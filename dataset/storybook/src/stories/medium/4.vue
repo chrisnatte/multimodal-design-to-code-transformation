@@ -1,9 +1,16 @@
 <template>
   <div class="flex items-center gap-1">
     <Breadcrumb :home="home" :model="items" />
-    <Button type="button" label="Dashboard anzeigen" severity="secondary" @click="menu?.toggle" />
+    <Button
+      type="button"
+      label="Dashboard anzeigen"
+      severity="secondary"
+      aria-haspopup="true"
+      aria-controls="menu"
+      @click="menu?.toggle"
+    />
   </div>
-  <Menu ref="menu" :model="menuItems" :popup="true" />
+  <Menu ref="menu" id="menu" :model="menuItems" :popup="true" />
 </template>
 
 <script setup lang="ts">
