@@ -12,7 +12,6 @@
         <Button
           icon="pi pi-ellipsis-h"
           severity="secondary"
-          class="border"
           aria-haspopup="true"
           aria-controls="actions-menu"
           @click="actionsMenu?.toggle"

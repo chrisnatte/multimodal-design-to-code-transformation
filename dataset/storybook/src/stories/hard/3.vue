@@ -16,7 +16,7 @@
         selection-mode="range"
         placeholder="Reisezeitraum wählen"
         input-id="travel-period-input"
-        :showIcon="true"
+        :show-icon="true"
       />
     </div>
     <div class="flex w-full max-w-3xs flex-col gap-2">
