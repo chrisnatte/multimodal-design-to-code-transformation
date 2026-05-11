@@ -1,0 +1,60 @@
+{
+    "type": "FRAME",
+    "id": "4:26",
+    "name": "7 [Loading State]",
+    "fills": [
+        {
+            "type": "SOLID",
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        }
+    ],
+    "layoutMode": "VERTICAL",
+    "layoutSizingHorizontal": "HUG",
+    "layoutSizingVertical": "HUG",
+    "paddingBottom": 24.0,
+    "paddingLeft": 24.0,
+    "paddingRight": 24.0,
+    "paddingTop": 24.0,
+    "children": [
+        {
+            "type": "FRAME",
+            "id": "10:5424",
+            "name": "Row",
+            "itemSpacing": 16.0,
+            "layoutMode": "VERTICAL",
+            "layoutSizingHorizontal": "FIXED",
+            "layoutSizingVertical": "HUG",
+            "children": [
+                {
+                    "type": "INSTANCE",
+                    "id": "10:5420",
+                    "name": "skeleton",
+                    "componentId": "7:7238"
+                },
+                {
+                    "type": "INSTANCE",
+                    "id": "10:5422",
+                    "name": "skeleton",
+                    "componentId": "7:7238"
+                },
+                {
+                    "type": "INSTANCE",
+                    "id": "10:5425",
+                    "name": "skeleton",
+                    "componentId": "7:7238"
+                },
+                {
+                    "type": "INSTANCE",
+                    "id": "10:5427",
+                    "name": "skeleton",
+                    "componentId": "7:7238"
+                }
+            ]
+        }
+    ]
+}

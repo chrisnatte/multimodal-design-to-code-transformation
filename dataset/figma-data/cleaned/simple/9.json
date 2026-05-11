@@ -1,0 +1,462 @@
+{
+    "type": "FRAME",
+    "id": "4:30",
+    "name": "9 [Todo-Liste]",
+    "fills": [
+        {
+            "type": "SOLID",
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        }
+    ],
+    "layoutMode": "VERTICAL",
+    "layoutSizingHorizontal": "HUG",
+    "layoutSizingVertical": "HUG",
+    "paddingBottom": 24.0,
+    "paddingLeft": 24.0,
+    "paddingRight": 24.0,
+    "paddingTop": 24.0,
+    "children": [
+        {
+            "type": "FRAME",
+            "id": "11:5557",
+            "name": "List",
+            "itemSpacing": 12.0,
+            "layoutMode": "VERTICAL",
+            "layoutSizingHorizontal": "FIXED",
+            "layoutSizingVertical": "HUG",
+            "children": [
+                {
+                    "type": "FRAME",
+                    "id": "11:5540",
+                    "name": "Row",
+                    "counterAxisAlignItems": "CENTER",
+                    "itemSpacing": 12.0,
+                    "layoutMode": "HORIZONTAL",
+                    "layoutSizingHorizontal": "FILL",
+                    "layoutSizingVertical": "HUG",
+                    "children": [
+                        {
+                            "type": "INSTANCE",
+                            "id": "11:5530",
+                            "name": "checkbox",
+                            "componentId": "7:4796",
+                            "componentProperties": {
+                                "Label#4275:102": {
+                                    "type": "TEXT",
+                                    "value": "Aufgabe1"
+                                },
+                                "Show Label#1844:0": {
+                                    "type": "BOOLEAN",
+                                    "value": true
+                                },
+                                "Hover": {
+                                    "value": "False",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Selected": {
+                                    "value": "False",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Focus": {
+                                    "value": "False",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Disabled": {
+                                    "value": "False",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Filled": {
+                                    "value": "True",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Size": {
+                                    "value": "Normal",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "FRAME",
+                                    "id": "I11:5530;5801:52775",
+                                    "name": "checkbox",
+                                    "cornerRadius": 4.0,
+                                    "fills": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.9725,
+                                                "g": 0.9804,
+                                                "b": 0.9882,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
+                                    "layoutMode": "HORIZONTAL",
+                                    "layoutSizingHorizontal": "FIXED",
+                                    "layoutSizingVertical": "FIXED"
+                                },
+                                {
+                                    "type": "TEXT",
+                                    "id": "I11:5530;5801:52776",
+                                    "name": "Label",
+                                    "characters": "Aufgabe1",
+                                    "componentPropertyReferences": {
+                                        "visible": "Show Label#1844:0",
+                                        "characters": "Label#4275:102"
+                                    },
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 400,
+                                        "fontSize": 14.0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "INSTANCE",
+                            "id": "11:5536",
+                            "name": "tag",
+                            "componentId": "7:7300",
+                            "componentProperties": {
+                                "Icon#2143:55": {
+                                    "type": "INSTANCE_SWAP",
+                                    "value": "7:7029",
+                                    "preferredValues": []
+                                },
+                                "Text#4272:22": {
+                                    "type": "TEXT",
+                                    "value": "Hoch"
+                                },
+                                "Show Icon#2143:34": {
+                                    "type": "BOOLEAN",
+                                    "value": false
+                                },
+                                "Severity": {
+                                    "value": "Danger",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Rounded": {
+                                    "value": "True",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TEXT",
+                                    "id": "I11:5536;4272:48377",
+                                    "name": "Tag",
+                                    "characters": "Hoch",
+                                    "componentPropertyReferences": {
+                                        "characters": "Text#4272:22"
+                                    },
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 700,
+                                        "fontSize": 12.25
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "FRAME",
+                    "id": "11:5606",
+                    "name": "Row",
+                    "counterAxisAlignItems": "CENTER",
+                    "itemSpacing": 12.0,
+                    "layoutMode": "HORIZONTAL",
+                    "layoutSizingHorizontal": "FILL",
+                    "layoutSizingVertical": "HUG",
+                    "children": [
+                        {
+                            "type": "INSTANCE",
+                            "id": "11:5607",
+                            "name": "checkbox",
+                            "componentId": "7:4796",
+                            "componentProperties": {
+                                "Label#4275:102": {
+                                    "type": "TEXT",
+                                    "value": "Aufgabe2"
+                                },
+                                "Show Label#1844:0": {
+                                    "type": "BOOLEAN",
+                                    "value": true
+                                },
+                                "Hover": {
+                                    "value": "False",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Selected": {
+                                    "value": "False",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Focus": {
+                                    "value": "False",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Disabled": {
+                                    "value": "False",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Filled": {
+                                    "value": "True",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Size": {
+                                    "value": "Normal",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "FRAME",
+                                    "id": "I11:5607;5801:52775",
+                                    "name": "checkbox",
+                                    "cornerRadius": 4.0,
+                                    "fills": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.9725,
+                                                "g": 0.9804,
+                                                "b": 0.9882,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
+                                    "layoutMode": "HORIZONTAL",
+                                    "layoutSizingHorizontal": "FIXED",
+                                    "layoutSizingVertical": "FIXED"
+                                },
+                                {
+                                    "type": "TEXT",
+                                    "id": "I11:5607;5801:52776",
+                                    "name": "Label",
+                                    "characters": "Aufgabe2",
+                                    "componentPropertyReferences": {
+                                        "visible": "Show Label#1844:0",
+                                        "characters": "Label#4275:102"
+                                    },
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 400,
+                                        "fontSize": 14.0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "INSTANCE",
+                            "id": "11:5608",
+                            "name": "tag",
+                            "componentId": "7:7285",
+                            "componentProperties": {
+                                "Icon#2143:55": {
+                                    "type": "INSTANCE_SWAP",
+                                    "value": "7:7029",
+                                    "preferredValues": []
+                                },
+                                "Text#4272:22": {
+                                    "type": "TEXT",
+                                    "value": "Niedrig"
+                                },
+                                "Show Icon#2143:34": {
+                                    "type": "BOOLEAN",
+                                    "value": false
+                                },
+                                "Severity": {
+                                    "value": "Primary",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Rounded": {
+                                    "value": "True",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TEXT",
+                                    "id": "I11:5608;4272:48365",
+                                    "name": "Tag",
+                                    "characters": "Niedrig",
+                                    "componentPropertyReferences": {
+                                        "characters": "Text#4272:22"
+                                    },
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 700,
+                                        "fontSize": 12.25
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "FRAME",
+                    "id": "11:5614",
+                    "name": "Row",
+                    "counterAxisAlignItems": "CENTER",
+                    "itemSpacing": 12.0,
+                    "layoutMode": "HORIZONTAL",
+                    "layoutSizingHorizontal": "FILL",
+                    "layoutSizingVertical": "HUG",
+                    "children": [
+                        {
+                            "type": "INSTANCE",
+                            "id": "11:5615",
+                            "name": "checkbox",
+                            "componentId": "7:4796",
+                            "componentProperties": {
+                                "Label#4275:102": {
+                                    "type": "TEXT",
+                                    "value": "Aufgabe3"
+                                },
+                                "Show Label#1844:0": {
+                                    "type": "BOOLEAN",
+                                    "value": true
+                                },
+                                "Hover": {
+                                    "value": "False",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Selected": {
+                                    "value": "False",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Focus": {
+                                    "value": "False",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Disabled": {
+                                    "value": "False",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Filled": {
+                                    "value": "True",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Size": {
+                                    "value": "Normal",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "FRAME",
+                                    "id": "I11:5615;5801:52775",
+                                    "name": "checkbox",
+                                    "cornerRadius": 4.0,
+                                    "fills": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.9725,
+                                                "g": 0.9804,
+                                                "b": 0.9882,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
+                                    "layoutMode": "HORIZONTAL",
+                                    "layoutSizingHorizontal": "FIXED",
+                                    "layoutSizingVertical": "FIXED"
+                                },
+                                {
+                                    "type": "TEXT",
+                                    "id": "I11:5615;5801:52776",
+                                    "name": "Label",
+                                    "characters": "Aufgabe3",
+                                    "componentPropertyReferences": {
+                                        "visible": "Show Label#1844:0",
+                                        "characters": "Label#4275:102"
+                                    },
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 400,
+                                        "fontSize": 14.0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "INSTANCE",
+                            "id": "11:5616",
+                            "name": "tag",
+                            "componentId": "7:7297",
+                            "componentProperties": {
+                                "Icon#2143:55": {
+                                    "type": "INSTANCE_SWAP",
+                                    "value": "7:7029",
+                                    "preferredValues": []
+                                },
+                                "Text#4272:22": {
+                                    "type": "TEXT",
+                                    "value": "Mittel"
+                                },
+                                "Show Icon#2143:34": {
+                                    "type": "BOOLEAN",
+                                    "value": false
+                                },
+                                "Severity": {
+                                    "value": "Warn",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Rounded": {
+                                    "value": "True",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "TEXT",
+                                    "id": "I11:5616;4272:48374",
+                                    "name": "Tag",
+                                    "characters": "Mittel",
+                                    "componentPropertyReferences": {
+                                        "characters": "Text#4272:22"
+                                    },
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 700,
+                                        "fontSize": 12.25
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

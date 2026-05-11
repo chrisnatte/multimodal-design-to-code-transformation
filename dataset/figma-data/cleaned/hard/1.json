@@ -1,0 +1,1084 @@
+{
+    "type": "FRAME",
+    "id": "4:54",
+    "name": "1 [Bearbeitungs-Dialog]",
+    "fills": [
+        {
+            "type": "SOLID",
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        }
+    ],
+    "itemSpacing": 10.0,
+    "layoutMode": "VERTICAL",
+    "layoutSizingHorizontal": "FIXED",
+    "layoutSizingVertical": "FIXED",
+    "children": [
+        {
+            "type": "FRAME",
+            "id": "26:1282",
+            "name": "screen",
+            "counterAxisAlignItems": "CENTER",
+            "fills": [
+                {
+                    "type": "SOLID",
+                    "color": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
+                        "a": 1.0
+                    }
+                }
+            ],
+            "layoutMode": "VERTICAL",
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "FIXED",
+            "paddingBottom": 280.0,
+            "paddingTop": 280.0,
+            "primaryAxisAlignItems": "CENTER",
+            "children": [
+                {
+                    "type": "FRAME",
+                    "id": "26:1325",
+                    "name": "dialog",
+                    "cornerRadius": 12.0,
+                    "fills": [
+                        {
+                            "type": "SOLID",
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0,
+                                "a": 1.0
+                            }
+                        }
+                    ],
+                    "layoutMode": "VERTICAL",
+                    "layoutSizingHorizontal": "FIXED",
+                    "layoutSizingVertical": "HUG",
+                    "children": [
+                        {
+                            "type": "FRAME",
+                            "id": "26:1326",
+                            "name": "header",
+                            "counterAxisAlignItems": "CENTER",
+                            "layoutMode": "HORIZONTAL",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "HUG",
+                            "paddingBottom": 17.5,
+                            "paddingLeft": 17.5,
+                            "paddingRight": 17.5,
+                            "paddingTop": 17.5,
+                            "primaryAxisAlignItems": "SPACE_BETWEEN",
+                            "children": [
+                                {
+                                    "type": "TEXT",
+                                    "id": "26:1327",
+                                    "name": "Header",
+                                    "characters": "Profil bearbeiten",
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 600,
+                                        "fontSize": 17.5
+                                    }
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "26:1328",
+                                    "name": "actions",
+                                    "itemSpacing": 7.0,
+                                    "layoutMode": "VERTICAL",
+                                    "layoutSizingHorizontal": "FIXED",
+                                    "layoutSizingVertical": "HUG",
+                                    "children": [
+                                        {
+                                            "type": "INSTANCE",
+                                            "id": "26:1329",
+                                            "name": "button",
+                                            "componentId": "7:2774",
+                                            "componentProperties": {
+                                                "Text#4293:477": {
+                                                    "type": "TEXT",
+                                                    "value": "Button"
+                                                },
+                                                "Show Right Icon#1644:1387": {
+                                                    "type": "BOOLEAN",
+                                                    "value": true
+                                                },
+                                                "Right Icon#1644:4161": {
+                                                    "type": "INSTANCE_SWAP",
+                                                    "value": "7:2160",
+                                                    "preferredValues": []
+                                                },
+                                                "Left Icon#1644:2774": {
+                                                    "type": "INSTANCE_SWAP",
+                                                    "value": "7:2160",
+                                                    "preferredValues": []
+                                                },
+                                                "Show Left Icon#1644:0": {
+                                                    "type": "BOOLEAN",
+                                                    "value": true
+                                                },
+                                                "Icon#1690:0": {
+                                                    "type": "INSTANCE_SWAP",
+                                                    "value": "9:255",
+                                                    "preferredValues": []
+                                                },
+                                                "Severity": {
+                                                    "value": "Secondary",
+                                                    "type": "VARIANT",
+                                                    "boundVariables": {}
+                                                },
+                                                "State": {
+                                                    "value": "Idle",
+                                                    "type": "VARIANT",
+                                                    "boundVariables": {}
+                                                },
+                                                "Disabled": {
+                                                    "value": "False",
+                                                    "type": "VARIANT",
+                                                    "boundVariables": {}
+                                                },
+                                                "Icon Only": {
+                                                    "value": "True",
+                                                    "type": "VARIANT",
+                                                    "boundVariables": {}
+                                                },
+                                                "⬆️ Raised": {
+                                                    "value": "False",
+                                                    "type": "VARIANT",
+                                                    "boundVariables": {}
+                                                },
+                                                "⥰ Rounded": {
+                                                    "value": "False",
+                                                    "type": "VARIANT",
+                                                    "boundVariables": {}
+                                                },
+                                                "🔤 Text": {
+                                                    "value": "True",
+                                                    "type": "VARIANT",
+                                                    "boundVariables": {}
+                                                },
+                                                "🔲 Outlined": {
+                                                    "value": "False",
+                                                    "type": "VARIANT",
+                                                    "boundVariables": {}
+                                                },
+                                                "Link": {
+                                                    "value": "False",
+                                                    "type": "VARIANT",
+                                                    "boundVariables": {}
+                                                }
+                                            },
+                                            "children": [
+                                                {
+                                                    "type": "INSTANCE",
+                                                    "id": "I26:1329;11:2307",
+                                                    "name": "times",
+                                                    "componentId": "9:255",
+                                                    "componentPropertyReferences": {
+                                                        "mainComponent": "Icon#1690:0"
+                                                    },
+                                                    "children": [
+                                                        {
+                                                            "type": "VECTOR",
+                                                            "id": "I26:1329;11:2307;30:37192",
+                                                            "name": "Vector"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "FRAME",
+                            "id": "26:1330",
+                            "name": "content",
+                            "itemSpacing": 16.0,
+                            "layoutMode": "VERTICAL",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "HUG",
+                            "paddingBottom": 17.5,
+                            "paddingLeft": 17.5,
+                            "paddingRight": 17.5,
+                            "primaryAxisAlignItems": "CENTER",
+                            "children": [
+                                {
+                                    "type": "INSTANCE",
+                                    "id": "26:1350",
+                                    "name": "inputtext",
+                                    "componentId": "7:125",
+                                    "componentProperties": {
+                                        "↳ Float Label#4275:152": {
+                                            "type": "TEXT",
+                                            "value": "Placeholder"
+                                        },
+                                        "🏷️ Show Label#5662:50": {
+                                            "type": "BOOLEAN",
+                                            "value": true
+                                        },
+                                        "ℹ️ Show Helper#1729:1731": {
+                                            "type": "BOOLEAN",
+                                            "value": false
+                                        },
+                                        "↳ Helper Text#1729:4039": {
+                                            "type": "TEXT",
+                                            "value": "Helper Text"
+                                        },
+                                        "➡️ Show Right Icon#1729:3462": {
+                                            "type": "BOOLEAN",
+                                            "value": false
+                                        },
+                                        "↳ Right Icon#1729:577": {
+                                            "type": "INSTANCE_SWAP",
+                                            "value": "7:29",
+                                            "preferredValues": []
+                                        },
+                                        "⬅️ Show Left Icon#1729:2885": {
+                                            "type": "BOOLEAN",
+                                            "value": false
+                                        },
+                                        "↳ Left Icon#1729:0": {
+                                            "type": "INSTANCE_SWAP",
+                                            "value": "7:29",
+                                            "preferredValues": []
+                                        },
+                                        "↳ Label#5662:83": {
+                                            "type": "TEXT",
+                                            "value": "Name"
+                                        },
+                                        "👁️ Show Text#1729:2308": {
+                                            "type": "BOOLEAN",
+                                            "value": true
+                                        },
+                                        "⚙️ State": {
+                                            "value": "Default",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "❌ Invalid": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "🚫 Disabled": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "🟦 Filled": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "🤏 Size": {
+                                            "value": "Normal",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "▭ Ifta Label": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "🏷️ Float Label": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "↳ Float Label Variant": {
+                                            "value": "N/A",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        }
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "TEXT",
+                                            "id": "I26:1350;5662:99533",
+                                            "name": "Label",
+                                            "characters": "Name",
+                                            "componentPropertyReferences": {
+                                                "visible": "🏷️ Show Label#5662:50",
+                                                "characters": "↳ Label#5662:83"
+                                            },
+                                            "style": {
+                                                "fontFamily": "Inter",
+                                                "fontWeight": 400,
+                                                "fontSize": 14.0
+                                            }
+                                        },
+                                        {
+                                            "type": "FRAME",
+                                            "id": "I26:1350;1729:36230",
+                                            "name": "input",
+                                            "cornerRadius": 6.0,
+                                            "counterAxisAlignItems": "CENTER",
+                                            "fills": [
+                                                {
+                                                    "type": "SOLID",
+                                                    "color": {
+                                                        "r": 1.0,
+                                                        "g": 1.0,
+                                                        "b": 1.0,
+                                                        "a": 1.0
+                                                    }
+                                                }
+                                            ],
+                                            "itemSpacing": 10.5,
+                                            "layoutMode": "HORIZONTAL",
+                                            "layoutSizingHorizontal": "FILL",
+                                            "layoutSizingVertical": "HUG",
+                                            "paddingBottom": 7.0,
+                                            "paddingLeft": 10.5,
+                                            "paddingRight": 10.5,
+                                            "paddingTop": 7.0,
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "I26:1350;1884:38746",
+                                                    "name": "content",
+                                                    "layoutMode": "VERTICAL",
+                                                    "layoutSizingHorizontal": "FILL",
+                                                    "layoutSizingVertical": "HUG",
+                                                    "children": [
+                                                        {
+                                                            "type": "INSTANCE",
+                                                            "id": "I26:1350;1809:36855",
+                                                            "name": "_inputtext-content",
+                                                            "componentId": "7:21",
+                                                            "componentProperties": {
+                                                                "Placeholder#4275:140": {
+                                                                    "type": "TEXT",
+                                                                    "value": "Name eingeben"
+                                                                },
+                                                                "Value#4275:146": {
+                                                                    "type": "TEXT",
+                                                                    "value": "Max Mustmann"
+                                                                },
+                                                                "Text Config": {
+                                                                    "value": "Text",
+                                                                    "type": "VARIANT",
+                                                                    "boundVariables": {}
+                                                                }
+                                                            },
+                                                            "componentPropertyReferences": {
+                                                                "visible": "👁️ Show Text#1729:2308"
+                                                            },
+                                                            "isExposedInstance": true,
+                                                            "children": [
+                                                                {
+                                                                    "type": "TEXT",
+                                                                    "id": "I26:1350;1809:36855;4275:52982",
+                                                                    "name": "Text",
+                                                                    "characters": "Max Mustmann",
+                                                                    "componentPropertyReferences": {
+                                                                        "characters": "Value#4275:146"
+                                                                    },
+                                                                    "style": {
+                                                                        "fontFamily": "Inter",
+                                                                        "fontWeight": 400,
+                                                                        "fontSize": 14.0
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "26:1409",
+                                    "name": "select",
+                                    "fills": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 1.0,
+                                                "g": 1.0,
+                                                "b": 1.0,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
+                                    "itemSpacing": 2.0,
+                                    "layoutMode": "VERTICAL",
+                                    "layoutSizingHorizontal": "FILL",
+                                    "layoutSizingVertical": "HUG",
+                                    "children": [
+                                        {
+                                            "type": "INSTANCE",
+                                            "id": "26:1410",
+                                            "name": "_select-input",
+                                            "componentId": "9:1364",
+                                            "componentProperties": {
+                                                "↳ Float Label#4275:152": {
+                                                    "type": "TEXT",
+                                                    "value": "Placeholder"
+                                                },
+                                                "✖️ Show Clear Icon#7165:0": {
+                                                    "type": "BOOLEAN",
+                                                    "value": false
+                                                },
+                                                "↳ Label#5662:83": {
+                                                    "type": "TEXT",
+                                                    "value": "Rolle"
+                                                },
+                                                "↳ Helper Text#1729:4039": {
+                                                    "type": "TEXT",
+                                                    "value": "Helper Text"
+                                                },
+                                                "🏷️ Show Label#5662:50": {
+                                                    "type": "BOOLEAN",
+                                                    "value": true
+                                                },
+                                                "👁️ Show Text#1729:2308": {
+                                                    "type": "BOOLEAN",
+                                                    "value": true
+                                                },
+                                                "ℹ️ Show Helper#1729:1731": {
+                                                    "type": "BOOLEAN",
+                                                    "value": false
+                                                },
+                                                "⚙️ State": {
+                                                    "value": "Focus",
+                                                    "type": "VARIANT",
+                                                    "boundVariables": {}
+                                                },
+                                                "❌ Invalid": {
+                                                    "value": "False",
+                                                    "type": "VARIANT",
+                                                    "boundVariables": {}
+                                                },
+                                                "🚫 Disabled": {
+                                                    "value": "False",
+                                                    "type": "VARIANT",
+                                                    "boundVariables": {}
+                                                },
+                                                "🟦 Filled": {
+                                                    "value": "False",
+                                                    "type": "VARIANT",
+                                                    "boundVariables": {}
+                                                },
+                                                "🤏 Size": {
+                                                    "value": "Normal",
+                                                    "type": "VARIANT",
+                                                    "boundVariables": {}
+                                                },
+                                                "▭ Ifta Label": {
+                                                    "value": "False",
+                                                    "type": "VARIANT",
+                                                    "boundVariables": {}
+                                                },
+                                                "🏷️ Float Label": {
+                                                    "value": "False",
+                                                    "type": "VARIANT",
+                                                    "boundVariables": {}
+                                                },
+                                                "↳ Float Label Variant": {
+                                                    "value": "N/A",
+                                                    "type": "VARIANT",
+                                                    "boundVariables": {}
+                                                }
+                                            },
+                                            "children": [
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "I26:1410;6195:7778",
+                                                    "name": "Label",
+                                                    "characters": "Rolle",
+                                                    "componentPropertyReferences": {
+                                                        "visible": "🏷️ Show Label#5662:50",
+                                                        "characters": "↳ Label#5662:83"
+                                                    },
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "I26:1410;6195:7779",
+                                                    "name": "input",
+                                                    "cornerRadius": 6.0,
+                                                    "counterAxisAlignItems": "CENTER",
+                                                    "fills": [
+                                                        {
+                                                            "type": "SOLID",
+                                                            "color": {
+                                                                "r": 1.0,
+                                                                "g": 1.0,
+                                                                "b": 1.0,
+                                                                "a": 1.0
+                                                            }
+                                                        }
+                                                    ],
+                                                    "layoutMode": "HORIZONTAL",
+                                                    "layoutSizingHorizontal": "FILL",
+                                                    "layoutSizingVertical": "HUG",
+                                                    "children": [
+                                                        {
+                                                            "type": "FRAME",
+                                                            "id": "I26:1410;6195:7780",
+                                                            "name": "content",
+                                                            "counterAxisAlignItems": "CENTER",
+                                                            "layoutMode": "HORIZONTAL",
+                                                            "layoutSizingHorizontal": "FILL",
+                                                            "layoutSizingVertical": "FIXED",
+                                                            "paddingBottom": 7.0,
+                                                            "paddingLeft": 10.5,
+                                                            "paddingTop": 7.0,
+                                                            "children": [
+                                                                {
+                                                                    "type": "INSTANCE",
+                                                                    "id": "I26:1410;6195:7781",
+                                                                    "name": "_select-input-content",
+                                                                    "componentId": "9:1310",
+                                                                    "componentProperties": {
+                                                                        "Placeholder#4275:140": {
+                                                                            "type": "TEXT",
+                                                                            "value": "Placeholder"
+                                                                        },
+                                                                        "Value#4275:146": {
+                                                                            "type": "TEXT",
+                                                                            "value": "Administrator"
+                                                                        },
+                                                                        "Text Config": {
+                                                                            "value": "Text",
+                                                                            "type": "VARIANT",
+                                                                            "boundVariables": {}
+                                                                        }
+                                                                    },
+                                                                    "componentPropertyReferences": {
+                                                                        "visible": "👁️ Show Text#1729:2308"
+                                                                    },
+                                                                    "isExposedInstance": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "TEXT",
+                                                                            "id": "I26:1410;6195:7781;6220:9122",
+                                                                            "name": "Text",
+                                                                            "characters": "Administrator",
+                                                                            "componentPropertyReferences": {
+                                                                                "characters": "Value#4275:146"
+                                                                            },
+                                                                            "style": {
+                                                                                "fontFamily": "Inter",
+                                                                                "fontWeight": 400,
+                                                                                "fontSize": 14.0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "FRAME",
+                                                            "id": "I26:1410;6195:7782",
+                                                            "name": "dropdown",
+                                                            "counterAxisAlignItems": "CENTER",
+                                                            "itemSpacing": 10.0,
+                                                            "layoutMode": "HORIZONTAL",
+                                                            "layoutSizingHorizontal": "FIXED",
+                                                            "layoutSizingVertical": "FILL",
+                                                            "primaryAxisAlignItems": "CENTER",
+                                                            "rectangleCornerRadii": [
+                                                                0.0,
+                                                                6.0,
+                                                                6.0,
+                                                                0.0
+                                                            ],
+                                                            "children": [
+                                                                {
+                                                                    "type": "INSTANCE",
+                                                                    "id": "I26:1410;6195:7783",
+                                                                    "name": "chevron-down",
+                                                                    "componentId": "9:99",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "VECTOR",
+                                                                            "id": "I26:1410;6195:7783;30:37111",
+                                                                            "name": "Vector"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "FRAME",
+                                            "id": "26:1411",
+                                            "name": "overlay",
+                                            "cornerRadius": 6.0,
+                                            "fills": [
+                                                {
+                                                    "type": "SOLID",
+                                                    "color": {
+                                                        "r": 1.0,
+                                                        "g": 1.0,
+                                                        "b": 1.0,
+                                                        "a": 1.0
+                                                    }
+                                                }
+                                            ],
+                                            "layoutMode": "VERTICAL",
+                                            "layoutSizingHorizontal": "FILL",
+                                            "layoutSizingVertical": "HUG",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "26:1414",
+                                                    "name": "list",
+                                                    "itemSpacing": 2.0,
+                                                    "layoutMode": "VERTICAL",
+                                                    "layoutSizingHorizontal": "FILL",
+                                                    "layoutSizingVertical": "HUG",
+                                                    "paddingBottom": 3.5,
+                                                    "paddingLeft": 3.5,
+                                                    "paddingRight": 3.5,
+                                                    "paddingTop": 3.5,
+                                                    "children": [
+                                                        {
+                                                            "type": "INSTANCE",
+                                                            "id": "26:1415",
+                                                            "name": "_select-option",
+                                                            "componentId": "9:3579",
+                                                            "componentProperties": {
+                                                                "Text (Emoji)#4055:3": {
+                                                                    "type": "TEXT",
+                                                                    "value": "🇺🇸"
+                                                                },
+                                                                "Text#4000:0": {
+                                                                    "type": "TEXT",
+                                                                    "value": "Administator"
+                                                                },
+                                                                "State": {
+                                                                    "value": "Highlight",
+                                                                    "type": "VARIANT",
+                                                                    "boundVariables": {}
+                                                                },
+                                                                "Group": {
+                                                                    "value": "False",
+                                                                    "type": "VARIANT",
+                                                                    "boundVariables": {}
+                                                                }
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "type": "TEXT",
+                                                                    "id": "I26:1415;6195:8082",
+                                                                    "name": "Option",
+                                                                    "characters": "Administator",
+                                                                    "componentPropertyReferences": {
+                                                                        "characters": "Text#4000:0"
+                                                                    },
+                                                                    "style": {
+                                                                        "fontFamily": "Inter",
+                                                                        "fontWeight": 400,
+                                                                        "fontSize": 14.0
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "INSTANCE",
+                                                            "id": "26:1416",
+                                                            "name": "_select-option",
+                                                            "componentId": "9:3575",
+                                                            "componentProperties": {
+                                                                "Text (Emoji)#4055:3": {
+                                                                    "type": "TEXT",
+                                                                    "value": "🇺🇸"
+                                                                },
+                                                                "Text#4000:0": {
+                                                                    "type": "TEXT",
+                                                                    "value": "Projektleiter"
+                                                                },
+                                                                "State": {
+                                                                    "value": "Default",
+                                                                    "type": "VARIANT",
+                                                                    "boundVariables": {}
+                                                                },
+                                                                "Group": {
+                                                                    "value": "False",
+                                                                    "type": "VARIANT",
+                                                                    "boundVariables": {}
+                                                                }
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "type": "TEXT",
+                                                                    "id": "I26:1416;6195:8078",
+                                                                    "name": "Option",
+                                                                    "characters": "Projektleiter",
+                                                                    "componentPropertyReferences": {
+                                                                        "characters": "Text#4000:0"
+                                                                    },
+                                                                    "style": {
+                                                                        "fontFamily": "Inter",
+                                                                        "fontWeight": 400,
+                                                                        "fontSize": 14.0
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "INSTANCE",
+                                                            "id": "27:2160",
+                                                            "name": "_select-option",
+                                                            "componentId": "9:3575",
+                                                            "componentProperties": {
+                                                                "Text (Emoji)#4055:3": {
+                                                                    "type": "TEXT",
+                                                                    "value": "🇺🇸"
+                                                                },
+                                                                "Text#4000:0": {
+                                                                    "type": "TEXT",
+                                                                    "value": "Gast"
+                                                                },
+                                                                "State": {
+                                                                    "value": "Default",
+                                                                    "type": "VARIANT",
+                                                                    "boundVariables": {}
+                                                                },
+                                                                "Group": {
+                                                                    "value": "False",
+                                                                    "type": "VARIANT",
+                                                                    "boundVariables": {}
+                                                                }
+                                                            },
+                                                            "children": [
+                                                                {
+                                                                    "type": "TEXT",
+                                                                    "id": "I27:2160;6195:8078",
+                                                                    "name": "Option",
+                                                                    "characters": "Gast",
+                                                                    "componentPropertyReferences": {
+                                                                        "characters": "Text#4000:0"
+                                                                    },
+                                                                    "style": {
+                                                                        "fontFamily": "Inter",
+                                                                        "fontWeight": 400,
+                                                                        "fontSize": 14.0
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "INSTANCE",
+                                    "id": "28:3129",
+                                    "name": "checkbox",
+                                    "componentId": "7:4753",
+                                    "componentProperties": {
+                                        "Label#4275:102": {
+                                            "type": "TEXT",
+                                            "value": "Ist aktiv"
+                                        },
+                                        "Show Label#1844:0": {
+                                            "type": "BOOLEAN",
+                                            "value": true
+                                        },
+                                        "Hover": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "Selected": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "Focus": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "Disabled": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "Filled": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "Size": {
+                                            "value": "Normal",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        }
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "I28:3129;1844:36245",
+                                            "name": "checkbox",
+                                            "cornerRadius": 4.0,
+                                            "fills": [
+                                                {
+                                                    "type": "SOLID",
+                                                    "color": {
+                                                        "r": 1.0,
+                                                        "g": 1.0,
+                                                        "b": 1.0,
+                                                        "a": 1.0
+                                                    }
+                                                }
+                                            ],
+                                            "layoutMode": "HORIZONTAL",
+                                            "layoutSizingHorizontal": "FIXED",
+                                            "layoutSizingVertical": "FIXED"
+                                        },
+                                        {
+                                            "type": "TEXT",
+                                            "id": "I28:3129;4275:52232",
+                                            "name": "Label",
+                                            "characters": "Ist aktiv",
+                                            "componentPropertyReferences": {
+                                                "visible": "Show Label#1844:0",
+                                                "characters": "Label#4275:102"
+                                            },
+                                            "style": {
+                                                "fontFamily": "Inter",
+                                                "fontWeight": 400,
+                                                "fontSize": 14.0
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "FRAME",
+                            "id": "26:1333",
+                            "name": "footer",
+                            "itemSpacing": 7.0,
+                            "layoutMode": "HORIZONTAL",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "HUG",
+                            "paddingBottom": 17.5,
+                            "paddingLeft": 17.5,
+                            "paddingRight": 17.5,
+                            "primaryAxisAlignItems": "MAX",
+                            "children": [
+                                {
+                                    "type": "INSTANCE",
+                                    "id": "26:1334",
+                                    "name": "button",
+                                    "componentId": "7:2912",
+                                    "componentProperties": {
+                                        "Icon#1690:0": {
+                                            "type": "INSTANCE_SWAP",
+                                            "value": "7:2160",
+                                            "preferredValues": []
+                                        },
+                                        "Right Icon#1644:4161": {
+                                            "type": "INSTANCE_SWAP",
+                                            "value": "7:2160",
+                                            "preferredValues": []
+                                        },
+                                        "Left Icon#1644:2774": {
+                                            "type": "INSTANCE_SWAP",
+                                            "value": "7:2160",
+                                            "preferredValues": []
+                                        },
+                                        "Show Left Icon#1644:0": {
+                                            "type": "BOOLEAN",
+                                            "value": false
+                                        },
+                                        "Text#4293:477": {
+                                            "type": "TEXT",
+                                            "value": "Abbrechen"
+                                        },
+                                        "Show Right Icon#1644:1387": {
+                                            "type": "BOOLEAN",
+                                            "value": false
+                                        },
+                                        "Severity": {
+                                            "value": "Plain",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "State": {
+                                            "value": "Idle",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "Disabled": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "Icon Only": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "⬆️ Raised": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "⥰ Rounded": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "🔤 Text": {
+                                            "value": "True",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "🔲 Outlined": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "Link": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        }
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "TEXT",
+                                            "id": "I26:1334;4452:51704",
+                                            "name": "Button",
+                                            "characters": "Abbrechen",
+                                            "componentPropertyReferences": {
+                                                "characters": "Text#4293:477"
+                                            },
+                                            "style": {
+                                                "fontFamily": "Inter",
+                                                "fontWeight": 500,
+                                                "fontSize": 14.0
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "INSTANCE",
+                                    "id": "26:1335",
+                                    "name": "button",
+                                    "componentId": "7:2368",
+                                    "componentProperties": {
+                                        "Left Icon#1644:2774": {
+                                            "type": "INSTANCE_SWAP",
+                                            "value": "7:2160",
+                                            "preferredValues": []
+                                        },
+                                        "Icon#1690:0": {
+                                            "type": "INSTANCE_SWAP",
+                                            "value": "7:2160",
+                                            "preferredValues": []
+                                        },
+                                        "Text#4293:477": {
+                                            "type": "TEXT",
+                                            "value": "Speichern"
+                                        },
+                                        "Show Right Icon#1644:1387": {
+                                            "type": "BOOLEAN",
+                                            "value": false
+                                        },
+                                        "Right Icon#1644:4161": {
+                                            "type": "INSTANCE_SWAP",
+                                            "value": "7:2160",
+                                            "preferredValues": []
+                                        },
+                                        "Show Left Icon#1644:0": {
+                                            "type": "BOOLEAN",
+                                            "value": false
+                                        },
+                                        "Severity": {
+                                            "value": "Primary",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "State": {
+                                            "value": "Idle",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "Disabled": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "Icon Only": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "⬆️ Raised": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "⥰ Rounded": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "🔤 Text": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "🔲 Outlined": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "Link": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        }
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "TEXT",
+                                            "id": "I26:1335;4293:57639",
+                                            "name": "Button",
+                                            "characters": "Speichern",
+                                            "componentPropertyReferences": {
+                                                "characters": "Text#4293:477"
+                                            },
+                                            "style": {
+                                                "fontFamily": "Inter",
+                                                "fontWeight": 500,
+                                                "fontSize": 14.0
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

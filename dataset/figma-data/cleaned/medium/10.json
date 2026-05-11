@@ -1,0 +1,320 @@
+{
+    "type": "FRAME",
+    "id": "4:52",
+    "name": "10 [Info-Card mit Progress]",
+    "fills": [
+        {
+            "type": "SOLID",
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        }
+    ],
+    "itemSpacing": 10.0,
+    "layoutMode": "VERTICAL",
+    "layoutSizingHorizontal": "HUG",
+    "layoutSizingVertical": "HUG",
+    "paddingBottom": 24.0,
+    "paddingLeft": 24.0,
+    "paddingRight": 24.0,
+    "paddingTop": 24.0,
+    "children": [
+        {
+            "type": "FRAME",
+            "id": "18:3056",
+            "name": "card",
+            "cornerRadius": 12.0,
+            "fills": [
+                {
+                    "type": "SOLID",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    }
+                }
+            ],
+            "itemSpacing": 7.0,
+            "layoutMode": "VERTICAL",
+            "layoutSizingHorizontal": "FIXED",
+            "layoutSizingVertical": "HUG",
+            "children": [
+                {
+                    "type": "FRAME",
+                    "id": "18:3058",
+                    "name": "body",
+                    "cornerRadius": 6.0,
+                    "itemSpacing": 24.0,
+                    "layoutMode": "VERTICAL",
+                    "layoutSizingHorizontal": "FILL",
+                    "layoutSizingVertical": "HUG",
+                    "paddingBottom": 17.5,
+                    "paddingLeft": 17.5,
+                    "paddingRight": 17.5,
+                    "paddingTop": 17.5,
+                    "children": [
+                        {
+                            "type": "FRAME",
+                            "id": "18:3059",
+                            "name": "caption",
+                            "itemSpacing": 7.0,
+                            "layoutMode": "VERTICAL",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "HUG",
+                            "children": [
+                                {
+                                    "type": "TEXT",
+                                    "id": "18:3060",
+                                    "name": "Dashboardeinrichtung",
+                                    "characters": "Dashboardeinrichtung",
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 500,
+                                        "fontSize": 17.5
+                                    }
+                                },
+                                {
+                                    "type": "TEXT",
+                                    "id": "18:3061",
+                                    "name": "Dein Dashboard zur Zeit eingerichtet. Dies kann wenige Minuten dauern.",
+                                    "characters": "Dein Dashboard zur Zeit eingerichtet. Dies kann wenige Minuten dauern.",
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 400,
+                                        "fontSize": 14.0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "FRAME",
+                            "id": "18:3062",
+                            "name": "content",
+                            "itemSpacing": 12.0,
+                            "layoutMode": "VERTICAL",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "HUG",
+                            "children": [
+                                {
+                                    "type": "INSTANCE",
+                                    "id": "18:3067",
+                                    "name": "progressbar",
+                                    "componentId": "7:7214",
+                                    "componentProperties": {
+                                        "Text#4271:24": {
+                                            "type": "TEXT",
+                                            "value": "50%"
+                                        },
+                                        "Type": {
+                                            "value": "Basic",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "Value": {
+                                            "value": "True",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        }
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "I18:3067;348:12905",
+                                            "name": "value",
+                                            "counterAxisAlignItems": "CENTER",
+                                            "fills": [
+                                                {
+                                                    "type": "SOLID",
+                                                    "color": {
+                                                        "r": 0.0627,
+                                                        "g": 0.7255,
+                                                        "b": 0.5059,
+                                                        "a": 1.0
+                                                    }
+                                                }
+                                            ],
+                                            "layoutMode": "VERTICAL",
+                                            "layoutSizingHorizontal": "FILL",
+                                            "layoutSizingVertical": "FILL",
+                                            "primaryAxisAlignItems": "CENTER",
+                                            "rectangleCornerRadii": [
+                                                6.0,
+                                                0.0,
+                                                0.0,
+                                                6.0
+                                            ],
+                                            "children": [
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "I18:3067;4271:48300",
+                                                    "name": "50%",
+                                                    "characters": "50%",
+                                                    "componentPropertyReferences": {
+                                                        "characters": "Text#4271:24"
+                                                    },
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 600,
+                                                        "fontSize": 10.5
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "FRAME",
+                                            "id": "I18:3067;348:12906",
+                                            "name": "background",
+                                            "fills": [
+                                                {
+                                                    "type": "SOLID",
+                                                    "color": {
+                                                        "r": 0.8863,
+                                                        "g": 0.9098,
+                                                        "b": 0.9412,
+                                                        "a": 1.0
+                                                    }
+                                                }
+                                            ],
+                                            "layoutMode": "VERTICAL",
+                                            "layoutSizingHorizontal": "FILL",
+                                            "layoutSizingVertical": "FILL",
+                                            "rectangleCornerRadii": [
+                                                0.0,
+                                                6.0,
+                                                6.0,
+                                                0.0
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TEXT",
+                                    "id": "18:3063",
+                                    "name": "Projektmetriken werden analysiert",
+                                    "characters": "Projektmetriken werden analysiert",
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 300,
+                                        "fontSize": 12.0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "FRAME",
+                            "id": "18:3064",
+                            "name": "footer",
+                            "itemSpacing": 7.0,
+                            "layoutMode": "HORIZONTAL",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "HUG",
+                            "primaryAxisAlignItems": "MAX",
+                            "children": [
+                                {
+                                    "type": "INSTANCE",
+                                    "id": "18:3065",
+                                    "name": "button",
+                                    "componentId": "7:2412",
+                                    "componentProperties": {
+                                        "Text#4293:477": {
+                                            "type": "TEXT",
+                                            "value": "Weiter"
+                                        },
+                                        "Icon#1690:0": {
+                                            "type": "INSTANCE_SWAP",
+                                            "value": "7:2160",
+                                            "preferredValues": []
+                                        },
+                                        "Show Right Icon#1644:1387": {
+                                            "type": "BOOLEAN",
+                                            "value": false
+                                        },
+                                        "Right Icon#1644:4161": {
+                                            "type": "INSTANCE_SWAP",
+                                            "value": "7:2160",
+                                            "preferredValues": []
+                                        },
+                                        "Left Icon#1644:2774": {
+                                            "type": "INSTANCE_SWAP",
+                                            "value": "7:2160",
+                                            "preferredValues": []
+                                        },
+                                        "Show Left Icon#1644:0": {
+                                            "type": "BOOLEAN",
+                                            "value": false
+                                        },
+                                        "Severity": {
+                                            "value": "Secondary",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "State": {
+                                            "value": "Idle",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "Disabled": {
+                                            "value": "True",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "Icon Only": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "⬆️ Raised": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "⥰ Rounded": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "🔤 Text": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "🔲 Outlined": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        },
+                                        "Link": {
+                                            "value": "False",
+                                            "type": "VARIANT",
+                                            "boundVariables": {}
+                                        }
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "TEXT",
+                                            "id": "I18:3065;4293:58343",
+                                            "name": "Button",
+                                            "characters": "Weiter",
+                                            "componentPropertyReferences": {
+                                                "characters": "Text#4293:477"
+                                            },
+                                            "style": {
+                                                "fontFamily": "Inter",
+                                                "fontWeight": 500,
+                                                "fontSize": 14.0
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

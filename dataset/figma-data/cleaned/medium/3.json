@@ -1,0 +1,225 @@
+{
+    "type": "FRAME",
+    "id": "4:38",
+    "name": "3 [FAQ-Accordion]",
+    "fills": [
+        {
+            "type": "SOLID",
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        }
+    ],
+    "itemSpacing": 10.0,
+    "layoutMode": "VERTICAL",
+    "layoutSizingHorizontal": "HUG",
+    "layoutSizingVertical": "HUG",
+    "paddingBottom": 24.0,
+    "paddingLeft": 24.0,
+    "paddingRight": 24.0,
+    "paddingTop": 24.0,
+    "children": [
+        {
+            "type": "FRAME",
+            "id": "12:2255",
+            "name": "accordion",
+            "layoutMode": "VERTICAL",
+            "layoutSizingHorizontal": "HUG",
+            "layoutSizingVertical": "HUG",
+            "children": [
+                {
+                    "type": "INSTANCE",
+                    "id": "12:2256",
+                    "name": "_accordion-panel",
+                    "componentId": "9:148",
+                    "componentProperties": {
+                        "Toggle Status": {
+                            "value": "Expanded",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Content Type": {
+                            "value": "Text",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "INSTANCE",
+                            "id": "I12:2256;462:27516",
+                            "name": "_accordion-header",
+                            "componentId": "9:113",
+                            "componentProperties": {
+                                "Header#4272:33": {
+                                    "type": "TEXT",
+                                    "value": "Was ist Design-To-Code?"
+                                },
+                                "State": {
+                                    "value": "Active",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Disabled": {
+                                    "value": "False",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Focus": {
+                                    "value": "False",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                }
+                            },
+                            "isExposedInstance": true,
+                            "children": [
+                                {
+                                    "type": "TEXT",
+                                    "id": "I12:2256;462:27516;3424:32676",
+                                    "name": "Header",
+                                    "characters": "Was ist Design-To-Code?",
+                                    "componentPropertyReferences": {
+                                        "characters": "Header#4272:33"
+                                    },
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 600,
+                                        "fontSize": 14.0
+                                    }
+                                },
+                                {
+                                    "type": "INSTANCE",
+                                    "id": "I12:2256;462:27516;1041:34338",
+                                    "name": "chevron-down",
+                                    "componentId": "9:99",
+                                    "children": [
+                                        {
+                                            "type": "VECTOR",
+                                            "id": "I12:2256;462:27516;1041:34338;30:37111",
+                                            "name": "Vector"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "FRAME",
+                            "id": "I12:2256;233:9317",
+                            "name": "content",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "layoutMode": "VERTICAL",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "HUG",
+                            "paddingBottom": 15.75,
+                            "paddingLeft": 15.75,
+                            "paddingRight": 15.75,
+                            "children": [
+                                {
+                                    "type": "TEXT",
+                                    "id": "I12:2256;3424:34826",
+                                    "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                    "characters": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 400,
+                                        "fontSize": 14.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "INSTANCE",
+                    "id": "12:2257",
+                    "name": "_accordion-panel",
+                    "componentId": "9:146",
+                    "componentProperties": {
+                        "Toggle Status": {
+                            "value": "Collapsed",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Content Type": {
+                            "value": "Text",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "INSTANCE",
+                            "id": "I12:2257;462:28313",
+                            "name": "_accordion-header",
+                            "componentId": "9:107",
+                            "componentProperties": {
+                                "Header#4272:33": {
+                                    "type": "TEXT",
+                                    "value": "Welche unterschiedlichen Ansätze gibt es?"
+                                },
+                                "State": {
+                                    "value": "Idle",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Disabled": {
+                                    "value": "False",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Focus": {
+                                    "value": "False",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                }
+                            },
+                            "isExposedInstance": true,
+                            "children": [
+                                {
+                                    "type": "TEXT",
+                                    "id": "I12:2257;462:28313;3424:32736",
+                                    "name": "Header",
+                                    "characters": "Welche unterschiedlichen Ansätze gibt es?",
+                                    "componentPropertyReferences": {
+                                        "characters": "Header#4272:33"
+                                    },
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 600,
+                                        "fontSize": 14.0
+                                    }
+                                },
+                                {
+                                    "type": "INSTANCE",
+                                    "id": "I12:2257;462:28313;462:27447",
+                                    "name": "chevron-up",
+                                    "componentId": "9:91",
+                                    "children": [
+                                        {
+                                            "type": "VECTOR",
+                                            "id": "I12:2257;462:28313;462:27447;30:37108",
+                                            "name": "Vector"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

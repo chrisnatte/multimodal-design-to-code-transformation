@@ -1,0 +1,543 @@
+{
+    "type": "FRAME",
+    "id": "4:20",
+    "name": "4 [Optionen-Auswahl]",
+    "fills": [
+        {
+            "type": "SOLID",
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        }
+    ],
+    "layoutMode": "VERTICAL",
+    "layoutSizingHorizontal": "HUG",
+    "layoutSizingVertical": "HUG",
+    "paddingBottom": 24.0,
+    "paddingLeft": 24.0,
+    "paddingRight": 24.0,
+    "paddingTop": 24.0,
+    "children": [
+        {
+            "type": "FRAME",
+            "id": "10:5237",
+            "name": "Column",
+            "itemSpacing": 4.0,
+            "layoutMode": "VERTICAL",
+            "layoutSizingHorizontal": "FIXED",
+            "layoutSizingVertical": "HUG",
+            "children": [
+                {
+                    "type": "INSTANCE",
+                    "id": "10:5229",
+                    "name": "radiobutton",
+                    "componentId": "7:5160",
+                    "componentProperties": {
+                        "Label#4283:5": {
+                            "type": "TEXT",
+                            "value": "Option1"
+                        },
+                        "Show Label#1850:29": {
+                            "type": "BOOLEAN",
+                            "value": true
+                        },
+                        "State": {
+                            "value": "Idle",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Selected": {
+                            "value": "True",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Disabled": {
+                            "value": "False",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Filled": {
+                            "value": "False",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Size": {
+                            "value": "Normal",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "FRAME",
+                            "id": "I10:5229;1850:45914",
+                            "name": "radiobutton",
+                            "cornerRadius": 17.5,
+                            "counterAxisAlignItems": "CENTER",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.0627,
+                                        "g": 0.7255,
+                                        "b": 0.5059,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "layoutMode": "HORIZONTAL",
+                            "layoutSizingHorizontal": "FIXED",
+                            "layoutSizingVertical": "FIXED",
+                            "primaryAxisAlignItems": "CENTER",
+                            "children": [
+                                {
+                                    "type": "RECTANGLE",
+                                    "id": "I10:5229;1850:45915",
+                                    "name": "icon",
+                                    "cornerRadius": 6.0,
+                                    "fills": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 1.0,
+                                                "g": 1.0,
+                                                "b": 1.0,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TEXT",
+                            "id": "I10:5229;4283:46963",
+                            "name": "Label",
+                            "characters": "Option1",
+                            "componentPropertyReferences": {
+                                "visible": "Show Label#1850:29",
+                                "characters": "Label#4283:5"
+                            },
+                            "style": {
+                                "fontFamily": "Inter",
+                                "fontWeight": 400,
+                                "fontSize": 14.0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "INSTANCE",
+                    "id": "10:5238",
+                    "name": "divider",
+                    "componentId": "7:4321",
+                    "componentProperties": {
+                        "Type": {
+                            "value": "Solid",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Content": {
+                            "value": "False",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Align": {
+                            "value": "N/A",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Direction": {
+                            "value": "Horizontal",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "FRAME",
+                            "id": "I10:5238;6354:27139",
+                            "name": "divider",
+                            "layoutMode": "VERTICAL",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "HUG",
+                            "children": [
+                                {
+                                    "type": "RECTANGLE",
+                                    "id": "I10:5238;302:11777",
+                                    "name": "divider",
+                                    "fills": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "INSTANCE",
+                    "id": "10:5233",
+                    "name": "radiobutton",
+                    "componentId": "7:5154",
+                    "componentProperties": {
+                        "Label#4283:5": {
+                            "type": "TEXT",
+                            "value": "Option2"
+                        },
+                        "Show Label#1850:29": {
+                            "type": "BOOLEAN",
+                            "value": true
+                        },
+                        "State": {
+                            "value": "Idle",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Selected": {
+                            "value": "False",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Disabled": {
+                            "value": "False",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Filled": {
+                            "value": "False",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Size": {
+                            "value": "Normal",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "FRAME",
+                            "id": "I10:5233;1850:45893",
+                            "name": "radiobutton",
+                            "cornerRadius": 17.5,
+                            "counterAxisAlignItems": "CENTER",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "layoutMode": "HORIZONTAL",
+                            "layoutSizingHorizontal": "FIXED",
+                            "layoutSizingVertical": "FIXED",
+                            "primaryAxisAlignItems": "CENTER"
+                        },
+                        {
+                            "type": "TEXT",
+                            "id": "I10:5233;4283:46935",
+                            "name": "Label",
+                            "characters": "Option2",
+                            "componentPropertyReferences": {
+                                "visible": "Show Label#1850:29",
+                                "characters": "Label#4283:5"
+                            },
+                            "style": {
+                                "fontFamily": "Inter",
+                                "fontWeight": 400,
+                                "fontSize": 14.0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "INSTANCE",
+                    "id": "10:5266",
+                    "name": "divider",
+                    "componentId": "7:4321",
+                    "componentProperties": {
+                        "Type": {
+                            "value": "Solid",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Content": {
+                            "value": "False",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Align": {
+                            "value": "N/A",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Direction": {
+                            "value": "Horizontal",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "FRAME",
+                            "id": "I10:5266;6354:27139",
+                            "name": "divider",
+                            "layoutMode": "VERTICAL",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "HUG",
+                            "children": [
+                                {
+                                    "type": "RECTANGLE",
+                                    "id": "I10:5266;302:11777",
+                                    "name": "divider",
+                                    "fills": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "INSTANCE",
+                    "id": "10:5267",
+                    "name": "radiobutton",
+                    "componentId": "7:5154",
+                    "componentProperties": {
+                        "Label#4283:5": {
+                            "type": "TEXT",
+                            "value": "Option3"
+                        },
+                        "Show Label#1850:29": {
+                            "type": "BOOLEAN",
+                            "value": true
+                        },
+                        "State": {
+                            "value": "Idle",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Selected": {
+                            "value": "False",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Disabled": {
+                            "value": "False",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Filled": {
+                            "value": "False",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Size": {
+                            "value": "Normal",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "FRAME",
+                            "id": "I10:5267;1850:45893",
+                            "name": "radiobutton",
+                            "cornerRadius": 17.5,
+                            "counterAxisAlignItems": "CENTER",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "layoutMode": "HORIZONTAL",
+                            "layoutSizingHorizontal": "FIXED",
+                            "layoutSizingVertical": "FIXED",
+                            "primaryAxisAlignItems": "CENTER"
+                        },
+                        {
+                            "type": "TEXT",
+                            "id": "I10:5267;4283:46935",
+                            "name": "Label",
+                            "characters": "Option3",
+                            "componentPropertyReferences": {
+                                "visible": "Show Label#1850:29",
+                                "characters": "Label#4283:5"
+                            },
+                            "style": {
+                                "fontFamily": "Inter",
+                                "fontWeight": 400,
+                                "fontSize": 14.0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "INSTANCE",
+                    "id": "10:5273",
+                    "name": "divider",
+                    "componentId": "7:4321",
+                    "componentProperties": {
+                        "Type": {
+                            "value": "Solid",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Content": {
+                            "value": "False",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Align": {
+                            "value": "N/A",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Direction": {
+                            "value": "Horizontal",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "FRAME",
+                            "id": "I10:5273;6354:27139",
+                            "name": "divider",
+                            "layoutMode": "VERTICAL",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "HUG",
+                            "children": [
+                                {
+                                    "type": "RECTANGLE",
+                                    "id": "I10:5273;302:11777",
+                                    "name": "divider",
+                                    "fills": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "INSTANCE",
+                    "id": "10:5274",
+                    "name": "radiobutton",
+                    "componentId": "7:5154",
+                    "componentProperties": {
+                        "Label#4283:5": {
+                            "type": "TEXT",
+                            "value": "Option4"
+                        },
+                        "Show Label#1850:29": {
+                            "type": "BOOLEAN",
+                            "value": true
+                        },
+                        "State": {
+                            "value": "Idle",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Selected": {
+                            "value": "False",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Disabled": {
+                            "value": "False",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Filled": {
+                            "value": "False",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Size": {
+                            "value": "Normal",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "FRAME",
+                            "id": "I10:5274;1850:45893",
+                            "name": "radiobutton",
+                            "cornerRadius": 17.5,
+                            "counterAxisAlignItems": "CENTER",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "layoutMode": "HORIZONTAL",
+                            "layoutSizingHorizontal": "FIXED",
+                            "layoutSizingVertical": "FIXED",
+                            "primaryAxisAlignItems": "CENTER"
+                        },
+                        {
+                            "type": "TEXT",
+                            "id": "I10:5274;4283:46935",
+                            "name": "Label",
+                            "characters": "Option4",
+                            "componentPropertyReferences": {
+                                "visible": "Show Label#1850:29",
+                                "characters": "Label#4283:5"
+                            },
+                            "style": {
+                                "fontFamily": "Inter",
+                                "fontWeight": 400,
+                                "fontSize": 14.0
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

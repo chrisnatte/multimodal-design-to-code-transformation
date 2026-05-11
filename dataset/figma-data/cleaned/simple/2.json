@@ -1,0 +1,141 @@
+{
+    "type": "FRAME",
+    "id": "4:16",
+    "name": "2 [Status-Reihe]",
+    "fills": [
+        {
+            "type": "SOLID",
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        }
+    ],
+    "layoutMode": "VERTICAL",
+    "layoutSizingHorizontal": "HUG",
+    "layoutSizingVertical": "HUG",
+    "paddingBottom": 24.0,
+    "paddingLeft": 24.0,
+    "paddingRight": 24.0,
+    "paddingTop": 24.0,
+    "children": [
+        {
+            "type": "FRAME",
+            "id": "10:4970",
+            "name": "Row",
+            "counterAxisAlignItems": "CENTER",
+            "itemSpacing": 16.0,
+            "layoutMode": "HORIZONTAL",
+            "layoutSizingHorizontal": "HUG",
+            "layoutSizingVertical": "HUG",
+            "children": [
+                {
+                    "type": "INSTANCE",
+                    "id": "10:4939",
+                    "name": "avatar",
+                    "componentId": "7:7062",
+                    "componentProperties": {
+                        "Text#4271:0": {
+                            "type": "TEXT",
+                            "value": "B"
+                        },
+                        "Show Badge#2138:0": {
+                            "type": "BOOLEAN",
+                            "value": true
+                        },
+                        "Size": {
+                            "value": "X-Large",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Type": {
+                            "value": "Label",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Circle": {
+                            "value": "True",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "TEXT",
+                            "id": "I10:4939;4271:48118",
+                            "name": "P",
+                            "characters": "B",
+                            "componentPropertyReferences": {
+                                "characters": "Text#4271:0"
+                            },
+                            "style": {
+                                "fontFamily": "Inter",
+                                "fontWeight": 400,
+                                "fontSize": 28.0
+                            }
+                        },
+                        {
+                            "type": "INSTANCE",
+                            "id": "I10:4939;2138:39379",
+                            "name": "overlaybadge",
+                            "componentId": "7:6923",
+                            "componentProperties": {
+                                "Text#4272:0": {
+                                    "type": "TEXT",
+                                    "value": "8"
+                                },
+                                "Severity": {
+                                    "value": "Primary",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Size": {
+                                    "value": "Default",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                },
+                                "Circle": {
+                                    "value": "True",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                }
+                            },
+                            "componentPropertyReferences": {
+                                "visible": "Show Badge#2138:0"
+                            },
+                            "children": [
+                                {
+                                    "type": "TEXT",
+                                    "id": "I10:4939;2138:39379;6998:92193",
+                                    "name": "8",
+                                    "characters": "8",
+                                    "componentPropertyReferences": {
+                                        "characters": "Text#4272:0"
+                                    },
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 700,
+                                        "fontSize": 10.5
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "TEXT",
+                    "id": "10:4969",
+                    "name": "Benutzername",
+                    "characters": "Benutzername",
+                    "style": {
+                        "fontFamily": "Inter",
+                        "fontWeight": 400,
+                        "fontSize": 20.0
+                    }
+                }
+            ]
+        }
+    ]
+}

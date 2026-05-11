@@ -1,0 +1,175 @@
+{
+    "type": "FRAME",
+    "id": "4:24",
+    "name": "6 [Datei-Upload-Status]",
+    "fills": [
+        {
+            "type": "SOLID",
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        }
+    ],
+    "layoutMode": "VERTICAL",
+    "layoutSizingHorizontal": "HUG",
+    "layoutSizingVertical": "HUG",
+    "paddingBottom": 24.0,
+    "paddingLeft": 24.0,
+    "paddingRight": 24.0,
+    "paddingTop": 24.0,
+    "children": [
+        {
+            "type": "FRAME",
+            "id": "10:5419",
+            "name": "Row",
+            "itemSpacing": 12.0,
+            "layoutMode": "VERTICAL",
+            "layoutSizingHorizontal": "FIXED",
+            "layoutSizingVertical": "HUG",
+            "children": [
+                {
+                    "type": "INSTANCE",
+                    "id": "10:5376",
+                    "name": "progressbar",
+                    "componentId": "7:7214",
+                    "componentProperties": {
+                        "Text#4271:24": {
+                            "type": "TEXT",
+                            "value": "25%"
+                        },
+                        "Type": {
+                            "value": "Basic",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Value": {
+                            "value": "True",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "FRAME",
+                            "id": "I10:5376;348:12905",
+                            "name": "value",
+                            "counterAxisAlignItems": "CENTER",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.0627,
+                                        "g": 0.7255,
+                                        "b": 0.5059,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "layoutMode": "VERTICAL",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "FILL",
+                            "primaryAxisAlignItems": "CENTER",
+                            "rectangleCornerRadii": [
+                                6.0,
+                                0.0,
+                                0.0,
+                                6.0
+                            ],
+                            "children": [
+                                {
+                                    "type": "TEXT",
+                                    "id": "I10:5376;4271:48300",
+                                    "name": "50%",
+                                    "characters": "25%",
+                                    "componentPropertyReferences": {
+                                        "characters": "Text#4271:24"
+                                    },
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 600,
+                                        "fontSize": 10.5
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "FRAME",
+                            "id": "I10:5376;348:12906",
+                            "name": "background",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.8863,
+                                        "g": 0.9098,
+                                        "b": 0.9412,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "layoutMode": "VERTICAL",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "FILL",
+                            "rectangleCornerRadii": [
+                                0.0,
+                                6.0,
+                                6.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "INSTANCE",
+                    "id": "10:5386",
+                    "name": "tag",
+                    "componentId": "7:7294",
+                    "componentProperties": {
+                        "Icon#2143:55": {
+                            "type": "INSTANCE_SWAP",
+                            "value": "7:7029",
+                            "preferredValues": []
+                        },
+                        "Text#4272:22": {
+                            "type": "TEXT",
+                            "value": "Datei wird hochgeladen..."
+                        },
+                        "Show Icon#2143:34": {
+                            "type": "BOOLEAN",
+                            "value": false
+                        },
+                        "Severity": {
+                            "value": "Info",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        },
+                        "Rounded": {
+                            "value": "True",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                        }
+                    },
+                    "children": [
+                        {
+                            "type": "TEXT",
+                            "id": "I10:5386;4272:48371",
+                            "name": "Tag",
+                            "characters": "Datei wird hochgeladen...",
+                            "componentPropertyReferences": {
+                                "characters": "Text#4272:22"
+                            },
+                            "style": {
+                                "fontFamily": "Inter",
+                                "fontWeight": 300,
+                                "fontSize": 12.25
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
