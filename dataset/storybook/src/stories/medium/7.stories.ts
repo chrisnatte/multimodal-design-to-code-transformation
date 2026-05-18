@@ -1,4 +1,5 @@
 import MediumComponentPaketList from './7.vue'
+import MediumComponentPaketListMethodA from './7-a.vue'
 
 export default {
   title: 'Medium/7-Paket-List',
@@ -6,3 +7,10 @@ export default {
 }
 
 export const Default = {}
+
+export const MethodA = {
+  render: () => ({
+    components: { MediumComponentPaketListMethodA },
+    template: '<MediumComponentPaketListMethodA />',
+  }),
+}

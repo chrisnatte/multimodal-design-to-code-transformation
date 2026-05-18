@@ -1,4 +1,5 @@
 import SimpleComponentFilter from './10.vue'
+import SimpleComponentFilterMethodA from './10-a.vue'
 
 export default {
   title: 'Simple/10-Filter',
@@ -6,3 +7,10 @@ export default {
 }
 
 export const Default = {}
+
+export const MethodA = {
+  render: () => ({
+    components: { SimpleComponentFilterMethodA },
+    template: '<SimpleComponentFilterMethodA />',
+  }),
+}

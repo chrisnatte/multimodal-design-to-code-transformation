@@ -1,4 +1,5 @@
 import MediumComponentProfileView from './6.vue'
+import MediumComponentProfileViewMethodA from './6-a.vue'
 
 export default {
   title: 'Medium/6-Profile-View',
@@ -6,3 +7,10 @@ export default {
 }
 
 export const Default = {}
+
+export const MethodA = {
+  render: () => ({
+    components: { MediumComponentProfileViewMethodA },
+    template: '<MediumComponentProfileViewMethodA />',
+  }),
+}
