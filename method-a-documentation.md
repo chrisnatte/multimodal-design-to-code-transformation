@@ -1,4 +1,4 @@
-# Ansatz A - regelbasierte Transformation
+# Ansatz A — Regelbasierte Transformation
 
 ## 1. Übersicht
 
@@ -10,14 +10,16 @@ Der regelbasierte Ansatz (Ansatz A) bildet die deterministische Baseline. Dieser
 
 Die zentrale Eigenschaft dieser Methode ist ihre vollständige Nachvollziehbarkeit: Jede einzelne Transformationsentscheidung lässt sich auf eine explizite Regel zurückführen.
 
+Stand der Implementierung: Der aktuelle Prototyp mappt regelbasiert sowohl primitive Figma-`INSTANCE`-Komponenten (`COMPONENT_MAP`, 17 Einträge) als auch zusammengesetzte, framebasierte Strukturen (`FRAME_MAP`, 8 Strategien, z.B. `Tabs`, `Dialog`, `DataTable`). Die Pipeline läuft über alle drei Komplexitätsstufen (Simple, Medium, Hard) und erfasst pro Mockup automatisch Coverage- und Timing-Metriken.
+
 ### Designprinzipien
 
-| Prinzip                           | Umsetzung                                                        |
-|-----------------------------------|------------------------------------------------------------------|
-| Determinismus                     | Identische Eingabe erzeugt identische Ausgabe — keine Stochastik |
-| Transparenz                       | Jede Regel ist in `COMPONENT_MAP` als Code hinterlegt            |
-| Modularität                       | Komponenten-Spezifikationen sind unabhängig erweiterbar          |
-| Trennung der Verantwortlichkeiten | AST-Aufbau, Mapping und Code-Generierung sind getrennt           |
+| Prinzip                           | Umsetzung                                                         |
+|-----------------------------------|-------------------------------------------------------------------|
+| Determinismus                     | Identische Eingabe erzeugt identische Ausgabe — keine Stochastik  |
+| Transparenz                       | Jede Regel ist in `COMPONENT_MAP`/`FRAME_MAP` als Code hinterlegt |
+| Modularität                       | Komponenten-Spezifikationen sind unabhängig erweiterbar           |
+| Trennung der Verantwortlichkeiten | AST-Aufbau, Mapping und Code-Generierung sind getrennt            |
 
 ---
 
@@ -30,13 +32,15 @@ Die zentrale Eigenschaft dieser Methode ist ihre vollständige Nachvollziehbarke
             ▼
 ┌─────────────────────────┐
 │  AST-Parser             │  Schritt 1: rekursive Knotenanalyse
-│  (transform_node)       │
+│  (transform_node)       │  Routing: INSTANCE → FRAME → TEXT
 └───────────┬─────────────┘
             ▼
-┌─────────────────────────┐
-│  Mapping-Engine         │  Schritt 2: Namens-Lookup in COMPONENT_MAP
-│  (apply_property_rules) │             + Property-Mapping pro Komponente
-└───────────┬─────────────┘
+┌─────────────────────────────────────────────────┐
+│  Mapping-Engine                                 │  Schritt 2
+│  ├─ INSTANCE → COMPONENT_MAP (17 Komponenten)   │  Namens-Lookup + Property-Mapping
+│  ├─ INSTANCE → FRAME_MAP-Fallback               │  Compound-Komponenten als INSTANCE
+│  └─ FRAME   → FRAME_MAP (8 Strategien)          │  Slot-basierte Compound-Komponenten
+└───────────┬─────────────────────────────────────┘
             ▼
 ┌─────────────────────────┐
 │  Layout-Engine          │  Schritt 3: FRAME → Tailwind-Utility-Klassen
@@ -45,7 +49,12 @@ Die zentrale Eigenschaft dieser Methode ist ihre vollständige Nachvollziehbarke
             ▼
 ┌─────────────────────────┐
 │  Code-Generator         │  Schritt 4: AST → formatierte Vue 3 SFC
-│  (render_ast)           │             + automatische Import-Sammlung
+│  (render_ast)           │  + automatische Import-Sammlung
+└───────────┬─────────────┘
+            ▼
+┌─────────────────────────┐
+│  Metrik-Erfassung       │  Schritt 5: Timing, Coverage, AST-Tiefe
+│  (_metrics, Report)     │  pro Mockup → metrics_report_a.json
 └───────────┬─────────────┘
             ▼
 ┌─────────────────────────┐
@@ -81,6 +90,16 @@ Die IR ist bewusst minimalistisch gehalten und entkoppelt die Eingabestruktur (F
 
 ## 4. Mapping-Konfiguration
 
+Die Implementierung verwendet zwei Mapping-Ebenen:
+
+- `COMPONENT_MAP` für primitive PrimeVue-Komponenten (z.B. `Button`, `InputText`, `Password`)
+- `FRAME_MAP` für zusammengesetzte Komponenten, die über FRAME-Strategien aufgebaut werden (z.B. `Card`, `Tabs`, `DataTable`)
+
+Aktueller Umfang (Code-Stand im Notebook):
+
+- `COMPONENT_MAP`: 17 direkte Komponenten + Alias `calendar → datepicker`
+- `FRAME_MAP`: 8 strategiebasierte Komponenten (`card`, `dialog`, `tabs`, `datatable`, `select`, `popover`, `breadcrumb`, `accordion`)
+
 ### 4.1 Struktur der `COMPONENT_MAP`
 
 Die zentrale Konfiguration ist ein Dictionary, in dem jeder Figma-Komponentenname auf eine Spezifikation abgebildet wird:
@@ -95,16 +114,40 @@ COMPONENT_MAP['button'] = {
 }
 ```
 
-| Feld                           | Funktion                                                                   |
-|--------------------------------|----------------------------------------------------------------------------|
-| `primevue`                     | PrimeVue-Komponentenname (Tag-Name im generierten Code)                    |
-| `props`                        | 1:1-Mappings von Figma-Properties auf PrimeVue-Props                       |
-| `variant_resolver`             | Auflösung mehrerer Boolean-Properties auf eine Enum-Prop                   |
-| `skip`                         | Properties, die ignoriert werden (rein visuell oder redundant)             |
-| `slot_strategy`                | Wie Children behandelt werden (`drop`, `default`, `header_content_footer`) |
-| `extra_attrs`                  | Zusätzliche Attribute (z.B. `v-model`-Bindings)                            |
-| `inherit_placeholder_from_sub` | Sonderfall: Platzhalter aus interner Sub-Instance ziehen                   |
-| `overlay_badge_child`          | Sonderfall: Avatar mit Badge in OverlayBadge wrappen                       |
+| Feld                           | Funktion                                                                     |
+|--------------------------------|------------------------------------------------------------------------------|
+| `primevue`                     | PrimeVue-Komponentenname (Tag-Name im generierten Code)                      |
+| `props`                        | 1:1-Mappings von Figma-Properties auf PrimeVue-Props                         |
+| `variant_resolver`             | Auflösung mehrerer Boolean-Properties auf eine Enum-Prop                     |
+| `skip`                         | Properties, die ignoriert werden (rein visuell oder redundant)               |
+| `slot_strategy`                | Wie Children behandelt werden (`drop`, `default`)                            |
+| `extra_attrs`                  | Zusätzliche Attribute (z.B. `v-model`-Bindings)                              |
+| `inherit_placeholder_from_sub` | Sonderfall: Platzhalter aus interner Sub-Instance ziehen                     |
+| `overlay_badge_child`          | Sonderfall: Avatar mit Badge in OverlayBadge wrappen                         |
+| `icon_only_prop`               | Sonderfall: Button Icon-Only unterdrückt die `label`-Prop im Post-Processing |
+| `parse_value_from`             | Sonderfall: ProgressBar-Zahlenwert aus Prozentstring extrahieren             |
+
+**Abgedeckte Komponenten (17):**
+
+| Komponente     | Instanzen im Datensatz | Besonderheiten                                        |
+|----------------|------------------------|-------------------------------------------------------|
+| `button`       | 52×                    | Variant-Resolver, Icon-Only-Post-Processing, Rounded  |
+| `inputtext`    | 17×                    | Placeholder via Float-Label-Property                  |
+| `tag`          | 21×                    | Severity: `Warn` und `Warning` beide auf `warn`       |
+| `avatar`       | 15×                    | OverlayBadge-Wrapping bei Show Badge=True             |
+| `divider`      | 14×                    | Drei Enum-Props (layout, type, align)                 |
+| `checkbox`     | 13×                    | Binary-Default, Label als separates Element           |
+| `radiobutton`  | 13×                    | Value aus Label-Property, Gruppen-v-model             |
+| `progressbar`  | 6×                     | `Value`=VARIANT steuert `showValue`; Zahl aus `Text#` |
+| `skeleton`     | 4×                     | Keine Properties — einfaches Self-Closing-Tag         |
+| `inputnumber`  | 4×                     | `Horizontal with Step` → `horizontal`                 |
+| `toggleswitch` | 4×                     | PrimeVue v4-Name (ehem. InputSwitch)                  |
+| `password`     | 3×                     | Placeholder aus `_inputtext-content`-Sub-Instance     |
+| `textarea`     | 3×                     | Placeholder aus `_textarea-content`-Sub-Instance      |
+| `slider`       | 3×                     | Orientation, Range, Disabled                          |
+| `datepicker`   | 3×                     | Zwei Enum-Props (view, selectionMode)                 |
+| `menu`         | 1×                     | Model-Array als Platzhalter                           |
+| `overlaybadge` | 1×                     | Wird nur als Child von Avatar erzeugt                 |
 
 ### 4.2 Property-Mapping-Regeln
 
@@ -122,7 +165,7 @@ Jede einzelne Property in `props` hat das folgende Schema:
 **Bedeutung der Felder:**
 
 - `target`: Name der PrimeVue-Prop im generierten Code
-- `type`: Steuert die Konvertierung der Werte. `boolean` und `number` werden via dynamic-binding (`:prop="..."`), `text` und `enum` als statisches Attribut ausgegeben
+- `type`: Steuert die Konvertierung der Werte. `boolean` und `number` werden via Dynamic-Binding (`:prop="..."`), `text` und `enum` als statisches Attribut ausgegeben
 - `value_map`: Optionales Wörterbuch für Wert-Übersetzung. `None` als Zielwert bedeutet "weglassen" (Default-Wert)
 - `omit_when`: Wenn der konvertierte Wert diesem entspricht, wird die Prop weggelassen — reduziert Boilerplate für Standard-Konfigurationen
 
@@ -134,11 +177,13 @@ Jede einzelne Property in `props` hat das folgende Schema:
     'type': 'enum',
     'value_map': {
         'Primary':   None,           # Default → keine severity-Prop nötig
+        'Plain':     None,           # Text-Variante, kein Severity
         'Secondary': 'secondary',
         'Success':   'success',
         'Info':      'info',
         'Warning':   'warn',         # Achtung: Figma "Warning" → PrimeVue "warn"
         'Danger':    'danger',
+        'Contrast':  'contrast',
     },
 }
 ```
@@ -159,11 +204,11 @@ PrimeVue-Komponenten haben oft eine `variant`-Prop, die in Figma als mehrere Boo
 }
 ```
 
-Die Regeln werden in der angegebenen Reihenfolge ausgewertet; die erste Übereinstimmung gewinnt. Greift keine Regel, wird die `variant`-Prop weggelassen (PrimeVue verwendet dann den Default).
+Die Regeln werden in der angegebenen Reihenfolge ausgewertet; die erste Übereinstimmung gewinnt. Greift keine Regel, wird die `variant`-Prop weggelassen (PrimeVue verwendet dann den Default). Properties wie `⥰ Rounded`, die eigenständige Boolean-Props in PrimeVue sind, werden direkt in `props` gemappt statt über den Variant-Resolver.
 
-### 4.4 Skip-Properties
+### 4.4 Skip-Properties und Icon-Filtering
 
-Figma exportiert für jede Komponente eine Vielzahl von Properties, die rein für die Visualisierung im Design-Tool relevant sind (`State: Idle`, `Hover`, `Focus`) oder die intern für die Component-Composition genutzt werden (`Show Right Icon`, `Right Icon`). Diese werden explizit in `skip` aufgelistet:
+Figma exportiert für jede Komponente Properties, die rein für die Visualisierung im Design-Tool relevant sind (`State: Idle`, `Hover`, `Focus`) oder die intern für die Component-Composition genutzt werden (`Show Right Icon`, `Right Icon`). Diese werden explizit in `skip` aufgelistet:
 
 ```python
 UNIVERSAL_SKIP = {'State', 'Hover', 'Focus', 'Pressed', 'Active'}
@@ -174,7 +219,47 @@ COMPONENT_MAP['button']['skip'] = UNIVERSAL_SKIP | {
 }
 ```
 
-Die explizite Aufzählung ist ein Designprinzip — sie macht sichtbar, welche Information bewusst ignoriert wird, statt durch stillschweigende Defaults zu verschwinden.
+Zusätzlich werden Standalone-Icon-Instances (PrimeIcons wie `chevron-down`, `times`, `search` etc.) über ein separates `ICON_SKIP_INSTANCES`-Set herausgefiltert, bevor sie den Mapping-Prozess erreichen. Diese Instances repräsentieren Figma-interne Darstellungen von Icons, die PrimeVue automatisch über `icon`-Props rendert, und erzeugen sonst fälschlich Unmapped-Einträge:
+
+```python
+ICON_SKIP_INSTANCES = {
+    'chevron-down', 'chevron-up', 'chevron-right', 'chevron-left',
+    'times', 'ellipsis-h', 'search', 'check', 'plus', 'minus',
+    'trash', 'pen-to-square', 'clone', 'flag', 'inbox', 'folder',
+    'user', 'shield', 'angle-left', 'angle-right', 'cart-plus',
+    'calendar', 'clock', 'arrow-up-right',
+}
+```
+
+### 4.5 Framebasierte Strategien (`FRAME_MAP`)
+
+Für zusammengesetzte Komponenten reicht ein reines Property-Mapping nicht aus. Hierfür nutzt die Implementierung `FRAME_MAP` + `STRATEGY_DISPATCH`.
+
+| Strategie    | Zielkomponente | Kernidee                                                             |
+|--------------|----------------|----------------------------------------------------------------------|
+| `card`       | `Card`         | `header`/`content`/`footer` als Slots, `body` transparent            |
+| `slot_map`   | `Dialog`       | Namensbasierte Slot-Zuordnung inkl. `v-model:visible`                |
+| `tabs`       | `Tabs`         | Extraktion von Headern und Panels → `TabList`/`TabPanels`            |
+| `datatable`  | `DataTable`    | Spalten aus `thead`, Body-Templates aus erster `tbody`-Zeile         |
+| `select`     | `Select`       | Label/Placeholder aus `_select-input`, Optionen aus `_select-option` |
+| `popover`    | `Popover`      | Entschachtelung verschachtelter `popover`-Frames                     |
+| `breadcrumb` | `Breadcrumb`   | `model` aus `_breadcrumb-item`-Instanzen                             |
+| `accordion`  | `Accordion`    | Panels aus `_accordion-panel` inkl. Header/Content                   |
+
+### 4.6 INSTANCE-FRAME-Dualität
+
+Ein und dieselbe Compound-Komponente kann je nach Figma-Datei sowohl als INSTANCE- als auch als FRAME-Node auftreten (z.B. `tabs` in `medium/06.json` als INSTANCE, in `medium/02.json` als FRAME). Die Implementierung behandelt diesen Sonderfall durch einen FRAME_MAP-Fallback in `_transform_instance`:
+
+```python
+spec = COMPONENT_MAP.get(name_key)
+if not spec:
+    if name_key in FRAME_MAP:          # Compound-Komponente als INSTANCE
+        return _transform_frame(node)  # → an Frame-Routing delegieren
+    _metrics['instances_unmapped'] += 1
+    return UINode(...)                  # rote Debug-Box
+```
+
+Dies funktioniert, weil INSTANCE- und FRAME-Nodes dieselbe `children`-Struktur besitzen — die Strategie-Funktionen greifen in beiden Fällen identisch.
 
 ---
 
@@ -182,39 +267,74 @@ Die explizite Aufzählung ist ein Designprinzip — sie macht sichtbar, welche I
 
 ### 5.1 Routing nach Node-Typ
 
-Die Funktion `transform_node()` ist der Einstiegspunkt und verteilt Knoten anhand ihres `type`-Feldes:
+Die Funktion `transform_node()` ist der Einstiegspunkt und verteilt Knoten anhand ihres `type`-Feldes. Nodes mit `_`-Präfix werden vorab herausgefiltert:
 
 ```python
 def transform_node(figma_node):
+    if raw_name.startswith('_'):
+        return None                        # interne Sub-Instance → verwerfen
     if figma_node['type'] == 'INSTANCE':
         return _transform_instance(figma_node)
     elif figma_node['type'] == 'FRAME':
         return _transform_frame(figma_node)
     elif figma_node['type'] == 'TEXT':
         return _transform_text(figma_node)
-    # VECTOR, RECTANGLE etc. werden aktuell verworfen
-    return None
+    return None                            # VECTOR, RECTANGLE etc. → verwerfen
 ```
 
 ### 5.2 Behandlung von INSTANCEs
 
-Eine Figma-INSTANCE entspricht einer Komponenten-Instanziierung. Die Verarbeitung läuft in fünf Schritten ab:
+Eine Figma-INSTANCE entspricht einer Komponenten-Instanziierung. Die Verarbeitung läuft in sechs Schritten ab:
 
-1. **Namenskonventions-Lookup**: Der Figma-Name wird normalisiert (`_normalize_name()`: Lowercase, Leerzeichen/Bindestriche/Unterstriche entfernen) und in `COMPONENT_MAP` nachgeschlagen
-2. **Property-Resolution**: `apply_property_rules()` extrahiert die PrimeVue-Props
-3. **Extra-Attribute**: `v-model`-Bindings, Boolean-Flags wie `showButtons`
-4. **Inheritance** (Sonderfall): Bei Komponenten wie `Password` wird der Placeholder aus der internen `_inputtext-content`-Sub-Instanz gezogen
-5. **Slot-Behandlung**: Je nach `slot_strategy` werden Children gerendert oder verworfen
+1. **Icon-Filtering**: Standalone Icons (`ICON_SKIP_INSTANCES`) werden sofort verworfen
+2. **COMPONENT_MAP-Lookup**: Normalisierter Name wird nachgeschlagen. Fehlschlag → FRAME_MAP-Fallback → ggf. rote Debug-Box + Metrik-Inkrement
+3. **Property-Resolution**: `apply_property_rules()` extrahiert die PrimeVue-Props
+4. **Extra-Attribute**: `v-model`-Bindings, Boolean-Flags wie `showButtons`
+5. **Inheritance**: Bei Komponenten wie `Password` wird der Placeholder aus der internen `_inputtext-content`-Sub-Instanz gezogen
+6. **Post-Processing**: Icon-Only-Unterdrückung (Button), ProgressBar-Zahlenwert-Parsing
 
-### 5.3 Sonderfälle der Komposition
+Nicht gemappte `INSTANCE`-Knoten werden bewusst als auffälliger Fallback ausgegeben, um Mapping-Lücken sichtbar zu machen:
+
+```html
+<div class="border border-dashed border-red-400 p-2">
+  <!-- Unmapped INSTANCE: 'unbekannte-komponente' -->
+</div>
+```
+
+### 5.3 Behandlung von FRAMEs — Dreistufiges Routing
+
+Die Funktion `_transform_frame()` implementiert eine dreistufige Routing-Kaskade:
+
+```python
+def _transform_frame(node):
+    norm = _normalize_name(node['name'])
+
+    # Stufe 1: Transparente Wrapper (z.B. 'screen') → Kind durchreichen
+    if norm in TRANSPARENT_FRAMES:
+        return transform_node(first_child)
+
+    # Stufe 2: FRAME_MAP → Compound-Komponente via Strategie-Funktion
+    spec = FRAME_MAP.get(norm)
+    if spec:
+        _metrics['frames_compound'] += 1
+        return STRATEGY_DISPATCH[spec['strategy']](node, spec)
+
+    # Stufe 3: Fallback → <div> mit Tailwind-Klassen
+    _metrics['frames_fallback'] += 1
+    return UINode(tag='div', classes=frame_to_classes(node), ...)
+```
+
+Passthrough-FRAMEs (kein Layout, nur ein Kind) werden transparent durchgereicht und zählen nicht als Fallback — das verhindert unnötige Wrapper-Divs im Output.
+
+### 5.4 Sonderfälle der Komposition
 
 #### Sub-Instances mit Präfix `_`
 
-Figma exportiert für viele Komponenten interne Sub-Instances wie `_inputtext-content` oder `_inputnumber-button`. Diese repräsentieren Implementierungsdetails der Figma-Komponente und haben keine eigenständige Entsprechung in PrimeVue (PrimeVue rendert diese internen Strukturen selbst). Konvention: Alle Instances mit `_`-Präfix werden im Output verworfen.
+Figma exportiert für viele Komponenten interne Sub-Instances wie `_inputtext-content` oder `_inputnumber-button`. Diese repräsentieren Implementierungsdetails der Figma-Komponente und haben keine eigenständige Entsprechung in PrimeVue. Konvention: Alle Nodes mit `_`-Präfix werden im Output verworfen. Die Strategie-Funktionen greifen dennoch gezielt auf sie zu (z.B. `_accordion-header` für den Header-Text), umgehen dabei aber den regulären `transform_node`-Pfad.
 
 #### Avatar mit OverlayBadge
 
-Wenn ein `avatar` die Property `Show Badge: true` hat und ein `overlaybadge`-Child enthält, wird die Reihenfolge im Output umgekehrt: Der `<OverlayBadge>` wird der äußere Container, und das `<Avatar>` wird sein Default-Slot-Inhalt. Das entspricht der korrekten PrimeVue-API:
+Wenn ein `avatar` die Property `Show Badge: true` hat und ein `overlaybadge`-Child enthält, wird die Reihenfolge im Output umgekehrt: Der `<OverlayBadge>` wird der äußere Container, und das `<Avatar>` wird sein Default-Slot-Inhalt:
 
 ```html
 <OverlayBadge value="8" severity="primary">
@@ -222,9 +342,22 @@ Wenn ein `avatar` die Property `Show Badge: true` hat und ein `overlaybadge`-Chi
 </OverlayBadge>
 ```
 
-#### Wrapper-FRAMEs
+#### Button Icon-Only
 
-Reine Layout-Container ohne Komponenten-Bezug (Figma-Frames mit Namen wie `Column`, `Row`, `content`) werden in `<div>`-Elemente mit Tailwind-Klassen übersetzt. Wenn ein Frame keine eigenen Layout-Klassen hat *und* nur ein Kind, wird er transparent durchgereicht — das verhindert unnötige Wrapper-Divs im Output.
+Wenn `Icon Only=True`, wird die `label`-Prop im Post-Processing entfernt. Das ist kein eigener Prop (`:iconOnly` existiert in PrimeVue v4 nicht), sondern ein Signal an den Generator, das Label zu unterdrücken. Die Property wird über `icon_only_prop` in der Spec referenziert.
+
+#### ProgressBar-Zahlenwert
+
+Die Figma-Property `Value` ist eine VARIANT (`True`/`False`), die `showValue` steuert — nicht der numerische Wert. Dieser steckt in `Text#4271:24` als Prozentstring (`"25%"`) und wird über `parse_value_from` im Post-Processing extrahiert:
+
+```python
+pct_text = str(_extract_value(figma_props[pct_key])).replace('%', '').strip()
+dynamic['value'] = str(int(float(pct_text)))    # "25%" → :value="25"
+```
+
+#### Compound-FRAMEs über Strategien
+
+Wenn ein normalisierter Frame-Name in `FRAME_MAP` enthalten ist, wird nicht der generische Layout-Fallback genutzt, sondern eine spezialisierte Transformationsstrategie (z.B. `_strategy_tabs`, `_strategy_datatable`). Dadurch entstehen korrekte PrimeVue-Kompositionsstrukturen statt flacher `<div>`-Container.
 
 ---
 
@@ -273,10 +406,11 @@ Die Funktion `render_ast()` traversiert den AST rekursiv und produziert formatie
 - **Multi-Line-Attribute** wenn mehr als zwei Attribute *oder* Gesamtlänge über 60 Zeichen
 - **Inline-Text** für Komponenten mit genau einem String-Child
 - **Einrückung** durch zwei Leerzeichen pro Verschachtelungsebene
+- **Named-Slot-Rendering**: UINodes mit gesetztem `slot`-Feld werden in `<template #slotname>...</template>` gewrappt
 
 ### 7.2 SFC-Struktur
 
-Der Generator produziert immer eine vollständige Single-File-Component mit drei Sektionen:
+Der Generator produziert immer eine vollständige Single-File-Component mit zwei Sektionen:
 
 ```vue
 <template>
@@ -292,46 +426,92 @@ const _state = reactive({ n10_4744: null })  // automatische State-Initialisieru
 </script>
 ```
 
-Die State-Variablen werden aus dem AST gesammelt und im `_state`-Objekt initialisiert. Variablennamen werden aus den Figma-IDs abgeleitet, mit `n`-Präfix versehen (gegen führende Ziffern) und Sonderzeichen ersetzt.
+Die State-Variablen werden aus dem AST gesammelt (`collect_refs`) und im `_state`-Objekt initialisiert. Der Mechanismus erkennt sowohl `v-model` als auch `v-model:visible` (Dialog-Sonderfall) und weitere `v-model:`-Varianten. Variablennamen werden aus den Figma-IDs abgeleitet, mit `n`-Präfix versehen (gegen führende Ziffern) und Sonderzeichen ersetzt.
+
+Außerdem entfernt `generate_sfc` automatisch den äußeren Canvas-Wrapper-Frame (ein einzelner `<div class="flex flex-col p-6">` ohne weitere Props, der rein als Figma-Mockup-Rahmen dient), sodass der Output direkt mit der eigentlichen Komponente beginnt.
+
+Der Pipeline-Lauf über alle Mockups und erzeugt dabei parallel einen Report in `reports/metrics_report_a.json` mit Laufzeit-, Coverage- und Strukturmetriken pro Datei.
 
 ---
 
-## 8. Stärken und Limitationen
+## 8. Metrik-Erfassung
 
-### 8.1 Stärken
+Die Pipeline erfasst pro Mockup automatisch Metriken für die spätere Evaluation. Die Zähler werden in einem modulweiten `_metrics`-Dictionary geführt, das zu Beginn jedes `generate_sfc()`-Aufrufs zurückgesetzt wird.
 
-| Eigenschaft                         | Bedeutung                                                                            |
-|-------------------------------------|--------------------------------------------------------------------------------------|
-| **Vollständige Reproduzierbarkeit** | Identische Inputs liefern identische Outputs — keine Stochastik                      |
-| **Audit-Fähigkeit**                 | Jede Mapping-Entscheidung ist auf eine konkrete Regel zurückführbar                  |
-| **Erweiterbarkeit**                 | Neue Komponenten werden durch Hinzufügen eines Eintrags in `COMPONENT_MAP` abgedeckt |
-| **Performance**                     | Keine API-Calls, keine GPU — Verarbeitungszeit im Millisekundenbereich               |
-| **Kein Daten-Footprint**            | Keine Trainingsdaten, keine API-Schlüssel, keine Token-Kosten                        |
+```python
+{
+    'input':                '01.json',
+    'output':               '01-a.vue',
+    'complexity':           'simple',     # aus Ordnerpfad abgeleitet
+    'duration_ms':          0.84,         # nur Transformationszeit, kein I/O
+    'sfc_bytes':            482,
+    'sfc_lines':            24,
+    'instances_total':      4,
+    'instances_mapped':     4,
+    'instances_unmapped':   0,
+    'frames_compound':      0,            # FRAME_MAP-Treffer
+    'frames_fallback':      2,            # generischer <div>-Fallback
+    'mapping_coverage':     1.0,          # mapped / total
+    'pv_components_unique': 3,            # eindeutige PrimeVue-Imports
+    'state_refs_count':     2,            # v-model-Bindings
+    'ast_depth_max':        4,            # maximale AST-Verschachtelung
+}
+```
 
-### 8.2 Limitationen
+Inkrement-Stellen im Code:
 
-| Limitation                                              | Auswirkung                                                                                     | Adressierbar durch                              |
-|---------------------------------------------------------|------------------------------------------------------------------------------------------------|-------------------------------------------------|
-| **Strikte Namenskonvention**                            | Bei abweichenden Naming-Patterns versagt das Mapping                                           | Ansatz B (LLM kann Variationen tolerieren)      |
-| **Keine semantische Interpretation**                    | "Button" und "Schaltfläche" werden nicht als gleichwertig erkannt                              | Ansatz B / C                                    |
-| **Manuelle Pflege der Mapping-Tabelle**                 | Jede neue Komponente benötigt eine Regel                                                       | Inkrementell / aufwendig                        |
-| **Eingeschränkte Layout-Heuristik**                     | Nur Auto-Layout-Frames werden korrekt übersetzt; absolut-positionierte Elemente fallen durch   | Ansatz C (Vision-LLM versteht visuelles Layout) |
-| **Kein Verständnis für unkonventionelle Kompositionen** | Wird Avatar+Badge ohne offizielle OverlayBadge-Composition modelliert, scheitert die Erkennung | Ansatz B / C                                    |
+| Zähler                 | Inkrementiert in      | Auslöser                           |
+|------------------------|-----------------------|------------------------------------|
+| `instances_mapped`     | `_transform_instance` | COMPONENT_MAP-Treffer              |
+| `instances_unmapped`   | `_transform_instance` | Weder COMPONENT_MAP noch FRAME_MAP |
+| `frames_compound`      | `_transform_frame`    | FRAME_MAP + Strategie-Dispatch     |
+| `frames_fallback`      | `_transform_frame`    | Generischer `<div>`-Fallback       |
+| `pv_components_unique` | `generate_sfc`        | Größe des Import-Sets              |
+| `state_refs_count`     | `generate_sfc`        | Anzahl gesammelter v-model-Refs    |
+| `ast_depth_max`        | `generate_sfc`        | Rekursive AST-Tiefenberechnung     |
 
-### 8.3 Hypothesen für den Methodenvergleich
+Timing wird über `time.perf_counter()` gemessen. Nur die `generate_sfc()`-Laufzeit wird erfasst (kein Datei-I/O), was Vergleichbarkeit mit Methode B/C sicherstellt, wo analog nur die API-Antwortzeit gemessen wird. Der aggregierte Report enthält zusätzlich eine `per_complexity`-Aufschlüsselung (avg_coverage, total_unmapped, total_fallback pro Schwierigkeitsstufe) als Datenbasis für UF5.
+
+---
+
+## 9. Stärken und Limitationen
+
+### 9.1 Stärken
+
+| Eigenschaft                         | Bedeutung                                                                                        |
+|-------------------------------------|--------------------------------------------------------------------------------------------------|
+| **Vollständige Reproduzierbarkeit** | Identische Inputs liefern identische Outputs — keine Stochastik                                  |
+| **Audit-Fähigkeit**                 | Jede Mapping-Entscheidung ist auf eine konkrete Regel zurückführbar                              |
+| **Erweiterbarkeit**                 | Neue Komponenten werden durch Hinzufügen eines Eintrags in `COMPONENT_MAP`/`FRAME_MAP` abgedeckt |
+| **Performance**                     | Keine API-Calls, keine GPU — Verarbeitungszeit im Millisekunden-Bereich                          |
+| **Kein Daten-Footprint**            | Keine Trainingsdaten, keine API-Schlüssel, keine Token-Kosten                                    |
+
+### 9.2 Limitationen
+
+| Limitation                                           | Auswirkung                                                                                     | Adressierbar durch                                  |
+|------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| **Strikte Namenskonvention und harte Property-Keys** | Kleine Benennungsabweichungen (inkl. IDs in Property-Namen wie `Text#4293:477`) brechen Regeln | Ansatz B (toleranteres Mapping)                     |
+| **Keine semantische Interpretation**                 | "Button" und "Schaltfläche" werden nicht zusammengeführt                                       | Ansatz B / C                                        |
+| **Begrenzte Node-Typ-Unterstützung**                 | `VECTOR`, `RECTANGLE` usw. werden verworfen; visuelle Details gehen verloren                   | Ansatz C                                            |
+| **Generierte Script-Platzhalter unvollständig**      | `:options`, `:model` oder `:value="items"` werden referenziert, aber nicht initialisiert       | Nachgelagerte Vervollständigung / Generator-Upgrade |
+| **Text-Semantik nur rudimentär**                     | Textknoten werden pauschal als `<span>` gerendert — kein `<h1>`, `<p>`, `<label>`              | Ausbau semantischer Heuristiken / Ansatz B / C      |
+| **Kein Passthrough (`:pt`)**                         | PrimeVue-Passthrough-Attribute für Fein-Styling werden nicht erzeugt                           | Ansatz B (Doku-Kontext ermöglicht Prop-Mapping)     |
+
+### 9.3 Hypothesen für den Methodenvergleich
 
 Aus den Designeigenschaften lassen sich folgende erwartete Stärken / Schwächen ableiten, die im Evaluations-Kapitel der Arbeit empirisch zu überprüfen sind:
 
 - **Erwartete Stärke bei UF1 (Mapping-Präzision)** auf *Clean*-Designs: höchste Trefferrate, da das Mapping direkt aus den Figma-Metadaten erfolgt
 - **Erwartete Stärke bei UF2 (Code-Qualität)**: konsistenteste Code-Struktur, da deterministisch
+- **Erwartete Schwäche bei UF3 (Visual Fidelity)**: Semantik-Lücke (`span` statt `h1`) und fehlende `:pt`-Attribute reduzieren die visuelle Treue
 - **Erwartete Schwäche bei UF5 (Robustheit)** auf *Messy*-Designs: starker Performance-Einbruch erwartet, sobald Naming-Conventions oder Auto-Layout-Disziplin fehlen
 - **Erwartete Stärke bei Effizienz**: deutlich schnellste Verarbeitungszeit aller drei Verfahren
 
 ---
 
-## 9. Beispiel-Output
+## 10. Beispiel-Output
 
-### 9.1 Eingabe: Password-Eingabe-Mockup (bereinigt)
+### 10.1 Eingabe: Password-Eingabe-Mockup (bereinigt)
 
 ```json
 {
@@ -371,19 +551,19 @@ Aus den Designeigenschaften lassen sich folgende erwartete Stärken / Schwächen
 }
 ```
 
-### 9.2 Ausgabe: Generierte Vue-3-SFC
+### 10.2 Ausgabe: Generierte Vue-3-SFC
+
+Der äußere Wrapper-Frame (`p-6`) wird automatisch entfernt — der Output beginnt direkt mit dem Column-Frame:
 
 ```vue
 <template>
-  <div class="flex flex-col p-6">
-    <div class="flex flex-col gap-6">
-      <Password
-        v-model="_state.n10_4744"
-        placeholder="Passwort eingeben"
-        :toggleMask="true"
-       />
-      <Button label="Anmelden" />
-    </div>
+  <div class="flex flex-col gap-6">
+    <Password
+      v-model="_state.n10_4744"
+      placeholder="Passwort eingeben"
+      :toggleMask="true"
+    />
+    <Button label="Anmelden" />
   </div>
 </template>
 
@@ -396,7 +576,7 @@ const _state = reactive({ n10_4744: null })
 </script>
 ```
 
-### 9.3 Beobachtungen am Beispiel
+### 10.3 Beobachtungen am Beispiel
 
 | Transformation                                                                  | Entscheidungsgrundlage                               |
 |---------------------------------------------------------------------------------|------------------------------------------------------|
@@ -405,47 +585,57 @@ const _state = reactive({ n10_4744: null })
 | `Placeholder#4275:140: "Passwort eingeben"` → `placeholder="Passwort eingeben"` | `inherit_placeholder_from_sub: '_inputtext-content'` |
 | `Severity: Primary` → *(weggelassen)*                                           | `value_map: {'Primary': None}`                       |
 | `Text#4293:477: "Anmelden"` → `label="Anmelden"`                                | Property-Regel mit `type: 'text'`                    |
-| `layoutMode: VERTICAL, padding: 24` → `class="flex flex-col p-6"`               | Layout-Engine                                        |
+| `layoutMode: VERTICAL, itemSpacing: 24` → `class="flex flex-col gap-6"`         | Layout-Engine                                        |
+| Äußerer `p-6`-Wrapper → *(entfernt)*                                            | Canvas-Wrapper-Unwrap in `generate_sfc`              |
 | `id: 10:4744` → `v-model="_state.n10_4744"`                                     | ID-Sanitization für JS-Identifier                    |
 
 ---
 
-## 10. Coverage-Diagnose als Evaluationsmetrik
+## 11. Coverage-Diagnose als Evaluationsmetrik
 
-Das Notebook enthält in Zelle 10 eine automatische Coverage-Diagnose:
+Das Notebook enthält eine automatische Coverage-Diagnose auf Basis aller Input-Dateien.
 
 ```
-Gemappte Instances:      6
-  password                    1x
-  button                      1x
-  avatar                      1x
-  overlaybadge                1x
-  slider                      1x
-  inputnumber                 1x
+Mapped instances:   <gesamt>
+  <name>            <anzahl>x
 
-Ungemappte Instances:    0
-Coverage: 100.0%
+Unmapped instances: <gesamt>
+Coverage: <wert>%
 ```
 
 Diese Metrik dient zwei Zwecken:
 
-1. **Entwicklungsunterstützung**: Sie zeigt sofort, welche Komponenten in `COMPONENT_MAP` noch fehlen
+1. **Entwicklungsunterstützung**: Sie zeigt sofort, welche Komponenten in `COMPONENT_MAP`/`FRAME_MAP` noch fehlen
 2. **Evaluations-Indikator für UF1**: Die Coverage ist eine direkt nutzbare Kennzahl für die Mapping-Präzision des regelbasierten Ansatzes
 
 Die Diagnose unterscheidet zwischen Children, die innerhalb von Drop-Strategy-Komponenten liegen (werden bewusst ignoriert), und Top-Level-Instanzen (zählen für die Coverage). Damit wird verhindert, dass interne Icon-Sub-Instances die Bewertung verzerren.
 
+Ergänzend dazu schreibt die Pipeline pro Datei folgende Kennzahlen in den Report:
+
+- `instances_mapped`, `instances_unmapped`, `mapping_coverage`
+- `frames_compound`, `frames_fallback`
+- `pv_components_unique`, `state_refs_count`, `ast_depth_max`
+- `duration_ms`, `sfc_bytes`, `sfc_lines`
+
 ---
 
-## 11. Erweiterung der Mapping-Konfiguration
+## 12. Erweiterung der Mapping-Konfiguration
 
 Neue Komponenten werden in vier Schritten hinzugefügt:
 
-1. **Inventur**: Aus den Cleaning-Output-Daten die Property-Liste der neuen Komponente ablesen (siehe `figma-mockup-data-cleaner`-Notebook und `dataset/figma-data/cleaned/component_invetory.json`)
+1. **Inventur**: Aus den Cleaning-Output-Daten die Property-Liste der neuen Komponente ablesen (siehe `figma-mockup-data-cleaner`-Notebook und `dataset/figma-data/cleaned/component_inventory.json`)
 2. **PrimeVue-Doku konsultieren**: Welche Props akzeptiert die Ziel-Komponente?
 3. **Regelblock in `COMPONENT_MAP` ergänzen** nach dem dokumentierten Schema
 4. **Mit Mockup testen**: Coverage-Diagnose sollte 100% erreichen
 
-**Vorlage für eine neue Komponenten-Regel:**
+Für framebasierte Komponenten gilt analog:
+
+1. Eintrag in `FRAME_MAP` anlegen (`primevue`, `strategy`, optional `slot_map`/`extra_attrs`)
+2. Strategie-Funktion implementieren (oder bestehende wiederverwenden)
+3. In `STRATEGY_DISPATCH` registrieren
+4. Mit Mockup + Report-Metriken validieren (`frames_compound` sollte steigen)
+
+**Vorlage für eine neue primitive Komponente:**
 
 ```python
 COMPONENT_MAP['neue_komponente'] = {
@@ -462,9 +652,25 @@ COMPONENT_MAP['neue_komponente'] = {
 }
 ```
 
+**Vorlage für eine neue Compound-Komponente:**
+
+```python
+FRAME_MAP['neue_compound'] = {
+    'primevue': 'NeueCompound',
+    'strategy': 'neue_compound',
+    'slot_map': {'header': 'header', 'content': None},
+}
+
+def _strategy_neue_compound(figma_node, spec):
+    # Slot-Analyse und UINode-Aufbau
+    return UINode(tag='NeueCompound', is_component=True, ...)
+
+STRATEGY_DISPATCH['neue_compound'] = _strategy_neue_compound
+```
+
 ---
 
-## 12. Position im methodischen Gesamtvergleich
+## 13. Position im methodischen Gesamtvergleich
 
 | Aspekt                   | Methode A (Regelbasiert)            | Methode B (Metadaten-LLM)       | Methode C (Vision-LLM)            |
 |--------------------------|-------------------------------------|---------------------------------|-----------------------------------|
@@ -475,5 +681,7 @@ COMPONENT_MAP['neue_komponente'] = {
 | Externe Abhängigkeiten   | Keine                               | LLM-API                         | Multimodale LLM-API               |
 | Erwarteter Hauptvorteil  | Präzision auf Clean-Designs         | Sprachflexibilität              | Visuelles Verständnis             |
 | Erwarteter Hauptnachteil | Sprödigkeit bei Naming-Abweichungen | Token-Kosten, Latenz            | Token-Kosten, Pixel-Approximation |
+| Kosten pro Mockup        | ~0 (CPU im ms-Bereich)              | API-Tokens (Input + Output)     | API-Tokens (Bild + Output)        |
+| Metrik-Erfassung         | Inline (12 Werte pro Mockup)        | Inline + Token-Zählung          | Inline + Token-Zählung            |
 
 Die regelbasierte Methode A bildet im Gesamtvergleich das untere Ende der Verständnis-Komplexität, aber das obere Ende der Vorhersagbarkeit. Diese Eigenschaft macht sie zur idealen Baseline: Abweichungen der LLM-basierten Methoden lassen sich gegen einen festen Referenzpunkt messen.
