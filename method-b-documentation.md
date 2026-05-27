@@ -8,17 +8,17 @@ Der metadatenbasierte LLM-Ansatz (Ansatz B) überführt die regelbasierte Transf
 
 **Interne Kernhypothese (B1 → B2 → B3):** Die drei Strategien messen zwei unabhängige Effekte: (1) Wie viel bringt Dokumentation als Kontext überhaupt? (B1 vs. B2). (2) Wie viel bringt das Bereinigen der Docs? (B2 vs. B3).
 
-Stand der Implementierung: Der Prototyp testet drei Kontext-Strategien (B1, B2, B3) in einer gemeinsamen Pipeline. Alle drei nutzen dasselbe Modell (GPT-5.4), denselben Prompt und denselben Input-Datensatz wie Ansatz A, was einen direkten Methodenvergleich ermöglicht. GPT-5.4 wird auch in Ansatz C eingesetzt — damit ist das Modell die kontrollierte Variable und die Eingabemodalität die einzige unabhängige Variable zwischen den Ansätzen.
+Stand der Implementierung: Der Prototyp testet drei Kontext-Strategien (B1, B2, B3) in einer gemeinsamen Pipeline. Alle drei nutzen dasselbe Modell (GPT-5.3-Codex / GPT-5.4), denselben Prompt und denselben Input-Datensatz wie Ansatz A, was einen direkten Methodenvergleich ermöglicht. GPT-5.3-Codex / GPT-5.4 wird auch in Ansatz C eingesetzt — damit ist das Modell die kontrollierte Variable und die Eingabemodalität die einzige unabhängige Variable zwischen den Ansätzen.
 
 ### Designprinzipien
 
-| Prinzip                       | Umsetzung                                                                   |
-|-------------------------------|-----------------------------------------------------------------------------|
-| Sprachliche Flexibilität      | LLM toleriert Naming-Abweichungen ohne explizite Regeln                     |
-| Kontext-Steuerung             | Qualität und Kosten werden über den Dokumentations-Kontext gesteuert        |
-| Vergleichbarkeit              | Identische Eingaben, identische Output-Struktur wie Ansatz A                |
-| Modell-Kontrolle              | Dasselbe Modell (GPT-5.4) in Ansatz B und C → Eingabemodalität als Variable |
-| Reproduzierbarkeit (begrenzt) | Gleicher Prompt → gleicher Kontext, aber Ausgabe ist nicht deterministisch  |
+| Prinzip                       | Umsetzung                                                                                   |
+|-------------------------------|---------------------------------------------------------------------------------------------|
+| Sprachliche Flexibilität      | LLM toleriert Naming-Abweichungen ohne explizite Regeln                                     |
+| Kontext-Steuerung             | Qualität und Kosten werden über den Dokumentations-Kontext gesteuert                        |
+| Vergleichbarkeit              | Identische Eingaben, identische Output-Struktur wie Ansatz A                                |
+| Modell-Kontrolle              | Dasselbe Modell (GPT-5.3-Codex / GPT-5.4) in Ansatz B und C → Eingabemodalität als Variable |
+| Reproduzierbarkeit (begrenzt) | Gleicher Prompt → gleicher Kontext, aber Ausgabe ist nicht deterministisch                  |
 
 ---
 
@@ -46,7 +46,7 @@ Stand der Implementierung: Der Prototyp testet drei Kontext-Strategien (B1, B2, 
 └───────────┬─────────────┘
             ▼
 ┌─────────────────────────┐
-│  LLM API-Aufruf         │  Schritt 3: GPT-5.4 (Zero-Shot)
+│  LLM API-Aufruf         │  Schritt 3: GPT-5.3-Codex / GPT-5.4 (Zero-Shot)
 │  (call_llm)             │  → Antwort mit rohem Vue-Code
 └───────────┬─────────────┘
             ▼
@@ -124,7 +124,6 @@ Figma Mockup JSON:
 ```json
 {figma_json}
 ```
-```
 
 ### 3.3 Prompt-Strategie: Zero-Shot
 
@@ -157,7 +156,7 @@ if strategy == 'b1':
 | LLM-Wissen        | nur aus Vortraining                |
 | Selektionsfehler  | keine (kein Kontext = kein Fehler) |
 
-**Hypothese:** B1 dient als Baseline für den Informationswert der Dokumentation. GPT-5.4 hat PrimeVue in seinen Trainingsdaten und erzeugt auch ohne expliziten Kontext verwendbaren Code — die Frage ist, ob die Qualität signifikant unter B2/B3 liegt.
+**Hypothese:** B1 dient als Baseline für den Informationswert der Dokumentation. GPT-5.3-Codex / GPT-5.4 hat PrimeVue in seinen Trainingsdaten und erzeugt auch ohne expliziten Kontext verwendbaren Code — die Frage ist, ob die Qualität signifikant unter B2/B3 liegt.
 
 ### 4.2 B2 — RAW-Docs erkannter Komponenten
 
@@ -182,7 +181,7 @@ for comp in sorted(detected):
 
 ### 4.3 B3 — CLEANED-Docs erkannter Komponenten
 
-Dieselbe Selektionslogik wie B2, aber mit den **bereinigten** Docs (nur Import + Basic + Props):
+Dieselbe Selektionslogik wie B2, aber mit den **bereinigten** Docs (nur Import + Basic + (Template + Advanced ) + Props):
 
 ```python
 docs = CLEANED_DOCS
@@ -248,11 +247,11 @@ def detect_components(figma_node, found=None):
 
 ### 5.1 API-Aufruf
 
-Die Funktion `call_llm` führt einen einzigen OpenAI-API-Aufruf durch. Das Modell ist `gpt-5.4` — dieselbe Modellgeneration, die auch in Ansatz C (Vision) eingesetzt wird, was die modellseitige Variable im Methodenvergleich kontrolliert.
+Die Funktion `call_llm` führt einen einzigen OpenAI-API-Aufruf durch. Das Modell ist `GPT-5.3-Codex / gpt-5.4` — dieselbe Modellgeneration, die auch in Ansatz C (Vision) eingesetzt wird, was die modellseitige Variable im Methodenvergleich kontrolliert.
 
 ```python
 payload = {
-    'model':      'gpt-5.4',
+    'model':      'GPT-5.3-Codex / gpt-5.4',
     'max_tokens': 4096,
     'messages': [
         {'role': 'system', 'content': system_prompt},
@@ -366,7 +365,7 @@ Der Report enthält zwei Aggregationsebenen — pro Strategie und pro Strategie 
 ```json
 {
   "method": "B",
-  "model": "gpt-5.4",
+  "model": "GPT-5.3-Codex / gpt-5.4",
   "per_strategy": {
     "b1": { "avg_input_tokens": 4200,  "total_cost_usd": 0.11, ... },
     "b2": { "avg_input_tokens": 18000, "total_cost_usd": 1.31, ... },
@@ -551,7 +550,7 @@ STRICT REQUIREMENTS:
 Der Modell-Name ist in `API_MODEL` zentralisiert:
 
 ```python
-API_MODEL = 'gpt-5.4'
+API_MODEL = 'GPT-5.3-Codex / gpt-5.4'
 # Alternativ für Kostensenkung:
 # API_MODEL = 'gpt-5.4-mini'
 ```
@@ -562,19 +561,19 @@ Ein Modell-Wechsel wirkt sich auf alle Strategien gleichermaßen aus. Wichtig: B
 
 ## 11. Position im methodischen Gesamtvergleich
 
-| Aspekt                   | Ansatz A (Regelbasiert)             | Ansatz B (Metadaten-LLM)              | Ansatz C (Vision-LLM)            |
-|--------------------------|-------------------------------------|---------------------------------------|----------------------------------|
-| Eingabe                  | Figma-JSON                          | Figma-JSON + Doku-Kontext             | Figma-PNG + Doku-Kontext         |
-| Modell                   | keines                              | GPT-5.4                              | GPT-5.4 (identisch)              |
-| Entscheidungslogik       | Deterministisch                     | Probabilistisch                       | Probabilistisch                  |
-| Kontext-Steuerung        | `COMPONENT_MAP`/`FRAME_MAP`         | B1 (kein) / B2 (RAW) / B3 (CLEANED)   | Dokumentations-Kontext           |
-| Erweiterbarkeit          | Manuell, regelbasiert               | `.md`-Datei ergänzen → fertig         | `.md`-Datei ergänzen → fertig    |
-| Reproduzierbarkeit       | 100%                                | ~hoch (geringe LLM-Varianz)           | ~hoch                            |
-| Externe Abhängigkeiten   | Keine                               | OpenAI-API                            | OpenAI-API                       |
-| Kosten pro Mockup        | ~$0                                 | B1: ~$0.001 / B2: ~$0.08 / B3: ~$0.02 | ~$0.05–0.15 (Bild-Tokens)        |
-| Metrik-Erfassung         | 12 Werte (Coverage, Tiefe, Timing)  | 14 Werte + Tokens + Kosten            | 14 Werte + Tokens + Kosten       |
-| Strukturgarantie         | Ja (deterministischer AST)          | Nein (`parse_ok`-Flag nötig)          | Nein                             |
-| Erwarteter Hauptvorteil  | Präzision, Kosten, Geschwindigkeit  | Sprachflexibilität, Semantik          | Visuelles Verständnis            |
-| Erwarteter Hauptnachteil | Sprödigkeit bei Naming-Abweichungen | Token-Kosten (B2), Varianz            | Pixel-Approximation, hohe Kosten |
+| Aspekt                   | Ansatz A (Regelbasiert)             | Ansatz B (Metadaten-LLM)              | Ansatz C (Vision-LLM)               |
+|--------------------------|-------------------------------------|---------------------------------------|-------------------------------------|
+| Eingabe                  | Figma-JSON                          | Figma-JSON + Doku-Kontext             | Figma-PNG + Doku-Kontext            |
+| Modell                   | keines                              | GPT-5.3-Codex / GPT-5.4               | GPT-5.3-Codex / GPT-5.4 (identisch) |
+| Entscheidungslogik       | Deterministisch                     | Probabilistisch                       | Probabilistisch                     |
+| Kontext-Steuerung        | `COMPONENT_MAP`/`FRAME_MAP`         | B1 (kein) / B2 (RAW) / B3 (CLEANED)   | Dokumentations-Kontext              |
+| Erweiterbarkeit          | Manuell, regelbasiert               | `.md`-Datei ergänzen → fertig         | `.md`-Datei ergänzen → fertig       |
+| Reproduzierbarkeit       | 100%                                | ~hoch (geringe LLM-Varianz)           | ~hoch                               |
+| Externe Abhängigkeiten   | Keine                               | OpenAI-API                            | OpenAI-API                          |
+| Kosten pro Mockup        | ~$0                                 | B1: ~$0.001 / B2: ~$0.08 / B3: ~$0.02 | ~$0.05–0.15 (Bild-Tokens)           |
+| Metrik-Erfassung         | 12 Werte (Coverage, Tiefe, Timing)  | 14 Werte + Tokens + Kosten            | 14 Werte + Tokens + Kosten          |
+| Strukturgarantie         | Ja (deterministischer AST)          | Nein (`parse_ok`-Flag nötig)          | Nein                                |
+| Erwarteter Hauptvorteil  | Präzision, Kosten, Geschwindigkeit  | Sprachflexibilität, Semantik          | Visuelles Verständnis               |
+| Erwarteter Hauptnachteil | Sprödigkeit bei Naming-Abweichungen | Token-Kosten (B2), Varianz            | Pixel-Approximation, hohe Kosten    |
 
 Ansatz B bildet das mittlere Glied im Methodenvergleich: flexibler als A durch natürlichsprachliches Kontext-Verständnis, aber ohne die visuelle Eingabe von C. Die interne B1/B2/B3-Varianz liefert zusätzlich einen eigenständigen Befund darüber, wie viel (a) Dokumentations-Kontext und (b) Dokumentations-Bereinigung für LLM-basierte Transformationen tatsächlich bringen.

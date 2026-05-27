@@ -1,5 +1,8 @@
 import HardComponentPasswordInput from './6.vue'
 import HardComponentPasswordInputMethodA from './6-a.vue'
+import HardComponentPasswordInputMethodB1 from './6-b1.vue'
+import HardComponentPasswordInputMethodB2 from './6-b2.vue'
+import HardComponentPasswordInputMethodB3 from './6-b3.vue'
 
 export default {
   title: 'Hard/6-Password-Input',
@@ -14,3 +17,25 @@ export const MethodA = {
     template: '<HardComponentPasswordInputMethodA />',
   }),
 }
+
+export const MethodB1 = {
+  render: () => ({
+    components: { HardComponentPasswordInputMethodB1 },
+    template: '<HardComponentPasswordInputMethodB1 />',
+  }),
+}
+
+export const MethodB2 = {
+  render: () => ({
+    components: { HardComponentPasswordInputMethodB2 },
+    template: '<HardComponentPasswordInputMethodB2 />',
+  }),
+}
+
+export const MethodB3 = {
+  render: () => ({
+    components: { HardComponentPasswordInputMethodB3 },
+    template: '<HardComponentPasswordInputMethodB3 />',
+  }),
+}
+

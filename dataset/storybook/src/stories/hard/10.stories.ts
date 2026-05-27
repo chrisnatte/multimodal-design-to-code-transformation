@@ -1,5 +1,8 @@
 import HardComponentAdminPanelList from './10.vue'
 import HardComponentAdminPanelListMethodA from './10-a.vue'
+import HardComponentAdminPanelListMethodB1 from './10-b1.vue'
+import HardComponentAdminPanelListMethodB2 from './10-b2.vue'
+import HardComponentAdminPanelListMethodB3 from './10-b3.vue'
 
 export default {
   title: 'Hard/10-Admin-Panel-List',
@@ -14,3 +17,25 @@ export const MethodA = {
     template: '<HardComponentAdminPanelListMethodA />',
   }),
 }
+
+export const MethodB1 = {
+  render: () => ({
+    components: { HardComponentAdminPanelListMethodB1 },
+    template: '<HardComponentAdminPanelListMethodB1 />',
+  }),
+}
+
+export const MethodB2 = {
+  render: () => ({
+    components: { HardComponentAdminPanelListMethodB2 },
+    template: '<HardComponentAdminPanelListMethodB2 />',
+  }),
+}
+
+export const MethodB3 = {
+  render: () => ({
+    components: { HardComponentAdminPanelListMethodB3 },
+    template: '<HardComponentAdminPanelListMethodB3 />',
+  }),
+}
+

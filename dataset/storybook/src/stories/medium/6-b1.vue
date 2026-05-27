@@ -1,0 +1,55 @@
+<template>
+  <div class="flex flex-col gap-2 bg-white rounded-xl">
+    <div class="flex flex-col items-center gap-3 p-2.5 pb-2.5">
+      <Avatar label="B" size="xlarge" shape="square" />
+      <span class="text-2xl font-normal">Benutzername</span>
+    </div>
+
+    <div class="flex flex-col gap-2 rounded-md p-4">
+      <Tabs v-model:value="state.activeTab">
+        <TabList>
+          <Tab value="profil">Profil</Tab>
+          <Tab value="informationen">Informationen</Tab>
+          <Tab value="sicherheit">Sicherheit</Tab>
+          <Tab value="aktivitaet">Aktivität</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel value="profil">
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </TabPanel>
+          <TabPanel value="informationen">
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </TabPanel>
+          <TabPanel value="sicherheit">
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </TabPanel>
+          <TabPanel value="aktivitaet">
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { reactive } from 'vue'
+import Avatar from 'primevue/avatar'
+import Tabs from 'primevue/tabs'
+import TabList from 'primevue/tablist'
+import Tab from 'primevue/tab'
+import TabPanels from 'primevue/tabpanels'
+import TabPanel from 'primevue/tabpanel'
+
+const state = reactive({
+  activeTab: 'informationen'
+})
+</script>
