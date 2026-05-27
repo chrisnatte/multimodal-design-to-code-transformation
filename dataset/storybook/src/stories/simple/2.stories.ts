@@ -3,6 +3,9 @@ import SimpleComponentStatusRowMethodA from './2-a.vue'
 import SimpleComponentStatusRowMethodB1 from './2-b1.vue'
 import SimpleComponentStatusRowMethodB2 from './2-b2.vue'
 import SimpleComponentStatusRowMethodB3 from './2-b3.vue'
+import SimpleComponentStatusRowMethodC1 from './2-c1.vue'
+import SimpleComponentStatusRowMethodC2 from './2-c2.vue'
+import SimpleComponentStatusRowMethodC3 from './2-c3.vue'
 
 export default {
   title: 'Simple/2-Status-Row',
@@ -39,3 +42,23 @@ export const MethodB3 = {
   }),
 }
 
+export const MethodC1 = {
+  render: () => ({
+    components: { SimpleComponentStatusRowMethodC1 },
+    template: '<SimpleComponentStatusRowMethodC1 />',
+  }),
+}
+
+export const MethodC2 = {
+  render: () => ({
+    components: { SimpleComponentStatusRowMethodC2 },
+    template: '<SimpleComponentStatusRowMethodC2 />',
+  }),
+}
+
+export const MethodC3 = {
+  render: () => ({
+    components: { SimpleComponentStatusRowMethodC3 },
+    template: '<SimpleComponentStatusRowMethodC3 />',
+  }),
+}

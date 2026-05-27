@@ -3,6 +3,9 @@ import HardComponentNotificationsListMethodA from './7-a.vue'
 import HardComponentNotificationsListMethodB1 from './7-b1.vue'
 import HardComponentNotificationsListMethodB2 from './7-b2.vue'
 import HardComponentNotificationsListMethodB3 from './7-b3.vue'
+import HardComponentNotificationsListMethodC1 from './7-c1.vue'
+import HardComponentNotificationsListMethodC2 from './7-c2.vue'
+import HardComponentNotificationsListMethodC3 from './7-c3.vue'
 
 export default {
   title: 'Hard/7-Notifications-List',
@@ -39,3 +42,23 @@ export const MethodB3 = {
   }),
 }
 
+export const MethodC1 = {
+  render: () => ({
+    components: { HardComponentNotificationsListMethodC1 },
+    template: '<HardComponentNotificationsListMethodC1 />',
+  }),
+}
+
+export const MethodC2 = {
+  render: () => ({
+    components: { HardComponentNotificationsListMethodC2 },
+    template: '<HardComponentNotificationsListMethodC2 />',
+  }),
+}
+
+export const MethodC3 = {
+  render: () => ({
+    components: { HardComponentNotificationsListMethodC3 },
+    template: '<HardComponentNotificationsListMethodC3 />',
+  }),
+}

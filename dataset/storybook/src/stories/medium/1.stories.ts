@@ -3,6 +3,9 @@ import MediumComponentLoginCardMethodA from './1-a.vue'
 import MediumComponentLoginCardMethodB1 from './1-b1.vue'
 import MediumComponentLoginCardMethodB2 from './1-b2.vue'
 import MediumComponentLoginCardMethodB3 from './1-b3.vue'
+import MediumComponentLoginCardMethodC1 from './1-c1.vue'
+import MediumComponentLoginCardMethodC2 from './1-c2.vue'
+import MediumComponentLoginCardMethodC3 from './1-c3.vue'
 
 export default {
   title: 'Medium/1-Login-Card',
@@ -39,3 +42,23 @@ export const MethodB3 = {
   }),
 }
 
+export const MethodC1 = {
+  render: () => ({
+    components: { MediumComponentLoginCardMethodC1 },
+    template: '<MediumComponentLoginCardMethodC1 />',
+  }),
+}
+
+export const MethodC2 = {
+  render: () => ({
+    components: { MediumComponentLoginCardMethodC2 },
+    template: '<MediumComponentLoginCardMethodC2 />',
+  }),
+}
+
+export const MethodC3 = {
+  render: () => ({
+    components: { MediumComponentLoginCardMethodC3 },
+    template: '<MediumComponentLoginCardMethodC3 />',
+  }),
+}

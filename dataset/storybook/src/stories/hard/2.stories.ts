@@ -3,6 +3,9 @@ import HardComponentUserTableMethodA from './2-a.vue'
 import HardComponentUserTableMethodB1 from './2-b1.vue'
 import HardComponentUserTableMethodB2 from './2-b2.vue'
 import HardComponentUserTableMethodB3 from './2-b3.vue'
+import HardComponentUserTableMethodC1 from './2-c1.vue'
+import HardComponentUserTableMethodC2 from './2-c2.vue'
+import HardComponentUserTableMethodC3 from './2-c3.vue'
 
 export default {
   title: 'Hard/2-User-Table',
@@ -39,3 +42,23 @@ export const MethodB3 = {
   }),
 }
 
+export const MethodC1 = {
+  render: () => ({
+    components: { HardComponentUserTableMethodC1 },
+    template: '<HardComponentUserTableMethodC1 />',
+  }),
+}
+
+export const MethodC2 = {
+  render: () => ({
+    components: { HardComponentUserTableMethodC2 },
+    template: '<HardComponentUserTableMethodC2 />',
+  }),
+}
+
+export const MethodC3 = {
+  render: () => ({
+    components: { HardComponentUserTableMethodC3 },
+    template: '<HardComponentUserTableMethodC3 />',
+  }),
+}

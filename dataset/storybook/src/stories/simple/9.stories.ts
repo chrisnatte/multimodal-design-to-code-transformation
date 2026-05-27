@@ -3,6 +3,9 @@ import SimpleComponentTodoListMethodA from './9-a.vue'
 import SimpleComponentTodoListMethodB1 from './9-b1.vue'
 import SimpleComponentTodoListMethodB2 from './9-b2.vue'
 import SimpleComponentTodoListMethodB3 from './9-b3.vue'
+import SimpleComponentTodoListMethodC1 from './9-c1.vue'
+import SimpleComponentTodoListMethodC2 from './9-c2.vue'
+import SimpleComponentTodoListMethodC3 from './9-c3.vue'
 
 export default {
   title: 'Simple/9-Todo-List',
@@ -39,3 +42,23 @@ export const MethodB3 = {
   }),
 }
 
+export const MethodC1 = {
+  render: () => ({
+    components: { SimpleComponentTodoListMethodC1 },
+    template: '<SimpleComponentTodoListMethodC1 />',
+  }),
+}
+
+export const MethodC2 = {
+  render: () => ({
+    components: { SimpleComponentTodoListMethodC2 },
+    template: '<SimpleComponentTodoListMethodC2 />',
+  }),
+}
+
+export const MethodC3 = {
+  render: () => ({
+    components: { SimpleComponentTodoListMethodC3 },
+    template: '<SimpleComponentTodoListMethodC3 />',
+  }),
+}

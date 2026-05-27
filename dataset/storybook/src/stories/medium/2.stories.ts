@@ -3,6 +3,9 @@ import MediumComponentSettingsTabsMethodA from './2-a.vue'
 import MediumComponentSettingsTabsMethodB1 from './2-b1.vue'
 import MediumComponentSettingsTabsMethodB2 from './2-b2.vue'
 import MediumComponentSettingsTabsMethodB3 from './2-b3.vue'
+import MediumComponentSettingsTabsMethodC1 from './2-c1.vue'
+import MediumComponentSettingsTabsMethodC2 from './2-c2.vue'
+import MediumComponentSettingsTabsMethodC3 from './2-c3.vue'
 
 export default {
   title: 'Medium/2-Settings-Tabs',
@@ -39,3 +42,23 @@ export const MethodB3 = {
   }),
 }
 
+export const MethodC1 = {
+  render: () => ({
+    components: { MediumComponentSettingsTabsMethodC1 },
+    template: '<MediumComponentSettingsTabsMethodC1 />',
+  }),
+}
+
+export const MethodC2 = {
+  render: () => ({
+    components: { MediumComponentSettingsTabsMethodC2 },
+    template: '<MediumComponentSettingsTabsMethodC2 />',
+  }),
+}
+
+export const MethodC3 = {
+  render: () => ({
+    components: { MediumComponentSettingsTabsMethodC3 },
+    template: '<MediumComponentSettingsTabsMethodC3 />',
+  }),
+}

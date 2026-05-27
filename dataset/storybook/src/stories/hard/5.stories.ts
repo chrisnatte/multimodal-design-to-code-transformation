@@ -3,6 +3,9 @@ import HardComponentStepFormularDialogMethodA from './5-a.vue'
 import HardComponentStepFormularDialogMethodB1 from './5-b1.vue'
 import HardComponentStepFormularDialogMethodB2 from './5-b2.vue'
 import HardComponentStepFormularDialogMethodB3 from './5-b3.vue'
+import HardComponentStepFormularDialogMethodC1 from './5-C1.vue'
+import HardComponentStepFormularDialogMethodC2 from './5-C2.vue'
+import HardComponentStepFormularDialogMethodC3 from './5-C3.vue'
 
 export default {
   title: 'Hard/5-Step-Formular-Dialog',
@@ -39,3 +42,23 @@ export const MethodB3 = {
   }),
 }
 
+export const MethodC1 = {
+  render: () => ({
+    components: { HardComponentStepFormularDialogMethodC1 },
+    template: '<HardComponentStepFormularDialogMethodC1 />',
+  }),
+}
+
+export const MethodC2 = {
+  render: () => ({
+    components: { HardComponentStepFormularDialogMethodC2 },
+    template: '<HardComponentStepFormularDialogMethodC2 />',
+  }),
+}
+
+export const MethodC3 = {
+  render: () => ({
+    components: { HardComponentStepFormularDialogMethodC3 },
+    template: '<HardComponentStepFormularDialogMethodC3 />',
+  }),
+}

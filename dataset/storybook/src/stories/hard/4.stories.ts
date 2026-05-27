@@ -3,6 +3,9 @@ import HardComponentActionTableMethodA from './4-a.vue'
 import HardComponentActionTableMethodB1 from './4-b1.vue'
 import HardComponentActionTableMethodB2 from './4-b2.vue'
 import HardComponentActionTableMethodB3 from './4-b3.vue'
+import HardComponentActionTableMethodC1 from './4-c1.vue'
+import HardComponentActionTableMethodC2 from './4-c2.vue'
+import HardComponentActionTableMethodC3 from './4-c3.vue'
 
 export default {
   title: 'Hard/4-Actions-Table',
@@ -39,3 +42,23 @@ export const MethodB3 = {
   }),
 }
 
+export const MethodC1 = {
+  render: () => ({
+    components: { HardComponentActionTableMethodC1 },
+    template: '<HardComponentActionTableMethodC1 />',
+  }),
+}
+
+export const MethodC2 = {
+  render: () => ({
+    components: { HardComponentActionTableMethodC2 },
+    template: '<HardComponentActionTableMethodC2 />',
+  }),
+}
+
+export const MethodC3 = {
+  render: () => ({
+    components: { HardComponentActionTableMethodC3 },
+    template: '<HardComponentActionTableMethodC3 />',
+  }),
+}

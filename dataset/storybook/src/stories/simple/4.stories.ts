@@ -3,6 +3,9 @@ import SimpleComponentOptionSelectionMethodA from './4-a.vue'
 import SimpleComponentOptionSelectionMethodB1 from './4-b1.vue'
 import SimpleComponentOptionSelectionMethodB2 from './4-b2.vue'
 import SimpleComponentOptionSelectionMethodB3 from './4-b3.vue'
+import SimpleComponentOptionSelectionMethodC1 from './4-c1.vue'
+import SimpleComponentOptionSelectionMethodC2 from './4-c2.vue'
+import SimpleComponentOptionSelectionMethodC3 from './4-c3.vue'
 
 export default {
   title: 'Simple/4-Option-Selection',
@@ -39,3 +42,23 @@ export const MethodB3 = {
   }),
 }
 
+export const MethodC1 = {
+  render: () => ({
+    components: { SimpleComponentOptionSelectionMethodC1 },
+    template: '<SimpleComponentOptionSelectionMethodC1 />',
+  }),
+}
+
+export const MethodC2 = {
+  render: () => ({
+    components: { SimpleComponentOptionSelectionMethodC2 },
+    template: '<SimpleComponentOptionSelectionMethodC2 />',
+  }),
+}
+
+export const MethodC3 = {
+  render: () => ({
+    components: { SimpleComponentOptionSelectionMethodC3 },
+    template: '<SimpleComponentOptionSelectionMethodC3 />',
+  }),
+}

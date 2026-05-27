@@ -3,6 +3,9 @@ import MediumComponentPaketListMethodA from './7-a.vue'
 import MediumComponentPaketListMethodB1 from './7-b1.vue'
 import MediumComponentPaketListMethodB2 from './7-b2.vue'
 import MediumComponentPaketListMethodB3 from './7-b3.vue'
+import MediumComponentPaketListMethodC1 from './7-c1.vue'
+import MediumComponentPaketListMethodC2 from './7-c2.vue'
+import MediumComponentPaketListMethodC3 from './7-c3.vue'
 
 export default {
   title: 'Medium/7-Paket-List',
@@ -39,3 +42,23 @@ export const MethodB3 = {
   }),
 }
 
+export const MethodC1 = {
+  render: () => ({
+    components: { MediumComponentPaketListMethodC1 },
+    template: '<MediumComponentPaketListMethodC1 />',
+  }),
+}
+
+export const MethodC2 = {
+  render: () => ({
+    components: { MediumComponentPaketListMethodC2 },
+    template: '<MediumComponentPaketListMethodC2 />',
+  }),
+}
+
+export const MethodC3 = {
+  render: () => ({
+    components: { MediumComponentPaketListMethodC3 },
+    template: '<MediumComponentPaketListMethodC3 />',
+  }),
+}

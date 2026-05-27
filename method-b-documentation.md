@@ -121,7 +121,6 @@ Transform this Figma mockup into a Vue 3 SFC with PrimeVue.
 Use the PrimeVue documentation above to select the correct components and props.
 
 Figma Mockup JSON:
-```json
 {figma_json}
 ```
 
