@@ -14,6 +14,18 @@ ToggleSwitch is used with the v-model property for two-way value binding.
 <ToggleSwitch v-model="checked" />
 ```
 
+## Template
+
+The handle slot is available to display custom content.
+
+```vue
+<ToggleSwitch v-model="checked">
+    <template #handle="{ checked }">
+        <i :class="['!text-xs pi', { 'pi-check': checked, 'pi-times': !checked }]" />
+    </template>
+</ToggleSwitch>
+```
+
 ## Toggle Switch
 
 ### Props

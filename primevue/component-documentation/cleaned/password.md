@@ -14,6 +14,27 @@ Password is used with the v-model property for two-way value binding.
 <Password v-model="value" :feedback="false" />
 ```
 
+## Template
+
+3 slots are included to customize the overlay. These are header , content and footer . Note that content overrides the default meter.
+
+```vue
+<Password v-model="value">
+    <template #header>
+        <div class="font-semibold text-xm mb-4">Reset Password</div>
+    </template>
+    <template #footer>
+        <Divider />
+        <ul class="pl-2 my-0 leading-normal text-sm">
+            <li>At least one lowercase</li>
+            <li>At least one uppercase</li>
+            <li>At least one numeric</li>
+            <li>Minimum 8 characters</li>
+        </ul>
+    </template>
+</Password>
+```
+
 ## Password
 
 ### Props

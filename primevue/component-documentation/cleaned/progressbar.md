@@ -14,6 +14,14 @@ ProgressBar is used with the value property.
 <ProgressBar :value="50"></ProgressBar>
 ```
 
+## Template
+
+Custom content inside the ProgressBar is defined with the default slot.
+
+```vue
+<ProgressBar :value="40"> {{ value }}/100 </ProgressBar>
+```
+
 ## Progress Bar
 
 ### Props
