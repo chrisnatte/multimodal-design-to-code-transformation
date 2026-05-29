@@ -1,0 +1,4536 @@
+{
+    "metric": "component_f1",
+    "per_method": {
+        "a": {
+            "avg_precision": 0.9505,
+            "avg_recall": 0.8704,
+            "avg_f1": 0.8968,
+            "n": 30
+        },
+        "b1": {
+            "avg_precision": 0.93,
+            "avg_recall": 0.8313,
+            "avg_f1": 0.8705,
+            "n": 30
+        },
+        "b2": {
+            "avg_precision": 0.9497,
+            "avg_recall": 0.8913,
+            "avg_f1": 0.9136,
+            "n": 30
+        },
+        "b3": {
+            "avg_precision": 0.943,
+            "avg_recall": 0.885,
+            "avg_f1": 0.9065,
+            "n": 30
+        },
+        "c1": {
+            "avg_precision": 0.7468,
+            "avg_recall": 0.7394,
+            "avg_f1": 0.7281,
+            "n": 30
+        },
+        "c2": {
+            "avg_precision": 0.93,
+            "avg_recall": 0.8879,
+            "avg_f1": 0.9009,
+            "n": 30
+        },
+        "c3": {
+            "avg_precision": 0.9175,
+            "avg_recall": 0.8899,
+            "avg_f1": 0.8945,
+            "n": 30
+        }
+    },
+    "per_method_complexity": {
+        "a-simple": {
+            "avg_f1": 0.9524,
+            "n": 10
+        },
+        "b1-simple": {
+            "avg_f1": 0.95,
+            "n": 10
+        },
+        "b2-simple": {
+            "avg_f1": 0.9524,
+            "n": 10
+        },
+        "b3-simple": {
+            "avg_f1": 0.9524,
+            "n": 10
+        },
+        "c1-simple": {
+            "avg_f1": 0.6967,
+            "n": 10
+        },
+        "c2-simple": {
+            "avg_f1": 0.9524,
+            "n": 10
+        },
+        "c3-simple": {
+            "avg_f1": 0.92,
+            "n": 10
+        },
+        "a-medium": {
+            "avg_f1": 0.922,
+            "n": 10
+        },
+        "b1-medium": {
+            "avg_f1": 0.8941,
+            "n": 10
+        },
+        "b2-medium": {
+            "avg_f1": 0.9815,
+            "n": 10
+        },
+        "b3-medium": {
+            "avg_f1": 0.9714,
+            "n": 10
+        },
+        "c1-medium": {
+            "avg_f1": 0.8406,
+            "n": 10
+        },
+        "c2-medium": {
+            "avg_f1": 0.9616,
+            "n": 10
+        },
+        "c3-medium": {
+            "avg_f1": 0.9567,
+            "n": 10
+        },
+        "a-hard": {
+            "avg_f1": 0.8159,
+            "n": 10
+        },
+        "b1-hard": {
+            "avg_f1": 0.7673,
+            "n": 10
+        },
+        "b2-hard": {
+            "avg_f1": 0.8069,
+            "n": 10
+        },
+        "b3-hard": {
+            "avg_f1": 0.7958,
+            "n": 10
+        },
+        "c1-hard": {
+            "avg_f1": 0.6471,
+            "n": 10
+        },
+        "c2-hard": {
+            "avg_f1": 0.7889,
+            "n": 10
+        },
+        "c3-hard": {
+            "avg_f1": 0.8069,
+            "n": 10
+        }
+    },
+    "degradation_factors": {
+        "a": {
+            "f1_simple": 0.9524,
+            "f1_hard": 0.8159,
+            "degradation_factor": 0.8567
+        },
+        "b1": {
+            "f1_simple": 0.95,
+            "f1_hard": 0.7673,
+            "degradation_factor": 0.8077
+        },
+        "b2": {
+            "f1_simple": 0.9524,
+            "f1_hard": 0.8069,
+            "degradation_factor": 0.8473
+        },
+        "b3": {
+            "f1_simple": 0.9524,
+            "f1_hard": 0.7958,
+            "degradation_factor": 0.8356
+        },
+        "c1": {
+            "f1_simple": 0.6967,
+            "f1_hard": 0.6471,
+            "degradation_factor": 0.9288
+        },
+        "c2": {
+            "f1_simple": 0.9524,
+            "f1_hard": 0.7889,
+            "degradation_factor": 0.8283
+        },
+        "c3": {
+            "f1_simple": 0.92,
+            "f1_hard": 0.8069,
+            "degradation_factor": 0.877
+        }
+    },
+    "files": [
+        {
+            "mockup": "simple-01",
+            "complexity": "simple",
+            "index": "01",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Password"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-01",
+            "complexity": "simple",
+            "index": "01",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Password"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-01",
+            "complexity": "simple",
+            "index": "01",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Password"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-01",
+            "complexity": "simple",
+            "index": "01",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Password"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-01",
+            "complexity": "simple",
+            "index": "01",
+            "method": "c1",
+            "precision": 0.25,
+            "recall": 0.5,
+            "f1": 0.3333,
+            "tp": [
+                "Button"
+            ],
+            "fp": [
+                "IconField",
+                "InputIcon",
+                "InputText"
+            ],
+            "fn": [
+                "Password"
+            ],
+            "gt_count": 2,
+            "gen_count": 4
+        },
+        {
+            "mockup": "simple-01",
+            "complexity": "simple",
+            "index": "01",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Password"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-01",
+            "complexity": "simple",
+            "index": "01",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Password"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-10",
+            "complexity": "simple",
+            "index": "10",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571,
+            "tp": [
+                "Button",
+                "Divider",
+                "InputNumber",
+                "InputText",
+                "RadioButton",
+                "ToggleSwitch"
+            ],
+            "fp": [],
+            "fn": [
+                "IconField",
+                "InputIcon"
+            ],
+            "gt_count": 8,
+            "gen_count": 6
+        },
+        {
+            "mockup": "simple-10",
+            "complexity": "simple",
+            "index": "10",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Divider",
+                "IconField",
+                "InputIcon",
+                "InputNumber",
+                "InputText",
+                "RadioButton",
+                "ToggleSwitch"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 8,
+            "gen_count": 8
+        },
+        {
+            "mockup": "simple-10",
+            "complexity": "simple",
+            "index": "10",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571,
+            "tp": [
+                "Button",
+                "Divider",
+                "InputNumber",
+                "InputText",
+                "RadioButton",
+                "ToggleSwitch"
+            ],
+            "fp": [],
+            "fn": [
+                "IconField",
+                "InputIcon"
+            ],
+            "gt_count": 8,
+            "gen_count": 6
+        },
+        {
+            "mockup": "simple-10",
+            "complexity": "simple",
+            "index": "10",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571,
+            "tp": [
+                "Button",
+                "Divider",
+                "InputNumber",
+                "InputText",
+                "RadioButton",
+                "ToggleSwitch"
+            ],
+            "fp": [],
+            "fn": [
+                "IconField",
+                "InputIcon"
+            ],
+            "gt_count": 8,
+            "gen_count": 6
+        },
+        {
+            "mockup": "simple-10",
+            "complexity": "simple",
+            "index": "10",
+            "method": "c1",
+            "precision": 0.8571,
+            "recall": 0.75,
+            "f1": 0.8,
+            "tp": [
+                "Button",
+                "Divider",
+                "IconField",
+                "InputIcon",
+                "InputText",
+                "RadioButton"
+            ],
+            "fp": [
+                "InputSwitch"
+            ],
+            "fn": [
+                "InputNumber",
+                "ToggleSwitch"
+            ],
+            "gt_count": 8,
+            "gen_count": 7
+        },
+        {
+            "mockup": "simple-10",
+            "complexity": "simple",
+            "index": "10",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571,
+            "tp": [
+                "Button",
+                "Divider",
+                "InputNumber",
+                "InputText",
+                "RadioButton",
+                "ToggleSwitch"
+            ],
+            "fp": [],
+            "fn": [
+                "IconField",
+                "InputIcon"
+            ],
+            "gt_count": 8,
+            "gen_count": 6
+        },
+        {
+            "mockup": "simple-10",
+            "complexity": "simple",
+            "index": "10",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333,
+            "tp": [
+                "Button",
+                "Divider",
+                "IconField",
+                "InputIcon",
+                "InputText",
+                "RadioButton",
+                "ToggleSwitch"
+            ],
+            "fp": [],
+            "fn": [
+                "InputNumber"
+            ],
+            "gt_count": 8,
+            "gen_count": 7
+        },
+        {
+            "mockup": "simple-02",
+            "complexity": "simple",
+            "index": "02",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "OverlayBadge"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-02",
+            "complexity": "simple",
+            "index": "02",
+            "method": "b1",
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "tp": [
+                "Avatar"
+            ],
+            "fp": [
+                "Badge"
+            ],
+            "fn": [
+                "OverlayBadge"
+            ],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-02",
+            "complexity": "simple",
+            "index": "02",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "OverlayBadge"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-02",
+            "complexity": "simple",
+            "index": "02",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "OverlayBadge"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-02",
+            "complexity": "simple",
+            "index": "02",
+            "method": "c1",
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "tp": [
+                "Avatar"
+            ],
+            "fp": [
+                "Badge"
+            ],
+            "fn": [
+                "OverlayBadge"
+            ],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-02",
+            "complexity": "simple",
+            "index": "02",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "OverlayBadge"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-02",
+            "complexity": "simple",
+            "index": "02",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "OverlayBadge"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-03",
+            "complexity": "simple",
+            "index": "03",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "InputNumber",
+                "Slider"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-03",
+            "complexity": "simple",
+            "index": "03",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "InputNumber",
+                "Slider"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-03",
+            "complexity": "simple",
+            "index": "03",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "InputNumber",
+                "Slider"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-03",
+            "complexity": "simple",
+            "index": "03",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "InputNumber",
+                "Slider"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-03",
+            "complexity": "simple",
+            "index": "03",
+            "method": "c1",
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "tp": [
+                "Slider"
+            ],
+            "fp": [
+                "Button"
+            ],
+            "fn": [
+                "InputNumber"
+            ],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-03",
+            "complexity": "simple",
+            "index": "03",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "InputNumber",
+                "Slider"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-03",
+            "complexity": "simple",
+            "index": "03",
+            "method": "c3",
+            "precision": 0.6667,
+            "recall": 1.0,
+            "f1": 0.8,
+            "tp": [
+                "InputNumber",
+                "Slider"
+            ],
+            "fp": [
+                "Button"
+            ],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 3
+        },
+        {
+            "mockup": "simple-04",
+            "complexity": "simple",
+            "index": "04",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Divider",
+                "RadioButton"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-04",
+            "complexity": "simple",
+            "index": "04",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Divider",
+                "RadioButton"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-04",
+            "complexity": "simple",
+            "index": "04",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Divider",
+                "RadioButton"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-04",
+            "complexity": "simple",
+            "index": "04",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Divider",
+                "RadioButton"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-04",
+            "complexity": "simple",
+            "index": "04",
+            "method": "c1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Divider",
+                "RadioButton"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-04",
+            "complexity": "simple",
+            "index": "04",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Divider",
+                "RadioButton"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-04",
+            "complexity": "simple",
+            "index": "04",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Divider",
+                "RadioButton"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-05",
+            "complexity": "simple",
+            "index": "05",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Checkbox",
+                "Textarea"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "simple-05",
+            "complexity": "simple",
+            "index": "05",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Checkbox",
+                "Textarea"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "simple-05",
+            "complexity": "simple",
+            "index": "05",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Checkbox",
+                "Textarea"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "simple-05",
+            "complexity": "simple",
+            "index": "05",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Checkbox",
+                "Textarea"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "simple-05",
+            "complexity": "simple",
+            "index": "05",
+            "method": "c1",
+            "precision": 0.6667,
+            "recall": 0.6667,
+            "f1": 0.6667,
+            "tp": [
+                "Button",
+                "Checkbox"
+            ],
+            "fp": [
+                "InputText"
+            ],
+            "fn": [
+                "Textarea"
+            ],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "simple-05",
+            "complexity": "simple",
+            "index": "05",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Checkbox",
+                "Textarea"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "simple-05",
+            "complexity": "simple",
+            "index": "05",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Checkbox",
+                "Textarea"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "simple-06",
+            "complexity": "simple",
+            "index": "06",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "ProgressBar",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-06",
+            "complexity": "simple",
+            "index": "06",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "ProgressBar",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-06",
+            "complexity": "simple",
+            "index": "06",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "ProgressBar",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-06",
+            "complexity": "simple",
+            "index": "06",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "ProgressBar",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-06",
+            "complexity": "simple",
+            "index": "06",
+            "method": "c1",
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "tp": [
+                "ProgressBar"
+            ],
+            "fp": [
+                "Button"
+            ],
+            "fn": [
+                "Tag"
+            ],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-06",
+            "complexity": "simple",
+            "index": "06",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "ProgressBar",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-06",
+            "complexity": "simple",
+            "index": "06",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "ProgressBar",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-07",
+            "complexity": "simple",
+            "index": "07",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Skeleton"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 1,
+            "gen_count": 1
+        },
+        {
+            "mockup": "simple-07",
+            "complexity": "simple",
+            "index": "07",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Skeleton"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 1,
+            "gen_count": 1
+        },
+        {
+            "mockup": "simple-07",
+            "complexity": "simple",
+            "index": "07",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Skeleton"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 1,
+            "gen_count": 1
+        },
+        {
+            "mockup": "simple-07",
+            "complexity": "simple",
+            "index": "07",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Skeleton"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 1,
+            "gen_count": 1
+        },
+        {
+            "mockup": "simple-07",
+            "complexity": "simple",
+            "index": "07",
+            "method": "c1",
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6667,
+            "tp": [
+                "Skeleton"
+            ],
+            "fp": [
+                "Card"
+            ],
+            "fn": [],
+            "gt_count": 1,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-07",
+            "complexity": "simple",
+            "index": "07",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Skeleton"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 1,
+            "gen_count": 1
+        },
+        {
+            "mockup": "simple-07",
+            "complexity": "simple",
+            "index": "07",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Skeleton"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 1,
+            "gen_count": 1
+        },
+        {
+            "mockup": "simple-08",
+            "complexity": "simple",
+            "index": "08",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667,
+            "tp": [
+                "Button",
+                "InputText"
+            ],
+            "fp": [],
+            "fn": [
+                "IconField",
+                "InputIcon"
+            ],
+            "gt_count": 4,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-08",
+            "complexity": "simple",
+            "index": "08",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "IconField",
+                "InputIcon",
+                "InputText"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "simple-08",
+            "complexity": "simple",
+            "index": "08",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667,
+            "tp": [
+                "Button",
+                "InputText"
+            ],
+            "fp": [],
+            "fn": [
+                "IconField",
+                "InputIcon"
+            ],
+            "gt_count": 4,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-08",
+            "complexity": "simple",
+            "index": "08",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667,
+            "tp": [
+                "Button",
+                "InputText"
+            ],
+            "fp": [],
+            "fn": [
+                "IconField",
+                "InputIcon"
+            ],
+            "gt_count": 4,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-08",
+            "complexity": "simple",
+            "index": "08",
+            "method": "c1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "IconField",
+                "InputIcon",
+                "InputText"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "simple-08",
+            "complexity": "simple",
+            "index": "08",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667,
+            "tp": [
+                "Button",
+                "InputText"
+            ],
+            "fp": [],
+            "fn": [
+                "IconField",
+                "InputIcon"
+            ],
+            "gt_count": 4,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-08",
+            "complexity": "simple",
+            "index": "08",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667,
+            "tp": [
+                "Button",
+                "InputText"
+            ],
+            "fp": [],
+            "fn": [
+                "IconField",
+                "InputIcon"
+            ],
+            "gt_count": 4,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-09",
+            "complexity": "simple",
+            "index": "09",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Checkbox",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-09",
+            "complexity": "simple",
+            "index": "09",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Checkbox",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-09",
+            "complexity": "simple",
+            "index": "09",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Checkbox",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-09",
+            "complexity": "simple",
+            "index": "09",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Checkbox",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-09",
+            "complexity": "simple",
+            "index": "09",
+            "method": "c1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Checkbox",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-09",
+            "complexity": "simple",
+            "index": "09",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Checkbox",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 2
+        },
+        {
+            "mockup": "simple-09",
+            "complexity": "simple",
+            "index": "09",
+            "method": "c3",
+            "precision": 0.6667,
+            "recall": 1.0,
+            "f1": 0.8,
+            "tp": [
+                "Checkbox",
+                "Tag"
+            ],
+            "fp": [
+                "Card"
+            ],
+            "fn": [],
+            "gt_count": 2,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-01",
+            "complexity": "medium",
+            "index": "01",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "Checkbox",
+                "InputText",
+                "Password"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "medium-01",
+            "complexity": "medium",
+            "index": "01",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8889,
+            "tp": [
+                "Button",
+                "Checkbox",
+                "InputText",
+                "Password"
+            ],
+            "fp": [],
+            "fn": [
+                "Card"
+            ],
+            "gt_count": 5,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-01",
+            "complexity": "medium",
+            "index": "01",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "Checkbox",
+                "InputText",
+                "Password"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "medium-01",
+            "complexity": "medium",
+            "index": "01",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "Checkbox",
+                "InputText",
+                "Password"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "medium-01",
+            "complexity": "medium",
+            "index": "01",
+            "method": "c1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "Checkbox",
+                "InputText",
+                "Password"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "medium-01",
+            "complexity": "medium",
+            "index": "01",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "Checkbox",
+                "InputText",
+                "Password"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "medium-01",
+            "complexity": "medium",
+            "index": "01",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "Checkbox",
+                "InputText",
+                "Password"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "medium-10",
+            "complexity": "medium",
+            "index": "10",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "ProgressBar"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-10",
+            "complexity": "medium",
+            "index": "10",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 0.6667,
+            "f1": 0.8,
+            "tp": [
+                "Button",
+                "ProgressBar"
+            ],
+            "fp": [],
+            "fn": [
+                "Card"
+            ],
+            "gt_count": 3,
+            "gen_count": 2
+        },
+        {
+            "mockup": "medium-10",
+            "complexity": "medium",
+            "index": "10",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "ProgressBar"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-10",
+            "complexity": "medium",
+            "index": "10",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "ProgressBar"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-10",
+            "complexity": "medium",
+            "index": "10",
+            "method": "c1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "ProgressBar"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-10",
+            "complexity": "medium",
+            "index": "10",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "ProgressBar"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-10",
+            "complexity": "medium",
+            "index": "10",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "ProgressBar"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-02",
+            "complexity": "medium",
+            "index": "02",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 0.5625,
+            "f1": 0.72,
+            "tp": [
+                "Button",
+                "Password",
+                "RadioButton",
+                "Slider",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs",
+                "ToggleSwitch"
+            ],
+            "fp": [],
+            "fn": [
+                "Avatar",
+                "Divider",
+                "InputNumber",
+                "InputText",
+                "OverlayBadge",
+                "Tab",
+                "Textarea"
+            ],
+            "gt_count": 16,
+            "gen_count": 9
+        },
+        {
+            "mockup": "medium-02",
+            "complexity": "medium",
+            "index": "02",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 0.6875,
+            "f1": 0.8148,
+            "tp": [
+                "Button",
+                "InputNumber",
+                "Password",
+                "RadioButton",
+                "Slider",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs",
+                "ToggleSwitch"
+            ],
+            "fp": [],
+            "fn": [
+                "Avatar",
+                "Divider",
+                "InputText",
+                "OverlayBadge",
+                "Textarea"
+            ],
+            "gt_count": 16,
+            "gen_count": 11
+        },
+        {
+            "mockup": "medium-02",
+            "complexity": "medium",
+            "index": "02",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 0.6875,
+            "f1": 0.8148,
+            "tp": [
+                "Button",
+                "InputNumber",
+                "Password",
+                "RadioButton",
+                "Slider",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs",
+                "ToggleSwitch"
+            ],
+            "fp": [],
+            "fn": [
+                "Avatar",
+                "Divider",
+                "InputText",
+                "OverlayBadge",
+                "Textarea"
+            ],
+            "gt_count": 16,
+            "gen_count": 11
+        },
+        {
+            "mockup": "medium-02",
+            "complexity": "medium",
+            "index": "02",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571,
+            "tp": [
+                "Button",
+                "Divider",
+                "InputText",
+                "Password",
+                "RadioButton",
+                "Slider",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs",
+                "ToggleSwitch"
+            ],
+            "fp": [],
+            "fn": [
+                "Avatar",
+                "InputNumber",
+                "OverlayBadge",
+                "Textarea"
+            ],
+            "gt_count": 16,
+            "gen_count": 12
+        },
+        {
+            "mockup": "medium-02",
+            "complexity": "medium",
+            "index": "02",
+            "method": "c1",
+            "precision": 0.7143,
+            "recall": 0.3125,
+            "f1": 0.4348,
+            "tp": [
+                "Avatar",
+                "Button",
+                "InputText",
+                "Textarea",
+                "ToggleSwitch"
+            ],
+            "fp": [
+                "Card",
+                "Tag"
+            ],
+            "fn": [
+                "Divider",
+                "InputNumber",
+                "OverlayBadge",
+                "Password",
+                "RadioButton",
+                "Slider",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "gt_count": 16,
+            "gen_count": 7
+        },
+        {
+            "mockup": "medium-02",
+            "complexity": "medium",
+            "index": "02",
+            "method": "c2",
+            "precision": 0.9091,
+            "recall": 0.625,
+            "f1": 0.7407,
+            "tp": [
+                "Avatar",
+                "Button",
+                "InputText",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs",
+                "Textarea",
+                "ToggleSwitch"
+            ],
+            "fp": [
+                "Tag"
+            ],
+            "fn": [
+                "Divider",
+                "InputNumber",
+                "OverlayBadge",
+                "Password",
+                "RadioButton",
+                "Slider"
+            ],
+            "gt_count": 16,
+            "gen_count": 11
+        },
+        {
+            "mockup": "medium-02",
+            "complexity": "medium",
+            "index": "02",
+            "method": "c3",
+            "precision": 0.9,
+            "recall": 0.5625,
+            "f1": 0.6923,
+            "tp": [
+                "Avatar",
+                "Button",
+                "InputText",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs",
+                "ToggleSwitch"
+            ],
+            "fp": [
+                "InputTextarea"
+            ],
+            "fn": [
+                "Divider",
+                "InputNumber",
+                "OverlayBadge",
+                "Password",
+                "RadioButton",
+                "Slider",
+                "Textarea"
+            ],
+            "gt_count": 16,
+            "gen_count": 10
+        },
+        {
+            "mockup": "medium-03",
+            "complexity": "medium",
+            "index": "03",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Accordion",
+                "AccordionContent",
+                "AccordionHeader",
+                "AccordionPanel"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-03",
+            "complexity": "medium",
+            "index": "03",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Accordion",
+                "AccordionContent",
+                "AccordionHeader",
+                "AccordionPanel"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-03",
+            "complexity": "medium",
+            "index": "03",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Accordion",
+                "AccordionContent",
+                "AccordionHeader",
+                "AccordionPanel"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-03",
+            "complexity": "medium",
+            "index": "03",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Accordion",
+                "AccordionContent",
+                "AccordionHeader",
+                "AccordionPanel"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-03",
+            "complexity": "medium",
+            "index": "03",
+            "method": "c1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Accordion",
+                "AccordionContent",
+                "AccordionHeader",
+                "AccordionPanel"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-03",
+            "complexity": "medium",
+            "index": "03",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Accordion",
+                "AccordionContent",
+                "AccordionHeader",
+                "AccordionPanel"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-03",
+            "complexity": "medium",
+            "index": "03",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Accordion",
+                "AccordionContent",
+                "AccordionHeader",
+                "AccordionPanel"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-04",
+            "complexity": "medium",
+            "index": "04",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 0.3333,
+            "f1": 0.5,
+            "tp": [
+                "Breadcrumb"
+            ],
+            "fp": [],
+            "fn": [
+                "Button",
+                "Menu"
+            ],
+            "gt_count": 3,
+            "gen_count": 1
+        },
+        {
+            "mockup": "medium-04",
+            "complexity": "medium",
+            "index": "04",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 0.6667,
+            "f1": 0.8,
+            "tp": [
+                "Button",
+                "Menu"
+            ],
+            "fp": [],
+            "fn": [
+                "Breadcrumb"
+            ],
+            "gt_count": 3,
+            "gen_count": 2
+        },
+        {
+            "mockup": "medium-04",
+            "complexity": "medium",
+            "index": "04",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Breadcrumb",
+                "Button",
+                "Menu"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-04",
+            "complexity": "medium",
+            "index": "04",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Breadcrumb",
+                "Button",
+                "Menu"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-04",
+            "complexity": "medium",
+            "index": "04",
+            "method": "c1",
+            "precision": 0.5,
+            "recall": 0.3333,
+            "f1": 0.4,
+            "tp": [
+                "Button"
+            ],
+            "fp": [
+                "Card"
+            ],
+            "fn": [
+                "Breadcrumb",
+                "Menu"
+            ],
+            "gt_count": 3,
+            "gen_count": 2
+        },
+        {
+            "mockup": "medium-04",
+            "complexity": "medium",
+            "index": "04",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Breadcrumb",
+                "Button",
+                "Menu"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-04",
+            "complexity": "medium",
+            "index": "04",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Breadcrumb",
+                "Button",
+                "Menu"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-05",
+            "complexity": "medium",
+            "index": "05",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "InputNumber",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-05",
+            "complexity": "medium",
+            "index": "05",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571,
+            "tp": [
+                "Button",
+                "InputNumber",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [
+                "Card"
+            ],
+            "gt_count": 4,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-05",
+            "complexity": "medium",
+            "index": "05",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "InputNumber",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-05",
+            "complexity": "medium",
+            "index": "05",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571,
+            "tp": [
+                "Button",
+                "InputNumber",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [
+                "Card"
+            ],
+            "gt_count": 4,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-05",
+            "complexity": "medium",
+            "index": "05",
+            "method": "c1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "InputNumber",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-05",
+            "complexity": "medium",
+            "index": "05",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "InputNumber",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-05",
+            "complexity": "medium",
+            "index": "05",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "InputNumber",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-06",
+            "complexity": "medium",
+            "index": "06",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Card",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 7,
+            "gen_count": 7
+        },
+        {
+            "mockup": "medium-06",
+            "complexity": "medium",
+            "index": "06",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 0.8571,
+            "f1": 0.9231,
+            "tp": [
+                "Avatar",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [
+                "Card"
+            ],
+            "gt_count": 7,
+            "gen_count": 6
+        },
+        {
+            "mockup": "medium-06",
+            "complexity": "medium",
+            "index": "06",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Card",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 7,
+            "gen_count": 7
+        },
+        {
+            "mockup": "medium-06",
+            "complexity": "medium",
+            "index": "06",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Card",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 7,
+            "gen_count": 7
+        },
+        {
+            "mockup": "medium-06",
+            "complexity": "medium",
+            "index": "06",
+            "method": "c1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Card",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 7,
+            "gen_count": 7
+        },
+        {
+            "mockup": "medium-06",
+            "complexity": "medium",
+            "index": "06",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Card",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 7,
+            "gen_count": 7
+        },
+        {
+            "mockup": "medium-06",
+            "complexity": "medium",
+            "index": "06",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Card",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 7,
+            "gen_count": 7
+        },
+        {
+            "mockup": "medium-07",
+            "complexity": "medium",
+            "index": "07",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "Checkbox",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-07",
+            "complexity": "medium",
+            "index": "07",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571,
+            "tp": [
+                "Button",
+                "Checkbox",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [
+                "Card"
+            ],
+            "gt_count": 4,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-07",
+            "complexity": "medium",
+            "index": "07",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "Checkbox",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-07",
+            "complexity": "medium",
+            "index": "07",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "Checkbox",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-07",
+            "complexity": "medium",
+            "index": "07",
+            "method": "c1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "Checkbox",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-07",
+            "complexity": "medium",
+            "index": "07",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "Checkbox",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-07",
+            "complexity": "medium",
+            "index": "07",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Card",
+                "Checkbox",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-08",
+            "complexity": "medium",
+            "index": "08",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Divider"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-08",
+            "complexity": "medium",
+            "index": "08",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Divider"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-08",
+            "complexity": "medium",
+            "index": "08",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Divider"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-08",
+            "complexity": "medium",
+            "index": "08",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Divider"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-08",
+            "complexity": "medium",
+            "index": "08",
+            "method": "c1",
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Divider"
+            ],
+            "fp": [
+                "Card"
+            ],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 4
+        },
+        {
+            "mockup": "medium-08",
+            "complexity": "medium",
+            "index": "08",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Divider"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-08",
+            "complexity": "medium",
+            "index": "08",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Divider"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 3,
+            "gen_count": 3
+        },
+        {
+            "mockup": "medium-09",
+            "complexity": "medium",
+            "index": "09",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "RadioButton",
+                "Slider",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs",
+                "Textarea"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 9,
+            "gen_count": 9
+        },
+        {
+            "mockup": "medium-09",
+            "complexity": "medium",
+            "index": "09",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "RadioButton",
+                "Slider",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs",
+                "Textarea"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 9,
+            "gen_count": 9
+        },
+        {
+            "mockup": "medium-09",
+            "complexity": "medium",
+            "index": "09",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "RadioButton",
+                "Slider",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs",
+                "Textarea"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 9,
+            "gen_count": 9
+        },
+        {
+            "mockup": "medium-09",
+            "complexity": "medium",
+            "index": "09",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "RadioButton",
+                "Slider",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs",
+                "Textarea"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 9,
+            "gen_count": 9
+        },
+        {
+            "mockup": "medium-09",
+            "complexity": "medium",
+            "index": "09",
+            "method": "c1",
+            "precision": 1.0,
+            "recall": 0.5556,
+            "f1": 0.7143,
+            "tp": [
+                "Button",
+                "RadioButton",
+                "Tab",
+                "TabList",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [
+                "Slider",
+                "TabPanel",
+                "TabPanels",
+                "Textarea"
+            ],
+            "gt_count": 9,
+            "gen_count": 5
+        },
+        {
+            "mockup": "medium-09",
+            "complexity": "medium",
+            "index": "09",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 0.7778,
+            "f1": 0.875,
+            "tp": [
+                "Button",
+                "RadioButton",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [
+                "Slider",
+                "Textarea"
+            ],
+            "gt_count": 9,
+            "gen_count": 7
+        },
+        {
+            "mockup": "medium-09",
+            "complexity": "medium",
+            "index": "09",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 0.7778,
+            "f1": 0.875,
+            "tp": [
+                "Button",
+                "RadioButton",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [
+                "Slider",
+                "Textarea"
+            ],
+            "gt_count": 9,
+            "gen_count": 7
+        },
+        {
+            "mockup": "hard-01",
+            "complexity": "hard",
+            "index": "01",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Checkbox",
+                "Dialog",
+                "InputText",
+                "Select"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-01",
+            "complexity": "hard",
+            "index": "01",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8889,
+            "tp": [
+                "Button",
+                "Checkbox",
+                "InputText",
+                "Select"
+            ],
+            "fp": [],
+            "fn": [
+                "Dialog"
+            ],
+            "gt_count": 5,
+            "gen_count": 4
+        },
+        {
+            "mockup": "hard-01",
+            "complexity": "hard",
+            "index": "01",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Checkbox",
+                "Dialog",
+                "InputText",
+                "Select"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-01",
+            "complexity": "hard",
+            "index": "01",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Checkbox",
+                "Dialog",
+                "InputText",
+                "Select"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-01",
+            "complexity": "hard",
+            "index": "01",
+            "method": "c1",
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8,
+            "tp": [
+                "Button",
+                "Checkbox",
+                "Dialog",
+                "InputText"
+            ],
+            "fp": [
+                "Dropdown"
+            ],
+            "fn": [
+                "Select"
+            ],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-01",
+            "complexity": "hard",
+            "index": "01",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Checkbox",
+                "Dialog",
+                "InputText",
+                "Select"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-01",
+            "complexity": "hard",
+            "index": "01",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "Checkbox",
+                "Dialog",
+                "InputText",
+                "Select"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-10",
+            "complexity": "hard",
+            "index": "10",
+            "method": "a",
+            "precision": 0.8571,
+            "recall": 0.8571,
+            "f1": 0.8571,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Column",
+                "DataTable",
+                "ProgressBar",
+                "Tag"
+            ],
+            "fp": [
+                "Popover"
+            ],
+            "fn": [
+                "Menu"
+            ],
+            "gt_count": 7,
+            "gen_count": 7
+        },
+        {
+            "mockup": "hard-10",
+            "complexity": "hard",
+            "index": "10",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 0.8571,
+            "f1": 0.9231,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Column",
+                "DataTable",
+                "ProgressBar",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [
+                "Menu"
+            ],
+            "gt_count": 7,
+            "gen_count": 6
+        },
+        {
+            "mockup": "hard-10",
+            "complexity": "hard",
+            "index": "10",
+            "method": "b2",
+            "precision": 0.8571,
+            "recall": 0.8571,
+            "f1": 0.8571,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Column",
+                "DataTable",
+                "ProgressBar",
+                "Tag"
+            ],
+            "fp": [
+                "Popover"
+            ],
+            "fn": [
+                "Menu"
+            ],
+            "gt_count": 7,
+            "gen_count": 7
+        },
+        {
+            "mockup": "hard-10",
+            "complexity": "hard",
+            "index": "10",
+            "method": "b3",
+            "precision": 0.8571,
+            "recall": 0.8571,
+            "f1": 0.8571,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Column",
+                "DataTable",
+                "ProgressBar",
+                "Tag"
+            ],
+            "fp": [
+                "Popover"
+            ],
+            "fn": [
+                "Menu"
+            ],
+            "gt_count": 7,
+            "gen_count": 7
+        },
+        {
+            "mockup": "hard-10",
+            "complexity": "hard",
+            "index": "10",
+            "method": "c1",
+            "precision": 0.6667,
+            "recall": 0.5714,
+            "f1": 0.6154,
+            "tp": [
+                "Avatar",
+                "Button",
+                "ProgressBar",
+                "Tag"
+            ],
+            "fp": [
+                "Card",
+                "Popover"
+            ],
+            "fn": [
+                "Column",
+                "DataTable",
+                "Menu"
+            ],
+            "gt_count": 7,
+            "gen_count": 6
+        },
+        {
+            "mockup": "hard-10",
+            "complexity": "hard",
+            "index": "10",
+            "method": "c2",
+            "precision": 0.8571,
+            "recall": 0.8571,
+            "f1": 0.8571,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Column",
+                "DataTable",
+                "ProgressBar",
+                "Tag"
+            ],
+            "fp": [
+                "Popover"
+            ],
+            "fn": [
+                "Menu"
+            ],
+            "gt_count": 7,
+            "gen_count": 7
+        },
+        {
+            "mockup": "hard-10",
+            "complexity": "hard",
+            "index": "10",
+            "method": "c3",
+            "precision": 0.8571,
+            "recall": 0.8571,
+            "f1": 0.8571,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Column",
+                "DataTable",
+                "ProgressBar",
+                "Tag"
+            ],
+            "fp": [
+                "Popover"
+            ],
+            "fn": [
+                "Menu"
+            ],
+            "gt_count": 7,
+            "gen_count": 7
+        },
+        {
+            "mockup": "hard-02",
+            "complexity": "hard",
+            "index": "02",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Checkbox",
+                "Column",
+                "DataTable",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-02",
+            "complexity": "hard",
+            "index": "02",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Checkbox",
+                "Column",
+                "DataTable",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-02",
+            "complexity": "hard",
+            "index": "02",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Checkbox",
+                "Column",
+                "DataTable",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-02",
+            "complexity": "hard",
+            "index": "02",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Checkbox",
+                "Column",
+                "DataTable",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-02",
+            "complexity": "hard",
+            "index": "02",
+            "method": "c1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Checkbox",
+                "Column",
+                "DataTable",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-02",
+            "complexity": "hard",
+            "index": "02",
+            "method": "c2",
+            "precision": 0.8333,
+            "recall": 1.0,
+            "f1": 0.9091,
+            "tp": [
+                "Avatar",
+                "Checkbox",
+                "Column",
+                "DataTable",
+                "Tag"
+            ],
+            "fp": [
+                "Card"
+            ],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 6
+        },
+        {
+            "mockup": "hard-02",
+            "complexity": "hard",
+            "index": "02",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Checkbox",
+                "Column",
+                "DataTable",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-03",
+            "complexity": "hard",
+            "index": "03",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "DatePicker",
+                "InputNumber",
+                "Select"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "hard-03",
+            "complexity": "hard",
+            "index": "03",
+            "method": "b1",
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.8889,
+            "tp": [
+                "Button",
+                "DatePicker",
+                "InputNumber",
+                "Select"
+            ],
+            "fp": [
+                "InputText"
+            ],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-03",
+            "complexity": "hard",
+            "index": "03",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Button",
+                "DatePicker",
+                "InputNumber",
+                "Select"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 4
+        },
+        {
+            "mockup": "hard-03",
+            "complexity": "hard",
+            "index": "03",
+            "method": "b3",
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.8889,
+            "tp": [
+                "Button",
+                "DatePicker",
+                "InputNumber",
+                "Select"
+            ],
+            "fp": [
+                "InputText"
+            ],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-03",
+            "complexity": "hard",
+            "index": "03",
+            "method": "c1",
+            "precision": 0.2,
+            "recall": 0.5,
+            "f1": 0.2857,
+            "tp": [
+                "Button",
+                "InputNumber"
+            ],
+            "fp": [
+                "Calendar",
+                "Card",
+                "Dropdown",
+                "IconField",
+                "InputGroup",
+                "InputIcon",
+                "InputText",
+                "Listbox"
+            ],
+            "fn": [
+                "DatePicker",
+                "Select"
+            ],
+            "gt_count": 4,
+            "gen_count": 10
+        },
+        {
+            "mockup": "hard-03",
+            "complexity": "hard",
+            "index": "03",
+            "method": "c2",
+            "precision": 0.6667,
+            "recall": 1.0,
+            "f1": 0.8,
+            "tp": [
+                "Button",
+                "DatePicker",
+                "InputNumber",
+                "Select"
+            ],
+            "fp": [
+                "Card",
+                "InputText"
+            ],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 6
+        },
+        {
+            "mockup": "hard-03",
+            "complexity": "hard",
+            "index": "03",
+            "method": "c3",
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.8889,
+            "tp": [
+                "Button",
+                "DatePicker",
+                "InputNumber",
+                "Select"
+            ],
+            "fp": [
+                "InputText"
+            ],
+            "fn": [],
+            "gt_count": 4,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-04",
+            "complexity": "hard",
+            "index": "04",
+            "method": "a",
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8,
+            "tp": [
+                "Button",
+                "Column",
+                "DataTable",
+                "Tag"
+            ],
+            "fp": [
+                "Popover"
+            ],
+            "fn": [
+                "Menu"
+            ],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-04",
+            "complexity": "hard",
+            "index": "04",
+            "method": "b1",
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8,
+            "tp": [
+                "Button",
+                "Column",
+                "DataTable",
+                "Tag"
+            ],
+            "fp": [
+                "OverlayPanel"
+            ],
+            "fn": [
+                "Menu"
+            ],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-04",
+            "complexity": "hard",
+            "index": "04",
+            "method": "b2",
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8,
+            "tp": [
+                "Button",
+                "Column",
+                "DataTable",
+                "Tag"
+            ],
+            "fp": [
+                "Popover"
+            ],
+            "fn": [
+                "Menu"
+            ],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-04",
+            "complexity": "hard",
+            "index": "04",
+            "method": "b3",
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8,
+            "tp": [
+                "Button",
+                "Column",
+                "DataTable",
+                "Tag"
+            ],
+            "fp": [
+                "Popover"
+            ],
+            "fn": [
+                "Menu"
+            ],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-04",
+            "complexity": "hard",
+            "index": "04",
+            "method": "c1",
+            "precision": 0.6667,
+            "recall": 0.8,
+            "f1": 0.7273,
+            "tp": [
+                "Button",
+                "Column",
+                "DataTable",
+                "Tag"
+            ],
+            "fp": [
+                "Card",
+                "OverlayPanel"
+            ],
+            "fn": [
+                "Menu"
+            ],
+            "gt_count": 5,
+            "gen_count": 6
+        },
+        {
+            "mockup": "hard-04",
+            "complexity": "hard",
+            "index": "04",
+            "method": "c2",
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8,
+            "tp": [
+                "Button",
+                "Column",
+                "DataTable",
+                "Tag"
+            ],
+            "fp": [
+                "Popover"
+            ],
+            "fn": [
+                "Menu"
+            ],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-04",
+            "complexity": "hard",
+            "index": "04",
+            "method": "c3",
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8,
+            "tp": [
+                "Button",
+                "Column",
+                "DataTable",
+                "Tag"
+            ],
+            "fp": [
+                "Popover"
+            ],
+            "fn": [
+                "Menu"
+            ],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-05",
+            "complexity": "hard",
+            "index": "05",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 0.7273,
+            "f1": 0.8421,
+            "tp": [
+                "Button",
+                "Dialog",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs",
+                "ToggleSwitch"
+            ],
+            "fp": [],
+            "fn": [
+                "Avatar",
+                "InputText",
+                "Select"
+            ],
+            "gt_count": 11,
+            "gen_count": 8
+        },
+        {
+            "mockup": "hard-05",
+            "complexity": "hard",
+            "index": "05",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 0.6364,
+            "f1": 0.7778,
+            "tp": [
+                "Button",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs",
+                "ToggleSwitch"
+            ],
+            "fp": [],
+            "fn": [
+                "Avatar",
+                "Dialog",
+                "InputText",
+                "Select"
+            ],
+            "gt_count": 11,
+            "gen_count": 7
+        },
+        {
+            "mockup": "hard-05",
+            "complexity": "hard",
+            "index": "05",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 0.7273,
+            "f1": 0.8421,
+            "tp": [
+                "Button",
+                "Dialog",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs",
+                "ToggleSwitch"
+            ],
+            "fp": [],
+            "fn": [
+                "Avatar",
+                "InputText",
+                "Select"
+            ],
+            "gt_count": 11,
+            "gen_count": 8
+        },
+        {
+            "mockup": "hard-05",
+            "complexity": "hard",
+            "index": "05",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 0.7273,
+            "f1": 0.8421,
+            "tp": [
+                "Button",
+                "Dialog",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs",
+                "ToggleSwitch"
+            ],
+            "fp": [],
+            "fn": [
+                "Avatar",
+                "InputText",
+                "Select"
+            ],
+            "gt_count": 11,
+            "gen_count": 8
+        },
+        {
+            "mockup": "hard-05",
+            "complexity": "hard",
+            "index": "05",
+            "method": "c1",
+            "precision": 1.0,
+            "recall": 0.7273,
+            "f1": 0.8421,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Dialog",
+                "InputText",
+                "Select",
+                "Tab",
+                "TabList",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [
+                "TabPanel",
+                "TabPanels",
+                "ToggleSwitch"
+            ],
+            "gt_count": 11,
+            "gen_count": 8
+        },
+        {
+            "mockup": "hard-05",
+            "complexity": "hard",
+            "index": "05",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 0.9091,
+            "f1": 0.9524,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Dialog",
+                "InputText",
+                "Select",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [
+                "ToggleSwitch"
+            ],
+            "gt_count": 11,
+            "gen_count": 10
+        },
+        {
+            "mockup": "hard-05",
+            "complexity": "hard",
+            "index": "05",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 0.9091,
+            "f1": 0.9524,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Dialog",
+                "InputText",
+                "Select",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [
+                "ToggleSwitch"
+            ],
+            "gt_count": 11,
+            "gen_count": 10
+        },
+        {
+            "mockup": "hard-06",
+            "complexity": "hard",
+            "index": "06",
+            "method": "a",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": [],
+            "fp": [
+                "Select"
+            ],
+            "fn": [],
+            "gt_count": 0,
+            "gen_count": 1
+        },
+        {
+            "mockup": "hard-06",
+            "complexity": "hard",
+            "index": "06",
+            "method": "b1",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": [],
+            "fp": [
+                "Button",
+                "IconField",
+                "InputIcon",
+                "InputText",
+                "Select"
+            ],
+            "fn": [],
+            "gt_count": 0,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-06",
+            "complexity": "hard",
+            "index": "06",
+            "method": "b2",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": [],
+            "fp": [
+                "InputText",
+                "Select"
+            ],
+            "fn": [],
+            "gt_count": 0,
+            "gen_count": 2
+        },
+        {
+            "mockup": "hard-06",
+            "complexity": "hard",
+            "index": "06",
+            "method": "b3",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": [],
+            "fp": [
+                "InputText",
+                "Select"
+            ],
+            "fn": [],
+            "gt_count": 0,
+            "gen_count": 2
+        },
+        {
+            "mockup": "hard-06",
+            "complexity": "hard",
+            "index": "06",
+            "method": "c1",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": [],
+            "fp": [
+                "Card",
+                "IconField",
+                "InputIcon",
+                "InputText",
+                "Select"
+            ],
+            "fn": [],
+            "gt_count": 0,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-06",
+            "complexity": "hard",
+            "index": "06",
+            "method": "c2",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": [],
+            "fp": [
+                "Select"
+            ],
+            "fn": [],
+            "gt_count": 0,
+            "gen_count": 1
+        },
+        {
+            "mockup": "hard-06",
+            "complexity": "hard",
+            "index": "06",
+            "method": "c3",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "tp": [],
+            "fp": [
+                "Select"
+            ],
+            "fn": [],
+            "gt_count": 0,
+            "gen_count": 1
+        },
+        {
+            "mockup": "hard-07",
+            "complexity": "hard",
+            "index": "07",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Card",
+                "Divider",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-07",
+            "complexity": "hard",
+            "index": "07",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Card",
+                "Divider",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-07",
+            "complexity": "hard",
+            "index": "07",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Card",
+                "Divider",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-07",
+            "complexity": "hard",
+            "index": "07",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Card",
+                "Divider",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-07",
+            "complexity": "hard",
+            "index": "07",
+            "method": "c1",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Card",
+                "Divider",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-07",
+            "complexity": "hard",
+            "index": "07",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Card",
+                "Divider",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-07",
+            "complexity": "hard",
+            "index": "07",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Card",
+                "Divider",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [],
+            "gt_count": 5,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-08",
+            "complexity": "hard",
+            "index": "08",
+            "method": "a",
+            "precision": 1.0,
+            "recall": 0.5833,
+            "f1": 0.7368,
+            "tp": [
+                "Button",
+                "Card",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [
+                "Accordion",
+                "AccordionContent",
+                "AccordionHeader",
+                "AccordionPanel",
+                "Tag"
+            ],
+            "gt_count": 12,
+            "gen_count": 7
+        },
+        {
+            "mockup": "hard-08",
+            "complexity": "hard",
+            "index": "08",
+            "method": "b1",
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667,
+            "tp": [
+                "Button",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [
+                "Accordion",
+                "AccordionContent",
+                "AccordionHeader",
+                "AccordionPanel",
+                "Card",
+                "Tag"
+            ],
+            "gt_count": 12,
+            "gen_count": 6
+        },
+        {
+            "mockup": "hard-08",
+            "complexity": "hard",
+            "index": "08",
+            "method": "b2",
+            "precision": 1.0,
+            "recall": 0.5833,
+            "f1": 0.7368,
+            "tp": [
+                "Button",
+                "Card",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [
+                "Accordion",
+                "AccordionContent",
+                "AccordionHeader",
+                "AccordionPanel",
+                "Tag"
+            ],
+            "gt_count": 12,
+            "gen_count": 7
+        },
+        {
+            "mockup": "hard-08",
+            "complexity": "hard",
+            "index": "08",
+            "method": "b3",
+            "precision": 1.0,
+            "recall": 0.5833,
+            "f1": 0.7368,
+            "tp": [
+                "Button",
+                "Card",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [
+                "Accordion",
+                "AccordionContent",
+                "AccordionHeader",
+                "AccordionPanel",
+                "Tag"
+            ],
+            "gt_count": 12,
+            "gen_count": 7
+        },
+        {
+            "mockup": "hard-08",
+            "complexity": "hard",
+            "index": "08",
+            "method": "c1",
+            "precision": 1.0,
+            "recall": 0.6667,
+            "f1": 0.8,
+            "tp": [
+                "Button",
+                "Card",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs",
+                "Tag"
+            ],
+            "fp": [],
+            "fn": [
+                "Accordion",
+                "AccordionContent",
+                "AccordionHeader",
+                "AccordionPanel"
+            ],
+            "gt_count": 12,
+            "gen_count": 8
+        },
+        {
+            "mockup": "hard-08",
+            "complexity": "hard",
+            "index": "08",
+            "method": "c2",
+            "precision": 1.0,
+            "recall": 0.5833,
+            "f1": 0.7368,
+            "tp": [
+                "Button",
+                "Card",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [
+                "Accordion",
+                "AccordionContent",
+                "AccordionHeader",
+                "AccordionPanel",
+                "Tag"
+            ],
+            "gt_count": 12,
+            "gen_count": 7
+        },
+        {
+            "mockup": "hard-08",
+            "complexity": "hard",
+            "index": "08",
+            "method": "c3",
+            "precision": 1.0,
+            "recall": 0.5833,
+            "f1": 0.7368,
+            "tp": [
+                "Button",
+                "Card",
+                "Tab",
+                "TabList",
+                "TabPanel",
+                "TabPanels",
+                "Tabs"
+            ],
+            "fp": [],
+            "fn": [
+                "Accordion",
+                "AccordionContent",
+                "AccordionHeader",
+                "AccordionPanel",
+                "Tag"
+            ],
+            "gt_count": 12,
+            "gen_count": 7
+        },
+        {
+            "mockup": "hard-09",
+            "complexity": "hard",
+            "index": "09",
+            "method": "a",
+            "precision": 0.8571,
+            "recall": 1.0,
+            "f1": 0.9231,
+            "tp": [
+                "Avatar",
+                "Breadcrumb",
+                "Button",
+                "DatePicker",
+                "Dialog",
+                "Textarea"
+            ],
+            "fp": [
+                "Divider"
+            ],
+            "fn": [],
+            "gt_count": 6,
+            "gen_count": 7
+        },
+        {
+            "mockup": "hard-09",
+            "complexity": "hard",
+            "index": "09",
+            "method": "b1",
+            "precision": 0.8,
+            "recall": 0.6667,
+            "f1": 0.7273,
+            "tp": [
+                "Avatar",
+                "Button",
+                "DatePicker",
+                "Textarea"
+            ],
+            "fp": [
+                "Divider"
+            ],
+            "fn": [
+                "Breadcrumb",
+                "Dialog"
+            ],
+            "gt_count": 6,
+            "gen_count": 5
+        },
+        {
+            "mockup": "hard-09",
+            "complexity": "hard",
+            "index": "09",
+            "method": "b2",
+            "precision": 0.8333,
+            "recall": 0.8333,
+            "f1": 0.8333,
+            "tp": [
+                "Avatar",
+                "Breadcrumb",
+                "Button",
+                "DatePicker",
+                "Textarea"
+            ],
+            "fp": [
+                "Divider"
+            ],
+            "fn": [
+                "Dialog"
+            ],
+            "gt_count": 6,
+            "gen_count": 6
+        },
+        {
+            "mockup": "hard-09",
+            "complexity": "hard",
+            "index": "09",
+            "method": "b3",
+            "precision": 0.8333,
+            "recall": 0.8333,
+            "f1": 0.8333,
+            "tp": [
+                "Avatar",
+                "Breadcrumb",
+                "Button",
+                "DatePicker",
+                "Textarea"
+            ],
+            "fp": [
+                "Divider"
+            ],
+            "fn": [
+                "Dialog"
+            ],
+            "gt_count": 6,
+            "gen_count": 6
+        },
+        {
+            "mockup": "hard-09",
+            "complexity": "hard",
+            "index": "09",
+            "method": "c1",
+            "precision": 0.3333,
+            "recall": 0.5,
+            "f1": 0.4,
+            "tp": [
+                "Avatar",
+                "Button",
+                "Textarea"
+            ],
+            "fp": [
+                "Card",
+                "Divider",
+                "IconField",
+                "InputIcon",
+                "InputText",
+                "Steps"
+            ],
+            "fn": [
+                "Breadcrumb",
+                "DatePicker",
+                "Dialog"
+            ],
+            "gt_count": 6,
+            "gen_count": 9
+        },
+        {
+            "mockup": "hard-09",
+            "complexity": "hard",
+            "index": "09",
+            "method": "c2",
+            "precision": 0.8333,
+            "recall": 0.8333,
+            "f1": 0.8333,
+            "tp": [
+                "Avatar",
+                "Button",
+                "DatePicker",
+                "Dialog",
+                "Textarea"
+            ],
+            "fp": [
+                "Divider"
+            ],
+            "fn": [
+                "Breadcrumb"
+            ],
+            "gt_count": 6,
+            "gen_count": 6
+        },
+        {
+            "mockup": "hard-09",
+            "complexity": "hard",
+            "index": "09",
+            "method": "c3",
+            "precision": 0.8333,
+            "recall": 0.8333,
+            "f1": 0.8333,
+            "tp": [
+                "Avatar",
+                "Button",
+                "DatePicker",
+                "Dialog",
+                "Textarea"
+            ],
+            "fp": [
+                "InputText"
+            ],
+            "fn": [
+                "Breadcrumb"
+            ],
+            "gt_count": 6,
+            "gen_count": 6
+        }
+    ]
+}
