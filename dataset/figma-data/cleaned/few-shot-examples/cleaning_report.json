@@ -1,0 +1,28 @@
+{
+    "summary": {
+        "total_files": 2,
+        "average_reduction_percent": 83.83,
+        "average_attributes_before": 2398.5,
+        "average_attributes_after": 416.5
+    },
+    "files": [
+        {
+            "filename": "few-shot-example-medium-composite.json",
+            "size_before": 70319,
+            "size_after": 11457,
+            "reduction_percent": 83.71,
+            "attributes_before": 3037,
+            "attributes_after": 519,
+            "name": "Card [Medium Composite]"
+        },
+        {
+            "filename": "few-shot-example-simple-composite.json",
+            "size_before": 41154,
+            "size_after": 6605,
+            "reduction_percent": 83.95,
+            "attributes_before": 1760,
+            "attributes_after": 314,
+            "name": "Column [Simple Composite]"
+        }
+    ]
+}
