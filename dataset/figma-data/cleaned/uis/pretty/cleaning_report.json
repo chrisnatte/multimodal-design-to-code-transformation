@@ -1,0 +1,55 @@
+{
+    "summary": {
+        "total_files": 5,
+        "average_reduction_percent": 84.51,
+        "average_attributes_before": 19245.8,
+        "average_attributes_after": 3258.0
+    },
+    "files": [
+        {
+            "filename": "1.json",
+            "size_before": 751272,
+            "size_after": 120883,
+            "reduction_percent": 83.91,
+            "attributes_before": 32938,
+            "attributes_after": 5639,
+            "name": "1 [Dashboard-Übersicht]"
+        },
+        {
+            "filename": "2.json",
+            "size_before": 255464,
+            "size_after": 25037,
+            "reduction_percent": 90.2,
+            "attributes_before": 11004,
+            "attributes_after": 1165,
+            "name": "2 [Benutzerprofil-Einstellungen]"
+        },
+        {
+            "filename": "3.json",
+            "size_before": 396575,
+            "size_after": 66224,
+            "reduction_percent": 83.3,
+            "attributes_before": 17630,
+            "attributes_after": 3082,
+            "name": "3 [Aufgabenverwaltung]"
+        },
+        {
+            "filename": "4.json",
+            "size_before": 305848,
+            "size_after": 54030,
+            "reduction_percent": 82.33,
+            "attributes_before": 13255,
+            "attributes_after": 2463,
+            "name": "4 [Produkt-Checkout]"
+        },
+        {
+            "filename": "5.json",
+            "size_before": 493449,
+            "size_after": 84791,
+            "reduction_percent": 82.82,
+            "attributes_before": 21402,
+            "attributes_after": 3941,
+            "name": "5 [Termin-Buchungssystem]"
+        }
+    ]
+}

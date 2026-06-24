@@ -1,11 +1,20 @@
 {
     "summary": {
-        "total_files": 2,
-        "average_reduction_percent": 83.83,
-        "average_attributes_before": 2398.5,
-        "average_attributes_after": 416.5
+        "total_files": 3,
+        "average_reduction_percent": 83.47,
+        "average_attributes_before": 3349.67,
+        "average_attributes_after": 604.33
     },
     "files": [
+        {
+            "filename": "few-shot-example-hard-composite.json",
+            "size_before": 121213,
+            "size_after": 20904,
+            "reduction_percent": 82.75,
+            "attributes_before": 5252,
+            "attributes_after": 980,
+            "name": "Page [Hard composite]"
+        },
         {
             "filename": "few-shot-example-medium-composite.json",
             "size_before": 70319,

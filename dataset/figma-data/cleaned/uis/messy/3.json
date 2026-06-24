@@ -1,0 +1,2190 @@
+{
+    "type": "FRAME",
+    "id": "92:1766",
+    "name": "3 [Aufgabenverwaltung]",
+    "fills": [
+        {
+            "type": "SOLID",
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        }
+    ],
+    "children": [
+        {
+            "type": "FRAME",
+            "id": "114:7660",
+            "name": "Frame",
+            "children": [
+                {
+                    "type": "FRAME",
+                    "id": "114:7661",
+                    "name": "Frame",
+                    "children": [
+                        {
+                            "type": "FRAME",
+                            "id": "114:7662",
+                            "name": "Frame",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:8146",
+                                    "name": "Frame",
+                                    "cornerRadius": 6.0,
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:8147",
+                                            "name": "Frame",
+                                            "cornerRadius": 4.0,
+                                            "fills": [
+                                                {
+                                                    "type": "SOLID",
+                                                    "color": {
+                                                        "r": 1.0,
+                                                        "g": 1.0,
+                                                        "b": 1.0,
+                                                        "a": 1.0
+                                                    }
+                                                }
+                                            ],
+                                            "layoutMode": "HORIZONTAL",
+                                            "layoutSizingHorizontal": "FIXED",
+                                            "layoutSizingVertical": "FIXED"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "FRAME",
+                            "id": "114:7664",
+                            "name": "Frame",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "TEXT",
+                                    "id": "114:7665",
+                                    "name": "Aufgabe",
+                                    "characters": "Aufgabe",
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 600,
+                                        "fontSize": 14.0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "FRAME",
+                            "id": "114:7666",
+                            "name": "Frame",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "TEXT",
+                                    "id": "114:7667",
+                                    "name": "Verantwortlicher",
+                                    "characters": "Verantwortlicher",
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 600,
+                                        "fontSize": 14.0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "FRAME",
+                            "id": "114:7668",
+                            "name": "Frame",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "TEXT",
+                                    "id": "114:7669",
+                                    "name": "Status",
+                                    "characters": "Status",
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 600,
+                                        "fontSize": 14.0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "FRAME",
+                            "id": "114:7670",
+                            "name": "Frame",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "TEXT",
+                                    "id": "114:7671",
+                                    "name": "Status",
+                                    "characters": "Status",
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 600,
+                                        "fontSize": 14.0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "FRAME",
+                            "id": "114:7672",
+                            "name": "Frame",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "TEXT",
+                                    "id": "114:7673",
+                                    "name": "Fällig",
+                                    "characters": "Fällig",
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 600,
+                                        "fontSize": 14.0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "FRAME",
+                            "id": "114:7674",
+                            "name": "Frame",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "TEXT",
+                                    "id": "114:7675",
+                                    "name": "Aktionen",
+                                    "characters": "Aktionen",
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 600,
+                                        "fontSize": 14.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "FRAME",
+                    "id": "114:7676",
+                    "name": "Frame",
+                    "children": [
+                        {
+                            "type": "FRAME",
+                            "id": "114:7677",
+                            "name": "Frame",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7678",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7679",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:8149",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 6.0,
+                                                    "children": [
+                                                        {
+                                                            "type": "FRAME",
+                                                            "id": "114:8150",
+                                                            "name": "Frame",
+                                                            "cornerRadius": 4.0,
+                                                            "fills": [
+                                                                {
+                                                                    "type": "SOLID",
+                                                                    "color": {
+                                                                        "r": 0.0627,
+                                                                        "g": 0.7255,
+                                                                        "b": 0.5059,
+                                                                        "a": 1.0
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "children": [
+                                                                {
+                                                                    "type": "FRAME",
+                                                                    "id": "114:8154",
+                                                                    "name": "Frame",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "VECTOR",
+                                                                            "id": "114:8155",
+                                                                            "name": "Vector"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:8156",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:8159",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "114:8160",
+                                                    "name": "Webseite Relaunch",
+                                                    "characters": "Webseite Relaunch",
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7682",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7683",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:8161",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 14.0,
+                                                    "fills": [
+                                                        {
+                                                            "type": "SOLID",
+                                                            "color": {
+                                                                "r": 0.8863,
+                                                                "g": 0.9098,
+                                                                "b": 0.9412,
+                                                                "a": 1.0
+                                                            }
+                                                        }
+                                                    ],
+                                                    "children": [
+                                                        {
+                                                            "type": "TEXT",
+                                                            "id": "114:8162",
+                                                            "name": "P",
+                                                            "characters": "M",
+                                                            "style": {
+                                                                "fontFamily": "Inter",
+                                                                "fontWeight": 400,
+                                                                "fontSize": 14.0
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "114:7685",
+                                                    "name": "Max Mustermann",
+                                                    "characters": "Max Mustermann",
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7686",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7687",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:7688",
+                                                    "name": "Frame",
+                                                    "children": [
+                                                        {
+                                                            "type": "FRAME",
+                                                            "id": "114:7689",
+                                                            "name": "Frame",
+                                                            "cornerRadius": 6.0,
+                                                            "children": [
+                                                                {
+                                                                    "type": "FRAME",
+                                                                    "id": "114:7690",
+                                                                    "name": "Frame",
+                                                                    "cornerRadius": 6.0,
+                                                                    "counterAxisAlignItems": "CENTER",
+                                                                    "fills": [
+                                                                        {
+                                                                            "type": "SOLID",
+                                                                            "color": {
+                                                                                "r": 0.0627,
+                                                                                "g": 0.7255,
+                                                                                "b": 0.5059,
+                                                                                "a": 1.0
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "layoutMode": "VERTICAL",
+                                                                    "layoutSizingHorizontal": "FIXED",
+                                                                    "layoutSizingVertical": "FIXED"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "TEXT",
+                                                            "id": "114:7691",
+                                                            "name": "100 %",
+                                                            "characters": "100 %",
+                                                            "style": {
+                                                                "fontFamily": "Inter",
+                                                                "fontWeight": 400,
+                                                                "fontSize": 12.0
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7692",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7693",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:8165",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 6.0,
+                                                    "fills": [
+                                                        {
+                                                            "type": "SOLID",
+                                                            "color": {
+                                                                "r": 0.8196,
+                                                                "g": 0.9804,
+                                                                "b": 0.898,
+                                                                "a": 1.0
+                                                            }
+                                                        }
+                                                    ],
+                                                    "children": [
+                                                        {
+                                                            "type": "TEXT",
+                                                            "id": "114:8167",
+                                                            "name": "Fertig",
+                                                            "characters": "Fertig",
+                                                            "style": {
+                                                                "fontFamily": "Inter",
+                                                                "fontWeight": 700,
+                                                                "fontSize": 12.25
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:8169",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:8172",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "114:8173",
+                                                    "name": "03.06.2026",
+                                                    "characters": "03.06.2026",
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7696",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7697",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:8174",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 6.0,
+                                                    "children": [
+                                                        {
+                                                            "type": "FRAME",
+                                                            "id": "114:8177",
+                                                            "name": "Frame",
+                                                            "children": [
+                                                                {
+                                                                    "type": "VECTOR",
+                                                                    "id": "114:8178",
+                                                                    "name": "Vector"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "FRAME",
+                            "id": "114:7699",
+                            "name": "Frame",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7700",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7701",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:8184",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 6.0,
+                                                    "children": [
+                                                        {
+                                                            "type": "FRAME",
+                                                            "id": "114:8185",
+                                                            "name": "Frame",
+                                                            "cornerRadius": 4.0,
+                                                            "fills": [
+                                                                {
+                                                                    "type": "SOLID",
+                                                                    "color": {
+                                                                        "r": 1.0,
+                                                                        "g": 1.0,
+                                                                        "b": 1.0,
+                                                                        "a": 1.0
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "layoutMode": "HORIZONTAL",
+                                                            "layoutSizingHorizontal": "FIXED",
+                                                            "layoutSizingVertical": "FIXED"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:8179",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:8182",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "114:8183",
+                                                    "name": "Mobile App",
+                                                    "characters": "Mobile App",
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7704",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7705",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:8187",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 14.0,
+                                                    "fills": [
+                                                        {
+                                                            "type": "SOLID",
+                                                            "color": {
+                                                                "r": 0.8863,
+                                                                "g": 0.9098,
+                                                                "b": 0.9412,
+                                                                "a": 1.0
+                                                            }
+                                                        }
+                                                    ],
+                                                    "children": [
+                                                        {
+                                                            "type": "TEXT",
+                                                            "id": "114:8188",
+                                                            "name": "P",
+                                                            "characters": "A",
+                                                            "style": {
+                                                                "fontFamily": "Inter",
+                                                                "fontWeight": 400,
+                                                                "fontSize": 14.0
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "114:7707",
+                                                    "name": "Anna Schmidt",
+                                                    "characters": "Anna Schmidt",
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7708",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7709",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:7710",
+                                                    "name": "Frame",
+                                                    "children": [
+                                                        {
+                                                            "type": "FRAME",
+                                                            "id": "114:8191",
+                                                            "name": "Frame",
+                                                            "cornerRadius": 6.0,
+                                                            "children": [
+                                                                {
+                                                                    "type": "FRAME",
+                                                                    "id": "114:8192",
+                                                                    "name": "Frame",
+                                                                    "counterAxisAlignItems": "CENTER",
+                                                                    "fills": [
+                                                                        {
+                                                                            "type": "SOLID",
+                                                                            "color": {
+                                                                                "r": 0.0627,
+                                                                                "g": 0.7255,
+                                                                                "b": 0.5059,
+                                                                                "a": 1.0
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "layoutMode": "VERTICAL",
+                                                                    "layoutSizingHorizontal": "FIXED",
+                                                                    "layoutSizingVertical": "FIXED",
+                                                                    "rectangleCornerRadii": [
+                                                                        6.0,
+                                                                        0.0,
+                                                                        0.0,
+                                                                        6.0
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "type": "FRAME",
+                                                                    "id": "114:8193",
+                                                                    "name": "Frame",
+                                                                    "fills": [
+                                                                        {
+                                                                            "type": "SOLID",
+                                                                            "color": {
+                                                                                "r": 0.8863,
+                                                                                "g": 0.9098,
+                                                                                "b": 0.9412,
+                                                                                "a": 1.0
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "layoutMode": "VERTICAL",
+                                                                    "layoutSizingHorizontal": "FIXED",
+                                                                    "layoutSizingVertical": "FIXED",
+                                                                    "rectangleCornerRadii": [
+                                                                        0.0,
+                                                                        6.0,
+                                                                        6.0,
+                                                                        0.0
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "TEXT",
+                                                            "id": "114:7712",
+                                                            "name": "45 %",
+                                                            "characters": "45 %",
+                                                            "style": {
+                                                                "fontFamily": "Inter",
+                                                                "fontWeight": 400,
+                                                                "fontSize": 12.0
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7713",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7714",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:8194",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 6.0,
+                                                    "fills": [
+                                                        {
+                                                            "type": "SOLID",
+                                                            "color": {
+                                                                "r": 1.0,
+                                                                "g": 0.9294,
+                                                                "b": 0.8353,
+                                                                "a": 1.0
+                                                            }
+                                                        }
+                                                    ],
+                                                    "children": [
+                                                        {
+                                                            "type": "TEXT",
+                                                            "id": "114:8196",
+                                                            "name": "In Arbeit",
+                                                            "characters": "In Arbeit",
+                                                            "style": {
+                                                                "fontFamily": "Inter",
+                                                                "fontWeight": 700,
+                                                                "fontSize": 12.25
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:8198",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:8201",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "114:8202",
+                                                    "name": "10.06.2026",
+                                                    "characters": "10.06.2026",
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7717",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7718",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:8203",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 6.0,
+                                                    "fills": [
+                                                        {
+                                                            "type": "SOLID",
+                                                            "color": {
+                                                                "r": 0.9451,
+                                                                "g": 0.9608,
+                                                                "b": 0.9765,
+                                                                "a": 1.0
+                                                            }
+                                                        }
+                                                    ],
+                                                    "children": [
+                                                        {
+                                                            "type": "FRAME",
+                                                            "id": "114:8258",
+                                                            "name": "Frame",
+                                                            "children": [
+                                                                {
+                                                                    "type": "VECTOR",
+                                                                    "id": "114:8259",
+                                                                    "name": "Vector"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "FRAME",
+                            "id": "114:7720",
+                            "name": "Frame",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7721",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7722",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:8206",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 6.0,
+                                                    "children": [
+                                                        {
+                                                            "type": "FRAME",
+                                                            "id": "114:8207",
+                                                            "name": "Frame",
+                                                            "cornerRadius": 4.0,
+                                                            "fills": [
+                                                                {
+                                                                    "type": "SOLID",
+                                                                    "color": {
+                                                                        "r": 1.0,
+                                                                        "g": 1.0,
+                                                                        "b": 1.0,
+                                                                        "a": 1.0
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "layoutMode": "HORIZONTAL",
+                                                            "layoutSizingHorizontal": "FIXED",
+                                                            "layoutSizingVertical": "FIXED"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:8209",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:8212",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "114:8213",
+                                                    "name": "Marketing Kampagne",
+                                                    "characters": "Marketing Kampagne",
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7725",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7726",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:8214",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 14.0,
+                                                    "fills": [
+                                                        {
+                                                            "type": "SOLID",
+                                                            "color": {
+                                                                "r": 0.8863,
+                                                                "g": 0.9098,
+                                                                "b": 0.9412,
+                                                                "a": 1.0
+                                                            }
+                                                        }
+                                                    ],
+                                                    "children": [
+                                                        {
+                                                            "type": "TEXT",
+                                                            "id": "114:8215",
+                                                            "name": "P",
+                                                            "characters": "L",
+                                                            "style": {
+                                                                "fontFamily": "Inter",
+                                                                "fontWeight": 400,
+                                                                "fontSize": 14.0
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "114:7728",
+                                                    "name": "Lisa Weber",
+                                                    "characters": "Lisa Weber",
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7729",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7730",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:7731",
+                                                    "name": "Frame",
+                                                    "children": [
+                                                        {
+                                                            "type": "FRAME",
+                                                            "id": "114:7732",
+                                                            "name": "Frame",
+                                                            "cornerRadius": 6.0,
+                                                            "children": [
+                                                                {
+                                                                    "type": "FRAME",
+                                                                    "id": "114:7733",
+                                                                    "name": "Frame",
+                                                                    "cornerRadius": 6.0,
+                                                                    "fills": [
+                                                                        {
+                                                                            "type": "SOLID",
+                                                                            "color": {
+                                                                                "r": 0.8863,
+                                                                                "g": 0.9098,
+                                                                                "b": 0.9412,
+                                                                                "a": 1.0
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "layoutMode": "VERTICAL",
+                                                                    "layoutSizingHorizontal": "FIXED",
+                                                                    "layoutSizingVertical": "FIXED"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "TEXT",
+                                                            "id": "114:7734",
+                                                            "name": "0 %",
+                                                            "characters": "0 %",
+                                                            "style": {
+                                                                "fontFamily": "Inter",
+                                                                "fontWeight": 400,
+                                                                "fontSize": 12.0
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7735",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7736",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:8218",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 6.0,
+                                                    "fills": [
+                                                        {
+                                                            "type": "SOLID",
+                                                            "color": {
+                                                                "r": 0.8784,
+                                                                "g": 0.949,
+                                                                "b": 0.9961,
+                                                                "a": 1.0
+                                                            }
+                                                        }
+                                                    ],
+                                                    "children": [
+                                                        {
+                                                            "type": "TEXT",
+                                                            "id": "114:8220",
+                                                            "name": "Offen",
+                                                            "characters": "Offen",
+                                                            "style": {
+                                                                "fontFamily": "Inter",
+                                                                "fontWeight": 700,
+                                                                "fontSize": 12.25
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:8222",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:8225",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "114:8226",
+                                                    "name": "18.05.2026",
+                                                    "characters": "18.05.2026",
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7739",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7740",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:8227",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 6.0,
+                                                    "children": [
+                                                        {
+                                                            "type": "FRAME",
+                                                            "id": "114:8230",
+                                                            "name": "Frame",
+                                                            "children": [
+                                                                {
+                                                                    "type": "VECTOR",
+                                                                    "id": "114:8231",
+                                                                    "name": "Vector"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "FRAME",
+                            "id": "114:7742",
+                            "name": "Frame",
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7743",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7744",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:8232",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 6.0,
+                                                    "children": [
+                                                        {
+                                                            "type": "FRAME",
+                                                            "id": "114:8233",
+                                                            "name": "Frame",
+                                                            "cornerRadius": 4.0,
+                                                            "fills": [
+                                                                {
+                                                                    "type": "SOLID",
+                                                                    "color": {
+                                                                        "r": 1.0,
+                                                                        "g": 1.0,
+                                                                        "b": 1.0,
+                                                                        "a": 1.0
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "layoutMode": "HORIZONTAL",
+                                                            "layoutSizingHorizontal": "FIXED",
+                                                            "layoutSizingVertical": "FIXED"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:8235",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:8238",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "114:8239",
+                                                    "name": "API Migration",
+                                                    "characters": "API Migration",
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7747",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7748",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:8240",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 14.0,
+                                                    "fills": [
+                                                        {
+                                                            "type": "SOLID",
+                                                            "color": {
+                                                                "r": 0.8863,
+                                                                "g": 0.9098,
+                                                                "b": 0.9412,
+                                                                "a": 1.0
+                                                            }
+                                                        }
+                                                    ],
+                                                    "children": [
+                                                        {
+                                                            "type": "TEXT",
+                                                            "id": "114:8241",
+                                                            "name": "P",
+                                                            "characters": "P",
+                                                            "style": {
+                                                                "fontFamily": "Inter",
+                                                                "fontWeight": 400,
+                                                                "fontSize": 14.0
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "114:7750",
+                                                    "name": "Paul Müller",
+                                                    "characters": "Paul Müller",
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7751",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7752",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:7753",
+                                                    "name": "Frame",
+                                                    "children": [
+                                                        {
+                                                            "type": "FRAME",
+                                                            "id": "114:7754",
+                                                            "name": "Frame",
+                                                            "cornerRadius": 6.0,
+                                                            "children": [
+                                                                {
+                                                                    "type": "FRAME",
+                                                                    "id": "114:7755",
+                                                                    "name": "Frame",
+                                                                    "counterAxisAlignItems": "CENTER",
+                                                                    "fills": [
+                                                                        {
+                                                                            "type": "SOLID",
+                                                                            "color": {
+                                                                                "r": 0.0627,
+                                                                                "g": 0.7255,
+                                                                                "b": 0.5059,
+                                                                                "a": 1.0
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "layoutMode": "VERTICAL",
+                                                                    "layoutSizingHorizontal": "FIXED",
+                                                                    "layoutSizingVertical": "FIXED",
+                                                                    "rectangleCornerRadii": [
+                                                                        6.0,
+                                                                        0.0,
+                                                                        0.0,
+                                                                        6.0
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "type": "FRAME",
+                                                                    "id": "114:7756",
+                                                                    "name": "Frame",
+                                                                    "fills": [
+                                                                        {
+                                                                            "type": "SOLID",
+                                                                            "color": {
+                                                                                "r": 0.8863,
+                                                                                "g": 0.9098,
+                                                                                "b": 0.9412,
+                                                                                "a": 1.0
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "layoutMode": "VERTICAL",
+                                                                    "layoutSizingHorizontal": "FIXED",
+                                                                    "layoutSizingVertical": "FIXED",
+                                                                    "rectangleCornerRadii": [
+                                                                        0.0,
+                                                                        6.0,
+                                                                        6.0,
+                                                                        0.0
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "TEXT",
+                                                            "id": "114:7757",
+                                                            "name": "72 %",
+                                                            "characters": "72 %",
+                                                            "style": {
+                                                                "fontFamily": "Inter",
+                                                                "fontWeight": 400,
+                                                                "fontSize": 12.0
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7758",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7759",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:8244",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 6.0,
+                                                    "fills": [
+                                                        {
+                                                            "type": "SOLID",
+                                                            "color": {
+                                                                "r": 0.9961,
+                                                                "g": 0.8863,
+                                                                "b": 0.8863,
+                                                                "a": 1.0
+                                                            }
+                                                        }
+                                                    ],
+                                                    "children": [
+                                                        {
+                                                            "type": "TEXT",
+                                                            "id": "114:8246",
+                                                            "name": "Blockiert",
+                                                            "characters": "Blockiert",
+                                                            "style": {
+                                                                "fontFamily": "Inter",
+                                                                "fontWeight": 700,
+                                                                "fontSize": 12.25
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:8248",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:8251",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "114:8252",
+                                                    "name": "12.05.2026",
+                                                    "characters": "12.05.2026",
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7762",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7763",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:8253",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 6.0,
+                                                    "children": [
+                                                        {
+                                                            "type": "FRAME",
+                                                            "id": "114:8256",
+                                                            "name": "Frame",
+                                                            "children": [
+                                                                {
+                                                                    "type": "VECTOR",
+                                                                    "id": "114:8257",
+                                                                    "name": "Vector"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "FRAME",
+            "id": "114:7765",
+            "name": "Frame",
+            "cornerRadius": 6.0,
+            "fills": [
+                {
+                    "type": "SOLID",
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    }
+                }
+            ],
+            "children": [
+                {
+                    "type": "FRAME",
+                    "id": "114:8123",
+                    "name": "Frame",
+                    "children": [
+                        {
+                            "type": "FRAME",
+                            "id": "114:8144",
+                            "name": "Frame",
+                            "children": [
+                                {
+                                    "type": "VECTOR",
+                                    "id": "114:8145",
+                                    "name": "Vector"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "FRAME",
+                    "id": "114:8128",
+                    "name": "Frame",
+                    "children": [
+                        {
+                            "type": "VECTOR",
+                            "id": "114:8129",
+                            "name": "Vector"
+                        }
+                    ]
+                },
+                {
+                    "type": "FRAME",
+                    "id": "114:8134",
+                    "name": "Frame",
+                    "children": [
+                        {
+                            "type": "TEXT",
+                            "id": "114:8136",
+                            "name": "Projekte",
+                            "characters": "Projekte",
+                            "style": {
+                                "fontFamily": "Inter",
+                                "fontWeight": 400,
+                                "fontSize": 14.0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "FRAME",
+                    "id": "114:8126",
+                    "name": "Frame",
+                    "children": [
+                        {
+                            "type": "VECTOR",
+                            "id": "114:8127",
+                            "name": "Vector"
+                        }
+                    ]
+                },
+                {
+                    "type": "FRAME",
+                    "id": "114:8130",
+                    "name": "Frame",
+                    "children": [
+                        {
+                            "type": "TEXT",
+                            "id": "114:8132",
+                            "name": "Projekt 1",
+                            "characters": "Projekt 1",
+                            "style": {
+                                "fontFamily": "Inter",
+                                "fontWeight": 400,
+                                "fontSize": 14.0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "FRAME",
+                    "id": "114:8138",
+                    "name": "chevron-right",
+                    "children": [
+                        {
+                            "type": "VECTOR",
+                            "id": "114:8139",
+                            "name": "Vector"
+                        }
+                    ]
+                },
+                {
+                    "type": "FRAME",
+                    "id": "114:8140",
+                    "name": "Frame",
+                    "children": [
+                        {
+                            "type": "TEXT",
+                            "id": "114:8142",
+                            "name": "Aufgaben",
+                            "characters": "Aufgaben",
+                            "style": {
+                                "fontFamily": "Inter",
+                                "fontWeight": 400,
+                                "fontSize": 14.0
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "FRAME",
+            "id": "114:7773",
+            "name": "Frame",
+            "children": [
+                {
+                    "type": "FRAME",
+                    "id": "114:7774",
+                    "name": "Frame",
+                    "cornerRadius": 25.0,
+                    "fills": [
+                        {
+                            "type": "SOLID",
+                            "color": {
+                                "r": 0.9451,
+                                "g": 0.9608,
+                                "b": 0.9765,
+                                "a": 1.0
+                            }
+                        }
+                    ],
+                    "children": [
+                        {
+                            "type": "FRAME",
+                            "id": "114:8121",
+                            "name": "Frame",
+                            "children": [
+                                {
+                                    "type": "VECTOR",
+                                    "id": "114:8122",
+                                    "name": "Vector"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "FRAME",
+                    "id": "114:7776",
+                    "name": "Frame",
+                    "children": [
+                        {
+                            "type": "TEXT",
+                            "id": "114:7777",
+                            "name": "Projektaufgaben",
+                            "characters": "Projektaufgaben",
+                            "style": {
+                                "fontFamily": "Inter",
+                                "fontWeight": 700,
+                                "fontSize": 32.0
+                            }
+                        },
+                        {
+                            "type": "TEXT",
+                            "id": "114:7778",
+                            "name": "Hier werden alle Aufgaben des Projekts Projekt 1 aufgelistet.",
+                            "characters": "Hier werden alle Aufgaben des Projekts Projekt 1 aufgelistet.",
+                            "style": {
+                                "fontFamily": "Inter",
+                                "fontWeight": 400,
+                                "fontSize": 16.0
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "FRAME",
+            "id": "114:7779",
+            "name": "Frame",
+            "children": [
+                {
+                    "type": "FRAME",
+                    "id": "114:7780",
+                    "name": "Frame",
+                    "children": [
+                        {
+                            "type": "FRAME",
+                            "id": "114:7781",
+                            "name": "Frame",
+                            "cornerRadius": 6.0,
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7782",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7783",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:7959",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 6.0,
+                                                    "children": [
+                                                        {
+                                                            "type": "FRAME",
+                                                            "id": "114:7977",
+                                                            "name": "Frame",
+                                                            "children": [
+                                                                {
+                                                                    "type": "VECTOR",
+                                                                    "id": "114:7978",
+                                                                    "name": "Vector"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "TEXT",
+                                                            "id": "114:7961",
+                                                            "name": "Bearbeiten",
+                                                            "characters": "Bearbeiten",
+                                                            "style": {
+                                                                "fontFamily": "Inter",
+                                                                "fontWeight": 500,
+                                                                "fontSize": 14.0
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:7965",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 6.0,
+                                                    "children": [
+                                                        {
+                                                            "type": "FRAME",
+                                                            "id": "114:8117",
+                                                            "name": "Frame",
+                                                            "children": [
+                                                                {
+                                                                    "type": "VECTOR",
+                                                                    "id": "114:8118",
+                                                                    "name": "Vector"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "TEXT",
+                                                            "id": "114:7967",
+                                                            "name": "Status aktualisieren",
+                                                            "characters": "Status aktualisieren",
+                                                            "style": {
+                                                                "fontFamily": "Inter",
+                                                                "fontWeight": 500,
+                                                                "fontSize": 14.0
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:7971",
+                                                    "name": "Frame",
+                                                    "cornerRadius": 6.0,
+                                                    "children": [
+                                                        {
+                                                            "type": "FRAME",
+                                                            "id": "114:8119",
+                                                            "name": "Frame",
+                                                            "children": [
+                                                                {
+                                                                    "type": "VECTOR",
+                                                                    "id": "114:8120",
+                                                                    "name": "Vector"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "TEXT",
+                                                            "id": "114:7973",
+                                                            "name": "Löschen",
+                                                            "characters": "Löschen",
+                                                            "style": {
+                                                                "fontFamily": "Inter",
+                                                                "fontWeight": 500,
+                                                                "fontSize": 14.0
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "FRAME",
+            "id": "114:7787",
+            "name": "Frame",
+            "children": [
+                {
+                    "type": "FRAME",
+                    "id": "114:7920",
+                    "name": "Frame",
+                    "children": [
+                        {
+                            "type": "TEXT",
+                            "id": "114:7921",
+                            "name": "Suche",
+                            "characters": "Suche",
+                            "style": {
+                                "fontFamily": "Inter",
+                                "fontWeight": 400,
+                                "fontSize": 14.0
+                            }
+                        },
+                        {
+                            "type": "FRAME",
+                            "id": "114:7922",
+                            "name": "Frame",
+                            "cornerRadius": 6.0,
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7931",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "VECTOR",
+                                            "id": "114:7932",
+                                            "name": "Vector"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7924",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7933",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "114:7934",
+                                                    "name": "Suche...",
+                                                    "characters": "Suche...",
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "FRAME",
+                    "id": "114:7789",
+                    "name": "Frame",
+                    "fills": [
+                        {
+                            "type": "SOLID",
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0,
+                                "a": 1.0
+                            }
+                        }
+                    ],
+                    "children": [
+                        {
+                            "type": "FRAME",
+                            "id": "114:7935",
+                            "name": "Frame",
+                            "children": [
+                                {
+                                    "type": "TEXT",
+                                    "id": "114:7936",
+                                    "name": "Statsu",
+                                    "characters": "Status",
+                                    "style": {
+                                        "fontFamily": "Inter",
+                                        "fontWeight": 400,
+                                        "fontSize": 14.0
+                                    }
+                                },
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7937",
+                                    "name": "Frame",
+                                    "cornerRadius": 6.0,
+                                    "fills": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 1.0,
+                                                "g": 1.0,
+                                                "b": 1.0,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7938",
+                                            "name": "Frame",
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:7947",
+                                                    "name": "Frame",
+                                                    "children": [
+                                                        {
+                                                            "type": "TEXT",
+                                                            "id": "114:7948",
+                                                            "name": "Status auswählen",
+                                                            "characters": "Status auswählen",
+                                                            "style": {
+                                                                "fontFamily": "Inter",
+                                                                "fontWeight": 400,
+                                                                "fontSize": 14.0
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7941",
+                                            "name": "Frame",
+                                            "rectangleCornerRadii": [
+                                                0.0,
+                                                6.0,
+                                                6.0,
+                                                0.0
+                                            ],
+                                            "children": [
+                                                {
+                                                    "type": "FRAME",
+                                                    "id": "114:7949",
+                                                    "name": "Frame",
+                                                    "children": [
+                                                        {
+                                                            "type": "VECTOR",
+                                                            "id": "114:7950",
+                                                            "name": "Vector"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "FRAME",
+                            "id": "114:7791",
+                            "name": "Frame",
+                            "cornerRadius": 6.0,
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 1.0,
+                                        "g": 1.0,
+                                        "b": 1.0,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "type": "FRAME",
+                                    "id": "114:7792",
+                                    "name": "Frame",
+                                    "children": [
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7951",
+                                            "name": "Frame",
+                                            "cornerRadius": 4.0,
+                                            "children": [
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "114:7952",
+                                                    "name": "Offen",
+                                                    "characters": "Offen",
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7953",
+                                            "name": "Frame",
+                                            "cornerRadius": 4.0,
+                                            "fills": [
+                                                {
+                                                    "type": "SOLID",
+                                                    "color": {
+                                                        "r": 0.9451,
+                                                        "g": 0.9608,
+                                                        "b": 0.9765,
+                                                        "a": 1.0
+                                                    }
+                                                }
+                                            ],
+                                            "children": [
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "114:7954",
+                                                    "name": "In Arbeit",
+                                                    "characters": "In Arbeit",
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7955",
+                                            "name": "Frame",
+                                            "cornerRadius": 4.0,
+                                            "children": [
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "114:7956",
+                                                    "name": "Blockiert",
+                                                    "characters": "Blockiert",
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "FRAME",
+                                            "id": "114:7957",
+                                            "name": "Frame",
+                                            "cornerRadius": 4.0,
+                                            "children": [
+                                                {
+                                                    "type": "TEXT",
+                                                    "id": "114:7958",
+                                                    "name": "Fertig",
+                                                    "characters": "Fertig",
+                                                    "style": {
+                                                        "fontFamily": "Inter",
+                                                        "fontWeight": 400,
+                                                        "fontSize": 14.0
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
