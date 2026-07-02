@@ -9,7 +9,7 @@
         "component_name": "avatar",
         "instances_total": 5,
         "property_count": 5,
-        "properties": "Circle, Show Badge#2138:0, Size, Text#4271:0, Type"
+        "properties": "Circle, Show Badge, Size, Text, Type"
     },
     {
         "component_name": "breadcrumb",
@@ -21,7 +21,7 @@
         "component_name": "button",
         "instances_total": 33,
         "property_count": 15,
-        "properties": "Disabled, Icon Only, Icon#1690:0, Left Icon#1644:2774, Link, Right Icon#1644:4161, Severity, Show Left Icon#1644:0, Show Right Icon#1644:1387, State, Text#4293:477, ⥰ Rounded, ⬆️ Raised, 🔤 Text, 🔲 Outlined"
+        "properties": "Disabled, Icon, Icon Only, Left Icon, Link, Right Icon, Severity, Show Left Icon, Show Right Icon, State, Text, ⥰ Rounded, ⬆️ Raised, 🔤 Text, 🔲 Outlined"
     },
     {
         "component_name": "card",
@@ -33,7 +33,7 @@
         "component_name": "checkbox",
         "instances_total": 8,
         "property_count": 8,
-        "properties": "Disabled, Filled, Focus, Hover, Label#4275:102, Selected, Show Label#1844:0, Size"
+        "properties": "Disabled, Filled, Focus, Hover, Label, Selected, Show Label, Size"
     },
     {
         "component_name": "datatable",
@@ -45,7 +45,7 @@
         "component_name": "datepicker",
         "instances_total": 2,
         "property_count": 5,
-        "properties": "Picker Type, Show Bar#2070:0, Show Week#1879:0, State, Type"
+        "properties": "Picker Type, Show Bar, Show Week, State, Type"
     },
     {
         "component_name": "dialog",
@@ -63,7 +63,7 @@
         "component_name": "inputtext",
         "instances_total": 12,
         "property_count": 18,
-        "properties": "ℹ️ Show Helper#1729:1731, ↳ Float Label Variant, ↳ Float Label#4275:152, ↳ Helper Text#1729:4039, ↳ Label#5662:83, ↳ Left Icon#1729:0, ↳ Right Icon#1729:577, ▭ Ifta Label, ⚙️ State, ❌ Invalid, ➡️ Show Right Icon#1729:3462, ⬅️ Show Left Icon#1729:2885, 🏷️ Float Label, 🏷️ Show Label#5662:50, 👁️ Show Text#1729:2308, 🚫 Disabled, 🟦 Filled, 🤏 Size"
+        "properties": "ℹ️ Show Helper, ↳ Float Label, ↳ Float Label Variant, ↳ Helper Text, ↳ Label, ↳ Left Icon, ↳ Right Icon, ▭ Ifta Label, ⚙️ State, ❌ Invalid, ➡️ Show Right Icon, ⬅️ Show Left Icon, 🏷️ Float Label, 🏷️ Show Label, 👁️ Show Text, 🚫 Disabled, 🟦 Filled, 🤏 Size"
     },
     {
         "component_name": "popover",
@@ -75,13 +75,13 @@
         "component_name": "progressbar",
         "instances_total": 2,
         "property_count": 3,
-        "properties": "Text#4271:24, Type, Value"
+        "properties": "Text, Type, Value"
     },
     {
         "component_name": "radiobutton",
         "instances_total": 7,
         "property_count": 7,
-        "properties": "Disabled, Filled, Label#4283:5, Selected, Show Label#1850:29, Size, State"
+        "properties": "Disabled, Filled, Label, Selected, Show Label, Size, State"
     },
     {
         "component_name": "select",
@@ -99,13 +99,13 @@
         "component_name": "tag",
         "instances_total": 13,
         "property_count": 5,
-        "properties": "Icon#2143:55, Rounded, Severity, Show Icon#2143:34, Text#4272:22"
+        "properties": "Icon, Rounded, Severity, Show Icon, Text"
     },
     {
         "component_name": "textarea",
         "instances_total": 1,
         "property_count": 10,
-        "properties": "↳ Float Label Variant, ↳ Float Label#4275:152, ▭ Ifta Label, ⚙️ State, ❌ Invalid, 🏷️ Float Label, 👁️ Show Text#1729:2308, 🚫 Disabled, 🟦 Filled, 🤏 Size"
+        "properties": "↳ Float Label, ↳ Float Label Variant, ▭ Ifta Label, ⚙️ State, ❌ Invalid, 🏷️ Float Label, 👁️ Show Text, 🚫 Disabled, 🟦 Filled, 🤏 Size"
     },
     {
         "component_name": "toggleswitch",

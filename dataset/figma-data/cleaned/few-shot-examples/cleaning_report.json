@@ -1,36 +1,36 @@
 {
     "summary": {
         "total_files": 3,
-        "average_reduction_percent": 83.47,
+        "average_reduction_percent": 82.42,
         "average_attributes_before": 3349.67,
-        "average_attributes_after": 604.33
+        "average_attributes_after": 628.67
     },
     "files": [
         {
             "filename": "few-shot-example-hard-composite.json",
             "size_before": 121213,
-            "size_after": 20904,
-            "reduction_percent": 82.75,
+            "size_after": 22455,
+            "reduction_percent": 81.47,
             "attributes_before": 5252,
-            "attributes_after": 980,
+            "attributes_after": 1036,
             "name": "Page [Hard composite]"
         },
         {
             "filename": "few-shot-example-medium-composite.json",
             "size_before": 70319,
-            "size_after": 11457,
-            "reduction_percent": 83.71,
+            "size_after": 12051,
+            "reduction_percent": 82.86,
             "attributes_before": 3037,
-            "attributes_after": 519,
+            "attributes_after": 529,
             "name": "Card [Medium Composite]"
         },
         {
             "filename": "few-shot-example-simple-composite.json",
             "size_before": 41154,
-            "size_after": 6605,
-            "reduction_percent": 83.95,
+            "size_after": 7026,
+            "reduction_percent": 82.93,
             "attributes_before": 1760,
-            "attributes_after": 314,
+            "attributes_after": 321,
             "name": "Column [Simple Composite]"
         }
     ]

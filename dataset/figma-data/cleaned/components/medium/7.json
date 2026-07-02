@@ -2,6 +2,12 @@
     "type": "FRAME",
     "id": "4:46",
     "name": "7 [Paket-Liste]",
+    "absoluteBoundingBox": {
+        "x": 3519.0,
+        "y": 1294.0,
+        "width": 304.0,
+        "height": 286.5
+    },
     "fills": [
         {
             "type": "SOLID",
@@ -26,6 +32,12 @@
             "type": "FRAME",
             "id": "17:2550",
             "name": "card",
+            "absoluteBoundingBox": {
+                "x": 3543.0,
+                "y": 1318.0,
+                "width": 256.0,
+                "height": 238.5
+            },
             "cornerRadius": 12.0,
             "fills": [
                 {
@@ -39,6 +51,7 @@
                 }
             ],
             "itemSpacing": 7.0,
+            "layoutAlign": "INHERIT",
             "layoutMode": "VERTICAL",
             "layoutSizingHorizontal": "FIXED",
             "layoutSizingVertical": "HUG",
@@ -47,8 +60,15 @@
                     "type": "FRAME",
                     "id": "17:2552",
                     "name": "body",
+                    "absoluteBoundingBox": {
+                        "x": 3543.0,
+                        "y": 1318.0,
+                        "width": 256.0,
+                        "height": 238.5
+                    },
                     "cornerRadius": 6.0,
                     "itemSpacing": 32.0,
+                    "layoutAlign": "STRETCH",
                     "layoutMode": "VERTICAL",
                     "layoutSizingHorizontal": "FILL",
                     "layoutSizingVertical": "HUG",
@@ -61,8 +81,15 @@
                             "type": "FRAME",
                             "id": "17:2553",
                             "name": "caption",
+                            "absoluteBoundingBox": {
+                                "x": 3560.5,
+                                "y": 1335.5,
+                                "width": 221.0,
+                                "height": 22.0
+                            },
                             "counterAxisAlignItems": "CENTER",
                             "itemSpacing": 7.0,
+                            "layoutAlign": "STRETCH",
                             "layoutMode": "HORIZONTAL",
                             "layoutSizingHorizontal": "FILL",
                             "layoutSizingVertical": "HUG",
@@ -72,6 +99,12 @@
                                     "type": "TEXT",
                                     "id": "17:2554",
                                     "name": "Paket 1",
+                                    "absoluteBoundingBox": {
+                                        "x": 3560.5,
+                                        "y": 1336.0,
+                                        "width": 61.0,
+                                        "height": 21.0
+                                    },
                                     "characters": "Paket 1",
                                     "style": {
                                         "fontFamily": "Inter",
@@ -83,42 +116,49 @@
                                     "type": "INSTANCE",
                                     "id": "17:2579",
                                     "name": "tag",
-                                    "componentId": "7:7273",
-                                    "componentProperties": {
-                                        "Text#4272:22": {
-                                            "type": "TEXT",
-                                            "value": "Beliebt"
-                                        },
-                                        "Icon#2143:55": {
-                                            "type": "INSTANCE_SWAP",
-                                            "value": "17:2584",
-                                            "preferredValues": []
-                                        },
-                                        "Show Icon#2143:34": {
-                                            "type": "BOOLEAN",
-                                            "value": true
-                                        },
-                                        "Severity": {
-                                            "value": "Info",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Rounded": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        }
+                                    "componentId": "Severity=Info, Rounded=False",
+                                    "absoluteBoundingBox": {
+                                        "x": 3711.5,
+                                        "y": 1335.5,
+                                        "width": 70.0,
+                                        "height": 22.0
                                     },
+                                    "componentProperties": {
+                                        "Text": "Beliebt",
+                                        "Icon": "17:2584",
+                                        "Show Icon": true,
+                                        "Severity": "Info",
+                                        "Rounded": "False"
+                                    },
+                                    "fills": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8784,
+                                                "g": 0.949,
+                                                "b": 0.9961,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
+                                    "layoutAlign": "INHERIT",
                                     "children": [
                                         {
                                             "type": "INSTANCE",
                                             "id": "I17:2579;373:13467",
                                             "name": "arrow-up-right",
-                                            "componentId": "17:2584",
+                                            "componentId": "arrow-up-right",
+                                            "absoluteBoundingBox": {
+                                                "x": 3718.5,
+                                                "y": 1341.2,
+                                                "width": 10.5,
+                                                "height": 10.5
+                                            },
                                             "componentPropertyReferences": {
                                                 "visible": "Show Icon#2143:34",
                                                 "mainComponent": "Icon#2143:55"
                                             },
+                                            "layoutAlign": "INHERIT",
                                             "children": [
                                                 {
                                                     "type": "VECTOR",
@@ -131,6 +171,12 @@
                                             "type": "TEXT",
                                             "id": "I17:2579;4272:48344",
                                             "name": "Tag",
+                                            "absoluteBoundingBox": {
+                                                "x": 3732.5,
+                                                "y": 1339.0,
+                                                "width": 42.0,
+                                                "height": 15.0
+                                            },
                                             "characters": "Beliebt",
                                             "componentPropertyReferences": {
                                                 "characters": "Text#4272:22"
@@ -149,7 +195,14 @@
                             "type": "FRAME",
                             "id": "17:2556",
                             "name": "content",
+                            "absoluteBoundingBox": {
+                                "x": 3560.5,
+                                "y": 1389.5,
+                                "width": 221.0,
+                                "height": 84.5
+                            },
                             "itemSpacing": 16.0,
+                            "layoutAlign": "STRETCH",
                             "layoutMode": "VERTICAL",
                             "layoutSizingHorizontal": "FILL",
                             "layoutSizingVertical": "HUG",
@@ -158,52 +211,35 @@
                                     "type": "INSTANCE",
                                     "id": "17:2611",
                                     "name": "checkbox",
-                                    "componentId": "7:4759",
-                                    "componentProperties": {
-                                        "Label#4275:102": {
-                                            "type": "TEXT",
-                                            "value": "Unbegrenzte Projekte "
-                                        },
-                                        "Show Label#1844:0": {
-                                            "type": "BOOLEAN",
-                                            "value": true
-                                        },
-                                        "Hover": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Selected": {
-                                            "value": "True",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Focus": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Disabled": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Filled": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Size": {
-                                            "value": "Normal",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        }
+                                    "componentId": "Hover=False, Selected=True, Focus=False, Disabled=False, Filled=False, Size=Normal",
+                                    "absoluteBoundingBox": {
+                                        "x": 3560.5,
+                                        "y": 1389.5,
+                                        "width": 169.5,
+                                        "height": 17.5
                                     },
+                                    "componentProperties": {
+                                        "Label": "Unbegrenzte Projekte ",
+                                        "Show Label": true,
+                                        "Hover": "False",
+                                        "Selected": "True",
+                                        "Focus": "False",
+                                        "Disabled": "False",
+                                        "Filled": "False",
+                                        "Size": "Normal"
+                                    },
+                                    "layoutAlign": "INHERIT",
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "I17:2611;1844:36785",
                                             "name": "checkbox",
+                                            "absoluteBoundingBox": {
+                                                "x": 3560.5,
+                                                "y": 1389.5,
+                                                "width": 17.5,
+                                                "height": 17.5
+                                            },
                                             "cornerRadius": 4.0,
                                             "counterAxisAlignItems": "CENTER",
                                             "fills": [
@@ -217,16 +253,35 @@
                                                     }
                                                 }
                                             ],
+                                            "layoutAlign": "INHERIT",
                                             "layoutMode": "HORIZONTAL",
                                             "layoutSizingHorizontal": "FIXED",
                                             "layoutSizingVertical": "FIXED",
                                             "primaryAxisAlignItems": "CENTER",
+                                            "strokes": [
+                                                {
+                                                    "type": "SOLID",
+                                                    "color": {
+                                                        "r": 0.0627,
+                                                        "g": 0.7255,
+                                                        "b": 0.5059,
+                                                        "a": 1.0
+                                                    }
+                                                }
+                                            ],
                                             "children": [
                                                 {
                                                     "type": "INSTANCE",
                                                     "id": "I17:2611;1844:36786",
                                                     "name": "check",
-                                                    "componentId": "7:2160",
+                                                    "componentId": "check",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 3563.1,
+                                                        "y": 1392.1,
+                                                        "width": 12.2,
+                                                        "height": 12.2
+                                                    },
+                                                    "layoutAlign": "INHERIT",
                                                     "children": [
                                                         {
                                                             "type": "VECTOR",
@@ -241,6 +296,12 @@
                                             "type": "TEXT",
                                             "id": "I17:2611;4275:52620",
                                             "name": "Label",
+                                            "absoluteBoundingBox": {
+                                                "x": 3585.0,
+                                                "y": 1389.8,
+                                                "width": 145.0,
+                                                "height": 17.0
+                                            },
                                             "characters": "Unbegrenzte Projekte ",
                                             "componentPropertyReferences": {
                                                 "visible": "Show Label#1844:0",
@@ -258,52 +319,35 @@
                                     "type": "INSTANCE",
                                     "id": "17:2615",
                                     "name": "checkbox",
-                                    "componentId": "7:4759",
-                                    "componentProperties": {
-                                        "Label#4275:102": {
-                                            "type": "TEXT",
-                                            "value": "Unbegrenzte Dashboards "
-                                        },
-                                        "Show Label#1844:0": {
-                                            "type": "BOOLEAN",
-                                            "value": true
-                                        },
-                                        "Hover": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Selected": {
-                                            "value": "True",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Focus": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Disabled": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Filled": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Size": {
-                                            "value": "Normal",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        }
+                                    "componentId": "Hover=False, Selected=True, Focus=False, Disabled=False, Filled=False, Size=Normal",
+                                    "absoluteBoundingBox": {
+                                        "x": 3560.5,
+                                        "y": 1423.0,
+                                        "width": 194.5,
+                                        "height": 17.5
                                     },
+                                    "componentProperties": {
+                                        "Label": "Unbegrenzte Dashboards ",
+                                        "Show Label": true,
+                                        "Hover": "False",
+                                        "Selected": "True",
+                                        "Focus": "False",
+                                        "Disabled": "False",
+                                        "Filled": "False",
+                                        "Size": "Normal"
+                                    },
+                                    "layoutAlign": "INHERIT",
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "I17:2615;1844:36785",
                                             "name": "checkbox",
+                                            "absoluteBoundingBox": {
+                                                "x": 3560.5,
+                                                "y": 1423.0,
+                                                "width": 17.5,
+                                                "height": 17.5
+                                            },
                                             "cornerRadius": 4.0,
                                             "counterAxisAlignItems": "CENTER",
                                             "fills": [
@@ -317,16 +361,35 @@
                                                     }
                                                 }
                                             ],
+                                            "layoutAlign": "INHERIT",
                                             "layoutMode": "HORIZONTAL",
                                             "layoutSizingHorizontal": "FIXED",
                                             "layoutSizingVertical": "FIXED",
                                             "primaryAxisAlignItems": "CENTER",
+                                            "strokes": [
+                                                {
+                                                    "type": "SOLID",
+                                                    "color": {
+                                                        "r": 0.0627,
+                                                        "g": 0.7255,
+                                                        "b": 0.5059,
+                                                        "a": 1.0
+                                                    }
+                                                }
+                                            ],
                                             "children": [
                                                 {
                                                     "type": "INSTANCE",
                                                     "id": "I17:2615;1844:36786",
                                                     "name": "check",
-                                                    "componentId": "7:2160",
+                                                    "componentId": "check",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 3563.1,
+                                                        "y": 1425.6,
+                                                        "width": 12.2,
+                                                        "height": 12.2
+                                                    },
+                                                    "layoutAlign": "INHERIT",
                                                     "children": [
                                                         {
                                                             "type": "VECTOR",
@@ -341,6 +404,12 @@
                                             "type": "TEXT",
                                             "id": "I17:2615;4275:52620",
                                             "name": "Label",
+                                            "absoluteBoundingBox": {
+                                                "x": 3585.0,
+                                                "y": 1423.2,
+                                                "width": 170.0,
+                                                "height": 17.0
+                                            },
                                             "characters": "Unbegrenzte Dashboards ",
                                             "componentPropertyReferences": {
                                                 "visible": "Show Label#1844:0",
@@ -358,52 +427,35 @@
                                     "type": "INSTANCE",
                                     "id": "17:2619",
                                     "name": "checkbox",
-                                    "componentId": "7:4759",
-                                    "componentProperties": {
-                                        "Label#4275:102": {
-                                            "type": "TEXT",
-                                            "value": "Erweiterte Analytics"
-                                        },
-                                        "Show Label#1844:0": {
-                                            "type": "BOOLEAN",
-                                            "value": true
-                                        },
-                                        "Hover": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Selected": {
-                                            "value": "True",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Focus": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Disabled": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Filled": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Size": {
-                                            "value": "Normal",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        }
+                                    "componentId": "Hover=False, Selected=True, Focus=False, Disabled=False, Filled=False, Size=Normal",
+                                    "absoluteBoundingBox": {
+                                        "x": 3560.5,
+                                        "y": 1456.5,
+                                        "width": 157.5,
+                                        "height": 17.5
                                     },
+                                    "componentProperties": {
+                                        "Label": "Erweiterte Analytics",
+                                        "Show Label": true,
+                                        "Hover": "False",
+                                        "Selected": "True",
+                                        "Focus": "False",
+                                        "Disabled": "False",
+                                        "Filled": "False",
+                                        "Size": "Normal"
+                                    },
+                                    "layoutAlign": "INHERIT",
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "I17:2619;1844:36785",
                                             "name": "checkbox",
+                                            "absoluteBoundingBox": {
+                                                "x": 3560.5,
+                                                "y": 1456.5,
+                                                "width": 17.5,
+                                                "height": 17.5
+                                            },
                                             "cornerRadius": 4.0,
                                             "counterAxisAlignItems": "CENTER",
                                             "fills": [
@@ -417,16 +469,35 @@
                                                     }
                                                 }
                                             ],
+                                            "layoutAlign": "INHERIT",
                                             "layoutMode": "HORIZONTAL",
                                             "layoutSizingHorizontal": "FIXED",
                                             "layoutSizingVertical": "FIXED",
                                             "primaryAxisAlignItems": "CENTER",
+                                            "strokes": [
+                                                {
+                                                    "type": "SOLID",
+                                                    "color": {
+                                                        "r": 0.0627,
+                                                        "g": 0.7255,
+                                                        "b": 0.5059,
+                                                        "a": 1.0
+                                                    }
+                                                }
+                                            ],
                                             "children": [
                                                 {
                                                     "type": "INSTANCE",
                                                     "id": "I17:2619;1844:36786",
                                                     "name": "check",
-                                                    "componentId": "7:2160",
+                                                    "componentId": "check",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 3563.1,
+                                                        "y": 1459.1,
+                                                        "width": 12.2,
+                                                        "height": 12.2
+                                                    },
+                                                    "layoutAlign": "INHERIT",
                                                     "children": [
                                                         {
                                                             "type": "VECTOR",
@@ -441,6 +512,12 @@
                                             "type": "TEXT",
                                             "id": "I17:2619;4275:52620",
                                             "name": "Label",
+                                            "absoluteBoundingBox": {
+                                                "x": 3585.0,
+                                                "y": 1456.8,
+                                                "width": 133.0,
+                                                "height": 17.0
+                                            },
                                             "characters": "Erweiterte Analytics",
                                             "componentPropertyReferences": {
                                                 "visible": "Show Label#1844:0",
@@ -460,7 +537,14 @@
                             "type": "FRAME",
                             "id": "17:2558",
                             "name": "footer",
+                            "absoluteBoundingBox": {
+                                "x": 3560.5,
+                                "y": 1506.0,
+                                "width": 221.0,
+                                "height": 33.0
+                            },
                             "itemSpacing": 7.0,
+                            "layoutAlign": "STRETCH",
                             "layoutMode": "HORIZONTAL",
                             "layoutSizingHorizontal": "FILL",
                             "layoutSizingVertical": "HUG",
@@ -469,86 +553,54 @@
                                     "type": "INSTANCE",
                                     "id": "17:2559",
                                     "name": "button",
-                                    "componentId": "7:2368",
-                                    "componentProperties": {
-                                        "Left Icon#1644:2774": {
-                                            "type": "INSTANCE_SWAP",
-                                            "value": "7:2160",
-                                            "preferredValues": []
-                                        },
-                                        "Icon#1690:0": {
-                                            "type": "INSTANCE_SWAP",
-                                            "value": "7:2160",
-                                            "preferredValues": []
-                                        },
-                                        "Text#4293:477": {
-                                            "type": "TEXT",
-                                            "value": "Jetzt starten"
-                                        },
-                                        "Show Right Icon#1644:1387": {
-                                            "type": "BOOLEAN",
-                                            "value": false
-                                        },
-                                        "Right Icon#1644:4161": {
-                                            "type": "INSTANCE_SWAP",
-                                            "value": "7:2160",
-                                            "preferredValues": []
-                                        },
-                                        "Show Left Icon#1644:0": {
-                                            "type": "BOOLEAN",
-                                            "value": false
-                                        },
-                                        "Severity": {
-                                            "value": "Primary",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "State": {
-                                            "value": "Idle",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Disabled": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Icon Only": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "⬆️ Raised": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "⥰ Rounded": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "🔤 Text": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "🔲 Outlined": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Link": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        }
+                                    "componentId": "Severity=Primary, State=Idle, Disabled=False, Icon Only=False, ⬆️ Raised=False, ⥰ Rounded=False, 🔤 Text=False, 🔲 Outlined=False, Link=False",
+                                    "absoluteBoundingBox": {
+                                        "x": 3560.5,
+                                        "y": 1506.0,
+                                        "width": 221.0,
+                                        "height": 33.0
                                     },
+                                    "componentProperties": {
+                                        "Left Icon": "7:2160",
+                                        "Icon": "7:2160",
+                                        "Text": "Jetzt starten",
+                                        "Show Right Icon": false,
+                                        "Right Icon": "7:2160",
+                                        "Show Left Icon": false,
+                                        "Severity": "Primary",
+                                        "State": "Idle",
+                                        "Disabled": "False",
+                                        "Icon Only": "False",
+                                        "⬆️ Raised": "False",
+                                        "⥰ Rounded": "False",
+                                        "🔤 Text": "False",
+                                        "🔲 Outlined": "False",
+                                        "Link": "False"
+                                    },
+                                    "fills": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.0627,
+                                                "g": 0.7255,
+                                                "b": 0.5059,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
+                                    "layoutAlign": "INHERIT",
+                                    "layoutGrow": 1.0,
                                     "children": [
                                         {
                                             "type": "TEXT",
                                             "id": "I17:2559;4293:57639",
                                             "name": "Button",
+                                            "absoluteBoundingBox": {
+                                                "x": 3627.5,
+                                                "y": 1514.0,
+                                                "width": 87.0,
+                                                "height": 17.0
+                                            },
                                             "characters": "Jetzt starten",
                                             "componentPropertyReferences": {
                                                 "characters": "Text#4293:477"

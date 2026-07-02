@@ -2,6 +2,12 @@
     "type": "FRAME",
     "id": "4:16",
     "name": "2 [Status-Reihe]",
+    "absoluteBoundingBox": {
+        "x": 360.0,
+        "y": 48.0,
+        "width": 257.0,
+        "height": 104.0
+    },
     "fills": [
         {
             "type": "SOLID",
@@ -25,8 +31,15 @@
             "type": "FRAME",
             "id": "10:4970",
             "name": "Row",
+            "absoluteBoundingBox": {
+                "x": 384.0,
+                "y": 72.0,
+                "width": 209.0,
+                "height": 56.0
+            },
             "counterAxisAlignItems": "CENTER",
             "itemSpacing": 16.0,
+            "layoutAlign": "INHERIT",
             "layoutMode": "HORIZONTAL",
             "layoutSizingHorizontal": "HUG",
             "layoutSizingVertical": "HUG",
@@ -35,37 +48,43 @@
                     "type": "INSTANCE",
                     "id": "10:4939",
                     "name": "avatar",
-                    "componentId": "7:7062",
-                    "componentProperties": {
-                        "Text#4271:0": {
-                            "type": "TEXT",
-                            "value": "B"
-                        },
-                        "Show Badge#2138:0": {
-                            "type": "BOOLEAN",
-                            "value": true
-                        },
-                        "Size": {
-                            "value": "X-Large",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Type": {
-                            "value": "Label",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Circle": {
-                            "value": "True",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        }
+                    "componentId": "Size=X-Large, Type=Label, Circle=True",
+                    "absoluteBoundingBox": {
+                        "x": 384.0,
+                        "y": 72.0,
+                        "width": 56.0,
+                        "height": 56.0
                     },
+                    "componentProperties": {
+                        "Text": "B",
+                        "Show Badge": true,
+                        "Size": "X-Large",
+                        "Type": "Label",
+                        "Circle": "True"
+                    },
+                    "fills": [
+                        {
+                            "type": "SOLID",
+                            "color": {
+                                "r": 0.8863,
+                                "g": 0.9098,
+                                "b": 0.9412,
+                                "a": 1.0
+                            }
+                        }
+                    ],
+                    "layoutAlign": "INHERIT",
                     "children": [
                         {
                             "type": "TEXT",
                             "id": "I10:4939;4271:48118",
                             "name": "P",
+                            "absoluteBoundingBox": {
+                                "x": 402.5,
+                                "y": 83.0,
+                                "width": 19.0,
+                                "height": 34.0
+                            },
                             "characters": "B",
                             "componentPropertyReferences": {
                                 "characters": "Text#4271:0"
@@ -80,36 +99,45 @@
                             "type": "INSTANCE",
                             "id": "I10:4939;2138:39379",
                             "name": "overlaybadge",
-                            "componentId": "7:6923",
+                            "componentId": "Severity=Primary, Size=Default, Circle=True",
+                            "absoluteBoundingBox": {
+                                "x": 429.5,
+                                "y": 61.5,
+                                "width": 21.0,
+                                "height": 21.0
+                            },
                             "componentProperties": {
-                                "Text#4272:0": {
-                                    "type": "TEXT",
-                                    "value": "8"
-                                },
-                                "Severity": {
-                                    "value": "Primary",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "Size": {
-                                    "value": "Default",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "Circle": {
-                                    "value": "True",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                }
+                                "Text": "8",
+                                "Severity": "Primary",
+                                "Size": "Default",
+                                "Circle": "True"
                             },
                             "componentPropertyReferences": {
                                 "visible": "Show Badge#2138:0"
                             },
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.0627,
+                                        "g": 0.7255,
+                                        "b": 0.5059,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "layoutAlign": "INHERIT",
                             "children": [
                                 {
                                     "type": "TEXT",
                                     "id": "I10:4939;2138:39379;6998:92193",
                                     "name": "8",
+                                    "absoluteBoundingBox": {
+                                        "x": 436.5,
+                                        "y": 61.5,
+                                        "width": 7.0,
+                                        "height": 21.0
+                                    },
                                     "characters": "8",
                                     "componentPropertyReferences": {
                                         "characters": "Text#4272:0"
@@ -128,6 +156,12 @@
                     "type": "TEXT",
                     "id": "10:4969",
                     "name": "Benutzername",
+                    "absoluteBoundingBox": {
+                        "x": 456.0,
+                        "y": 88.0,
+                        "width": 137.0,
+                        "height": 24.0
+                    },
                     "characters": "Benutzername",
                     "style": {
                         "fontFamily": "Inter",

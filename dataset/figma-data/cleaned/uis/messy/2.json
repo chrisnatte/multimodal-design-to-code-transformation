@@ -2,6 +2,12 @@
     "type": "FRAME",
     "id": "92:1767",
     "name": "2 [Benutzerprofil-Einstellungen]",
+    "absoluteBoundingBox": {
+        "x": 2048.0,
+        "y": 1588.0,
+        "width": 1920.0,
+        "height": 1080.0
+    },
     "fills": [
         {
             "type": "SOLID",
@@ -18,6 +24,12 @@
             "type": "FRAME",
             "id": "114:7408",
             "name": "Frame",
+            "absoluteBoundingBox": {
+                "x": 2048.0,
+                "y": 1588.0,
+                "width": 1920.0,
+                "height": 1080.0
+            },
             "fills": [
                 {
                     "type": "SOLID",
@@ -34,6 +46,12 @@
                     "type": "FRAME",
                     "id": "114:7409",
                     "name": "Frame",
+                    "absoluteBoundingBox": {
+                        "x": 2752.0,
+                        "y": 1845.8,
+                        "width": 512.0,
+                        "height": 564.5
+                    },
                     "cornerRadius": 12.0,
                     "fills": [
                         {
@@ -46,26 +64,61 @@
                             }
                         }
                     ],
+                    "strokes": [
+                        {
+                            "type": "SOLID",
+                            "color": {
+                                "r": 0.8863,
+                                "g": 0.9098,
+                                "b": 0.9412,
+                                "a": 1.0
+                            }
+                        }
+                    ],
                     "children": [
                         {
                             "type": "FRAME",
                             "id": "114:7410",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 2753.0,
+                                "y": 1846.8,
+                                "width": 510.0,
+                                "height": 64.0
+                            },
                             "children": [
                                 {
                                     "type": "FRAME",
                                     "id": "114:7411",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 2770.5,
+                                        "y": 1864.2,
+                                        "width": 424.0,
+                                        "height": 29.0
+                                    },
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7412",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 2770.5,
+                                                "y": 1864.2,
+                                                "width": 155.0,
+                                                "height": 29.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:7519",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 2770.5,
+                                                        "y": 1864.8,
+                                                        "width": 28.0,
+                                                        "height": 28.0
+                                                    },
                                                     "cornerRadius": 14.0,
                                                     "fills": [
                                                         {
@@ -83,6 +136,12 @@
                                                             "type": "TEXT",
                                                             "id": "114:7520",
                                                             "name": "P",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 2778.0,
+                                                                "y": 1870.2,
+                                                                "width": 13.0,
+                                                                "height": 17.0
+                                                            },
                                                             "characters": "M",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -96,11 +155,23 @@
                                                     "type": "FRAME",
                                                     "id": "114:7414",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 2810.5,
+                                                        "y": 1864.2,
+                                                        "width": 115.0,
+                                                        "height": 29.0
+                                                    },
                                                     "children": [
                                                         {
                                                             "type": "TEXT",
                                                             "id": "114:7415",
                                                             "name": "Max Mustermann",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 2810.5,
+                                                                "y": 1864.2,
+                                                                "width": 115.0,
+                                                                "height": 17.0
+                                                            },
                                                             "characters": "Max Mustermann",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -112,6 +183,12 @@
                                                             "type": "TEXT",
                                                             "id": "114:7416",
                                                             "name": "Manager",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 2810.5,
+                                                                "y": 1881.2,
+                                                                "width": 42.0,
+                                                                "height": 12.0
+                                                            },
                                                             "characters": "Manager",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -127,6 +204,12 @@
                                             "type": "FRAME",
                                             "id": "114:7516",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 3148.5,
+                                                "y": 1867.8,
+                                                "width": 46.0,
+                                                "height": 22.0
+                                            },
                                             "cornerRadius": 6.0,
                                             "fills": [
                                                 {
@@ -144,6 +227,12 @@
                                                     "type": "TEXT",
                                                     "id": "114:7518",
                                                     "name": "Aktiv",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 3155.5,
+                                                        "y": 1871.2,
+                                                        "width": 32.0,
+                                                        "height": 15.0
+                                                    },
                                                     "characters": "Aktiv",
                                                     "style": {
                                                         "fontFamily": "Inter",
@@ -159,17 +248,35 @@
                                     "type": "FRAME",
                                     "id": "114:7418",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 3210.5,
+                                        "y": 1864.8,
+                                        "width": 35.0,
+                                        "height": 28.0
+                                    },
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7525",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 3210.5,
+                                                "y": 1864.8,
+                                                "width": 35.0,
+                                                "height": 28.0
+                                            },
                                             "cornerRadius": 6.0,
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:7528",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 3221.0,
+                                                        "y": 1871.8,
+                                                        "width": 14.0,
+                                                        "height": 14.0
+                                                    },
                                                     "children": [
                                                         {
                                                             "type": "VECTOR",
@@ -188,16 +295,34 @@
                             "type": "FRAME",
                             "id": "114:7420",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 2753.0,
+                                "y": 1910.8,
+                                "width": 510.0,
+                                "height": 448.0
+                            },
                             "children": [
                                 {
                                     "type": "FRAME",
                                     "id": "114:7421",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 2770.5,
+                                        "y": 1910.8,
+                                        "width": 475.0,
+                                        "height": 430.5
+                                    },
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7422",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 2770.5,
+                                                "y": 1910.8,
+                                                "width": 475.0,
+                                                "height": 46.0
+                                            },
                                             "fills": [
                                                 {
                                                     "type": "SOLID",
@@ -209,11 +334,28 @@
                                                     }
                                                 }
                                             ],
+                                            "strokes": [
+                                                {
+                                                    "type": "SOLID",
+                                                    "color": {
+                                                        "r": 0.8863,
+                                                        "g": 0.9098,
+                                                        "b": 0.9412,
+                                                        "a": 1.0
+                                                    }
+                                                }
+                                            ],
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:7530",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 2770.5,
+                                                        "y": 1910.8,
+                                                        "width": 157.5,
+                                                        "height": 46.0
+                                                    },
                                                     "fills": [
                                                         {
                                                             "type": "SOLID",
@@ -225,11 +367,28 @@
                                                             }
                                                         }
                                                     ],
+                                                    "strokes": [
+                                                        {
+                                                            "type": "SOLID",
+                                                            "color": {
+                                                                "r": 0.0627,
+                                                                "g": 0.7255,
+                                                                "b": 0.5059,
+                                                                "a": 1.0
+                                                            }
+                                                        }
+                                                    ],
                                                     "children": [
                                                         {
                                                             "type": "TEXT",
                                                             "id": "114:7532",
                                                             "name": "Persönliche Daten",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 2786.2,
+                                                                "y": 1924.8,
+                                                                "width": 126.0,
+                                                                "height": 17.0
+                                                            },
                                                             "characters": "Persönliche Daten",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -243,6 +402,12 @@
                                                     "type": "FRAME",
                                                     "id": "114:7534",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 2928.0,
+                                                        "y": 1910.8,
+                                                        "width": 125.5,
+                                                        "height": 46.0
+                                                    },
                                                     "fills": [
                                                         {
                                                             "type": "SOLID",
@@ -254,11 +419,28 @@
                                                             }
                                                         }
                                                     ],
+                                                    "strokes": [
+                                                        {
+                                                            "type": "SOLID",
+                                                            "color": {
+                                                                "r": 0.8863,
+                                                                "g": 0.9098,
+                                                                "b": 0.9412,
+                                                                "a": 1.0
+                                                            }
+                                                        }
+                                                    ],
                                                     "children": [
                                                         {
                                                             "type": "TEXT",
                                                             "id": "114:7536",
                                                             "name": "Einstellungen",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 2943.8,
+                                                                "y": 1924.8,
+                                                                "width": 94.0,
+                                                                "height": 17.0
+                                                            },
                                                             "characters": "Einstellungen",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -274,6 +456,12 @@
                                             "type": "FRAME",
                                             "id": "114:7425",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 2770.5,
+                                                "y": 1956.8,
+                                                "width": 475.0,
+                                                "height": 384.5
+                                            },
                                             "fills": [
                                                 {
                                                     "type": "SOLID",
@@ -290,16 +478,34 @@
                                                     "type": "FRAME",
                                                     "id": "114:7426",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 2774.5,
+                                                        "y": 1969.0,
+                                                        "width": 467.0,
+                                                        "height": 356.5
+                                                    },
                                                     "children": [
                                                         {
                                                             "type": "FRAME",
                                                             "id": "114:7550",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 2774.5,
+                                                                "y": 1969.0,
+                                                                "width": 467.0,
+                                                                "height": 61.0
+                                                            },
                                                             "children": [
                                                                 {
                                                                     "type": "TEXT",
                                                                     "id": "114:7551",
                                                                     "name": "Name",
+                                                                    "absoluteBoundingBox": {
+                                                                        "x": 2774.5,
+                                                                        "y": 1969.0,
+                                                                        "width": 39.0,
+                                                                        "height": 21.0
+                                                                    },
                                                                     "characters": "Name",
                                                                     "style": {
                                                                         "fontFamily": "Inter",
@@ -311,6 +517,12 @@
                                                                     "type": "FRAME",
                                                                     "id": "114:7552",
                                                                     "name": "Frame",
+                                                                    "absoluteBoundingBox": {
+                                                                        "x": 2774.5,
+                                                                        "y": 1997.0,
+                                                                        "width": 467.0,
+                                                                        "height": 33.0
+                                                                    },
                                                                     "cornerRadius": 6.0,
                                                                     "fills": [
                                                                         {
@@ -323,21 +535,50 @@
                                                                             }
                                                                         }
                                                                     ],
+                                                                    "strokes": [
+                                                                        {
+                                                                            "type": "SOLID",
+                                                                            "color": {
+                                                                                "r": 0.7961,
+                                                                                "g": 0.8353,
+                                                                                "b": 0.8824,
+                                                                                "a": 1.0
+                                                                            }
+                                                                        }
+                                                                    ],
                                                                     "children": [
                                                                         {
                                                                             "type": "FRAME",
                                                                             "id": "114:7554",
                                                                             "name": "Frame",
+                                                                            "absoluteBoundingBox": {
+                                                                                "x": 2786.0,
+                                                                                "y": 2005.0,
+                                                                                "width": 444.0,
+                                                                                "height": 17.0
+                                                                            },
                                                                             "children": [
                                                                                 {
                                                                                     "type": "FRAME",
                                                                                     "id": "114:7561",
                                                                                     "name": "Frame",
+                                                                                    "absoluteBoundingBox": {
+                                                                                        "x": 2786.0,
+                                                                                        "y": 2005.0,
+                                                                                        "width": 444.0,
+                                                                                        "height": 17.0
+                                                                                    },
                                                                                     "children": [
                                                                                         {
                                                                                             "type": "TEXT",
                                                                                             "id": "114:7562",
                                                                                             "name": "Max Mustermann",
+                                                                                            "absoluteBoundingBox": {
+                                                                                                "x": 2786.0,
+                                                                                                "y": 2005.0,
+                                                                                                "width": 102.0,
+                                                                                                "height": 17.0
+                                                                                            },
                                                                                             "characters": "Max Mustmann",
                                                                                             "style": {
                                                                                                 "fontFamily": "Inter",
@@ -357,11 +598,23 @@
                                                             "type": "FRAME",
                                                             "id": "114:7542",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 2774.5,
+                                                                "y": 2046.0,
+                                                                "width": 467.0,
+                                                                "height": 61.0
+                                                            },
                                                             "children": [
                                                                 {
                                                                     "type": "TEXT",
                                                                     "id": "114:7543",
                                                                     "name": "E-Mail",
+                                                                    "absoluteBoundingBox": {
+                                                                        "x": 2774.5,
+                                                                        "y": 2046.0,
+                                                                        "width": 42.0,
+                                                                        "height": 21.0
+                                                                    },
                                                                     "characters": "E-Mail",
                                                                     "style": {
                                                                         "fontFamily": "Inter",
@@ -373,6 +626,12 @@
                                                                     "type": "FRAME",
                                                                     "id": "114:7544",
                                                                     "name": "Frame",
+                                                                    "absoluteBoundingBox": {
+                                                                        "x": 2774.5,
+                                                                        "y": 2074.0,
+                                                                        "width": 467.0,
+                                                                        "height": 33.0
+                                                                    },
                                                                     "cornerRadius": 6.0,
                                                                     "fills": [
                                                                         {
@@ -385,21 +644,50 @@
                                                                             }
                                                                         }
                                                                     ],
+                                                                    "strokes": [
+                                                                        {
+                                                                            "type": "SOLID",
+                                                                            "color": {
+                                                                                "r": 0.7961,
+                                                                                "g": 0.8353,
+                                                                                "b": 0.8824,
+                                                                                "a": 1.0
+                                                                            }
+                                                                        }
+                                                                    ],
                                                                     "children": [
                                                                         {
                                                                             "type": "FRAME",
                                                                             "id": "114:7546",
                                                                             "name": "Frame",
+                                                                            "absoluteBoundingBox": {
+                                                                                "x": 2786.0,
+                                                                                "y": 2082.0,
+                                                                                "width": 444.0,
+                                                                                "height": 17.0
+                                                                            },
                                                                             "children": [
                                                                                 {
                                                                                     "type": "FRAME",
                                                                                     "id": "114:7563",
                                                                                     "name": "Frame",
+                                                                                    "absoluteBoundingBox": {
+                                                                                        "x": 2786.0,
+                                                                                        "y": 2082.0,
+                                                                                        "width": 444.0,
+                                                                                        "height": 17.0
+                                                                                    },
                                                                                     "children": [
                                                                                         {
                                                                                             "type": "TEXT",
                                                                                             "id": "114:7564",
                                                                                             "name": "max@example.com",
+                                                                                            "absoluteBoundingBox": {
+                                                                                                "x": 2786.0,
+                                                                                                "y": 2082.0,
+                                                                                                "width": 129.0,
+                                                                                                "height": 17.0
+                                                                                            },
                                                                                             "characters": "max@example.com",
                                                                                             "style": {
                                                                                                 "fontFamily": "Inter",
@@ -419,6 +707,12 @@
                                                             "type": "FRAME",
                                                             "id": "114:7429",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 2774.5,
+                                                                "y": 2123.0,
+                                                                "width": 467.0,
+                                                                "height": 169.0
+                                                            },
                                                             "fills": [
                                                                 {
                                                                     "type": "SOLID",
@@ -435,11 +729,23 @@
                                                                     "type": "FRAME",
                                                                     "id": "114:7565",
                                                                     "name": "Frame",
+                                                                    "absoluteBoundingBox": {
+                                                                        "x": 2774.5,
+                                                                        "y": 2123.0,
+                                                                        "width": 467.0,
+                                                                        "height": 61.0
+                                                                    },
                                                                     "children": [
                                                                         {
                                                                             "type": "TEXT",
                                                                             "id": "114:7566",
                                                                             "name": "Rolle",
+                                                                            "absoluteBoundingBox": {
+                                                                                "x": 2774.5,
+                                                                                "y": 2123.0,
+                                                                                "width": 33.0,
+                                                                                "height": 21.0
+                                                                            },
                                                                             "characters": "Rolle",
                                                                             "style": {
                                                                                 "fontFamily": "Inter",
@@ -451,6 +757,12 @@
                                                                             "type": "FRAME",
                                                                             "id": "114:7567",
                                                                             "name": "Frame",
+                                                                            "absoluteBoundingBox": {
+                                                                                "x": 2774.5,
+                                                                                "y": 2151.0,
+                                                                                "width": 467.0,
+                                                                                "height": 33.0
+                                                                            },
                                                                             "cornerRadius": 6.0,
                                                                             "fills": [
                                                                                 {
@@ -463,21 +775,50 @@
                                                                                     }
                                                                                 }
                                                                             ],
+                                                                            "strokes": [
+                                                                                {
+                                                                                    "type": "SOLID",
+                                                                                    "color": {
+                                                                                        "r": 0.0627,
+                                                                                        "g": 0.7255,
+                                                                                        "b": 0.5059,
+                                                                                        "a": 1.0
+                                                                                    }
+                                                                                }
+                                                                            ],
                                                                             "children": [
                                                                                 {
                                                                                     "type": "FRAME",
                                                                                     "id": "114:7568",
                                                                                     "name": "Frame",
+                                                                                    "absoluteBoundingBox": {
+                                                                                        "x": 2775.5,
+                                                                                        "y": 2152.0,
+                                                                                        "width": 430.0,
+                                                                                        "height": 31.0
+                                                                                    },
                                                                                     "children": [
                                                                                         {
                                                                                             "type": "FRAME",
                                                                                             "id": "114:7577",
                                                                                             "name": "Frame",
+                                                                                            "absoluteBoundingBox": {
+                                                                                                "x": 2786.0,
+                                                                                                "y": 2159.0,
+                                                                                                "width": 419.5,
+                                                                                                "height": 17.0
+                                                                                            },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "type": "TEXT",
                                                                                                     "id": "114:7578",
                                                                                                     "name": "Manger",
+                                                                                                    "absoluteBoundingBox": {
+                                                                                                        "x": 2786.0,
+                                                                                                        "y": 2159.0,
+                                                                                                        "width": 59.0,
+                                                                                                        "height": 17.0
+                                                                                                    },
                                                                                                     "characters": "Manager",
                                                                                                     "style": {
                                                                                                         "fontFamily": "Inter",
@@ -493,6 +834,12 @@
                                                                                     "type": "FRAME",
                                                                                     "id": "114:7571",
                                                                                     "name": "Frame",
+                                                                                    "absoluteBoundingBox": {
+                                                                                        "x": 3205.5,
+                                                                                        "y": 2152.0,
+                                                                                        "width": 35.0,
+                                                                                        "height": 31.0
+                                                                                    },
                                                                                     "rectangleCornerRadii": [
                                                                                         0.0,
                                                                                         6.0,
@@ -504,6 +851,12 @@
                                                                                             "type": "FRAME",
                                                                                             "id": "114:7579",
                                                                                             "name": "Frame",
+                                                                                            "absoluteBoundingBox": {
+                                                                                                "x": 3216.0,
+                                                                                                "y": 2160.5,
+                                                                                                "width": 14.0,
+                                                                                                "height": 14.0
+                                                                                            },
                                                                                             "children": [
                                                                                                 {
                                                                                                     "type": "VECTOR",
@@ -522,6 +875,12 @@
                                                                     "type": "FRAME",
                                                                     "id": "114:7431",
                                                                     "name": "Frame",
+                                                                    "absoluteBoundingBox": {
+                                                                        "x": 2774.5,
+                                                                        "y": 2186.0,
+                                                                        "width": 467.0,
+                                                                        "height": 106.0
+                                                                    },
                                                                     "cornerRadius": 6.0,
                                                                     "fills": [
                                                                         {
@@ -534,16 +893,39 @@
                                                                             }
                                                                         }
                                                                     ],
+                                                                    "strokes": [
+                                                                        {
+                                                                            "type": "SOLID",
+                                                                            "color": {
+                                                                                "r": 0.8863,
+                                                                                "g": 0.9098,
+                                                                                "b": 0.9412,
+                                                                                "a": 1.0
+                                                                            }
+                                                                        }
+                                                                    ],
                                                                     "children": [
                                                                         {
                                                                             "type": "FRAME",
                                                                             "id": "114:7434",
                                                                             "name": "Frame",
+                                                                            "absoluteBoundingBox": {
+                                                                                "x": 2775.5,
+                                                                                "y": 2187.0,
+                                                                                "width": 465.0,
+                                                                                "height": 104.0
+                                                                            },
                                                                             "children": [
                                                                                 {
                                                                                     "type": "FRAME",
                                                                                     "id": "114:7589",
                                                                                     "name": "Frame",
+                                                                                    "absoluteBoundingBox": {
+                                                                                        "x": 2779.0,
+                                                                                        "y": 2190.5,
+                                                                                        "width": 458.0,
+                                                                                        "height": 31.0
+                                                                                    },
                                                                                     "cornerRadius": 4.0,
                                                                                     "fills": [
                                                                                         {
@@ -561,6 +943,12 @@
                                                                                             "type": "TEXT",
                                                                                             "id": "114:7590",
                                                                                             "name": "Manager",
+                                                                                            "absoluteBoundingBox": {
+                                                                                                "x": 2789.5,
+                                                                                                "y": 2197.5,
+                                                                                                "width": 59.0,
+                                                                                                "height": 17.0
+                                                                                            },
                                                                                             "characters": "Manager",
                                                                                             "style": {
                                                                                                 "fontFamily": "Inter",
@@ -574,12 +962,24 @@
                                                                                     "type": "FRAME",
                                                                                     "id": "114:7593",
                                                                                     "name": "Frame",
+                                                                                    "absoluteBoundingBox": {
+                                                                                        "x": 2779.0,
+                                                                                        "y": 2223.5,
+                                                                                        "width": 458.0,
+                                                                                        "height": 31.0
+                                                                                    },
                                                                                     "cornerRadius": 4.0,
                                                                                     "children": [
                                                                                         {
                                                                                             "type": "TEXT",
                                                                                             "id": "114:7594",
                                                                                             "name": "Mitabeiter",
+                                                                                            "absoluteBoundingBox": {
+                                                                                                "x": 2789.5,
+                                                                                                "y": 2230.5,
+                                                                                                "width": 73.0,
+                                                                                                "height": 17.0
+                                                                                            },
                                                                                             "characters": "Mitarbeiter",
                                                                                             "style": {
                                                                                                 "fontFamily": "Inter",
@@ -593,12 +993,24 @@
                                                                                     "type": "FRAME",
                                                                                     "id": "114:7591",
                                                                                     "name": "Frame",
+                                                                                    "absoluteBoundingBox": {
+                                                                                        "x": 2779.0,
+                                                                                        "y": 2256.5,
+                                                                                        "width": 458.0,
+                                                                                        "height": 31.0
+                                                                                    },
                                                                                     "cornerRadius": 4.0,
                                                                                     "children": [
                                                                                         {
                                                                                             "type": "TEXT",
                                                                                             "id": "114:7592",
                                                                                             "name": "Kunde",
+                                                                                            "absoluteBoundingBox": {
+                                                                                                "x": 2789.5,
+                                                                                                "y": 2263.5,
+                                                                                                "width": 42.0,
+                                                                                                "height": 17.0
+                                                                                            },
                                                                                             "characters": "Kunde",
                                                                                             "style": {
                                                                                                 "fontFamily": "Inter",
@@ -618,14 +1030,37 @@
                                                             "type": "FRAME",
                                                             "id": "114:7538",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 2774.5,
+                                                                "y": 2308.0,
+                                                                "width": 76.5,
+                                                                "height": 17.5
+                                                            },
                                                             "cornerRadius": 6.0,
                                                             "children": [
                                                                 {
                                                                     "type": "FRAME",
                                                                     "id": "114:7539",
                                                                     "name": "Frame",
+                                                                    "absoluteBoundingBox": {
+                                                                        "x": 2774.5,
+                                                                        "y": 2308.0,
+                                                                        "width": 17.5,
+                                                                        "height": 17.5
+                                                                    },
                                                                     "cornerRadius": 4.0,
                                                                     "fills": [
+                                                                        {
+                                                                            "type": "SOLID",
+                                                                            "color": {
+                                                                                "r": 0.0627,
+                                                                                "g": 0.7255,
+                                                                                "b": 0.5059,
+                                                                                "a": 1.0
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "strokes": [
                                                                         {
                                                                             "type": "SOLID",
                                                                             "color": {
@@ -641,6 +1076,12 @@
                                                                             "type": "FRAME",
                                                                             "id": "114:7595",
                                                                             "name": "Frame",
+                                                                            "absoluteBoundingBox": {
+                                                                                "x": 2777.1,
+                                                                                "y": 2310.6,
+                                                                                "width": 12.2,
+                                                                                "height": 12.2
+                                                                            },
                                                                             "children": [
                                                                                 {
                                                                                     "type": "VECTOR",
@@ -655,6 +1096,12 @@
                                                                     "type": "TEXT",
                                                                     "id": "114:7541",
                                                                     "name": "Ist Aktiv",
+                                                                    "absoluteBoundingBox": {
+                                                                        "x": 2799.0,
+                                                                        "y": 2308.2,
+                                                                        "width": 52.0,
+                                                                        "height": 17.0
+                                                                    },
                                                                     "characters": "Ist aktiv",
                                                                     "style": {
                                                                         "fontFamily": "Inter",
@@ -676,13 +1123,36 @@
                             "type": "FRAME",
                             "id": "114:7461",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 2753.0,
+                                "y": 2358.8,
+                                "width": 510.0,
+                                "height": 50.5
+                            },
                             "children": [
                                 {
                                     "type": "FRAME",
                                     "id": "114:7613",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 3050.5,
+                                        "y": 2358.8,
+                                        "width": 97.0,
+                                        "height": 33.0
+                                    },
                                     "cornerRadius": 6.0,
                                     "fills": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.9451,
+                                                "g": 0.9608,
+                                                "b": 0.9765,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
+                                    "strokes": [
                                         {
                                             "type": "SOLID",
                                             "color": {
@@ -698,6 +1168,12 @@
                                             "type": "TEXT",
                                             "id": "114:7615",
                                             "name": "Abbrechen",
+                                            "absoluteBoundingBox": {
+                                                "x": 3062.0,
+                                                "y": 2366.8,
+                                                "width": 74.0,
+                                                "height": 17.0
+                                            },
                                             "characters": "Abbrechen",
                                             "style": {
                                                 "fontFamily": "Inter",
@@ -711,8 +1187,25 @@
                                     "type": "FRAME",
                                     "id": "114:7619",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 3154.5,
+                                        "y": 2358.8,
+                                        "width": 91.0,
+                                        "height": 33.0
+                                    },
                                     "cornerRadius": 6.0,
                                     "fills": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.0627,
+                                                "g": 0.7255,
+                                                "b": 0.5059,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
+                                    "strokes": [
                                         {
                                             "type": "SOLID",
                                             "color": {
@@ -728,6 +1221,12 @@
                                             "type": "TEXT",
                                             "id": "114:7621",
                                             "name": "Speichern",
+                                            "absoluteBoundingBox": {
+                                                "x": 3166.0,
+                                                "y": 2366.8,
+                                                "width": 68.0,
+                                                "height": 17.0
+                                            },
                                             "characters": "Speichern",
                                             "style": {
                                                 "fontFamily": "Inter",

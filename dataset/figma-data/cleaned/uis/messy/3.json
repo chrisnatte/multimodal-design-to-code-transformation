@@ -2,6 +2,12 @@
     "type": "FRAME",
     "id": "92:1766",
     "name": "3 [Aufgabenverwaltung]",
+    "absoluteBoundingBox": {
+        "x": 4032.0,
+        "y": 1588.0,
+        "width": 1920.0,
+        "height": 1080.0
+    },
     "fills": [
         {
             "type": "SOLID",
@@ -18,16 +24,34 @@
             "type": "FRAME",
             "id": "114:7660",
             "name": "Frame",
+            "absoluteBoundingBox": {
+                "x": 4114.0,
+                "y": 1809.0,
+                "width": 1472.0,
+                "height": 239.5
+            },
             "children": [
                 {
                     "type": "FRAME",
                     "id": "114:7661",
                     "name": "Frame",
+                    "absoluteBoundingBox": {
+                        "x": 4114.0,
+                        "y": 1809.0,
+                        "width": 1472.0,
+                        "height": 39.5
+                    },
                     "children": [
                         {
                             "type": "FRAME",
                             "id": "114:7662",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 4114.0,
+                                "y": 1809.0,
+                                "width": 72.0,
+                                "height": 39.5
+                            },
                             "fills": [
                                 {
                                     "type": "SOLID",
@@ -39,17 +63,40 @@
                                     }
                                 }
                             ],
+                            "strokes": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.8863,
+                                        "g": 0.9098,
+                                        "b": 0.9412,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
                             "children": [
                                 {
                                     "type": "FRAME",
                                     "id": "114:8146",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4141.2,
+                                        "y": 1819.5,
+                                        "width": 17.5,
+                                        "height": 17.5
+                                    },
                                     "cornerRadius": 6.0,
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:8147",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4141.2,
+                                                "y": 1819.5,
+                                                "width": 17.5,
+                                                "height": 17.5
+                                            },
                                             "cornerRadius": 4.0,
                                             "fills": [
                                                 {
@@ -64,7 +111,18 @@
                                             ],
                                             "layoutMode": "HORIZONTAL",
                                             "layoutSizingHorizontal": "FIXED",
-                                            "layoutSizingVertical": "FIXED"
+                                            "layoutSizingVertical": "FIXED",
+                                            "strokes": [
+                                                {
+                                                    "type": "SOLID",
+                                                    "color": {
+                                                        "r": 0.7961,
+                                                        "g": 0.8353,
+                                                        "b": 0.8824,
+                                                        "a": 1.0
+                                                    }
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -74,6 +132,12 @@
                             "type": "FRAME",
                             "id": "114:7664",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 4186.0,
+                                "y": 1809.0,
+                                "width": 512.0,
+                                "height": 39.0
+                            },
                             "fills": [
                                 {
                                     "type": "SOLID",
@@ -85,11 +149,28 @@
                                     }
                                 }
                             ],
+                            "strokes": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.8863,
+                                        "g": 0.9098,
+                                        "b": 0.9412,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
                             "children": [
                                 {
                                     "type": "TEXT",
                                     "id": "114:7665",
                                     "name": "Aufgabe",
+                                    "absoluteBoundingBox": {
+                                        "x": 4200.0,
+                                        "y": 1819.5,
+                                        "width": 58.0,
+                                        "height": 17.0
+                                    },
                                     "characters": "Aufgabe",
                                     "style": {
                                         "fontFamily": "Inter",
@@ -103,6 +184,12 @@
                             "type": "FRAME",
                             "id": "114:7666",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 4698.0,
+                                "y": 1809.0,
+                                "width": 256.0,
+                                "height": 39.0
+                            },
                             "fills": [
                                 {
                                     "type": "SOLID",
@@ -114,11 +201,28 @@
                                     }
                                 }
                             ],
+                            "strokes": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.8863,
+                                        "g": 0.9098,
+                                        "b": 0.9412,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
                             "children": [
                                 {
                                     "type": "TEXT",
                                     "id": "114:7667",
                                     "name": "Verantwortlicher",
+                                    "absoluteBoundingBox": {
+                                        "x": 4712.0,
+                                        "y": 1819.5,
+                                        "width": 115.0,
+                                        "height": 17.0
+                                    },
                                     "characters": "Verantwortlicher",
                                     "style": {
                                         "fontFamily": "Inter",
@@ -132,6 +236,12 @@
                             "type": "FRAME",
                             "id": "114:7668",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 4954.0,
+                                "y": 1809.0,
+                                "width": 256.0,
+                                "height": 39.0
+                            },
                             "fills": [
                                 {
                                     "type": "SOLID",
@@ -143,11 +253,28 @@
                                     }
                                 }
                             ],
+                            "strokes": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.8863,
+                                        "g": 0.9098,
+                                        "b": 0.9412,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
                             "children": [
                                 {
                                     "type": "TEXT",
                                     "id": "114:7669",
                                     "name": "Status",
+                                    "absoluteBoundingBox": {
+                                        "x": 4968.0,
+                                        "y": 1819.5,
+                                        "width": 44.0,
+                                        "height": 17.0
+                                    },
                                     "characters": "Status",
                                     "style": {
                                         "fontFamily": "Inter",
@@ -161,6 +288,12 @@
                             "type": "FRAME",
                             "id": "114:7670",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 5210.0,
+                                "y": 1809.0,
+                                "width": 160.0,
+                                "height": 39.0
+                            },
                             "fills": [
                                 {
                                     "type": "SOLID",
@@ -172,11 +305,28 @@
                                     }
                                 }
                             ],
+                            "strokes": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.8863,
+                                        "g": 0.9098,
+                                        "b": 0.9412,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
                             "children": [
                                 {
                                     "type": "TEXT",
                                     "id": "114:7671",
                                     "name": "Status",
+                                    "absoluteBoundingBox": {
+                                        "x": 5224.0,
+                                        "y": 1819.5,
+                                        "width": 44.0,
+                                        "height": 17.0
+                                    },
                                     "characters": "Status",
                                     "style": {
                                         "fontFamily": "Inter",
@@ -190,6 +340,12 @@
                             "type": "FRAME",
                             "id": "114:7672",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 5370.0,
+                                "y": 1809.0,
+                                "width": 124.0,
+                                "height": 39.0
+                            },
                             "fills": [
                                 {
                                     "type": "SOLID",
@@ -201,11 +357,28 @@
                                     }
                                 }
                             ],
+                            "strokes": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.8863,
+                                        "g": 0.9098,
+                                        "b": 0.9412,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
                             "children": [
                                 {
                                     "type": "TEXT",
                                     "id": "114:7673",
                                     "name": "Fällig",
+                                    "absoluteBoundingBox": {
+                                        "x": 5384.0,
+                                        "y": 1819.5,
+                                        "width": 36.0,
+                                        "height": 17.0
+                                    },
                                     "characters": "Fällig",
                                     "style": {
                                         "fontFamily": "Inter",
@@ -219,6 +392,12 @@
                             "type": "FRAME",
                             "id": "114:7674",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 5494.0,
+                                "y": 1809.0,
+                                "width": 92.0,
+                                "height": 39.0
+                            },
                             "fills": [
                                 {
                                     "type": "SOLID",
@@ -230,11 +409,28 @@
                                     }
                                 }
                             ],
+                            "strokes": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.8863,
+                                        "g": 0.9098,
+                                        "b": 0.9412,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
                             "children": [
                                 {
                                     "type": "TEXT",
                                     "id": "114:7675",
                                     "name": "Aktionen",
+                                    "absoluteBoundingBox": {
+                                        "x": 5508.0,
+                                        "y": 1819.5,
+                                        "width": 61.0,
+                                        "height": 17.0
+                                    },
                                     "characters": "Aktionen",
                                     "style": {
                                         "fontFamily": "Inter",
@@ -250,11 +446,23 @@
                     "type": "FRAME",
                     "id": "114:7676",
                     "name": "Frame",
+                    "absoluteBoundingBox": {
+                        "x": 4114.0,
+                        "y": 1848.5,
+                        "width": 1472.0,
+                        "height": 200.0
+                    },
                     "children": [
                         {
                             "type": "FRAME",
                             "id": "114:7677",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 4114.0,
+                                "y": 1848.5,
+                                "width": 1472.0,
+                                "height": 50.0
+                            },
                             "fills": [
                                 {
                                     "type": "SOLID",
@@ -271,24 +479,70 @@
                                     "type": "FRAME",
                                     "id": "114:7678",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4114.0,
+                                        "y": 1848.5,
+                                        "width": 72.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7679",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4141.2,
+                                                "y": 1864.2,
+                                                "width": 17.5,
+                                                "height": 17.5
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:8149",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4141.2,
+                                                        "y": 1864.2,
+                                                        "width": 17.5,
+                                                        "height": 17.5
+                                                    },
                                                     "cornerRadius": 6.0,
                                                     "children": [
                                                         {
                                                             "type": "FRAME",
                                                             "id": "114:8150",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 4141.2,
+                                                                "y": 1864.2,
+                                                                "width": 17.5,
+                                                                "height": 17.5
+                                                            },
                                                             "cornerRadius": 4.0,
                                                             "fills": [
+                                                                {
+                                                                    "type": "SOLID",
+                                                                    "color": {
+                                                                        "r": 0.0627,
+                                                                        "g": 0.7255,
+                                                                        "b": 0.5059,
+                                                                        "a": 1.0
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "strokes": [
                                                                 {
                                                                     "type": "SOLID",
                                                                     "color": {
@@ -304,6 +558,12 @@
                                                                     "type": "FRAME",
                                                                     "id": "114:8154",
                                                                     "name": "Frame",
+                                                                    "absoluteBoundingBox": {
+                                                                        "x": 4143.9,
+                                                                        "y": 1866.9,
+                                                                        "width": 12.2,
+                                                                        "height": 12.2
+                                                                    },
                                                                     "children": [
                                                                         {
                                                                             "type": "VECTOR",
@@ -324,16 +584,45 @@
                                     "type": "FRAME",
                                     "id": "114:8156",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4186.0,
+                                        "y": 1848.5,
+                                        "width": 512.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:8159",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4200.0,
+                                                "y": 1864.5,
+                                                "width": 484.0,
+                                                "height": 17.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "TEXT",
                                                     "id": "114:8160",
                                                     "name": "Webseite Relaunch",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4200.0,
+                                                        "y": 1864.5,
+                                                        "width": 126.0,
+                                                        "height": 17.0
+                                                    },
                                                     "characters": "Webseite Relaunch",
                                                     "style": {
                                                         "fontFamily": "Inter",
@@ -349,16 +638,45 @@
                                     "type": "FRAME",
                                     "id": "114:7682",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4698.0,
+                                        "y": 1848.5,
+                                        "width": 256.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7683",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4712.0,
+                                                "y": 1859.0,
+                                                "width": 228.0,
+                                                "height": 28.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:8161",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4712.0,
+                                                        "y": 1859.0,
+                                                        "width": 28.0,
+                                                        "height": 28.0
+                                                    },
                                                     "cornerRadius": 14.0,
                                                     "fills": [
                                                         {
@@ -376,6 +694,12 @@
                                                             "type": "TEXT",
                                                             "id": "114:8162",
                                                             "name": "P",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 4719.5,
+                                                                "y": 1864.5,
+                                                                "width": 13.0,
+                                                                "height": 17.0
+                                                            },
                                                             "characters": "M",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -389,6 +713,12 @@
                                                     "type": "TEXT",
                                                     "id": "114:7685",
                                                     "name": "Max Mustermann",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4752.0,
+                                                        "y": 1864.5,
+                                                        "width": 115.0,
+                                                        "height": 17.0
+                                                    },
                                                     "characters": "Max Mustermann",
                                                     "style": {
                                                         "fontFamily": "Inter",
@@ -404,27 +734,68 @@
                                     "type": "FRAME",
                                     "id": "114:7686",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4954.0,
+                                        "y": 1848.5,
+                                        "width": 256.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7687",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4968.0,
+                                                "y": 1864.5,
+                                                "width": 228.0,
+                                                "height": 17.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:7688",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4968.0,
+                                                        "y": 1865.5,
+                                                        "width": 228.0,
+                                                        "height": 15.0
+                                                    },
                                                     "children": [
                                                         {
                                                             "type": "FRAME",
                                                             "id": "114:7689",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 4968.0,
+                                                                "y": 1870.0,
+                                                                "width": 182.0,
+                                                                "height": 6.0
+                                                            },
                                                             "cornerRadius": 6.0,
                                                             "children": [
                                                                 {
                                                                     "type": "FRAME",
                                                                     "id": "114:7690",
                                                                     "name": "Frame",
+                                                                    "absoluteBoundingBox": {
+                                                                        "x": 4968.0,
+                                                                        "y": 1870.0,
+                                                                        "width": 182.0,
+                                                                        "height": 17.5
+                                                                    },
                                                                     "cornerRadius": 6.0,
                                                                     "counterAxisAlignItems": "CENTER",
                                                                     "fills": [
@@ -448,6 +819,12 @@
                                                             "type": "TEXT",
                                                             "id": "114:7691",
                                                             "name": "100 %",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5162.0,
+                                                                "y": 1865.5,
+                                                                "width": 34.0,
+                                                                "height": 15.0
+                                                            },
                                                             "characters": "100 %",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -465,16 +842,45 @@
                                     "type": "FRAME",
                                     "id": "114:7692",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 5210.0,
+                                        "y": 1848.5,
+                                        "width": 160.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7693",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 5224.0,
+                                                "y": 1862.0,
+                                                "width": 132.0,
+                                                "height": 22.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:8165",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 5224.0,
+                                                        "y": 1862.0,
+                                                        "width": 50.0,
+                                                        "height": 22.0
+                                                    },
                                                     "cornerRadius": 6.0,
                                                     "fills": [
                                                         {
@@ -492,6 +898,12 @@
                                                             "type": "TEXT",
                                                             "id": "114:8167",
                                                             "name": "Fertig",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5231.0,
+                                                                "y": 1865.5,
+                                                                "width": 36.0,
+                                                                "height": 15.0
+                                                            },
                                                             "characters": "Fertig",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -509,16 +921,45 @@
                                     "type": "FRAME",
                                     "id": "114:8169",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 5370.0,
+                                        "y": 1848.5,
+                                        "width": 124.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:8172",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 5384.0,
+                                                "y": 1864.5,
+                                                "width": 96.0,
+                                                "height": 17.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "TEXT",
                                                     "id": "114:8173",
                                                     "name": "03.06.2026",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 5384.0,
+                                                        "y": 1864.5,
+                                                        "width": 77.0,
+                                                        "height": 17.0
+                                                    },
                                                     "characters": "03.06.2026",
                                                     "style": {
                                                         "fontFamily": "Inter",
@@ -534,22 +975,57 @@
                                     "type": "FRAME",
                                     "id": "114:7696",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 5494.0,
+                                        "y": 1848.5,
+                                        "width": 92.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7697",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 5508.0,
+                                                "y": 1859.0,
+                                                "width": 64.0,
+                                                "height": 28.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:8174",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 5522.5,
+                                                        "y": 1859.0,
+                                                        "width": 35.0,
+                                                        "height": 28.0
+                                                    },
                                                     "cornerRadius": 6.0,
                                                     "children": [
                                                         {
                                                             "type": "FRAME",
                                                             "id": "114:8177",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5533.0,
+                                                                "y": 1866.0,
+                                                                "width": 14.0,
+                                                                "height": 14.0
+                                                            },
                                                             "children": [
                                                                 {
                                                                     "type": "VECTOR",
@@ -570,6 +1046,12 @@
                             "type": "FRAME",
                             "id": "114:7699",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 4114.0,
+                                "y": 1898.5,
+                                "width": 1472.0,
+                                "height": 50.0
+                            },
                             "fills": [
                                 {
                                     "type": "SOLID",
@@ -586,22 +1068,57 @@
                                     "type": "FRAME",
                                     "id": "114:7700",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4114.0,
+                                        "y": 1898.5,
+                                        "width": 72.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7701",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4141.2,
+                                                "y": 1914.2,
+                                                "width": 17.5,
+                                                "height": 17.5
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:8184",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4141.2,
+                                                        "y": 1914.2,
+                                                        "width": 17.5,
+                                                        "height": 17.5
+                                                    },
                                                     "cornerRadius": 6.0,
                                                     "children": [
                                                         {
                                                             "type": "FRAME",
                                                             "id": "114:8185",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 4141.2,
+                                                                "y": 1914.2,
+                                                                "width": 17.5,
+                                                                "height": 17.5
+                                                            },
                                                             "cornerRadius": 4.0,
                                                             "fills": [
                                                                 {
@@ -616,7 +1133,18 @@
                                                             ],
                                                             "layoutMode": "HORIZONTAL",
                                                             "layoutSizingHorizontal": "FIXED",
-                                                            "layoutSizingVertical": "FIXED"
+                                                            "layoutSizingVertical": "FIXED",
+                                                            "strokes": [
+                                                                {
+                                                                    "type": "SOLID",
+                                                                    "color": {
+                                                                        "r": 0.7961,
+                                                                        "g": 0.8353,
+                                                                        "b": 0.8824,
+                                                                        "a": 1.0
+                                                                    }
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 }
@@ -628,16 +1156,45 @@
                                     "type": "FRAME",
                                     "id": "114:8179",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4186.0,
+                                        "y": 1898.5,
+                                        "width": 512.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:8182",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4200.0,
+                                                "y": 1914.5,
+                                                "width": 484.0,
+                                                "height": 17.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "TEXT",
                                                     "id": "114:8183",
                                                     "name": "Mobile App",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4200.0,
+                                                        "y": 1914.5,
+                                                        "width": 75.0,
+                                                        "height": 17.0
+                                                    },
                                                     "characters": "Mobile App",
                                                     "style": {
                                                         "fontFamily": "Inter",
@@ -653,16 +1210,45 @@
                                     "type": "FRAME",
                                     "id": "114:7704",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4698.0,
+                                        "y": 1898.5,
+                                        "width": 256.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7705",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4712.0,
+                                                "y": 1909.0,
+                                                "width": 228.0,
+                                                "height": 28.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:8187",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4712.0,
+                                                        "y": 1909.0,
+                                                        "width": 28.0,
+                                                        "height": 28.0
+                                                    },
                                                     "cornerRadius": 14.0,
                                                     "fills": [
                                                         {
@@ -680,6 +1266,12 @@
                                                             "type": "TEXT",
                                                             "id": "114:8188",
                                                             "name": "P",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 4721.0,
+                                                                "y": 1914.5,
+                                                                "width": 10.0,
+                                                                "height": 17.0
+                                                            },
                                                             "characters": "A",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -693,6 +1285,12 @@
                                                     "type": "TEXT",
                                                     "id": "114:7707",
                                                     "name": "Anna Schmidt",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4752.0,
+                                                        "y": 1914.5,
+                                                        "width": 92.0,
+                                                        "height": 17.0
+                                                    },
                                                     "characters": "Anna Schmidt",
                                                     "style": {
                                                         "fontFamily": "Inter",
@@ -708,27 +1306,68 @@
                                     "type": "FRAME",
                                     "id": "114:7708",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4954.0,
+                                        "y": 1898.5,
+                                        "width": 256.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7709",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4968.0,
+                                                "y": 1914.5,
+                                                "width": 228.0,
+                                                "height": 17.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:7710",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4968.0,
+                                                        "y": 1915.5,
+                                                        "width": 228.0,
+                                                        "height": 15.0
+                                                    },
                                                     "children": [
                                                         {
                                                             "type": "FRAME",
                                                             "id": "114:8191",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 4968.0,
+                                                                "y": 1920.0,
+                                                                "width": 182.0,
+                                                                "height": 6.0
+                                                            },
                                                             "cornerRadius": 6.0,
                                                             "children": [
                                                                 {
                                                                     "type": "FRAME",
                                                                     "id": "114:8192",
                                                                     "name": "Frame",
+                                                                    "absoluteBoundingBox": {
+                                                                        "x": 4968.0,
+                                                                        "y": 1920.0,
+                                                                        "width": 91.0,
+                                                                        "height": 6.0
+                                                                    },
                                                                     "counterAxisAlignItems": "CENTER",
                                                                     "fills": [
                                                                         {
@@ -755,6 +1394,12 @@
                                                                     "type": "FRAME",
                                                                     "id": "114:8193",
                                                                     "name": "Frame",
+                                                                    "absoluteBoundingBox": {
+                                                                        "x": 5059.0,
+                                                                        "y": 1920.0,
+                                                                        "width": 91.0,
+                                                                        "height": 6.0
+                                                                    },
                                                                     "fills": [
                                                                         {
                                                                             "type": "SOLID",
@@ -782,6 +1427,12 @@
                                                             "type": "TEXT",
                                                             "id": "114:7712",
                                                             "name": "45 %",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5162.0,
+                                                                "y": 1915.5,
+                                                                "width": 29.0,
+                                                                "height": 15.0
+                                                            },
                                                             "characters": "45 %",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -799,16 +1450,45 @@
                                     "type": "FRAME",
                                     "id": "114:7713",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 5210.0,
+                                        "y": 1898.5,
+                                        "width": 160.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7714",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 5224.0,
+                                                "y": 1912.0,
+                                                "width": 132.0,
+                                                "height": 22.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:8194",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 5224.0,
+                                                        "y": 1912.0,
+                                                        "width": 66.0,
+                                                        "height": 22.0
+                                                    },
                                                     "cornerRadius": 6.0,
                                                     "fills": [
                                                         {
@@ -826,6 +1506,12 @@
                                                             "type": "TEXT",
                                                             "id": "114:8196",
                                                             "name": "In Arbeit",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5231.0,
+                                                                "y": 1915.5,
+                                                                "width": 52.0,
+                                                                "height": 15.0
+                                                            },
                                                             "characters": "In Arbeit",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -843,16 +1529,45 @@
                                     "type": "FRAME",
                                     "id": "114:8198",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 5370.0,
+                                        "y": 1898.5,
+                                        "width": 124.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:8201",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 5384.0,
+                                                "y": 1914.5,
+                                                "width": 96.0,
+                                                "height": 17.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "TEXT",
                                                     "id": "114:8202",
                                                     "name": "10.06.2026",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 5384.0,
+                                                        "y": 1914.5,
+                                                        "width": 74.0,
+                                                        "height": 17.0
+                                                    },
                                                     "characters": "10.06.2026",
                                                     "style": {
                                                         "fontFamily": "Inter",
@@ -868,16 +1583,45 @@
                                     "type": "FRAME",
                                     "id": "114:7717",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 5494.0,
+                                        "y": 1898.5,
+                                        "width": 92.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7718",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 5508.0,
+                                                "y": 1909.0,
+                                                "width": 64.0,
+                                                "height": 28.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:8203",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 5522.5,
+                                                        "y": 1909.0,
+                                                        "width": 35.0,
+                                                        "height": 28.0
+                                                    },
                                                     "cornerRadius": 6.0,
                                                     "fills": [
                                                         {
@@ -895,6 +1639,12 @@
                                                             "type": "FRAME",
                                                             "id": "114:8258",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5533.0,
+                                                                "y": 1916.0,
+                                                                "width": 14.0,
+                                                                "height": 14.0
+                                                            },
                                                             "children": [
                                                                 {
                                                                     "type": "VECTOR",
@@ -915,6 +1665,12 @@
                             "type": "FRAME",
                             "id": "114:7720",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 4114.0,
+                                "y": 1948.5,
+                                "width": 1472.0,
+                                "height": 50.0
+                            },
                             "fills": [
                                 {
                                     "type": "SOLID",
@@ -931,22 +1687,57 @@
                                     "type": "FRAME",
                                     "id": "114:7721",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4114.0,
+                                        "y": 1948.5,
+                                        "width": 72.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7722",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4141.2,
+                                                "y": 1964.2,
+                                                "width": 17.5,
+                                                "height": 17.5
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:8206",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4141.2,
+                                                        "y": 1964.2,
+                                                        "width": 17.5,
+                                                        "height": 17.5
+                                                    },
                                                     "cornerRadius": 6.0,
                                                     "children": [
                                                         {
                                                             "type": "FRAME",
                                                             "id": "114:8207",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 4141.2,
+                                                                "y": 1964.2,
+                                                                "width": 17.5,
+                                                                "height": 17.5
+                                                            },
                                                             "cornerRadius": 4.0,
                                                             "fills": [
                                                                 {
@@ -961,7 +1752,18 @@
                                                             ],
                                                             "layoutMode": "HORIZONTAL",
                                                             "layoutSizingHorizontal": "FIXED",
-                                                            "layoutSizingVertical": "FIXED"
+                                                            "layoutSizingVertical": "FIXED",
+                                                            "strokes": [
+                                                                {
+                                                                    "type": "SOLID",
+                                                                    "color": {
+                                                                        "r": 0.7961,
+                                                                        "g": 0.8353,
+                                                                        "b": 0.8824,
+                                                                        "a": 1.0
+                                                                    }
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 }
@@ -973,16 +1775,45 @@
                                     "type": "FRAME",
                                     "id": "114:8209",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4186.0,
+                                        "y": 1948.5,
+                                        "width": 512.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:8212",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4200.0,
+                                                "y": 1964.5,
+                                                "width": 484.0,
+                                                "height": 17.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "TEXT",
                                                     "id": "114:8213",
                                                     "name": "Marketing Kampagne",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4200.0,
+                                                        "y": 1964.5,
+                                                        "width": 141.0,
+                                                        "height": 17.0
+                                                    },
                                                     "characters": "Marketing Kampagne",
                                                     "style": {
                                                         "fontFamily": "Inter",
@@ -998,16 +1829,45 @@
                                     "type": "FRAME",
                                     "id": "114:7725",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4698.0,
+                                        "y": 1948.5,
+                                        "width": 256.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7726",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4712.0,
+                                                "y": 1959.0,
+                                                "width": 356.0,
+                                                "height": 28.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:8214",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4712.0,
+                                                        "y": 1959.0,
+                                                        "width": 28.0,
+                                                        "height": 28.0
+                                                    },
                                                     "cornerRadius": 14.0,
                                                     "fills": [
                                                         {
@@ -1025,6 +1885,12 @@
                                                             "type": "TEXT",
                                                             "id": "114:8215",
                                                             "name": "P",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 4722.0,
+                                                                "y": 1964.5,
+                                                                "width": 8.0,
+                                                                "height": 17.0
+                                                            },
                                                             "characters": "L",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -1038,6 +1904,12 @@
                                                     "type": "TEXT",
                                                     "id": "114:7728",
                                                     "name": "Lisa Weber",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4752.0,
+                                                        "y": 1964.5,
+                                                        "width": 74.0,
+                                                        "height": 17.0
+                                                    },
                                                     "characters": "Lisa Weber",
                                                     "style": {
                                                         "fontFamily": "Inter",
@@ -1053,27 +1925,68 @@
                                     "type": "FRAME",
                                     "id": "114:7729",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4954.0,
+                                        "y": 1948.5,
+                                        "width": 256.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7730",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4968.0,
+                                                "y": 1964.5,
+                                                "width": 228.0,
+                                                "height": 17.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:7731",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4968.0,
+                                                        "y": 1965.5,
+                                                        "width": 228.0,
+                                                        "height": 15.0
+                                                    },
                                                     "children": [
                                                         {
                                                             "type": "FRAME",
                                                             "id": "114:7732",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 4968.0,
+                                                                "y": 1970.0,
+                                                                "width": 182.0,
+                                                                "height": 6.0
+                                                            },
                                                             "cornerRadius": 6.0,
                                                             "children": [
                                                                 {
                                                                     "type": "FRAME",
                                                                     "id": "114:7733",
                                                                     "name": "Frame",
+                                                                    "absoluteBoundingBox": {
+                                                                        "x": 4968.0,
+                                                                        "y": 1970.0,
+                                                                        "width": 182.0,
+                                                                        "height": 17.5
+                                                                    },
                                                                     "cornerRadius": 6.0,
                                                                     "fills": [
                                                                         {
@@ -1096,6 +2009,12 @@
                                                             "type": "TEXT",
                                                             "id": "114:7734",
                                                             "name": "0 %",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5162.0,
+                                                                "y": 1965.5,
+                                                                "width": 21.0,
+                                                                "height": 15.0
+                                                            },
                                                             "characters": "0 %",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -1113,16 +2032,45 @@
                                     "type": "FRAME",
                                     "id": "114:7735",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 5210.0,
+                                        "y": 1948.5,
+                                        "width": 160.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7736",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 5224.0,
+                                                "y": 1962.0,
+                                                "width": 132.0,
+                                                "height": 22.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:8218",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 5224.0,
+                                                        "y": 1962.0,
+                                                        "width": 48.0,
+                                                        "height": 22.0
+                                                    },
                                                     "cornerRadius": 6.0,
                                                     "fills": [
                                                         {
@@ -1140,6 +2088,12 @@
                                                             "type": "TEXT",
                                                             "id": "114:8220",
                                                             "name": "Offen",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5231.0,
+                                                                "y": 1965.5,
+                                                                "width": 34.0,
+                                                                "height": 15.0
+                                                            },
                                                             "characters": "Offen",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -1157,16 +2111,45 @@
                                     "type": "FRAME",
                                     "id": "114:8222",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 5370.0,
+                                        "y": 1948.5,
+                                        "width": 124.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:8225",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 5384.0,
+                                                "y": 1964.5,
+                                                "width": 96.0,
+                                                "height": 17.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "TEXT",
                                                     "id": "114:8226",
                                                     "name": "18.05.2026",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 5384.0,
+                                                        "y": 1964.5,
+                                                        "width": 74.0,
+                                                        "height": 17.0
+                                                    },
                                                     "characters": "18.05.2026",
                                                     "style": {
                                                         "fontFamily": "Inter",
@@ -1182,22 +2165,57 @@
                                     "type": "FRAME",
                                     "id": "114:7739",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 5494.0,
+                                        "y": 1948.5,
+                                        "width": 92.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7740",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 5508.0,
+                                                "y": 1959.0,
+                                                "width": 64.0,
+                                                "height": 28.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:8227",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 5522.5,
+                                                        "y": 1959.0,
+                                                        "width": 35.0,
+                                                        "height": 28.0
+                                                    },
                                                     "cornerRadius": 6.0,
                                                     "children": [
                                                         {
                                                             "type": "FRAME",
                                                             "id": "114:8230",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5533.0,
+                                                                "y": 1966.0,
+                                                                "width": 14.0,
+                                                                "height": 14.0
+                                                            },
                                                             "children": [
                                                                 {
                                                                     "type": "VECTOR",
@@ -1218,6 +2236,12 @@
                             "type": "FRAME",
                             "id": "114:7742",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 4114.0,
+                                "y": 1998.5,
+                                "width": 1472.0,
+                                "height": 50.0
+                            },
                             "fills": [
                                 {
                                     "type": "SOLID",
@@ -1234,22 +2258,57 @@
                                     "type": "FRAME",
                                     "id": "114:7743",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4114.0,
+                                        "y": 1998.5,
+                                        "width": 72.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7744",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4141.2,
+                                                "y": 2014.2,
+                                                "width": 17.5,
+                                                "height": 17.5
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:8232",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4141.2,
+                                                        "y": 2014.2,
+                                                        "width": 17.5,
+                                                        "height": 17.5
+                                                    },
                                                     "cornerRadius": 6.0,
                                                     "children": [
                                                         {
                                                             "type": "FRAME",
                                                             "id": "114:8233",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 4141.2,
+                                                                "y": 2014.2,
+                                                                "width": 17.5,
+                                                                "height": 17.5
+                                                            },
                                                             "cornerRadius": 4.0,
                                                             "fills": [
                                                                 {
@@ -1264,7 +2323,18 @@
                                                             ],
                                                             "layoutMode": "HORIZONTAL",
                                                             "layoutSizingHorizontal": "FIXED",
-                                                            "layoutSizingVertical": "FIXED"
+                                                            "layoutSizingVertical": "FIXED",
+                                                            "strokes": [
+                                                                {
+                                                                    "type": "SOLID",
+                                                                    "color": {
+                                                                        "r": 0.7961,
+                                                                        "g": 0.8353,
+                                                                        "b": 0.8824,
+                                                                        "a": 1.0
+                                                                    }
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 }
@@ -1276,16 +2346,45 @@
                                     "type": "FRAME",
                                     "id": "114:8235",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4186.0,
+                                        "y": 1998.5,
+                                        "width": 512.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:8238",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4200.0,
+                                                "y": 2014.5,
+                                                "width": 484.0,
+                                                "height": 17.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "TEXT",
                                                     "id": "114:8239",
                                                     "name": "API Migration",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4200.0,
+                                                        "y": 2014.5,
+                                                        "width": 89.0,
+                                                        "height": 17.0
+                                                    },
                                                     "characters": "API Migration",
                                                     "style": {
                                                         "fontFamily": "Inter",
@@ -1301,16 +2400,45 @@
                                     "type": "FRAME",
                                     "id": "114:7747",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4698.0,
+                                        "y": 1998.5,
+                                        "width": 256.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7748",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4712.0,
+                                                "y": 2009.0,
+                                                "width": 228.0,
+                                                "height": 28.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:8240",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4712.0,
+                                                        "y": 2009.0,
+                                                        "width": 28.0,
+                                                        "height": 28.0
+                                                    },
                                                     "cornerRadius": 14.0,
                                                     "fills": [
                                                         {
@@ -1328,6 +2456,12 @@
                                                             "type": "TEXT",
                                                             "id": "114:8241",
                                                             "name": "P",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 4721.5,
+                                                                "y": 2014.5,
+                                                                "width": 9.0,
+                                                                "height": 17.0
+                                                            },
                                                             "characters": "P",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -1341,6 +2475,12 @@
                                                     "type": "TEXT",
                                                     "id": "114:7750",
                                                     "name": "Paul Müller",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4752.0,
+                                                        "y": 2014.5,
+                                                        "width": 73.0,
+                                                        "height": 17.0
+                                                    },
                                                     "characters": "Paul Müller",
                                                     "style": {
                                                         "fontFamily": "Inter",
@@ -1356,27 +2496,68 @@
                                     "type": "FRAME",
                                     "id": "114:7751",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4954.0,
+                                        "y": 1998.5,
+                                        "width": 256.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7752",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4968.0,
+                                                "y": 2014.5,
+                                                "width": 228.0,
+                                                "height": 17.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:7753",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4968.0,
+                                                        "y": 2015.5,
+                                                        "width": 228.0,
+                                                        "height": 15.0
+                                                    },
                                                     "children": [
                                                         {
                                                             "type": "FRAME",
                                                             "id": "114:7754",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 4968.0,
+                                                                "y": 2020.0,
+                                                                "width": 182.0,
+                                                                "height": 6.0
+                                                            },
                                                             "cornerRadius": 6.0,
                                                             "children": [
                                                                 {
                                                                     "type": "FRAME",
                                                                     "id": "114:7755",
                                                                     "name": "Frame",
+                                                                    "absoluteBoundingBox": {
+                                                                        "x": 4968.0,
+                                                                        "y": 2020.0,
+                                                                        "width": 131.0,
+                                                                        "height": 17.5
+                                                                    },
                                                                     "counterAxisAlignItems": "CENTER",
                                                                     "fills": [
                                                                         {
@@ -1403,6 +2584,12 @@
                                                                     "type": "FRAME",
                                                                     "id": "114:7756",
                                                                     "name": "Frame",
+                                                                    "absoluteBoundingBox": {
+                                                                        "x": 5099.0,
+                                                                        "y": 2020.0,
+                                                                        "width": 51.0,
+                                                                        "height": 17.5
+                                                                    },
                                                                     "fills": [
                                                                         {
                                                                             "type": "SOLID",
@@ -1430,6 +2617,12 @@
                                                             "type": "TEXT",
                                                             "id": "114:7757",
                                                             "name": "72 %",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5162.0,
+                                                                "y": 2015.5,
+                                                                "width": 28.0,
+                                                                "height": 15.0
+                                                            },
                                                             "characters": "72 %",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -1447,16 +2640,45 @@
                                     "type": "FRAME",
                                     "id": "114:7758",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 5210.0,
+                                        "y": 1998.5,
+                                        "width": 160.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7759",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 5224.0,
+                                                "y": 2012.0,
+                                                "width": 132.0,
+                                                "height": 22.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:8244",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 5224.0,
+                                                        "y": 2012.0,
+                                                        "width": 69.0,
+                                                        "height": 22.0
+                                                    },
                                                     "cornerRadius": 6.0,
                                                     "fills": [
                                                         {
@@ -1474,6 +2696,12 @@
                                                             "type": "TEXT",
                                                             "id": "114:8246",
                                                             "name": "Blockiert",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5231.0,
+                                                                "y": 2015.5,
+                                                                "width": 55.0,
+                                                                "height": 15.0
+                                                            },
                                                             "characters": "Blockiert",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -1491,16 +2719,45 @@
                                     "type": "FRAME",
                                     "id": "114:8248",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 5370.0,
+                                        "y": 1998.5,
+                                        "width": 124.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:8251",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 5384.0,
+                                                "y": 2014.5,
+                                                "width": 96.0,
+                                                "height": 17.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "TEXT",
                                                     "id": "114:8252",
                                                     "name": "12.05.2026",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 5384.0,
+                                                        "y": 2014.5,
+                                                        "width": 74.0,
+                                                        "height": 17.0
+                                                    },
                                                     "characters": "12.05.2026",
                                                     "style": {
                                                         "fontFamily": "Inter",
@@ -1516,22 +2773,57 @@
                                     "type": "FRAME",
                                     "id": "114:7762",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 5494.0,
+                                        "y": 1998.5,
+                                        "width": 92.0,
+                                        "height": 50.0
+                                    },
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8863,
+                                                "g": 0.9098,
+                                                "b": 0.9412,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7763",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 5508.0,
+                                                "y": 2009.0,
+                                                "width": 64.0,
+                                                "height": 28.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:8253",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 5522.5,
+                                                        "y": 2009.0,
+                                                        "width": 35.0,
+                                                        "height": 28.0
+                                                    },
                                                     "cornerRadius": 6.0,
                                                     "children": [
                                                         {
                                                             "type": "FRAME",
                                                             "id": "114:8256",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5533.0,
+                                                                "y": 2016.0,
+                                                                "width": 14.0,
+                                                                "height": 14.0
+                                                            },
                                                             "children": [
                                                                 {
                                                                     "type": "VECTOR",
@@ -1556,6 +2848,12 @@
             "type": "FRAME",
             "id": "114:7765",
             "name": "Frame",
+            "absoluteBoundingBox": {
+                "x": 4114.0,
+                "y": 1674.0,
+                "width": 302.0,
+                "height": 42.0
+            },
             "cornerRadius": 6.0,
             "fills": [
                 {
@@ -1573,11 +2871,23 @@
                     "type": "FRAME",
                     "id": "114:8123",
                     "name": "Frame",
+                    "absoluteBoundingBox": {
+                        "x": 4128.0,
+                        "y": 1688.0,
+                        "width": 14.0,
+                        "height": 14.0
+                    },
                     "children": [
                         {
                             "type": "FRAME",
                             "id": "114:8144",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 4128.0,
+                                "y": 1688.0,
+                                "width": 14.0,
+                                "height": 14.0
+                            },
                             "children": [
                                 {
                                     "type": "VECTOR",
@@ -1592,6 +2902,12 @@
                     "type": "FRAME",
                     "id": "114:8128",
                     "name": "Frame",
+                    "absoluteBoundingBox": {
+                        "x": 4149.0,
+                        "y": 1688.0,
+                        "width": 14.0,
+                        "height": 14.0
+                    },
                     "children": [
                         {
                             "type": "VECTOR",
@@ -1604,11 +2920,23 @@
                     "type": "FRAME",
                     "id": "114:8134",
                     "name": "Frame",
+                    "absoluteBoundingBox": {
+                        "x": 4170.0,
+                        "y": 1688.0,
+                        "width": 55.0,
+                        "height": 14.0
+                    },
                     "children": [
                         {
                             "type": "TEXT",
                             "id": "114:8136",
                             "name": "Projekte",
+                            "absoluteBoundingBox": {
+                                "x": 4170.0,
+                                "y": 1688.0,
+                                "width": 55.0,
+                                "height": 14.0
+                            },
                             "characters": "Projekte",
                             "style": {
                                 "fontFamily": "Inter",
@@ -1622,6 +2950,12 @@
                     "type": "FRAME",
                     "id": "114:8126",
                     "name": "Frame",
+                    "absoluteBoundingBox": {
+                        "x": 4232.0,
+                        "y": 1688.0,
+                        "width": 14.0,
+                        "height": 14.0
+                    },
                     "children": [
                         {
                             "type": "VECTOR",
@@ -1634,11 +2968,23 @@
                     "type": "FRAME",
                     "id": "114:8130",
                     "name": "Frame",
+                    "absoluteBoundingBox": {
+                        "x": 4253.0,
+                        "y": 1688.0,
+                        "width": 57.0,
+                        "height": 14.0
+                    },
                     "children": [
                         {
                             "type": "TEXT",
                             "id": "114:8132",
                             "name": "Projekt 1",
+                            "absoluteBoundingBox": {
+                                "x": 4253.0,
+                                "y": 1688.0,
+                                "width": 57.0,
+                                "height": 14.0
+                            },
                             "characters": "Projekt 1",
                             "style": {
                                 "fontFamily": "Inter",
@@ -1652,6 +2998,12 @@
                     "type": "FRAME",
                     "id": "114:8138",
                     "name": "chevron-right",
+                    "absoluteBoundingBox": {
+                        "x": 4317.0,
+                        "y": 1688.0,
+                        "width": 14.0,
+                        "height": 14.0
+                    },
                     "children": [
                         {
                             "type": "VECTOR",
@@ -1664,11 +3016,23 @@
                     "type": "FRAME",
                     "id": "114:8140",
                     "name": "Frame",
+                    "absoluteBoundingBox": {
+                        "x": 4338.0,
+                        "y": 1688.0,
+                        "width": 64.0,
+                        "height": 14.0
+                    },
                     "children": [
                         {
                             "type": "TEXT",
                             "id": "114:8142",
                             "name": "Aufgaben",
+                            "absoluteBoundingBox": {
+                                "x": 4338.0,
+                                "y": 1688.0,
+                                "width": 64.0,
+                                "height": 14.0
+                            },
                             "characters": "Aufgaben",
                             "style": {
                                 "fontFamily": "Inter",
@@ -1684,13 +3048,36 @@
             "type": "FRAME",
             "id": "114:7773",
             "name": "Frame",
+            "absoluteBoundingBox": {
+                "x": 4048.0,
+                "y": 1604.0,
+                "width": 523.0,
+                "height": 58.0
+            },
             "children": [
                 {
                     "type": "FRAME",
                     "id": "114:7774",
                     "name": "Frame",
+                    "absoluteBoundingBox": {
+                        "x": 4048.0,
+                        "y": 1608.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    },
                     "cornerRadius": 25.0,
                     "fills": [
+                        {
+                            "type": "SOLID",
+                            "color": {
+                                "r": 0.9451,
+                                "g": 0.9608,
+                                "b": 0.9765,
+                                "a": 1.0
+                            }
+                        }
+                    ],
+                    "strokes": [
                         {
                             "type": "SOLID",
                             "color": {
@@ -1706,6 +3093,12 @@
                             "type": "FRAME",
                             "id": "114:8121",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 4057.0,
+                                "y": 1617.0,
+                                "width": 32.0,
+                                "height": 32.0
+                            },
                             "children": [
                                 {
                                     "type": "VECTOR",
@@ -1720,11 +3113,23 @@
                     "type": "FRAME",
                     "id": "114:7776",
                     "name": "Frame",
+                    "absoluteBoundingBox": {
+                        "x": 4114.0,
+                        "y": 1604.0,
+                        "width": 457.0,
+                        "height": 58.0
+                    },
                     "children": [
                         {
                             "type": "TEXT",
                             "id": "114:7777",
                             "name": "Projektaufgaben",
+                            "absoluteBoundingBox": {
+                                "x": 4114.0,
+                                "y": 1604.0,
+                                "width": 260.0,
+                                "height": 39.0
+                            },
                             "characters": "Projektaufgaben",
                             "style": {
                                 "fontFamily": "Inter",
@@ -1736,6 +3141,12 @@
                             "type": "TEXT",
                             "id": "114:7778",
                             "name": "Hier werden alle Aufgaben des Projekts Projekt 1 aufgelistet.",
+                            "absoluteBoundingBox": {
+                                "x": 4114.0,
+                                "y": 1647.0,
+                                "width": 457.0,
+                                "height": 19.0
+                            },
                             "characters": "Hier werden alle Aufgaben des Projekts Projekt 1 aufgelistet.",
                             "style": {
                                 "fontFamily": "Inter",
@@ -1751,16 +3162,34 @@
             "type": "FRAME",
             "id": "114:7779",
             "name": "Frame",
+            "absoluteBoundingBox": {
+                "x": 5523.0,
+                "y": 1945.0,
+                "width": 200.0,
+                "height": 138.0
+            },
             "children": [
                 {
                     "type": "FRAME",
                     "id": "114:7780",
                     "name": "Frame",
+                    "absoluteBoundingBox": {
+                        "x": 5523.0,
+                        "y": 1945.0,
+                        "width": 200.0,
+                        "height": 138.0
+                    },
                     "children": [
                         {
                             "type": "FRAME",
                             "id": "114:7781",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 5523.0,
+                                "y": 1945.0,
+                                "width": 200.0,
+                                "height": 138.0
+                            },
                             "cornerRadius": 6.0,
                             "fills": [
                                 {
@@ -1773,27 +3202,73 @@
                                     }
                                 }
                             ],
+                            "strokes": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.8863,
+                                        "g": 0.9098,
+                                        "b": 0.9412,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
                             "children": [
                                 {
                                     "type": "FRAME",
                                     "id": "114:7782",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 5524.0,
+                                        "y": 1946.0,
+                                        "width": 198.0,
+                                        "height": 136.0
+                                    },
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7783",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 5534.5,
+                                                "y": 1956.5,
+                                                "width": 177.0,
+                                                "height": 115.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:7959",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 5534.5,
+                                                        "y": 1956.5,
+                                                        "width": 177.0,
+                                                        "height": 33.0
+                                                    },
                                                     "cornerRadius": 6.0,
+                                                    "strokes": [
+                                                        {
+                                                            "type": "SOLID",
+                                                            "color": {
+                                                                "r": 0.8863,
+                                                                "g": 0.9098,
+                                                                "b": 0.9412,
+                                                                "a": 1.0
+                                                            }
+                                                        }
+                                                    ],
                                                     "children": [
                                                         {
                                                             "type": "FRAME",
                                                             "id": "114:7977",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5546.0,
+                                                                "y": 1966.0,
+                                                                "width": 14.0,
+                                                                "height": 14.0
+                                                            },
                                                             "children": [
                                                                 {
                                                                     "type": "VECTOR",
@@ -1806,6 +3281,12 @@
                                                             "type": "TEXT",
                                                             "id": "114:7961",
                                                             "name": "Bearbeiten",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5567.0,
+                                                                "y": 1964.5,
+                                                                "width": 73.0,
+                                                                "height": 17.0
+                                                            },
                                                             "characters": "Bearbeiten",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -1819,12 +3300,35 @@
                                                     "type": "FRAME",
                                                     "id": "114:7965",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 5534.5,
+                                                        "y": 1997.5,
+                                                        "width": 177.0,
+                                                        "height": 33.0
+                                                    },
                                                     "cornerRadius": 6.0,
+                                                    "strokes": [
+                                                        {
+                                                            "type": "SOLID",
+                                                            "color": {
+                                                                "r": 0.8863,
+                                                                "g": 0.9098,
+                                                                "b": 0.9412,
+                                                                "a": 1.0
+                                                            }
+                                                        }
+                                                    ],
                                                     "children": [
                                                         {
                                                             "type": "FRAME",
                                                             "id": "114:8117",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5546.0,
+                                                                "y": 2007.0,
+                                                                "width": 14.0,
+                                                                "height": 14.0
+                                                            },
                                                             "children": [
                                                                 {
                                                                     "type": "VECTOR",
@@ -1837,6 +3341,12 @@
                                                             "type": "TEXT",
                                                             "id": "114:7967",
                                                             "name": "Status aktualisieren",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5567.0,
+                                                                "y": 2005.5,
+                                                                "width": 133.0,
+                                                                "height": 17.0
+                                                            },
                                                             "characters": "Status aktualisieren",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -1850,12 +3360,35 @@
                                                     "type": "FRAME",
                                                     "id": "114:7971",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 5534.5,
+                                                        "y": 2038.5,
+                                                        "width": 177.0,
+                                                        "height": 33.0
+                                                    },
                                                     "cornerRadius": 6.0,
+                                                    "strokes": [
+                                                        {
+                                                            "type": "SOLID",
+                                                            "color": {
+                                                                "r": 0.8863,
+                                                                "g": 0.9098,
+                                                                "b": 0.9412,
+                                                                "a": 1.0
+                                                            }
+                                                        }
+                                                    ],
                                                     "children": [
                                                         {
                                                             "type": "FRAME",
                                                             "id": "114:8119",
                                                             "name": "Frame",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5546.0,
+                                                                "y": 2048.0,
+                                                                "width": 14.0,
+                                                                "height": 14.0
+                                                            },
                                                             "children": [
                                                                 {
                                                                     "type": "VECTOR",
@@ -1868,6 +3401,12 @@
                                                             "type": "TEXT",
                                                             "id": "114:7973",
                                                             "name": "Löschen",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 5567.0,
+                                                                "y": 2046.5,
+                                                                "width": 57.0,
+                                                                "height": 17.0
+                                                            },
                                                             "characters": "Löschen",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -1891,16 +3430,34 @@
             "type": "FRAME",
             "id": "114:7787",
             "name": "Frame",
+            "absoluteBoundingBox": {
+                "x": 4114.0,
+                "y": 1732.0,
+                "width": 448.0,
+                "height": 202.0
+            },
             "children": [
                 {
                     "type": "FRAME",
                     "id": "114:7920",
                     "name": "Frame",
+                    "absoluteBoundingBox": {
+                        "x": 4114.0,
+                        "y": 1732.0,
+                        "width": 216.0,
+                        "height": 61.0
+                    },
                     "children": [
                         {
                             "type": "TEXT",
                             "id": "114:7921",
                             "name": "Suche",
+                            "absoluteBoundingBox": {
+                                "x": 4114.0,
+                                "y": 1732.0,
+                                "width": 42.0,
+                                "height": 21.0
+                            },
                             "characters": "Suche",
                             "style": {
                                 "fontFamily": "Inter",
@@ -1912,6 +3469,12 @@
                             "type": "FRAME",
                             "id": "114:7922",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 4114.0,
+                                "y": 1760.0,
+                                "width": 216.0,
+                                "height": 33.0
+                            },
                             "cornerRadius": 6.0,
                             "fills": [
                                 {
@@ -1924,11 +3487,28 @@
                                     }
                                 }
                             ],
+                            "strokes": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.7961,
+                                        "g": 0.8353,
+                                        "b": 0.8824,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
                             "children": [
                                 {
                                     "type": "FRAME",
                                     "id": "114:7931",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4125.5,
+                                        "y": 1769.5,
+                                        "width": 14.0,
+                                        "height": 14.0
+                                    },
                                     "children": [
                                         {
                                             "type": "VECTOR",
@@ -1941,16 +3521,34 @@
                                     "type": "FRAME",
                                     "id": "114:7924",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4150.0,
+                                        "y": 1768.0,
+                                        "width": 168.5,
+                                        "height": 17.0
+                                    },
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7933",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4150.0,
+                                                "y": 1768.0,
+                                                "width": 168.5,
+                                                "height": 17.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "TEXT",
                                                     "id": "114:7934",
                                                     "name": "Suche...",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4150.0,
+                                                        "y": 1768.0,
+                                                        "width": 53.0,
+                                                        "height": 17.0
+                                                    },
                                                     "characters": "Suche...",
                                                     "style": {
                                                         "fontFamily": "Inter",
@@ -1970,6 +3568,12 @@
                     "type": "FRAME",
                     "id": "114:7789",
                     "name": "Frame",
+                    "absoluteBoundingBox": {
+                        "x": 4346.0,
+                        "y": 1732.0,
+                        "width": 216.0,
+                        "height": 202.0
+                    },
                     "fills": [
                         {
                             "type": "SOLID",
@@ -1986,11 +3590,23 @@
                             "type": "FRAME",
                             "id": "114:7935",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 4346.0,
+                                "y": 1732.0,
+                                "width": 216.0,
+                                "height": 61.0
+                            },
                             "children": [
                                 {
                                     "type": "TEXT",
                                     "id": "114:7936",
                                     "name": "Statsu",
+                                    "absoluteBoundingBox": {
+                                        "x": 4346.0,
+                                        "y": 1732.0,
+                                        "width": 43.0,
+                                        "height": 21.0
+                                    },
                                     "characters": "Status",
                                     "style": {
                                         "fontFamily": "Inter",
@@ -2002,6 +3618,12 @@
                                     "type": "FRAME",
                                     "id": "114:7937",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4346.0,
+                                        "y": 1760.0,
+                                        "width": 216.0,
+                                        "height": 33.0
+                                    },
                                     "cornerRadius": 6.0,
                                     "fills": [
                                         {
@@ -2014,21 +3636,50 @@
                                             }
                                         }
                                     ],
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.0627,
+                                                "g": 0.7255,
+                                                "b": 0.5059,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7938",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4347.0,
+                                                "y": 1761.0,
+                                                "width": 179.0,
+                                                "height": 31.0
+                                            },
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "114:7947",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4357.5,
+                                                        "y": 1768.0,
+                                                        "width": 168.5,
+                                                        "height": 17.0
+                                                    },
                                                     "children": [
                                                         {
                                                             "type": "TEXT",
                                                             "id": "114:7948",
                                                             "name": "Status auswählen",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 4357.5,
+                                                                "y": 1768.0,
+                                                                "width": 117.0,
+                                                                "height": 17.0
+                                                            },
                                                             "characters": "Status auswählen",
                                                             "style": {
                                                                 "fontFamily": "Inter",
@@ -2044,6 +3695,12 @@
                                             "type": "FRAME",
                                             "id": "114:7941",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4526.0,
+                                                "y": 1761.0,
+                                                "width": 35.0,
+                                                "height": 31.0
+                                            },
                                             "rectangleCornerRadii": [
                                                 0.0,
                                                 6.0,
@@ -2055,6 +3712,12 @@
                                                     "type": "FRAME",
                                                     "id": "114:7949",
                                                     "name": "Frame",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4536.5,
+                                                        "y": 1769.5,
+                                                        "width": 14.0,
+                                                        "height": 14.0
+                                                    },
                                                     "children": [
                                                         {
                                                             "type": "VECTOR",
@@ -2073,6 +3736,12 @@
                             "type": "FRAME",
                             "id": "114:7791",
                             "name": "Frame",
+                            "absoluteBoundingBox": {
+                                "x": 4346.0,
+                                "y": 1795.0,
+                                "width": 216.0,
+                                "height": 139.0
+                            },
                             "cornerRadius": 6.0,
                             "fills": [
                                 {
@@ -2085,22 +3754,51 @@
                                     }
                                 }
                             ],
+                            "strokes": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.8863,
+                                        "g": 0.9098,
+                                        "b": 0.9412,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
                             "children": [
                                 {
                                     "type": "FRAME",
                                     "id": "114:7792",
                                     "name": "Frame",
+                                    "absoluteBoundingBox": {
+                                        "x": 4347.0,
+                                        "y": 1796.0,
+                                        "width": 214.0,
+                                        "height": 137.0
+                                    },
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "114:7951",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4350.5,
+                                                "y": 1799.5,
+                                                "width": 207.0,
+                                                "height": 31.0
+                                            },
                                             "cornerRadius": 4.0,
                                             "children": [
                                                 {
                                                     "type": "TEXT",
                                                     "id": "114:7952",
                                                     "name": "Offen",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4361.0,
+                                                        "y": 1806.5,
+                                                        "width": 37.0,
+                                                        "height": 17.0
+                                                    },
                                                     "characters": "Offen",
                                                     "style": {
                                                         "fontFamily": "Inter",
@@ -2114,6 +3812,12 @@
                                             "type": "FRAME",
                                             "id": "114:7953",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4350.5,
+                                                "y": 1832.5,
+                                                "width": 207.0,
+                                                "height": 31.0
+                                            },
                                             "cornerRadius": 4.0,
                                             "fills": [
                                                 {
@@ -2131,6 +3835,12 @@
                                                     "type": "TEXT",
                                                     "id": "114:7954",
                                                     "name": "In Arbeit",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4361.0,
+                                                        "y": 1839.5,
+                                                        "width": 56.0,
+                                                        "height": 17.0
+                                                    },
                                                     "characters": "In Arbeit",
                                                     "style": {
                                                         "fontFamily": "Inter",
@@ -2144,12 +3854,24 @@
                                             "type": "FRAME",
                                             "id": "114:7955",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4350.5,
+                                                "y": 1865.5,
+                                                "width": 207.0,
+                                                "height": 31.0
+                                            },
                                             "cornerRadius": 4.0,
                                             "children": [
                                                 {
                                                     "type": "TEXT",
                                                     "id": "114:7956",
                                                     "name": "Blockiert",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4361.0,
+                                                        "y": 1872.5,
+                                                        "width": 59.0,
+                                                        "height": 17.0
+                                                    },
                                                     "characters": "Blockiert",
                                                     "style": {
                                                         "fontFamily": "Inter",
@@ -2163,12 +3885,24 @@
                                             "type": "FRAME",
                                             "id": "114:7957",
                                             "name": "Frame",
+                                            "absoluteBoundingBox": {
+                                                "x": 4350.5,
+                                                "y": 1898.5,
+                                                "width": 207.0,
+                                                "height": 31.0
+                                            },
                                             "cornerRadius": 4.0,
                                             "children": [
                                                 {
                                                     "type": "TEXT",
                                                     "id": "114:7958",
                                                     "name": "Fertig",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 4361.0,
+                                                        "y": 1905.5,
+                                                        "width": 39.0,
+                                                        "height": 17.0
+                                                    },
                                                     "characters": "Fertig",
                                                     "style": {
                                                         "fontFamily": "Inter",

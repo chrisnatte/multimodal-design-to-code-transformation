@@ -2,6 +2,12 @@
     "type": "FRAME",
     "id": "103:2973",
     "name": "Card [Medium Composite]",
+    "absoluteBoundingBox": {
+        "x": 640.0,
+        "y": 68.0,
+        "width": 256.0,
+        "height": 246.0
+    },
     "cornerRadius": 12.0,
     "fills": [
         {
@@ -23,8 +29,15 @@
             "type": "FRAME",
             "id": "103:2975",
             "name": "body",
+            "absoluteBoundingBox": {
+                "x": 640.0,
+                "y": 68.0,
+                "width": 256.0,
+                "height": 246.0
+            },
             "cornerRadius": 6.0,
             "itemSpacing": 16.0,
+            "layoutAlign": "STRETCH",
             "layoutMode": "VERTICAL",
             "layoutSizingHorizontal": "FILL",
             "layoutSizingVertical": "HUG",
@@ -37,7 +50,14 @@
                     "type": "FRAME",
                     "id": "103:2976",
                     "name": "caption",
+                    "absoluteBoundingBox": {
+                        "x": 664.0,
+                        "y": 92.0,
+                        "width": 208.0,
+                        "height": 21.0
+                    },
                     "itemSpacing": 7.0,
+                    "layoutAlign": "STRETCH",
                     "layoutMode": "VERTICAL",
                     "layoutSizingHorizontal": "FILL",
                     "layoutSizingVertical": "HUG",
@@ -46,6 +66,12 @@
                             "type": "TEXT",
                             "id": "103:2977",
                             "name": "Anmelden",
+                            "absoluteBoundingBox": {
+                                "x": 664.0,
+                                "y": 92.0,
+                                "width": 208.0,
+                                "height": 21.0
+                            },
                             "characters": "Anmelden",
                             "style": {
                                 "fontFamily": "Inter",
@@ -59,7 +85,14 @@
                     "type": "FRAME",
                     "id": "103:2979",
                     "name": "content",
+                    "absoluteBoundingBox": {
+                        "x": 664.0,
+                        "y": 129.0,
+                        "width": 208.0,
+                        "height": 120.0
+                    },
                     "itemSpacing": 16.0,
+                    "layoutAlign": "STRETCH",
                     "layoutMode": "VERTICAL",
                     "layoutSizingHorizontal": "FILL",
                     "layoutSizingVertical": "HUG",
@@ -68,96 +101,45 @@
                             "type": "INSTANCE",
                             "id": "104:2994",
                             "name": "inputtext",
-                            "componentId": "7:125",
-                            "componentProperties": {
-                                "↳ Float Label#4275:152": {
-                                    "type": "TEXT",
-                                    "value": "Placeholder"
-                                },
-                                "🏷️ Show Label#5662:50": {
-                                    "type": "BOOLEAN",
-                                    "value": false
-                                },
-                                "ℹ️ Show Helper#1729:1731": {
-                                    "type": "BOOLEAN",
-                                    "value": false
-                                },
-                                "↳ Helper Text#1729:4039": {
-                                    "type": "TEXT",
-                                    "value": "Helper Text"
-                                },
-                                "➡️ Show Right Icon#1729:3462": {
-                                    "type": "BOOLEAN",
-                                    "value": false
-                                },
-                                "↳ Right Icon#1729:577": {
-                                    "type": "INSTANCE_SWAP",
-                                    "value": "7:29",
-                                    "preferredValues": []
-                                },
-                                "⬅️ Show Left Icon#1729:2885": {
-                                    "type": "BOOLEAN",
-                                    "value": false
-                                },
-                                "↳ Left Icon#1729:0": {
-                                    "type": "INSTANCE_SWAP",
-                                    "value": "7:29",
-                                    "preferredValues": []
-                                },
-                                "↳ Label#5662:83": {
-                                    "type": "TEXT",
-                                    "value": "Label"
-                                },
-                                "👁️ Show Text#1729:2308": {
-                                    "type": "BOOLEAN",
-                                    "value": true
-                                },
-                                "⚙️ State": {
-                                    "value": "Default",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "❌ Invalid": {
-                                    "value": "False",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "🚫 Disabled": {
-                                    "value": "False",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "🟦 Filled": {
-                                    "value": "False",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "🤏 Size": {
-                                    "value": "Normal",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "▭ Ifta Label": {
-                                    "value": "False",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "🏷️ Float Label": {
-                                    "value": "False",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "↳ Float Label Variant": {
-                                    "value": "N/A",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                }
+                            "componentId": "⚙️ State=Default, ❌ Invalid=False, 🚫 Disabled=False, 🟦 Filled=False, 🤏 Size=Normal, ▭ Ifta Label=False, 🏷️ Float Label=False, ↳ Float Label Variant=N/A",
+                            "absoluteBoundingBox": {
+                                "x": 664.0,
+                                "y": 129.0,
+                                "width": 208.0,
+                                "height": 33.0
                             },
+                            "componentProperties": {
+                                "↳ Float Label": "Placeholder",
+                                "🏷️ Show Label": false,
+                                "ℹ️ Show Helper": false,
+                                "↳ Helper Text": "Helper Text",
+                                "➡️ Show Right Icon": false,
+                                "↳ Right Icon": "7:29",
+                                "⬅️ Show Left Icon": false,
+                                "↳ Left Icon": "7:29",
+                                "↳ Label": "Label",
+                                "👁️ Show Text": true,
+                                "⚙️ State": "Default",
+                                "❌ Invalid": "False",
+                                "🚫 Disabled": "False",
+                                "🟦 Filled": "False",
+                                "🤏 Size": "Normal",
+                                "▭ Ifta Label": "False",
+                                "🏷️ Float Label": "False",
+                                "↳ Float Label Variant": "N/A"
+                            },
+                            "layoutAlign": "STRETCH",
                             "children": [
                                 {
                                     "type": "FRAME",
                                     "id": "I104:2994;1729:36230",
                                     "name": "input",
+                                    "absoluteBoundingBox": {
+                                        "x": 664.0,
+                                        "y": 129.0,
+                                        "width": 208.0,
+                                        "height": 33.0
+                                    },
                                     "cornerRadius": 6.0,
                                     "counterAxisAlignItems": "CENTER",
                                     "fills": [
@@ -172,6 +154,7 @@
                                         }
                                     ],
                                     "itemSpacing": 10.5,
+                                    "layoutAlign": "STRETCH",
                                     "layoutMode": "HORIZONTAL",
                                     "layoutSizingHorizontal": "FILL",
                                     "layoutSizingVertical": "HUG",
@@ -179,11 +162,30 @@
                                     "paddingLeft": 10.5,
                                     "paddingRight": 10.5,
                                     "paddingTop": 7.0,
+                                    "strokes": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.7961,
+                                                "g": 0.8353,
+                                                "b": 0.8824,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "I104:2994;1884:38746",
                                             "name": "content",
+                                            "absoluteBoundingBox": {
+                                                "x": 675.5,
+                                                "y": 137.0,
+                                                "width": 185.0,
+                                                "height": 17.0
+                                            },
+                                            "layoutAlign": "INHERIT",
+                                            "layoutGrow": 1.0,
                                             "layoutMode": "VERTICAL",
                                             "layoutSizingHorizontal": "FILL",
                                             "layoutSizingVertical": "HUG",
@@ -192,31 +194,34 @@
                                                     "type": "INSTANCE",
                                                     "id": "I104:2994;1809:36855",
                                                     "name": "_inputtext-content",
-                                                    "componentId": "7:19",
+                                                    "componentId": "Text Config=Placeholder",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 675.5,
+                                                        "y": 137.0,
+                                                        "width": 185.0,
+                                                        "height": 17.0
+                                                    },
                                                     "componentProperties": {
-                                                        "Value#4275:146": {
-                                                            "type": "TEXT",
-                                                            "value": "Text"
-                                                        },
-                                                        "Placeholder#4275:140": {
-                                                            "type": "TEXT",
-                                                            "value": "E-Mail-Adresse"
-                                                        },
-                                                        "Text Config": {
-                                                            "value": "Placeholder",
-                                                            "type": "VARIANT",
-                                                            "boundVariables": {}
-                                                        }
+                                                        "Value": "Text",
+                                                        "Placeholder": "E-Mail-Adresse",
+                                                        "Text Config": "Placeholder"
                                                     },
                                                     "componentPropertyReferences": {
                                                         "visible": "👁️ Show Text#1729:2308"
                                                     },
                                                     "isExposedInstance": true,
+                                                    "layoutAlign": "STRETCH",
                                                     "children": [
                                                         {
                                                             "type": "TEXT",
                                                             "id": "I104:2994;1809:36855;4275:52783",
                                                             "name": "Placeholder",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 675.5,
+                                                                "y": 137.0,
+                                                                "width": 185.0,
+                                                                "height": 17.0
+                                                            },
                                                             "characters": "E-Mail-Adresse",
                                                             "componentPropertyReferences": {
                                                                 "characters": "Placeholder#4275:140"
@@ -239,120 +244,64 @@
                             "type": "INSTANCE",
                             "id": "104:3004",
                             "name": "password",
-                            "componentId": "7:4473",
-                            "componentProperties": {
-                                "State": {
-                                    "value": "Selected",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "Toggle Mask": {
-                                    "value": "True",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "Password Visible": {
-                                    "value": "False",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                }
+                            "componentId": "State=Selected, Toggle Mask=True, Password Visible=False",
+                            "absoluteBoundingBox": {
+                                "x": 664.0,
+                                "y": 178.0,
+                                "width": 208.0,
+                                "height": 33.0
                             },
+                            "componentProperties": {
+                                "State": "Selected",
+                                "Toggle Mask": "True",
+                                "Password Visible": "False"
+                            },
+                            "layoutAlign": "STRETCH",
                             "children": [
                                 {
                                     "type": "INSTANCE",
                                     "id": "I104:3004;1794:38489",
                                     "name": "inputtext",
-                                    "componentId": "7:125",
+                                    "componentId": "⚙️ State=Default, ❌ Invalid=False, 🚫 Disabled=False, 🟦 Filled=False, 🤏 Size=Normal, ▭ Ifta Label=False, 🏷️ Float Label=False, ↳ Float Label Variant=N/A",
+                                    "absoluteBoundingBox": {
+                                        "x": 664.0,
+                                        "y": 178.0,
+                                        "width": 208.0,
+                                        "height": 33.0
+                                    },
                                     "componentProperties": {
-                                        "↳ Float Label#4275:152": {
-                                            "type": "TEXT",
-                                            "value": "Placeholder"
-                                        },
-                                        "🏷️ Show Label#5662:50": {
-                                            "type": "BOOLEAN",
-                                            "value": false
-                                        },
-                                        "➡️ Show Right Icon#1729:3462": {
-                                            "type": "BOOLEAN",
-                                            "value": true
-                                        },
-                                        "↳ Right Icon#1729:577": {
-                                            "type": "INSTANCE_SWAP",
-                                            "value": "7:4456",
-                                            "preferredValues": []
-                                        },
-                                        "⬅️ Show Left Icon#1729:2885": {
-                                            "type": "BOOLEAN",
-                                            "value": false
-                                        },
-                                        "↳ Left Icon#1729:0": {
-                                            "type": "INSTANCE_SWAP",
-                                            "value": "7:29",
-                                            "preferredValues": []
-                                        },
-                                        "↳ Label#5662:83": {
-                                            "type": "TEXT",
-                                            "value": "Label"
-                                        },
-                                        "👁️ Show Text#1729:2308": {
-                                            "type": "BOOLEAN",
-                                            "value": true
-                                        },
-                                        "↳ Helper Text#1729:4039": {
-                                            "type": "TEXT",
-                                            "value": "Helper Text"
-                                        },
-                                        "ℹ️ Show Helper#1729:1731": {
-                                            "type": "BOOLEAN",
-                                            "value": false
-                                        },
-                                        "⚙️ State": {
-                                            "value": "Default",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "❌ Invalid": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "🚫 Disabled": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "🟦 Filled": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "🤏 Size": {
-                                            "value": "Normal",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "▭ Ifta Label": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "🏷️ Float Label": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "↳ Float Label Variant": {
-                                            "value": "N/A",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        }
+                                        "↳ Float Label": "Placeholder",
+                                        "🏷️ Show Label": false,
+                                        "➡️ Show Right Icon": true,
+                                        "↳ Right Icon": "7:4456",
+                                        "⬅️ Show Left Icon": false,
+                                        "↳ Left Icon": "7:29",
+                                        "↳ Label": "Label",
+                                        "👁️ Show Text": true,
+                                        "↳ Helper Text": "Helper Text",
+                                        "ℹ️ Show Helper": false,
+                                        "⚙️ State": "Default",
+                                        "❌ Invalid": "False",
+                                        "🚫 Disabled": "False",
+                                        "🟦 Filled": "False",
+                                        "🤏 Size": "Normal",
+                                        "▭ Ifta Label": "False",
+                                        "🏷️ Float Label": "False",
+                                        "↳ Float Label Variant": "N/A"
                                     },
                                     "isExposedInstance": true,
+                                    "layoutAlign": "STRETCH",
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "I104:3004;1794:38489;1729:36230",
                                             "name": "input",
+                                            "absoluteBoundingBox": {
+                                                "x": 664.0,
+                                                "y": 178.0,
+                                                "width": 208.0,
+                                                "height": 33.0
+                                            },
                                             "cornerRadius": 6.0,
                                             "counterAxisAlignItems": "CENTER",
                                             "fills": [
@@ -367,6 +316,7 @@
                                                 }
                                             ],
                                             "itemSpacing": 10.5,
+                                            "layoutAlign": "STRETCH",
                                             "layoutMode": "HORIZONTAL",
                                             "layoutSizingHorizontal": "FILL",
                                             "layoutSizingVertical": "HUG",
@@ -374,11 +324,30 @@
                                             "paddingLeft": 10.5,
                                             "paddingRight": 10.5,
                                             "paddingTop": 7.0,
+                                            "strokes": [
+                                                {
+                                                    "type": "SOLID",
+                                                    "color": {
+                                                        "r": 0.7961,
+                                                        "g": 0.8353,
+                                                        "b": 0.8824,
+                                                        "a": 1.0
+                                                    }
+                                                }
+                                            ],
                                             "children": [
                                                 {
                                                     "type": "FRAME",
                                                     "id": "I104:3004;1794:38489;1884:38746",
                                                     "name": "content",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 675.5,
+                                                        "y": 186.0,
+                                                        "width": 160.5,
+                                                        "height": 17.0
+                                                    },
+                                                    "layoutAlign": "INHERIT",
+                                                    "layoutGrow": 1.0,
                                                     "layoutMode": "VERTICAL",
                                                     "layoutSizingHorizontal": "FILL",
                                                     "layoutSizingVertical": "HUG",
@@ -387,31 +356,34 @@
                                                             "type": "INSTANCE",
                                                             "id": "I104:3004;1794:38489;1809:36855",
                                                             "name": "_inputtext-content",
-                                                            "componentId": "7:21",
+                                                            "componentId": "Text Config=Text",
+                                                            "absoluteBoundingBox": {
+                                                                "x": 675.5,
+                                                                "y": 186.0,
+                                                                "width": 160.5,
+                                                                "height": 17.0
+                                                            },
                                                             "componentProperties": {
-                                                                "Placeholder#4275:140": {
-                                                                    "type": "TEXT",
-                                                                    "value": "Placeholder"
-                                                                },
-                                                                "Value#4275:146": {
-                                                                    "type": "TEXT",
-                                                                    "value": "********"
-                                                                },
-                                                                "Text Config": {
-                                                                    "value": "Text",
-                                                                    "type": "VARIANT",
-                                                                    "boundVariables": {}
-                                                                }
+                                                                "Placeholder": "Placeholder",
+                                                                "Value": "********",
+                                                                "Text Config": "Text"
                                                             },
                                                             "componentPropertyReferences": {
                                                                 "visible": "👁️ Show Text#1729:2308"
                                                             },
                                                             "isExposedInstance": true,
+                                                            "layoutAlign": "STRETCH",
                                                             "children": [
                                                                 {
                                                                     "type": "TEXT",
                                                                     "id": "I104:3004;1794:38489;1809:36855;4275:52982",
                                                                     "name": "Text",
+                                                                    "absoluteBoundingBox": {
+                                                                        "x": 675.5,
+                                                                        "y": 186.0,
+                                                                        "width": 160.5,
+                                                                        "height": 17.0
+                                                                    },
                                                                     "characters": "********",
                                                                     "componentPropertyReferences": {
                                                                         "characters": "Value#4275:146"
@@ -430,11 +402,18 @@
                                                     "type": "INSTANCE",
                                                     "id": "I104:3004;1794:38489;1729:34862",
                                                     "name": "eye",
-                                                    "componentId": "7:4456",
+                                                    "componentId": "eye",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 846.5,
+                                                        "y": 187.5,
+                                                        "width": 14.0,
+                                                        "height": 14.0
+                                                    },
                                                     "componentPropertyReferences": {
                                                         "visible": "➡️ Show Right Icon#1729:3462",
                                                         "mainComponent": "↳ Right Icon#1729:577"
                                                     },
+                                                    "layoutAlign": "INHERIT",
                                                     "children": [
                                                         {
                                                             "type": "VECTOR",
@@ -453,7 +432,14 @@
                             "type": "FRAME",
                             "id": "104:3262",
                             "name": "Frame 1",
+                            "absoluteBoundingBox": {
+                                "x": 664.0,
+                                "y": 227.0,
+                                "width": 208.0,
+                                "height": 22.0
+                            },
                             "counterAxisAlignItems": "CENTER",
+                            "layoutAlign": "STRETCH",
                             "layoutMode": "HORIZONTAL",
                             "layoutSizingHorizontal": "FILL",
                             "layoutSizingVertical": "HUG",
@@ -463,37 +449,43 @@
                                     "type": "INSTANCE",
                                     "id": "104:3246",
                                     "name": "tag",
-                                    "componentId": "7:7273",
-                                    "componentProperties": {
-                                        "Icon#2143:55": {
-                                            "type": "INSTANCE_SWAP",
-                                            "value": "7:7029",
-                                            "preferredValues": []
-                                        },
-                                        "Text#4272:22": {
-                                            "type": "TEXT",
-                                            "value": "Beliebt"
-                                        },
-                                        "Show Icon#2143:34": {
-                                            "type": "BOOLEAN",
-                                            "value": false
-                                        },
-                                        "Severity": {
-                                            "value": "Info",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Rounded": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        }
+                                    "componentId": "Severity=Info, Rounded=False",
+                                    "absoluteBoundingBox": {
+                                        "x": 664.0,
+                                        "y": 227.0,
+                                        "width": 56.0,
+                                        "height": 22.0
                                     },
+                                    "componentProperties": {
+                                        "Icon": "7:7029",
+                                        "Text": "Beliebt",
+                                        "Show Icon": false,
+                                        "Severity": "Info",
+                                        "Rounded": "False"
+                                    },
+                                    "fills": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.8784,
+                                                "g": 0.949,
+                                                "b": 0.9961,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
+                                    "layoutAlign": "INHERIT",
                                     "children": [
                                         {
                                             "type": "TEXT",
                                             "id": "I104:3246;4272:48344",
                                             "name": "Tag",
+                                            "absoluteBoundingBox": {
+                                                "x": 671.0,
+                                                "y": 230.5,
+                                                "width": 42.0,
+                                                "height": 15.0
+                                            },
                                             "characters": "Beliebt",
                                             "componentPropertyReferences": {
                                                 "characters": "Text#4272:22"
@@ -510,28 +502,30 @@
                                     "type": "INSTANCE",
                                     "id": "104:3257",
                                     "name": "progressbar",
-                                    "componentId": "7:7214",
-                                    "componentProperties": {
-                                        "Text#4271:24": {
-                                            "type": "TEXT",
-                                            "value": ""
-                                        },
-                                        "Type": {
-                                            "value": "Basic",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Value": {
-                                            "value": "True",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        }
+                                    "componentId": "Type=Basic, Value=True",
+                                    "absoluteBoundingBox": {
+                                        "x": 788.0,
+                                        "y": 236.0,
+                                        "width": 84.0,
+                                        "height": 4.0
                                     },
+                                    "componentProperties": {
+                                        "Text": "",
+                                        "Type": "Basic",
+                                        "Value": "True"
+                                    },
+                                    "layoutAlign": "INHERIT",
                                     "children": [
                                         {
                                             "type": "FRAME",
                                             "id": "I104:3257;348:12905",
                                             "name": "value",
+                                            "absoluteBoundingBox": {
+                                                "x": 788.0,
+                                                "y": 236.0,
+                                                "width": 42.0,
+                                                "height": 4.0
+                                            },
                                             "counterAxisAlignItems": "CENTER",
                                             "fills": [
                                                 {
@@ -544,6 +538,8 @@
                                                     }
                                                 }
                                             ],
+                                            "layoutAlign": "STRETCH",
+                                            "layoutGrow": 1.0,
                                             "layoutMode": "VERTICAL",
                                             "layoutSizingHorizontal": "FILL",
                                             "layoutSizingVertical": "FILL",
@@ -559,6 +555,12 @@
                                                     "type": "TEXT",
                                                     "id": "I104:3257;4271:48300",
                                                     "name": "50%",
+                                                    "absoluteBoundingBox": {
+                                                        "x": 809.0,
+                                                        "y": 231.5,
+                                                        "width": 0.0,
+                                                        "height": 13.0
+                                                    },
                                                     "characters": "",
                                                     "componentPropertyReferences": {
                                                         "characters": "Text#4271:24"
@@ -575,6 +577,12 @@
                                             "type": "FRAME",
                                             "id": "I104:3257;348:12906",
                                             "name": "background",
+                                            "absoluteBoundingBox": {
+                                                "x": 830.0,
+                                                "y": 236.0,
+                                                "width": 42.0,
+                                                "height": 4.0
+                                            },
                                             "fills": [
                                                 {
                                                     "type": "SOLID",
@@ -586,6 +594,8 @@
                                                     }
                                                 }
                                             ],
+                                            "layoutAlign": "STRETCH",
+                                            "layoutGrow": 1.0,
                                             "layoutMode": "VERTICAL",
                                             "layoutSizingHorizontal": "FILL",
                                             "layoutSizingVertical": "FILL",
@@ -606,7 +616,14 @@
                     "type": "FRAME",
                     "id": "103:2981",
                     "name": "footer",
+                    "absoluteBoundingBox": {
+                        "x": 664.0,
+                        "y": 265.0,
+                        "width": 208.0,
+                        "height": 25.0
+                    },
                     "itemSpacing": 7.0,
+                    "layoutAlign": "STRETCH",
                     "layoutMode": "HORIZONTAL",
                     "layoutSizingHorizontal": "FILL",
                     "layoutSizingVertical": "HUG",
@@ -615,86 +632,54 @@
                             "type": "INSTANCE",
                             "id": "104:3273",
                             "name": "button",
-                            "componentId": "7:2368",
-                            "componentProperties": {
-                                "Left Icon#1644:2774": {
-                                    "type": "INSTANCE_SWAP",
-                                    "value": "7:2160",
-                                    "preferredValues": []
-                                },
-                                "Icon#1690:0": {
-                                    "type": "INSTANCE_SWAP",
-                                    "value": "7:2160",
-                                    "preferredValues": []
-                                },
-                                "Text#4293:477": {
-                                    "type": "TEXT",
-                                    "value": "Jetzt starten"
-                                },
-                                "Show Right Icon#1644:1387": {
-                                    "type": "BOOLEAN",
-                                    "value": false
-                                },
-                                "Right Icon#1644:4161": {
-                                    "type": "INSTANCE_SWAP",
-                                    "value": "7:2160",
-                                    "preferredValues": []
-                                },
-                                "Show Left Icon#1644:0": {
-                                    "type": "BOOLEAN",
-                                    "value": false
-                                },
-                                "Severity": {
-                                    "value": "Primary",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "State": {
-                                    "value": "Idle",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "Disabled": {
-                                    "value": "False",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "Icon Only": {
-                                    "value": "False",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "⬆️ Raised": {
-                                    "value": "False",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "⥰ Rounded": {
-                                    "value": "False",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "🔤 Text": {
-                                    "value": "False",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "🔲 Outlined": {
-                                    "value": "False",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "Link": {
-                                    "value": "False",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                }
+                            "componentId": "Severity=Primary, State=Idle, Disabled=False, Icon Only=False, ⬆️ Raised=False, ⥰ Rounded=False, 🔤 Text=False, 🔲 Outlined=False, Link=False",
+                            "absoluteBoundingBox": {
+                                "x": 664.0,
+                                "y": 265.0,
+                                "width": 208.0,
+                                "height": 25.0
                             },
+                            "componentProperties": {
+                                "Left Icon": "7:2160",
+                                "Icon": "7:2160",
+                                "Text": "Jetzt starten",
+                                "Show Right Icon": false,
+                                "Right Icon": "7:2160",
+                                "Show Left Icon": false,
+                                "Severity": "Primary",
+                                "State": "Idle",
+                                "Disabled": "False",
+                                "Icon Only": "False",
+                                "⬆️ Raised": "False",
+                                "⥰ Rounded": "False",
+                                "🔤 Text": "False",
+                                "🔲 Outlined": "False",
+                                "Link": "False"
+                            },
+                            "fills": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.0627,
+                                        "g": 0.7255,
+                                        "b": 0.5059,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
+                            "layoutAlign": "INHERIT",
+                            "layoutGrow": 1.0,
                             "children": [
                                 {
                                     "type": "TEXT",
                                     "id": "I104:3273;4293:57639",
                                     "name": "Button",
+                                    "absoluteBoundingBox": {
+                                        "x": 731.0,
+                                        "y": 270.0,
+                                        "width": 74.0,
+                                        "height": 15.0
+                                    },
                                     "characters": "Jetzt starten",
                                     "componentPropertyReferences": {
                                         "characters": "Text#4293:477"

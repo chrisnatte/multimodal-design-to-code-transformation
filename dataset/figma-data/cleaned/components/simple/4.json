@@ -2,6 +2,12 @@
     "type": "FRAME",
     "id": "4:20",
     "name": "4 [Optionen-Auswahl]",
+    "absoluteBoundingBox": {
+        "x": 1031.0,
+        "y": 48.0,
+        "width": 127.5,
+        "height": 181.0
+    },
     "fills": [
         {
             "type": "SOLID",
@@ -25,7 +31,14 @@
             "type": "FRAME",
             "id": "10:5237",
             "name": "Column",
+            "absoluteBoundingBox": {
+                "x": 1055.0,
+                "y": 72.0,
+                "width": 79.5,
+                "height": 133.0
+            },
             "itemSpacing": 4.0,
+            "layoutAlign": "INHERIT",
             "layoutMode": "VERTICAL",
             "layoutSizingHorizontal": "FIXED",
             "layoutSizingVertical": "HUG",
@@ -34,47 +47,34 @@
                     "type": "INSTANCE",
                     "id": "10:5229",
                     "name": "radiobutton",
-                    "componentId": "7:5160",
-                    "componentProperties": {
-                        "Label#4283:5": {
-                            "type": "TEXT",
-                            "value": "Option1"
-                        },
-                        "Show Label#1850:29": {
-                            "type": "BOOLEAN",
-                            "value": true
-                        },
-                        "State": {
-                            "value": "Idle",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Selected": {
-                            "value": "True",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Disabled": {
-                            "value": "False",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Filled": {
-                            "value": "False",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Size": {
-                            "value": "Normal",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        }
+                    "componentId": "State=Idle, Selected=True, Disabled=False, Filled=False, Size=Normal",
+                    "absoluteBoundingBox": {
+                        "x": 1055.0,
+                        "y": 72.0,
+                        "width": 79.5,
+                        "height": 17.5
                     },
+                    "componentProperties": {
+                        "Label": "Option1",
+                        "Show Label": true,
+                        "State": "Idle",
+                        "Selected": "True",
+                        "Disabled": "False",
+                        "Filled": "False",
+                        "Size": "Normal"
+                    },
+                    "layoutAlign": "STRETCH",
                     "children": [
                         {
                             "type": "FRAME",
                             "id": "I10:5229;1850:45914",
                             "name": "radiobutton",
+                            "absoluteBoundingBox": {
+                                "x": 1055.0,
+                                "y": 72.0,
+                                "width": 17.5,
+                                "height": 17.5
+                            },
                             "cornerRadius": 17.5,
                             "counterAxisAlignItems": "CENTER",
                             "fills": [
@@ -88,15 +88,33 @@
                                     }
                                 }
                             ],
+                            "layoutAlign": "INHERIT",
                             "layoutMode": "HORIZONTAL",
                             "layoutSizingHorizontal": "FIXED",
                             "layoutSizingVertical": "FIXED",
                             "primaryAxisAlignItems": "CENTER",
+                            "strokes": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.0627,
+                                        "g": 0.7255,
+                                        "b": 0.5059,
+                                        "a": 1.0
+                                    }
+                                }
+                            ],
                             "children": [
                                 {
                                     "type": "RECTANGLE",
                                     "id": "I10:5229;1850:45915",
                                     "name": "icon",
+                                    "absoluteBoundingBox": {
+                                        "x": 1058.5,
+                                        "y": 75.5,
+                                        "width": 10.5,
+                                        "height": 10.5
+                                    },
                                     "cornerRadius": 6.0,
                                     "fills": [
                                         {
@@ -116,6 +134,12 @@
                             "type": "TEXT",
                             "id": "I10:5229;4283:46963",
                             "name": "Label",
+                            "absoluteBoundingBox": {
+                                "x": 1079.5,
+                                "y": 72.2,
+                                "width": 51.0,
+                                "height": 17.0
+                            },
                             "characters": "Option1",
                             "componentPropertyReferences": {
                                 "visible": "Show Label#1850:29",
@@ -133,34 +157,33 @@
                     "type": "INSTANCE",
                     "id": "10:5238",
                     "name": "divider",
-                    "componentId": "7:4321",
-                    "componentProperties": {
-                        "Type": {
-                            "value": "Solid",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Content": {
-                            "value": "False",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Align": {
-                            "value": "N/A",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Direction": {
-                            "value": "Horizontal",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        }
+                    "componentId": "Type=Solid, Content=False, Align=N/A, Direction=Horizontal",
+                    "absoluteBoundingBox": {
+                        "x": 1055.0,
+                        "y": 93.5,
+                        "width": 79.5,
+                        "height": 13.0
                     },
+                    "componentProperties": {
+                        "Type": "Solid",
+                        "Content": "False",
+                        "Align": "N/A",
+                        "Direction": "Horizontal"
+                    },
+                    "layoutAlign": "STRETCH",
                     "children": [
                         {
                             "type": "FRAME",
                             "id": "I10:5238;6354:27139",
                             "name": "divider",
+                            "absoluteBoundingBox": {
+                                "x": 1055.0,
+                                "y": 99.5,
+                                "width": 79.5,
+                                "height": 1.0
+                            },
+                            "layoutAlign": "INHERIT",
+                            "layoutGrow": 1.0,
                             "layoutMode": "VERTICAL",
                             "layoutSizingHorizontal": "FILL",
                             "layoutSizingVertical": "HUG",
@@ -169,6 +192,12 @@
                                     "type": "RECTANGLE",
                                     "id": "I10:5238;302:11777",
                                     "name": "divider",
+                                    "absoluteBoundingBox": {
+                                        "x": 1055.0,
+                                        "y": 99.5,
+                                        "width": 79.5,
+                                        "height": 1.0
+                                    },
                                     "fills": [
                                         {
                                             "type": "SOLID",
@@ -189,47 +218,34 @@
                     "type": "INSTANCE",
                     "id": "10:5233",
                     "name": "radiobutton",
-                    "componentId": "7:5154",
-                    "componentProperties": {
-                        "Label#4283:5": {
-                            "type": "TEXT",
-                            "value": "Option2"
-                        },
-                        "Show Label#1850:29": {
-                            "type": "BOOLEAN",
-                            "value": true
-                        },
-                        "State": {
-                            "value": "Idle",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Selected": {
-                            "value": "False",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Disabled": {
-                            "value": "False",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Filled": {
-                            "value": "False",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Size": {
-                            "value": "Normal",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        }
+                    "componentId": "State=Idle, Selected=False, Disabled=False, Filled=False, Size=Normal",
+                    "absoluteBoundingBox": {
+                        "x": 1055.0,
+                        "y": 110.5,
+                        "width": 79.5,
+                        "height": 17.5
                     },
+                    "componentProperties": {
+                        "Label": "Option2",
+                        "Show Label": true,
+                        "State": "Idle",
+                        "Selected": "False",
+                        "Disabled": "False",
+                        "Filled": "False",
+                        "Size": "Normal"
+                    },
+                    "layoutAlign": "STRETCH",
                     "children": [
                         {
                             "type": "FRAME",
                             "id": "I10:5233;1850:45893",
                             "name": "radiobutton",
+                            "absoluteBoundingBox": {
+                                "x": 1055.0,
+                                "y": 110.5,
+                                "width": 17.5,
+                                "height": 17.5
+                            },
                             "cornerRadius": 17.5,
                             "counterAxisAlignItems": "CENTER",
                             "fills": [
@@ -243,15 +259,33 @@
                                     }
                                 }
                             ],
+                            "layoutAlign": "INHERIT",
                             "layoutMode": "HORIZONTAL",
                             "layoutSizingHorizontal": "FIXED",
                             "layoutSizingVertical": "FIXED",
-                            "primaryAxisAlignItems": "CENTER"
+                            "primaryAxisAlignItems": "CENTER",
+                            "strokes": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.7961,
+                                        "g": 0.8353,
+                                        "b": 0.8824,
+                                        "a": 1.0
+                                    }
+                                }
+                            ]
                         },
                         {
                             "type": "TEXT",
                             "id": "I10:5233;4283:46935",
                             "name": "Label",
+                            "absoluteBoundingBox": {
+                                "x": 1079.5,
+                                "y": 110.8,
+                                "width": 53.0,
+                                "height": 17.0
+                            },
                             "characters": "Option2",
                             "componentPropertyReferences": {
                                 "visible": "Show Label#1850:29",
@@ -269,34 +303,33 @@
                     "type": "INSTANCE",
                     "id": "10:5266",
                     "name": "divider",
-                    "componentId": "7:4321",
-                    "componentProperties": {
-                        "Type": {
-                            "value": "Solid",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Content": {
-                            "value": "False",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Align": {
-                            "value": "N/A",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Direction": {
-                            "value": "Horizontal",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        }
+                    "componentId": "Type=Solid, Content=False, Align=N/A, Direction=Horizontal",
+                    "absoluteBoundingBox": {
+                        "x": 1055.0,
+                        "y": 132.0,
+                        "width": 79.5,
+                        "height": 13.0
                     },
+                    "componentProperties": {
+                        "Type": "Solid",
+                        "Content": "False",
+                        "Align": "N/A",
+                        "Direction": "Horizontal"
+                    },
+                    "layoutAlign": "STRETCH",
                     "children": [
                         {
                             "type": "FRAME",
                             "id": "I10:5266;6354:27139",
                             "name": "divider",
+                            "absoluteBoundingBox": {
+                                "x": 1055.0,
+                                "y": 138.0,
+                                "width": 79.5,
+                                "height": 1.0
+                            },
+                            "layoutAlign": "INHERIT",
+                            "layoutGrow": 1.0,
                             "layoutMode": "VERTICAL",
                             "layoutSizingHorizontal": "FILL",
                             "layoutSizingVertical": "HUG",
@@ -305,6 +338,12 @@
                                     "type": "RECTANGLE",
                                     "id": "I10:5266;302:11777",
                                     "name": "divider",
+                                    "absoluteBoundingBox": {
+                                        "x": 1055.0,
+                                        "y": 138.0,
+                                        "width": 79.5,
+                                        "height": 1.0
+                                    },
                                     "fills": [
                                         {
                                             "type": "SOLID",
@@ -325,47 +364,34 @@
                     "type": "INSTANCE",
                     "id": "10:5267",
                     "name": "radiobutton",
-                    "componentId": "7:5154",
-                    "componentProperties": {
-                        "Label#4283:5": {
-                            "type": "TEXT",
-                            "value": "Option3"
-                        },
-                        "Show Label#1850:29": {
-                            "type": "BOOLEAN",
-                            "value": true
-                        },
-                        "State": {
-                            "value": "Idle",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Selected": {
-                            "value": "False",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Disabled": {
-                            "value": "False",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Filled": {
-                            "value": "False",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Size": {
-                            "value": "Normal",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        }
+                    "componentId": "State=Idle, Selected=False, Disabled=False, Filled=False, Size=Normal",
+                    "absoluteBoundingBox": {
+                        "x": 1055.0,
+                        "y": 149.0,
+                        "width": 79.5,
+                        "height": 17.5
                     },
+                    "componentProperties": {
+                        "Label": "Option3",
+                        "Show Label": true,
+                        "State": "Idle",
+                        "Selected": "False",
+                        "Disabled": "False",
+                        "Filled": "False",
+                        "Size": "Normal"
+                    },
+                    "layoutAlign": "STRETCH",
                     "children": [
                         {
                             "type": "FRAME",
                             "id": "I10:5267;1850:45893",
                             "name": "radiobutton",
+                            "absoluteBoundingBox": {
+                                "x": 1055.0,
+                                "y": 149.0,
+                                "width": 17.5,
+                                "height": 17.5
+                            },
                             "cornerRadius": 17.5,
                             "counterAxisAlignItems": "CENTER",
                             "fills": [
@@ -379,15 +405,33 @@
                                     }
                                 }
                             ],
+                            "layoutAlign": "INHERIT",
                             "layoutMode": "HORIZONTAL",
                             "layoutSizingHorizontal": "FIXED",
                             "layoutSizingVertical": "FIXED",
-                            "primaryAxisAlignItems": "CENTER"
+                            "primaryAxisAlignItems": "CENTER",
+                            "strokes": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.7961,
+                                        "g": 0.8353,
+                                        "b": 0.8824,
+                                        "a": 1.0
+                                    }
+                                }
+                            ]
                         },
                         {
                             "type": "TEXT",
                             "id": "I10:5267;4283:46935",
                             "name": "Label",
+                            "absoluteBoundingBox": {
+                                "x": 1079.5,
+                                "y": 149.2,
+                                "width": 54.0,
+                                "height": 17.0
+                            },
                             "characters": "Option3",
                             "componentPropertyReferences": {
                                 "visible": "Show Label#1850:29",
@@ -405,34 +449,33 @@
                     "type": "INSTANCE",
                     "id": "10:5273",
                     "name": "divider",
-                    "componentId": "7:4321",
-                    "componentProperties": {
-                        "Type": {
-                            "value": "Solid",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Content": {
-                            "value": "False",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Align": {
-                            "value": "N/A",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Direction": {
-                            "value": "Horizontal",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        }
+                    "componentId": "Type=Solid, Content=False, Align=N/A, Direction=Horizontal",
+                    "absoluteBoundingBox": {
+                        "x": 1055.0,
+                        "y": 170.5,
+                        "width": 79.5,
+                        "height": 13.0
                     },
+                    "componentProperties": {
+                        "Type": "Solid",
+                        "Content": "False",
+                        "Align": "N/A",
+                        "Direction": "Horizontal"
+                    },
+                    "layoutAlign": "STRETCH",
                     "children": [
                         {
                             "type": "FRAME",
                             "id": "I10:5273;6354:27139",
                             "name": "divider",
+                            "absoluteBoundingBox": {
+                                "x": 1055.0,
+                                "y": 176.5,
+                                "width": 79.5,
+                                "height": 1.0
+                            },
+                            "layoutAlign": "INHERIT",
+                            "layoutGrow": 1.0,
                             "layoutMode": "VERTICAL",
                             "layoutSizingHorizontal": "FILL",
                             "layoutSizingVertical": "HUG",
@@ -441,6 +484,12 @@
                                     "type": "RECTANGLE",
                                     "id": "I10:5273;302:11777",
                                     "name": "divider",
+                                    "absoluteBoundingBox": {
+                                        "x": 1055.0,
+                                        "y": 176.5,
+                                        "width": 79.5,
+                                        "height": 1.0
+                                    },
                                     "fills": [
                                         {
                                             "type": "SOLID",
@@ -461,47 +510,34 @@
                     "type": "INSTANCE",
                     "id": "10:5274",
                     "name": "radiobutton",
-                    "componentId": "7:5154",
-                    "componentProperties": {
-                        "Label#4283:5": {
-                            "type": "TEXT",
-                            "value": "Option4"
-                        },
-                        "Show Label#1850:29": {
-                            "type": "BOOLEAN",
-                            "value": true
-                        },
-                        "State": {
-                            "value": "Idle",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Selected": {
-                            "value": "False",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Disabled": {
-                            "value": "False",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Filled": {
-                            "value": "False",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Size": {
-                            "value": "Normal",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        }
+                    "componentId": "State=Idle, Selected=False, Disabled=False, Filled=False, Size=Normal",
+                    "absoluteBoundingBox": {
+                        "x": 1055.0,
+                        "y": 187.5,
+                        "width": 79.5,
+                        "height": 17.5
                     },
+                    "componentProperties": {
+                        "Label": "Option4",
+                        "Show Label": true,
+                        "State": "Idle",
+                        "Selected": "False",
+                        "Disabled": "False",
+                        "Filled": "False",
+                        "Size": "Normal"
+                    },
+                    "layoutAlign": "STRETCH",
                     "children": [
                         {
                             "type": "FRAME",
                             "id": "I10:5274;1850:45893",
                             "name": "radiobutton",
+                            "absoluteBoundingBox": {
+                                "x": 1055.0,
+                                "y": 187.5,
+                                "width": 17.5,
+                                "height": 17.5
+                            },
                             "cornerRadius": 17.5,
                             "counterAxisAlignItems": "CENTER",
                             "fills": [
@@ -515,15 +551,33 @@
                                     }
                                 }
                             ],
+                            "layoutAlign": "INHERIT",
                             "layoutMode": "HORIZONTAL",
                             "layoutSizingHorizontal": "FIXED",
                             "layoutSizingVertical": "FIXED",
-                            "primaryAxisAlignItems": "CENTER"
+                            "primaryAxisAlignItems": "CENTER",
+                            "strokes": [
+                                {
+                                    "type": "SOLID",
+                                    "color": {
+                                        "r": 0.7961,
+                                        "g": 0.8353,
+                                        "b": 0.8824,
+                                        "a": 1.0
+                                    }
+                                }
+                            ]
                         },
                         {
                             "type": "TEXT",
                             "id": "I10:5274;4283:46935",
                             "name": "Label",
+                            "absoluteBoundingBox": {
+                                "x": 1079.5,
+                                "y": 187.8,
+                                "width": 54.0,
+                                "height": 17.0
+                            },
                             "characters": "Option4",
                             "componentPropertyReferences": {
                                 "visible": "Show Label#1850:29",

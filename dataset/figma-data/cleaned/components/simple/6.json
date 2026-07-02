@@ -2,6 +2,12 @@
     "type": "FRAME",
     "id": "4:24",
     "name": "6 [Datei-Upload-Status]",
+    "absoluteBoundingBox": {
+        "x": 1559.0,
+        "y": 48.0,
+        "width": 368.0,
+        "height": 99.5
+    },
     "fills": [
         {
             "type": "SOLID",
@@ -25,7 +31,14 @@
             "type": "FRAME",
             "id": "10:5419",
             "name": "Row",
+            "absoluteBoundingBox": {
+                "x": 1583.0,
+                "y": 72.0,
+                "width": 320.0,
+                "height": 51.5
+            },
             "itemSpacing": 12.0,
+            "layoutAlign": "INHERIT",
             "layoutMode": "VERTICAL",
             "layoutSizingHorizontal": "FIXED",
             "layoutSizingVertical": "HUG",
@@ -34,28 +47,30 @@
                     "type": "INSTANCE",
                     "id": "10:5376",
                     "name": "progressbar",
-                    "componentId": "7:7214",
-                    "componentProperties": {
-                        "Text#4271:24": {
-                            "type": "TEXT",
-                            "value": "25%"
-                        },
-                        "Type": {
-                            "value": "Basic",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Value": {
-                            "value": "True",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        }
+                    "componentId": "Type=Basic, Value=True",
+                    "absoluteBoundingBox": {
+                        "x": 1583.0,
+                        "y": 72.0,
+                        "width": 320.0,
+                        "height": 17.5
                     },
+                    "componentProperties": {
+                        "Text": "25%",
+                        "Type": "Basic",
+                        "Value": "True"
+                    },
+                    "layoutAlign": "STRETCH",
                     "children": [
                         {
                             "type": "FRAME",
                             "id": "I10:5376;348:12905",
                             "name": "value",
+                            "absoluteBoundingBox": {
+                                "x": 1583.0,
+                                "y": 72.0,
+                                "width": 160.0,
+                                "height": 17.5
+                            },
                             "counterAxisAlignItems": "CENTER",
                             "fills": [
                                 {
@@ -68,6 +83,8 @@
                                     }
                                 }
                             ],
+                            "layoutAlign": "STRETCH",
+                            "layoutGrow": 1.0,
                             "layoutMode": "VERTICAL",
                             "layoutSizingHorizontal": "FILL",
                             "layoutSizingVertical": "FILL",
@@ -83,6 +100,12 @@
                                     "type": "TEXT",
                                     "id": "I10:5376;4271:48300",
                                     "name": "50%",
+                                    "absoluteBoundingBox": {
+                                        "x": 1651.5,
+                                        "y": 74.2,
+                                        "width": 23.0,
+                                        "height": 13.0
+                                    },
                                     "characters": "25%",
                                     "componentPropertyReferences": {
                                         "characters": "Text#4271:24"
@@ -99,6 +122,12 @@
                             "type": "FRAME",
                             "id": "I10:5376;348:12906",
                             "name": "background",
+                            "absoluteBoundingBox": {
+                                "x": 1743.0,
+                                "y": 72.0,
+                                "width": 160.0,
+                                "height": 17.5
+                            },
                             "fills": [
                                 {
                                     "type": "SOLID",
@@ -110,6 +139,8 @@
                                     }
                                 }
                             ],
+                            "layoutAlign": "STRETCH",
+                            "layoutGrow": 1.0,
                             "layoutMode": "VERTICAL",
                             "layoutSizingHorizontal": "FILL",
                             "layoutSizingVertical": "FILL",
@@ -126,37 +157,43 @@
                     "type": "INSTANCE",
                     "id": "10:5386",
                     "name": "tag",
-                    "componentId": "7:7294",
-                    "componentProperties": {
-                        "Icon#2143:55": {
-                            "type": "INSTANCE_SWAP",
-                            "value": "7:7029",
-                            "preferredValues": []
-                        },
-                        "Text#4272:22": {
-                            "type": "TEXT",
-                            "value": "Datei wird hochgeladen..."
-                        },
-                        "Show Icon#2143:34": {
-                            "type": "BOOLEAN",
-                            "value": false
-                        },
-                        "Severity": {
-                            "value": "Info",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        },
-                        "Rounded": {
-                            "value": "True",
-                            "type": "VARIANT",
-                            "boundVariables": {}
-                        }
+                    "componentId": "Severity=Info, Rounded=True",
+                    "absoluteBoundingBox": {
+                        "x": 1583.0,
+                        "y": 101.5,
+                        "width": 160.0,
+                        "height": 22.0
                     },
+                    "componentProperties": {
+                        "Icon": "7:7029",
+                        "Text": "Datei wird hochgeladen...",
+                        "Show Icon": false,
+                        "Severity": "Info",
+                        "Rounded": "True"
+                    },
+                    "fills": [
+                        {
+                            "type": "SOLID",
+                            "color": {
+                                "r": 0.8784,
+                                "g": 0.949,
+                                "b": 0.9961,
+                                "a": 1.0
+                            }
+                        }
+                    ],
+                    "layoutAlign": "INHERIT",
                     "children": [
                         {
                             "type": "TEXT",
                             "id": "I10:5386;4272:48371",
                             "name": "Tag",
+                            "absoluteBoundingBox": {
+                                "x": 1590.0,
+                                "y": 105.0,
+                                "width": 146.0,
+                                "height": 15.0
+                            },
                             "characters": "Datei wird hochgeladen...",
                             "componentPropertyReferences": {
                                 "characters": "Text#4272:22"

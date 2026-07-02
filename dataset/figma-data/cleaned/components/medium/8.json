@@ -2,6 +2,12 @@
     "type": "FRAME",
     "id": "4:48",
     "name": "8 [Sidebar-Menü mit Profil]",
+    "absoluteBoundingBox": {
+        "x": 3871.0,
+        "y": 1294.0,
+        "width": 288.0,
+        "height": 560.0
+    },
     "fills": [
         {
             "type": "SOLID",
@@ -25,6 +31,12 @@
             "type": "FRAME",
             "id": "17:2643",
             "name": "Column",
+            "absoluteBoundingBox": {
+                "x": 3895.0,
+                "y": 1318.0,
+                "width": 240.0,
+                "height": 512.0
+            },
             "counterAxisAlignItems": "CENTER",
             "fills": [
                 {
@@ -38,6 +50,7 @@
                 }
             ],
             "itemSpacing": 24.0,
+            "layoutAlign": "INHERIT",
             "layoutMode": "VERTICAL",
             "layoutSizingHorizontal": "HUG",
             "layoutSizingVertical": "FIXED",
@@ -51,8 +64,15 @@
                     "type": "FRAME",
                     "id": "18:2835",
                     "name": "Column",
+                    "absoluteBoundingBox": {
+                        "x": 3919.0,
+                        "y": 1342.0,
+                        "width": 192.0,
+                        "height": 184.0
+                    },
                     "counterAxisAlignItems": "CENTER",
                     "itemSpacing": 24.0,
+                    "layoutAlign": "STRETCH",
                     "layoutMode": "VERTICAL",
                     "layoutSizingHorizontal": "FILL",
                     "layoutSizingVertical": "HUG",
@@ -61,6 +81,12 @@
                             "type": "TEXT",
                             "id": "17:2644",
                             "name": "Emails",
+                            "absoluteBoundingBox": {
+                                "x": 3978.5,
+                                "y": 1342.0,
+                                "width": 73.0,
+                                "height": 29.0
+                            },
                             "characters": "Emails",
                             "style": {
                                 "fontFamily": "Inter",
@@ -72,7 +98,14 @@
                             "type": "FRAME",
                             "id": "17:2738",
                             "name": "List",
+                            "absoluteBoundingBox": {
+                                "x": 3919.0,
+                                "y": 1395.0,
+                                "width": 192.0,
+                                "height": 131.0
+                            },
                             "itemSpacing": 16.0,
+                            "layoutAlign": "INHERIT",
                             "layoutMode": "VERTICAL",
                             "layoutSizingHorizontal": "FIXED",
                             "layoutSizingVertical": "HUG",
@@ -81,91 +114,59 @@
                                     "type": "INSTANCE",
                                     "id": "17:2650",
                                     "name": "button",
-                                    "componentId": "7:3722",
-                                    "componentProperties": {
-                                        "Right Icon#1644:4161": {
-                                            "type": "INSTANCE_SWAP",
-                                            "value": "7:2160",
-                                            "preferredValues": []
-                                        },
-                                        "Show Right Icon#1644:1387": {
-                                            "type": "BOOLEAN",
-                                            "value": false
-                                        },
-                                        "Icon#1690:0": {
-                                            "type": "INSTANCE_SWAP",
-                                            "value": "7:2160",
-                                            "preferredValues": []
-                                        },
-                                        "Text#4293:477": {
-                                            "type": "TEXT",
-                                            "value": "Postfach"
-                                        },
-                                        "Left Icon#1644:2774": {
-                                            "type": "INSTANCE_SWAP",
-                                            "value": "17:2704",
-                                            "preferredValues": []
-                                        },
-                                        "Show Left Icon#1644:0": {
-                                            "type": "BOOLEAN",
-                                            "value": true
-                                        },
-                                        "Severity": {
-                                            "value": "Secondary",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "State": {
-                                            "value": "Active",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Disabled": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Icon Only": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "⬆️ Raised": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "⥰ Rounded": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "🔤 Text": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "🔲 Outlined": {
-                                            "value": "True",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Link": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        }
+                                    "componentId": "Severity=Secondary, State=Active, Disabled=False, Icon Only=False, ⬆️ Raised=False, ⥰ Rounded=False, 🔤 Text=False, 🔲 Outlined=True, Link=False",
+                                    "absoluteBoundingBox": {
+                                        "x": 3919.0,
+                                        "y": 1395.0,
+                                        "width": 192.0,
+                                        "height": 33.0
                                     },
+                                    "componentProperties": {
+                                        "Right Icon": "7:2160",
+                                        "Show Right Icon": false,
+                                        "Icon": "7:2160",
+                                        "Text": "Postfach",
+                                        "Left Icon": "17:2704",
+                                        "Show Left Icon": true,
+                                        "Severity": "Secondary",
+                                        "State": "Active",
+                                        "Disabled": "False",
+                                        "Icon Only": "False",
+                                        "⬆️ Raised": "False",
+                                        "⥰ Rounded": "False",
+                                        "🔤 Text": "False",
+                                        "🔲 Outlined": "True",
+                                        "Link": "False"
+                                    },
+                                    "fills": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.9451,
+                                                "g": 0.9608,
+                                                "b": 0.9765,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
+                                    "layoutAlign": "STRETCH",
                                     "children": [
                                         {
                                             "type": "INSTANCE",
                                             "id": "I17:2650;1644:36229",
                                             "name": "inbox",
-                                            "componentId": "17:2704",
+                                            "componentId": "inbox",
+                                            "absoluteBoundingBox": {
+                                                "x": 3930.5,
+                                                "y": 1404.5,
+                                                "width": 14.0,
+                                                "height": 14.0
+                                            },
                                             "componentPropertyReferences": {
                                                 "visible": "Show Left Icon#1644:0",
                                                 "mainComponent": "Left Icon#1644:2774"
                                             },
+                                            "layoutAlign": "INHERIT",
                                             "children": [
                                                 {
                                                     "type": "VECTOR",
@@ -178,6 +179,12 @@
                                             "type": "TEXT",
                                             "id": "I17:2650;4293:58944",
                                             "name": "Button",
+                                            "absoluteBoundingBox": {
+                                                "x": 3951.5,
+                                                "y": 1403.0,
+                                                "width": 60.0,
+                                                "height": 17.0
+                                            },
                                             "characters": "Postfach",
                                             "componentPropertyReferences": {
                                                 "characters": "Text#4293:477"
@@ -194,91 +201,48 @@
                                     "type": "INSTANCE",
                                     "id": "17:2707",
                                     "name": "button",
-                                    "componentId": "7:2940",
-                                    "componentProperties": {
-                                        "Icon#1690:0": {
-                                            "type": "INSTANCE_SWAP",
-                                            "value": "7:2160",
-                                            "preferredValues": []
-                                        },
-                                        "Right Icon#1644:4161": {
-                                            "type": "INSTANCE_SWAP",
-                                            "value": "7:2160",
-                                            "preferredValues": []
-                                        },
-                                        "Text#4293:477": {
-                                            "type": "TEXT",
-                                            "value": "Ordner"
-                                        },
-                                        "Left Icon#1644:2774": {
-                                            "type": "INSTANCE_SWAP",
-                                            "value": "18:2739",
-                                            "preferredValues": []
-                                        },
-                                        "Show Right Icon#1644:1387": {
-                                            "type": "BOOLEAN",
-                                            "value": false
-                                        },
-                                        "Show Left Icon#1644:0": {
-                                            "type": "BOOLEAN",
-                                            "value": true
-                                        },
-                                        "Severity": {
-                                            "value": "Secondary",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "State": {
-                                            "value": "Idle",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Disabled": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Icon Only": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "⬆️ Raised": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "⥰ Rounded": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "🔤 Text": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "🔲 Outlined": {
-                                            "value": "True",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Link": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        }
+                                    "componentId": "Severity=Secondary, State=Idle, Disabled=False, Icon Only=False, ⬆️ Raised=False, ⥰ Rounded=False, 🔤 Text=False, 🔲 Outlined=True, Link=False",
+                                    "absoluteBoundingBox": {
+                                        "x": 3919.0,
+                                        "y": 1444.0,
+                                        "width": 192.0,
+                                        "height": 33.0
                                     },
+                                    "componentProperties": {
+                                        "Icon": "7:2160",
+                                        "Right Icon": "7:2160",
+                                        "Text": "Ordner",
+                                        "Left Icon": "18:2739",
+                                        "Show Right Icon": false,
+                                        "Show Left Icon": true,
+                                        "Severity": "Secondary",
+                                        "State": "Idle",
+                                        "Disabled": "False",
+                                        "Icon Only": "False",
+                                        "⬆️ Raised": "False",
+                                        "⥰ Rounded": "False",
+                                        "🔤 Text": "False",
+                                        "🔲 Outlined": "True",
+                                        "Link": "False"
+                                    },
+                                    "layoutAlign": "STRETCH",
                                     "children": [
                                         {
                                             "type": "INSTANCE",
                                             "id": "I17:2707;1644:34691",
                                             "name": "folder",
-                                            "componentId": "18:2739",
+                                            "componentId": "folder",
+                                            "absoluteBoundingBox": {
+                                                "x": 3930.5,
+                                                "y": 1453.5,
+                                                "width": 14.0,
+                                                "height": 14.0
+                                            },
                                             "componentPropertyReferences": {
                                                 "visible": "Show Left Icon#1644:0",
                                                 "mainComponent": "Left Icon#1644:2774"
                                             },
+                                            "layoutAlign": "INHERIT",
                                             "children": [
                                                 {
                                                     "type": "VECTOR",
@@ -291,6 +255,12 @@
                                             "type": "TEXT",
                                             "id": "I17:2707;4293:58755",
                                             "name": "Button",
+                                            "absoluteBoundingBox": {
+                                                "x": 3951.5,
+                                                "y": 1452.0,
+                                                "width": 47.0,
+                                                "height": 17.0
+                                            },
                                             "characters": "Ordner",
                                             "componentPropertyReferences": {
                                                 "characters": "Text#4293:477"
@@ -307,91 +277,48 @@
                                     "type": "INSTANCE",
                                     "id": "18:2815",
                                     "name": "button",
-                                    "componentId": "7:2940",
-                                    "componentProperties": {
-                                        "Icon#1690:0": {
-                                            "type": "INSTANCE_SWAP",
-                                            "value": "7:2160",
-                                            "preferredValues": []
-                                        },
-                                        "Right Icon#1644:4161": {
-                                            "type": "INSTANCE_SWAP",
-                                            "value": "7:2160",
-                                            "preferredValues": []
-                                        },
-                                        "Text#4293:477": {
-                                            "type": "TEXT",
-                                            "value": "Konto"
-                                        },
-                                        "Left Icon#1644:2774": {
-                                            "type": "INSTANCE_SWAP",
-                                            "value": "7:7029",
-                                            "preferredValues": []
-                                        },
-                                        "Show Right Icon#1644:1387": {
-                                            "type": "BOOLEAN",
-                                            "value": false
-                                        },
-                                        "Show Left Icon#1644:0": {
-                                            "type": "BOOLEAN",
-                                            "value": true
-                                        },
-                                        "Severity": {
-                                            "value": "Secondary",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "State": {
-                                            "value": "Idle",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Disabled": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Icon Only": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "⬆️ Raised": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "⥰ Rounded": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "🔤 Text": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "🔲 Outlined": {
-                                            "value": "True",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Link": {
-                                            "value": "False",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        }
+                                    "componentId": "Severity=Secondary, State=Idle, Disabled=False, Icon Only=False, ⬆️ Raised=False, ⥰ Rounded=False, 🔤 Text=False, 🔲 Outlined=True, Link=False",
+                                    "absoluteBoundingBox": {
+                                        "x": 3919.0,
+                                        "y": 1493.0,
+                                        "width": 192.0,
+                                        "height": 33.0
                                     },
+                                    "componentProperties": {
+                                        "Icon": "7:2160",
+                                        "Right Icon": "7:2160",
+                                        "Text": "Konto",
+                                        "Left Icon": "7:7029",
+                                        "Show Right Icon": false,
+                                        "Show Left Icon": true,
+                                        "Severity": "Secondary",
+                                        "State": "Idle",
+                                        "Disabled": "False",
+                                        "Icon Only": "False",
+                                        "⬆️ Raised": "False",
+                                        "⥰ Rounded": "False",
+                                        "🔤 Text": "False",
+                                        "🔲 Outlined": "True",
+                                        "Link": "False"
+                                    },
+                                    "layoutAlign": "STRETCH",
                                     "children": [
                                         {
                                             "type": "INSTANCE",
                                             "id": "I18:2815;1644:34691",
                                             "name": "user",
-                                            "componentId": "7:7029",
+                                            "componentId": "user",
+                                            "absoluteBoundingBox": {
+                                                "x": 3930.5,
+                                                "y": 1502.5,
+                                                "width": 14.0,
+                                                "height": 14.0
+                                            },
                                             "componentPropertyReferences": {
                                                 "visible": "Show Left Icon#1644:0",
                                                 "mainComponent": "Left Icon#1644:2774"
                                             },
+                                            "layoutAlign": "INHERIT",
                                             "children": [
                                                 {
                                                     "type": "VECTOR",
@@ -404,6 +331,12 @@
                                             "type": "TEXT",
                                             "id": "I18:2815;4293:58755",
                                             "name": "Button",
+                                            "absoluteBoundingBox": {
+                                                "x": 3951.5,
+                                                "y": 1501.0,
+                                                "width": 40.0,
+                                                "height": 17.0
+                                            },
                                             "characters": "Konto",
                                             "componentPropertyReferences": {
                                                 "characters": "Text#4293:477"
@@ -424,7 +357,14 @@
                     "type": "FRAME",
                     "id": "18:2840",
                     "name": "Column",
+                    "absoluteBoundingBox": {
+                        "x": 3919.0,
+                        "y": 1735.0,
+                        "width": 192.0,
+                        "height": 71.0
+                    },
                     "counterAxisAlignItems": "CENTER",
+                    "layoutAlign": "STRETCH",
                     "layoutMode": "VERTICAL",
                     "layoutSizingHorizontal": "FILL",
                     "layoutSizingVertical": "HUG",
@@ -433,34 +373,33 @@
                             "type": "INSTANCE",
                             "id": "18:2824",
                             "name": "divider",
-                            "componentId": "7:4321",
-                            "componentProperties": {
-                                "Type": {
-                                    "value": "Solid",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "Content": {
-                                    "value": "False",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "Align": {
-                                    "value": "N/A",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                },
-                                "Direction": {
-                                    "value": "Horizontal",
-                                    "type": "VARIANT",
-                                    "boundVariables": {}
-                                }
+                            "componentId": "Type=Solid, Content=False, Align=N/A, Direction=Horizontal",
+                            "absoluteBoundingBox": {
+                                "x": 3919.0,
+                                "y": 1735.0,
+                                "width": 192.0,
+                                "height": 29.0
                             },
+                            "componentProperties": {
+                                "Type": "Solid",
+                                "Content": "False",
+                                "Align": "N/A",
+                                "Direction": "Horizontal"
+                            },
+                            "layoutAlign": "STRETCH",
                             "children": [
                                 {
                                     "type": "FRAME",
                                     "id": "I18:2824;6354:27139",
                                     "name": "divider",
+                                    "absoluteBoundingBox": {
+                                        "x": 3919.0,
+                                        "y": 1749.0,
+                                        "width": 192.0,
+                                        "height": 1.0
+                                    },
+                                    "layoutAlign": "INHERIT",
+                                    "layoutGrow": 1.0,
                                     "layoutMode": "VERTICAL",
                                     "layoutSizingHorizontal": "FILL",
                                     "layoutSizingVertical": "HUG",
@@ -469,6 +408,12 @@
                                             "type": "RECTANGLE",
                                             "id": "I18:2824;302:11777",
                                             "name": "divider",
+                                            "absoluteBoundingBox": {
+                                                "x": 3919.0,
+                                                "y": 1749.0,
+                                                "width": 192.0,
+                                                "height": 1.0
+                                            },
                                             "fills": [
                                                 {
                                                     "type": "SOLID",
@@ -489,8 +434,15 @@
                             "type": "FRAME",
                             "id": "18:2828",
                             "name": "Row",
+                            "absoluteBoundingBox": {
+                                "x": 3931.0,
+                                "y": 1764.0,
+                                "width": 168.0,
+                                "height": 42.0
+                            },
                             "counterAxisAlignItems": "CENTER",
                             "itemSpacing": 16.0,
+                            "layoutAlign": "INHERIT",
                             "layoutMode": "HORIZONTAL",
                             "layoutSizingHorizontal": "HUG",
                             "layoutSizingVertical": "HUG",
@@ -499,37 +451,43 @@
                                     "type": "INSTANCE",
                                     "id": "18:2829",
                                     "name": "avatar",
-                                    "componentId": "7:7059",
-                                    "componentProperties": {
-                                        "Text#4271:0": {
-                                            "type": "TEXT",
-                                            "value": "B"
-                                        },
-                                        "Show Badge#2138:0": {
-                                            "type": "BOOLEAN",
-                                            "value": false
-                                        },
-                                        "Size": {
-                                            "value": "Large",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Type": {
-                                            "value": "Label",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        },
-                                        "Circle": {
-                                            "value": "True",
-                                            "type": "VARIANT",
-                                            "boundVariables": {}
-                                        }
+                                    "componentId": "Size=Large, Type=Label, Circle=True",
+                                    "absoluteBoundingBox": {
+                                        "x": 3931.0,
+                                        "y": 1764.0,
+                                        "width": 42.0,
+                                        "height": 42.0
                                     },
+                                    "componentProperties": {
+                                        "Text": "B",
+                                        "Show Badge": false,
+                                        "Size": "Large",
+                                        "Type": "Label",
+                                        "Circle": "True"
+                                    },
+                                    "fills": [
+                                        {
+                                            "type": "SOLID",
+                                            "color": {
+                                                "r": 0.3922,
+                                                "g": 0.4549,
+                                                "b": 0.5451,
+                                                "a": 1.0
+                                            }
+                                        }
+                                    ],
+                                    "layoutAlign": "INHERIT",
                                     "children": [
                                         {
                                             "type": "TEXT",
                                             "id": "I18:2829;4271:48105",
                                             "name": "P",
+                                            "absoluteBoundingBox": {
+                                                "x": 3945.0,
+                                                "y": 1772.5,
+                                                "width": 14.0,
+                                                "height": 25.0
+                                            },
                                             "characters": "B",
                                             "componentPropertyReferences": {
                                                 "characters": "Text#4271:0"
@@ -546,6 +504,12 @@
                                     "type": "TEXT",
                                     "id": "18:2830",
                                     "name": "Benutzername",
+                                    "absoluteBoundingBox": {
+                                        "x": 3989.0,
+                                        "y": 1775.5,
+                                        "width": 110.0,
+                                        "height": 19.0
+                                    },
                                     "characters": "Benutzername",
                                     "style": {
                                         "fontFamily": "Inter",
