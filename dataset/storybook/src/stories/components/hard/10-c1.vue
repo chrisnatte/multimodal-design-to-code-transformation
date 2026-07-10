@@ -44,10 +44,7 @@
                 severity="secondary"
                 @click="toggleMenu(index)"
               />
-              <Popover
-                v-model:visible="state.openMenuIndex === index"
-                class="w-64"
-              >
+              <Popover :visible="state.openMenuIndex === index" class="w-64">
                 <div class="flex flex-col gap-2 p-1">
                   <Button label="Profil bearbeiten" icon="pi pi-pencil" outlined class="justify-start" />
                   <Button label="Status ändern" icon="pi pi-flag" outlined class="justify-start" />
