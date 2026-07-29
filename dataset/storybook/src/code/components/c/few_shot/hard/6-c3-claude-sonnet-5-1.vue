@@ -1,0 +1,26 @@
+<template>
+  <Select
+    v-model="selectedPerson"
+    :options="people"
+    option-label="name"
+    placeholder="Verantwortlichen aus."
+    filter
+    filter-placeholder="Suche..."
+    show-clear
+    class="w-64"
+  />
+</template>
+
+<script setup lang="ts">
+  import { ref } from 'vue'
+  import Select from 'primevue/select'
+
+  const people = ref([
+    { name: 'Max Mustermann' },
+    { name: 'Anna Schmidt' },
+    { name: 'Lisa Weber' },
+    { name: 'Paul Müller' },
+  ])
+
+  const selectedPerson = ref(null)
+</script>
