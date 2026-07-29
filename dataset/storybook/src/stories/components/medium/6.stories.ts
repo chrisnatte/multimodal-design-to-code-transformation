@@ -1,4 +1,4 @@
-import MediumComponentProfileView from './6.vue'
+import MediumComponentProfileView from '../../../code/components/gt/medium/6.vue'
 import MediumComponentProfileViewMethodA from './6-a.vue'
 import MediumComponentProfileViewMethodB1 from './6-b1.vue'
 import MediumComponentProfileViewMethodB2 from './6-b2.vue'

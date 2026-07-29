@@ -1,4 +1,4 @@
-import MediumComponentFAQAccordionPasswordInput from './3.vue'
+import MediumComponentFAQAccordionPasswordInput from '../../../code/components/gt/medium/3.vue'
 import MediumComponentFAQAccordionPasswordInputMethodA from './3-a.vue'
 import MediumComponentFAQAccordionPasswordInputMethodB1 from './3-b1.vue'
 import MediumComponentFAQAccordionPasswordInputMethodB2 from './3-b2.vue'

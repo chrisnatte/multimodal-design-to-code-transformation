@@ -1,4 +1,4 @@
-import SimpleComponentLoadingState from './7.vue'
+import SimpleComponentLoadingState from '../../../code/components/gt/simple/7.vue'
 import SimpleComponentLoadingStateMethodA from './7-a.vue'
 import SimpleComponentLoadingStateMethodB1 from './7-b1.vue'
 import SimpleComponentLoadingStateMethodB2 from './7-b2.vue'

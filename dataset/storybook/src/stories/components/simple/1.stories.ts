@@ -1,4 +1,4 @@
-import SimpleComponentPasswordInput from './1.vue'
+import SimpleComponentPasswordInput from '../../../code/components/gt/simple/1.vue'
 import SimpleComponentPasswordInputMethodA from './1-a.vue'
 import SimpleComponentPasswordInputMethodB1 from './1-b1.vue'
 import SimpleComponentPasswordInputMethodB2 from './1-b2.vue'

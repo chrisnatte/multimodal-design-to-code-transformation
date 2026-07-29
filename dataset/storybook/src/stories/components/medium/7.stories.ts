@@ -1,4 +1,4 @@
-import MediumComponentPaketList from './7.vue'
+import MediumComponentPaketList from '../../../code/components/gt/medium/7.vue'
 import MediumComponentPaketListMethodA from './7-a.vue'
 import MediumComponentPaketListMethodB1 from './7-b1.vue'
 import MediumComponentPaketListMethodB2 from './7-b2.vue'

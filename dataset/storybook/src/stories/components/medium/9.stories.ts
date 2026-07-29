@@ -1,4 +1,4 @@
-import MediumComponentStepForStep from './9.vue'
+import MediumComponentStepForStep from '../../../code/components/gt/medium/9.vue'
 import MediumComponentStepForStepMethodA from './9-a.vue'
 import MediumComponentStepForStepMethodB1 from './9-b1.vue'
 import MediumComponentStepForStepMethodB2 from './9-b2.vue'

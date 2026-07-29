@@ -1,4 +1,4 @@
-import SimpleComponentSearch from './8.vue'
+import SimpleComponentSearch from '../../../code/components/gt/simple/8.vue'
 import SimpleComponentSearchMethodA from './8-a.vue'
 import SimpleComponentSearchMethodB1 from './8-b1.vue'
 import SimpleComponentSearchMethodB2 from './8-b2.vue'

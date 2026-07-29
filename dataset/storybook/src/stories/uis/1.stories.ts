@@ -1,4 +1,4 @@
-import UI1GroundTruth from './1.vue'
+import UI1GroundTruth from '../../code/uis/gt/1.vue'
 
 export default {
   title: 'UIs/1-Dashboard-Overview',

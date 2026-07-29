@@ -1,4 +1,4 @@
-import UI3GroundTruth from './3.vue'
+import UI3GroundTruth from '../../code/uis/gt/3.vue'
 
 export default {
   title: 'UIs/3-Task-Management',

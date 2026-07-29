@@ -1,4 +1,4 @@
-import SimpleComponentRatingInput from './3.vue'
+import SimpleComponentRatingInput from '../../../code/components/gt/simple/3.vue'
 import SimpleComponentRatingInputMethodA from './3-a.vue'
 import SimpleComponentRatingInputMethodB1 from './3-b1.vue'
 import SimpleComponentRatingInputMethodB2 from './3-b2.vue'

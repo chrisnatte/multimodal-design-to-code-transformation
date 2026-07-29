@@ -1,4 +1,4 @@
-import SimpleComponentFileUploadStatus from './6.vue'
+import SimpleComponentFileUploadStatus from '../../../code/components/gt/simple/6.vue'
 import SimpleComponentFileUploadStatusMethodA from './6-a.vue'
 import SimpleComponentFileUploadStatusMethodB1 from './6-b1.vue'
 import SimpleComponentFileUploadStatusMethodB2 from './6-b2.vue'

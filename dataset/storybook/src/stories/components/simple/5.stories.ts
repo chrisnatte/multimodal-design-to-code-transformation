@@ -1,4 +1,4 @@
-import SimpleComponentFeedbackInput from './5.vue'
+import SimpleComponentFeedbackInput from '../../../code/components/gt/simple/5.vue'
 import SimpleComponentFeedbackInputMethodA from './5-a.vue'
 import SimpleComponentFeedbackInputMethodB1 from './5-b1.vue'
 import SimpleComponentFeedbackInputMethodB2 from './5-b2.vue'

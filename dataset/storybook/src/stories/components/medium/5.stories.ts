@@ -1,4 +1,4 @@
-import MediumComponentProductCard from './5.vue'
+import MediumComponentProductCard from '../../../code/components/gt/medium/5.vue'
 import MediumComponentProductCardMethodA from './5-a.vue'
 import MediumComponentProductCardMethodB1 from './5-b1.vue'
 import MediumComponentProductCardMethodB2 from './5-b2.vue'

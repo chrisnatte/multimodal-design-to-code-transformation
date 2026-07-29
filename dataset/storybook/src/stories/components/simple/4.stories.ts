@@ -1,4 +1,4 @@
-import SimpleComponentOptionSelection from './4.vue'
+import SimpleComponentOptionSelection from '../../../code/components/gt/simple/4.vue'
 import SimpleComponentOptionSelectionMethodA from './4-a.vue'
 import SimpleComponentOptionSelectionMethodB1 from './4-b1.vue'
 import SimpleComponentOptionSelectionMethodB2 from './4-b2.vue'

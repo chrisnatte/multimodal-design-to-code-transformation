@@ -1,4 +1,4 @@
-import MediumComponentLoginCard from './1.vue'
+import MediumComponentLoginCard from '../../../code/components/gt/medium/1.vue'
 import MediumComponentLoginCardMethodA from './1-a.vue'
 import MediumComponentLoginCardMethodB1 from './1-b1.vue'
 import MediumComponentLoginCardMethodB2 from './1-b2.vue'

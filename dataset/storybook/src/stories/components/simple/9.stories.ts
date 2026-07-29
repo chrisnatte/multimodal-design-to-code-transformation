@@ -1,4 +1,4 @@
-import SimpleComponentTodoList from './9.vue'
+import SimpleComponentTodoList from '../../../code/components/gt/simple/9.vue'
 import SimpleComponentTodoListMethodA from './9-a.vue'
 import SimpleComponentTodoListMethodB1 from './9-b1.vue'
 import SimpleComponentTodoListMethodB2 from './9-b2.vue'

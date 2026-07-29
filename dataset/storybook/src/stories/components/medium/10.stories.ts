@@ -1,4 +1,4 @@
-import MediumComponentInfoCardWithProgress from './10.vue'
+import MediumComponentInfoCardWithProgress from '../../../code/components/gt/medium/10.vue'
 import MediumComponentInfoCardWithProgressMethodA from './10-a.vue'
 import MediumComponentInfoCardWithProgressMethodB1 from './10-b1.vue'
 import MediumComponentInfoCardWithProgressMethodB2 from './10-b2.vue'

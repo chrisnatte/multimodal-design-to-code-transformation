@@ -1,4 +1,4 @@
-import MediumComponentDashboardNavigation from './4.vue'
+import MediumComponentDashboardNavigation from '../../../code/components/gt/medium/4.vue'
 import MediumComponentDashboardNavigationMethodA from './4-a.vue'
 import MediumComponentDashboardNavigationMethodB1 from './4-b1.vue'
 import MediumComponentDashboardNavigationMethodB2 from './4-b2.vue'

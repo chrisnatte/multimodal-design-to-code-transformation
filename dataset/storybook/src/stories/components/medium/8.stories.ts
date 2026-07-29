@@ -1,4 +1,4 @@
-import MediumComponentSidebarMenuWithProfile from './8.vue'
+import MediumComponentSidebarMenuWithProfile from '../../../code/components/gt/medium/8.vue'
 import MediumComponentSidebarMenuWithProfileMethodA from './8-a.vue'
 import MediumComponentSidebarMenuWithProfileMethodB1 from './8-b1.vue'
 import MediumComponentSidebarMenuWithProfileMethodB2 from './8-b2.vue'

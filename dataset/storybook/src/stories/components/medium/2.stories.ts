@@ -1,4 +1,4 @@
-import MediumComponentSettingsTabs from './2.vue'
+import MediumComponentSettingsTabs from '../../../code/components/gt/medium/2.vue'
 import MediumComponentSettingsTabsMethodA from './2-a.vue'
 import MediumComponentSettingsTabsMethodB1 from './2-b1.vue'
 import MediumComponentSettingsTabsMethodB2 from './2-b2.vue'

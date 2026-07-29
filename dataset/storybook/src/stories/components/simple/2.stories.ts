@@ -1,4 +1,4 @@
-import SimpleComponentStatusRow from './2.vue'
+import SimpleComponentStatusRow from '../../../code/components/gt/simple/2.vue'
 import SimpleComponentStatusRowMethodA from './2-a.vue'
 import SimpleComponentStatusRowMethodB1 from './2-b1.vue'
 import SimpleComponentStatusRowMethodB2 from './2-b2.vue'

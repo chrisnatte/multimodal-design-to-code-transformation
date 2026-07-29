@@ -1,4 +1,4 @@
-import SimpleComponentFilter from './10.vue'
+import SimpleComponentFilter from '../../../code/components/gt/simple/10.vue'
 import SimpleComponentFilterMethodA from './10-a.vue'
 import SimpleComponentFilterMethodB1 from './10-b1.vue'
 import SimpleComponentFilterMethodB2 from './10-b2.vue'
