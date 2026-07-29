@@ -1,0 +1,15 @@
+<template>
+  <div class="flex w-fit flex-col bg-white p-6">
+    <div class="flex flex-row items-center gap-4">
+      <OverlayBadge value="8" severity="success">
+        <Avatar label="B" size="xlarge" shape="circle" />
+      </OverlayBadge>
+      <span class="text-xl">Benutzername</span>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+import Avatar from 'primevue/avatar'
+import OverlayBadge from 'primevue/overlaybadge'
+</script>
