@@ -1,166 +1,165 @@
 <template>
-  <div class="flex h-screen w-full bg-white font-sans text-gray-900">
+  <div class="flex h-screen w-full bg-white font-sans text-slate-900">
     <!-- Sidebar -->
-    <div class="w-64 bg-[#f1f5f9] flex flex-col py-6 px-6 gap-10 shrink-0">
-      <div class="text-base font-normal text-gray-800">Navigation</div>
-      <div class="flex flex-col gap-4">
-        <div class="flex items-center gap-3 p-2 bg-[#d1fae5] border border-[#a7f3d0] rounded-md text-[#10b981] cursor-pointer">
-          <i class="pi pi-home"></i>
-          <span class="font-medium text-sm">Dashboard</span>
-        </div>
-        <div class="flex items-center gap-3 p-2 border border-gray-400 rounded-md text-gray-600 cursor-pointer hover:bg-gray-100">
-          <i class="pi pi-users"></i>
-          <span class="font-medium text-sm">Kunden</span>
-        </div>
-        <div class="flex items-center gap-3 p-2 border border-gray-400 rounded-md text-gray-600 cursor-pointer hover:bg-gray-100">
-          <i class="pi pi-chart-bar"></i>
-          <span class="font-medium text-sm">Berichte</span>
-        </div>
-        <div class="flex items-center gap-3 p-2 border border-gray-400 rounded-md text-gray-600 cursor-pointer hover:bg-gray-100">
-          <i class="pi pi-cog"></i>
-          <span class="font-medium text-sm">Einstellungen</span>
-        </div>
-      </div>
+    <div class="w-64 bg-slate-50 p-6 flex flex-col gap-4 border-r border-slate-200">
+      <div class="text-lg font-normal text-slate-900 mb-4">Navigation</div>
+      <Menu :model="sidebarItems" class="w-full bg-transparent border-none p-0" />
     </div>
 
     <!-- Main Content -->
-    <div class="flex-1 flex flex-col p-8 gap-8 overflow-y-auto">
+    <div class="flex-1 p-8 flex flex-col gap-8 overflow-y-auto">
       <!-- Header -->
       <div class="flex flex-col gap-2">
-        <h1 class="text-3xl font-bold text-gray-900 m-0">Dashboard</h1>
-        <p class="text-base text-gray-600 m-0">Bekomme eine Übersicht über die Projekte.</p>
+        <h1 class="text-3xl font-bold text-slate-900">Dashboard</h1>
+        <p class="text-base text-slate-600">Bekomme eine Übersicht über die Projekte.</p>
       </div>
 
       <!-- Stat Cards -->
       <div class="flex gap-6">
-        <Card class="flex-1 bg-[#f1f5f9] shadow-none border-none rounded-xl" :pt="{ body: { class: 'p-4' } }">
+        <Card class="flex-1 bg-slate-50 shadow-none border border-slate-200 rounded-xl">
           <template #content>
-            <div class="flex flex-col gap-4">
-              <div>
-                <div class="text-2xl font-medium text-gray-900">42.8 Tsd.</div>
-                <div class="text-sm text-gray-600">Umsatz in €</div>
-              </div>
-              <Tag value="+ 12 %" class="!bg-[#d1fae5] !text-[#10b981] font-bold text-xs w-fit px-2 py-1" />
+            <div class="flex flex-col gap-1">
+              <div class="text-2xl font-medium text-slate-900">42.8 Tsd.</div>
+              <div class="text-sm text-slate-600">Umsatz in €</div>
+              <Tag value="+ 12 %" severity="success" class="w-fit mt-3" />
             </div>
           </template>
         </Card>
-        <Card class="flex-1 bg-[#f1f5f9] shadow-none border-none rounded-xl" :pt="{ body: { class: 'p-4' } }">
+        <Card class="flex-1 bg-slate-50 shadow-none border border-slate-200 rounded-xl">
           <template #content>
-            <div class="flex flex-col gap-4">
-              <div>
-                <div class="text-2xl font-medium text-gray-900">1.247</div>
-                <div class="text-sm text-gray-600">Bestellungen</div>
-              </div>
-              <Tag value="+ 8 %" class="!bg-[#d1fae5] !text-[#10b981] font-bold text-xs w-fit px-2 py-1" />
+            <div class="flex flex-col gap-1">
+              <div class="text-2xl font-medium text-slate-900">1.247</div>
+              <div class="text-sm text-slate-600">Bestellungen</div>
+              <Tag value="+ 8 %" severity="success" class="w-fit mt-3" />
             </div>
           </template>
         </Card>
-        <Card class="flex-1 bg-[#f1f5f9] shadow-none border-none rounded-xl" :pt="{ body: { class: 'p-4' } }">
+        <Card class="flex-1 bg-slate-50 shadow-none border border-slate-200 rounded-xl">
           <template #content>
-            <div class="flex flex-col gap-4">
-              <div>
-                <div class="text-2xl font-medium text-gray-900">3.891</div>
-                <div class="text-sm text-gray-600">Nutzer</div>
-              </div>
-              <Tag value="+ 2 %" class="!bg-[#ffedd5] !text-[#f59e0b] font-bold text-xs w-fit px-2 py-1" />
-            </div>
-          </template>
-        </Card>
-        <Card class="flex-1 bg-[#f1f5f9] shadow-none border-none rounded-xl" :pt="{ body: { class: 'p-4' } }">
-          <template #content>
-            <div class="flex flex-col gap-4">
-              <div>
-                <div class="text-2xl font-medium text-gray-900">89</div>
-                <div class="text-sm text-gray-600">Retouren</div>
-              </div>
-              <Tag value="+ 23 %" class="!bg-[#fee2e2] !text-[#ef4444] font-bold text-xs w-fit px-2 py-1" />
+            <div class="flex flex-col gap-1">
+              <div class="text-2xl font-medium text-slate-900">89</div>
+              <div class="text-sm text-slate-600">Retouren</div>
+              <Tag value="+ 23 %" severity="danger" class="w-fit mt-3" />
             </div>
           </template>
         </Card>
       </div>
 
-      <!-- Filter & Export -->
-      <div class="flex justify-between items-start gap-6">
-        <!-- Filter Box -->
-        <div class="flex-1 bg-[#f1f5f9] rounded-lg border border-gray-200 flex flex-col">
-          <div class="flex justify-between items-center p-4 border-b border-gray-200">
-            <span class="font-semibold text-sm text-gray-900">Filter</span>
-            <i class="pi pi-filter text-gray-500"></i>
+      <!-- Filters & Export -->
+      <div class="flex justify-between items-end gap-6">
+        <div class="flex flex-col bg-slate-50 rounded-lg border border-slate-200 flex-1">
+          <div class="flex justify-between items-center p-3 border-b border-slate-200">
+            <span class="font-semibold text-sm text-slate-900">Filter</span>
+            <i class="pi pi-filter text-slate-500"></i>
           </div>
-          <div class="p-4 flex gap-6">
-            <!-- Zeitraum -->
-            <div class="flex flex-col gap-2 w-64">
-              <span class="text-sm text-gray-600">Zeitraum</span>
-              <div class="p-2 bg-white border border-[#10b981] rounded-md text-sm text-gray-600 cursor-pointer">
-                Zeitraum wählen
-              </div>
+          <div class="flex gap-6 p-4">
+            <div class="flex flex-col gap-2 flex-1">
+              <label class="text-sm text-slate-600">Zeitraum</label>
+              <DatePicker v-model="dateRange" selectionMode="range" placeholder="Zeitraum wählen" class="w-full" />
             </div>
-            <!-- Status -->
-            <div class="flex flex-col gap-2 w-52">
-              <span class="text-sm text-gray-600">Status</span>
-              <div class="flex justify-between items-center p-2 bg-white border border-[#10b981] rounded-md text-sm text-gray-600 cursor-pointer">
-                <span>Status auswählen</span>
-                <i class="pi pi-chevron-down"></i>
-              </div>
+            <div class="flex flex-col gap-2 flex-1">
+              <label class="text-sm text-slate-600">Status</label>
+              <Select v-model="selectedStatus" :options="statuses" placeholder="Status auswählen" class="w-full" />
             </div>
-            <!-- Zustand -->
-            <div class="flex flex-col gap-2 w-32">
-              <span class="text-sm text-gray-600">Zustand</span>
-              <div class="flex items-center gap-2">
-                <div class="flex items-center gap-2 bg-[#10b981] text-white px-2 py-1 rounded-md text-sm cursor-pointer">
-                  <i class="pi pi-check text-xs"></i> Aktiv
-                </div>
-                <div class="flex items-center gap-2 bg-white border border-gray-200 text-gray-600 px-2 py-1 rounded-md text-sm cursor-pointer">
-                  Archiv
-                </div>
-              </div>
+            <div class="flex flex-col gap-2 flex-1">
+              <label class="text-sm text-slate-600">Zustand</label>
+              <SelectButton v-model="selectedState" :options="stateOptions" aria-labelledby="basic" class="w-full" />
             </div>
           </div>
         </div>
 
-        <!-- Export -->
-        <div class="flex flex-col gap-2 relative">
-          <Button label="Exportieren" icon="pi pi-download" iconPos="right" class="!bg-[#10b981] !border-[#10b981] !text-white w-48" @click="isExportMenuOpen = !isExportMenuOpen" />
-          <!-- Dropdown mockup -->
-          <div v-if="isExportMenuOpen" class="absolute top-12 left-0 w-48 bg-white border border-gray-200 rounded-md shadow-sm flex flex-col p-2 gap-2 z-10">
-            <div class="p-2 border border-gray-200 rounded-md text-sm font-medium text-gray-700 cursor-pointer hover:bg-gray-50">Als CSV exportieren</div>
-            <div class="p-2 border border-gray-200 rounded-md text-sm font-medium text-gray-700 cursor-pointer hover:bg-gray-50">Als PDF exportieren</div>
-          </div>
+        <div class="pb-4">
+          <Button type="button" label="Exportieren" icon="pi pi-download" @click="toggleExport" severity="success" class="px-4 py-2" />
+          <Menu ref="exportMenu" id="overlay_menu" :model="exportItems" :popup="true" />
         </div>
       </div>
 
-      <!-- Table -->
-      <div class="flex flex-col border border-gray-200 rounded-lg bg-white">
-        <!-- Header -->
-        <div class="flex border-b border-gray-200 bg-white rounded-t-lg">
-          <div class="w-96 p-3 font-semibold text-sm text-gray-900 border-r border-gray-200">Produkt</div>
-          <div class="w-40 p-3 font-semibold text-sm text-gray-900 border-r border-gray-200">Status</div>
-          <div class="w-32 p-3 font-semibold text-sm text-gray-900 border-r border-gray-200">Bestelldatum</div>
-          <div class="w-32 p-3 font-semibold text-sm text-gray-900 border-r border-gray-200">Summe</div>
-          <div class="w-32 p-3 font-semibold text-sm text-gray-900 border-r border-gray-200">Stück</div>
-          <div class="w-24 p-3 font-semibold text-sm text-gray-900">Aktionen</div>
-        </div>
-        <!-- Rows -->
-        <div class="flex flex-col">
-          <!-- Row 1 -->
-          <div class="flex border-b border-gray-200 items-center relative">
-            <div class="w-96 p-3 text-sm text-gray-700 border-r border-gray-200">Widget Pro</div>
-            <div class="w-40 p-3 border-r border-gray-200">
-              <Tag value="Angekommen" class="!bg-[#d1fae5] !text-[#10b981] font-bold text-xs px-2 py-1" />
-            </div>
-            <div class="w-32 p-3 text-sm text-gray-700 border-r border-gray-200">15.04.2026</div>
-            <div class="w-32 p-3 text-sm text-gray-700 border-r border-gray-200">12.400 €</div>
-            <div class="w-32 p-3 text-sm text-gray-700 border-r border-gray-200">312</div>
-            <div class="w-24 p-3 flex justify-center relative">
-              <Button icon="pi pi-ellipsis-h" variant="text" severity="secondary" rounded @click="isActionMenuOpen = !isActionMenuOpen" />
-              <!-- Action Menu Mockup -->
-              <div v-if="isActionMenuOpen" class="absolute top-10 right-0 w-48 bg-white border border-gray-200 rounded-md shadow-sm flex flex-col p-2 gap-2 z-10">
-                <div class="flex items-center gap-2 p-2 border border-gray-200 rounded-md text-sm font-medium text-gray-700 cursor-pointer hover:bg-gray-50">
-                  <i class="pi pi-pencil"></i> Bearbeiten
-                </div>
-                <div class="flex items-center gap-2 p-2 border border-gray-200 rounded-md text-sm font-medium text-gray-700 cursor-pointer hover:bg-gray-50">
-                  <i class="pi pi-refresh"></i> Status aktualisieren
-                </div>
-                <div class="flex items-center gap-2 p-2 border border-gray-200 rounded-md text-sm font-medium text-gray-700 cursor-pointer hover:bg-gray-50">
-                  <i class="pi pi-trash"></i> Löschen
-                </div>
+      <!-- Data Table -->
+      <div class="border border-slate-200 rounded-lg overflow-hidden bg-white">
+        <DataTable :value="products" tableStyle="min-width: 50rem" class="p-datatable-sm">
+          <Column field="product" header="Produkt" class="font-semibold"></Column>
+          <Column field="status" header="Status">
+            <template #body="slotProps">
+              <Tag :value="slotProps.data.status" :severity="getStatusSeverity(slotProps.data.status)" />
+            </template>
+          </Column>
+          <Column field="date" header="Bestelldatum"></Column>
+          <Column field="total" header="Summe"></Column>
+          <Column field="pieces" header="Stück"></Column>
+          <Column header="Aktionen">
+            <template #body="slotProps">
+              <Button icon="pi pi-ellipsis-h" text rounded aria-haspopup="true" aria-controls="overlay_menu_action" @click="toggleAction($event, slotProps.data)" />
+            </template>
+          </Column>
+        </DataTable>
+        <Menu ref="actionMenu" id="overlay_menu_action" :model="actionItems" :popup="true" />
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+import Menu from 'primevue/menu';
+import Card from 'primevue/card';
+import Tag from 'primevue/tag';
+import DatePicker from 'primevue/datepicker';
+import Select from 'primevue/select';
+import SelectButton from 'primevue/selectbutton';
+import Button from 'primevue/button';
+import DataTable from 'primevue/datatable';
+import Column from 'primevue/column';
+
+const sidebarItems = ref([
+  { label: 'Dashboard', icon: 'pi pi-home' },
+  { label: 'Kunden', icon: 'pi pi-users' },
+  { label: 'Berichte', icon: 'pi pi-chart-bar' },
+  { label: 'Einstellungen', icon: 'pi pi-cog' }
+]);
+
+const dateRange = ref(null);
+const selectedStatus = ref(null);
+const statuses = ref(['Bezahlt', 'In Bearbeitung', 'Versendet', 'Angekommen']);
+const stateOptions = ref(['Aktiv', 'Archiv']);
+const selectedState = ref('Aktiv');
+
+const exportMenu = ref();
+const exportItems = ref([
+  { label: 'Als CSV exportieren', icon: 'pi pi-file-excel' },
+  { label: 'Als PDF exportieren', icon: 'pi pi-file-pdf' }
+]);
+
+const toggleExport = (event) => {
+  exportMenu.value.toggle(event);
+};
+
+const products = ref([
+  { product: 'Widget Pro', status: 'Angekommen', date: '15.04.2026', total: '12.400 €', pieces: 312 },
+  { product: 'Gadget Mini', status: 'In Bearbeitung', date: '24.04.2026', total: '8.920 €', pieces: 485 },
+  { product: 'Sensor X1', status: 'Versendet', date: '09.05.2026', total: '6.100 €', pieces: 150 },
+  { product: 'System V5', status: 'Bezahlt', date: '12.06.2026', total: '10.250 €', pieces: 2 },
+]);
+
+const getStatusSeverity = (status) => {
+  switch (status) {
+    case 'Angekommen': return 'success';
+    case 'In Bearbeitung': return 'warning';
+    case 'Versendet': return 'secondary';
+    case 'Bezahlt': return 'info';
+    default: return 'info';
+  }
+};
+
+const actionMenu = ref();
+const selectedProduct = ref();
+const actionItems = ref([
+  { label: 'Bearbeiten', icon: 'pi pi-pencil' },
+  { label: 'Status aktualisieren', icon: 'pi pi-refresh' },
+  { label: 'Löschen', icon: 'pi pi-trash' }
+]);
+
+const toggleAction = (event, product) => {
+  selectedProduct.value = product;
+  actionMenu.value.toggle(event);
+};
+</script>

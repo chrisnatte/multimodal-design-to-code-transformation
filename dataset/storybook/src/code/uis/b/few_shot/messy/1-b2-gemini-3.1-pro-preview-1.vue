@@ -1,203 +1,169 @@
 <template>
-  <div class="flex min-h-screen bg-surface-50">
+  <div class="flex min-h-screen bg-white font-sans text-slate-800">
     <!-- Sidebar -->
-    <div class="w-64 flex-shrink-0 bg-surface-50 p-6 flex flex-col gap-6 border-r border-surface-200">
-      <div class="text-lg font-normal text-surface-900">Navigation</div>
-      <div class="flex flex-col gap-2">
-        <Button 
-          label="Dashboard" 
-          icon="pi pi-home" 
-          class="!justify-start w-full !bg-green-100 !text-green-700 hover:!bg-green-200" 
-          variant="text" 
-        />
-        <Button 
-          label="Kunden" 
-          icon="pi pi-users" 
-          class="!justify-start w-full !text-surface-600 hover:!bg-surface-200" 
-          variant="text" 
-        />
-        <Button 
-          label="Berichte" 
-          icon="pi pi-chart-bar" 
-          class="!justify-start w-full !text-surface-600 hover:!bg-surface-200" 
-          variant="text" 
-        />
-        <Button 
-          label="Einstellungen" 
-          icon="pi pi-cog" 
-          class="!justify-start w-full !text-surface-600 hover:!bg-surface-200" 
-          variant="text" 
-        />
-      </div>
-    </div>
+    <aside class="w-64 bg-slate-50 p-6 border-r border-slate-200 flex flex-col gap-4">
+      <div class="text-base font-normal text-slate-500 mb-2">Navigation</div>
+      <nav class="flex flex-col gap-2">
+        <a href="#" class="flex items-center gap-3 px-3 py-2 bg-emerald-100 text-emerald-800 rounded-md font-medium">
+          <i class="pi pi-home"></i> Dashboard
+        </a>
+        <a href="#" class="flex items-center gap-3 px-3 py-2 text-slate-600 hover:bg-slate-100 rounded-md font-medium">
+          <i class="pi pi-users"></i> Kunden
+        </a>
+        <a href="#" class="flex items-center gap-3 px-3 py-2 text-slate-600 hover:bg-slate-100 rounded-md font-medium">
+          <i class="pi pi-chart-bar"></i> Berichte
+        </a>
+        <a href="#" class="flex items-center gap-3 px-3 py-2 text-slate-600 hover:bg-slate-100 rounded-md font-medium">
+          <i class="pi pi-cog"></i> Einstellungen
+        </a>
+      </nav>
+    </aside>
 
     <!-- Main Content -->
-    <div class="flex-1 p-8 flex flex-col gap-8 bg-white">
+    <main class="flex-1 p-8 flex flex-col gap-8">
       <!-- Header -->
-      <div class="flex flex-col gap-2">
-        <h1 class="text-3xl font-bold m-0 text-surface-900">Dashboard</h1>
-        <p class="text-surface-600 m-0 text-base">Bekomme eine Übersicht über die Projekte.</p>
-      </div>
-
-      <!-- Summary Cards -->
-      <div class="grid grid-cols-4 gap-6">
-        <Card class="bg-surface-50 shadow-none border border-surface-200">
-          <template #content>
-            <div class="flex flex-col gap-4">
-              <div class="flex flex-col gap-1">
-                <div class="text-2xl font-medium text-surface-900">42.8 Tsd.</div>
-                <div class="text-surface-600 text-sm">Umsatz in €</div>
-              </div>
-              <Tag value="+ 12 %" severity="success" class="w-fit" />
-            </div>
-          </template>
-        </Card>
-        
-        <Card class="bg-surface-50 shadow-none border border-surface-200">
-          <template #content>
-            <div class="flex flex-col gap-4">
-              <div class="flex flex-col gap-1">
-                <div class="text-2xl font-medium text-surface-900">1.247</div>
-                <div class="text-surface-600 text-sm">Bestellungen</div>
-              </div>
-              <Tag value="+ 8 %" severity="success" class="w-fit" />
-            </div>
-          </template>
-        </Card>
-
-        <Card class="bg-surface-50 shadow-none border border-surface-200">
-          <template #content>
-            <div class="flex flex-col gap-4">
-              <div class="flex flex-col gap-1">
-                <div class="text-2xl font-medium text-surface-900">3.891</div>
-                <div class="text-surface-600 text-sm">Nutzer</div>
-              </div>
-              <Tag value="+ 2 %" severity="warn" class="w-fit !bg-orange-100 !text-orange-700" />
-            </div>
-          </template>
-        </Card>
-
-        <Card class="bg-surface-50 shadow-none border border-surface-200">
-          <template #content>
-            <div class="flex flex-col gap-4">
-              <div class="flex flex-col gap-1">
-                <div class="text-2xl font-medium text-surface-900">89</div>
-                <div class="text-surface-600 text-sm">Retouren</div>
-              </div>
-              <Tag value="+ 23 %" severity="danger" class="w-fit !bg-red-100 !text-red-700" />
-            </div>
-          </template>
-        </Card>
-      </div>
-
-      <!-- Filters -->
-      <div class="flex flex-col gap-6 bg-surface-50 p-6 rounded-lg border border-surface-200">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center gap-2 font-semibold text-surface-900">
-            Filter <i class="pi pi-filter"></i>
-          </div>
-          <div>
-            <Button label="Exportieren" icon="pi pi-download" iconPos="right" severity="success" @click="toggleExportMenu" />
-            <Menu ref="exportMenu" :model="exportMenuItems" popup />
-          </div>
+      <header class="flex justify-between items-start">
+        <div>
+          <h1 class="text-3xl font-bold text-slate-900">Dashboard</h1>
+          <p class="text-slate-500 mt-1">Bekomme eine Übersicht über die Projekte.</p>
         </div>
+        <div>
+          <Button label="Exportieren" icon="pi pi-chevron-down" iconPos="right" severity="success" @click="toggleExportMenu" />
+          <Menu ref="exportMenu" :model="exportOptions" :popup="true" />
+        </div>
+      </header>
 
-        <div class="flex gap-6 items-end">
-          <div class="flex flex-col gap-2 flex-1">
-            <label class="text-sm text-surface-700">Zeitraum</label>
-            <DatePicker v-model="date" placeholder="Zeitraum wählen" class="w-full" />
+      <!-- Stat Cards -->
+      <div class="grid grid-cols-4 gap-6">
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 flex flex-col gap-4">
+          <div>
+            <div class="text-2xl font-medium text-slate-900">42.8 Tsd.</div>
+            <div class="text-sm text-slate-500">Umsatz in €</div>
           </div>
-          <div class="flex flex-col gap-2 flex-1">
-            <label class="text-sm text-surface-700">Status</label>
-            <Select v-model="status" :options="statusOptions" placeholder="Status auswählen" class="w-full" />
+          <div class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-1 rounded w-fit">+ 12 %</div>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 flex flex-col gap-4">
+          <div>
+            <div class="text-2xl font-medium text-slate-900">1.247</div>
+            <div class="text-sm text-slate-500">Bestellungen</div>
+          </div>
+          <div class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-1 rounded w-fit">+ 8 %</div>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 flex flex-col gap-4">
+          <div>
+            <div class="text-2xl font-medium text-slate-900">3.891</div>
+            <div class="text-sm text-slate-500">Nutzer</div>
+          </div>
+          <div class="bg-orange-100 text-orange-800 text-xs font-bold px-2 py-1 rounded w-fit">+ 2 %</div>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 flex flex-col gap-4">
+          <div>
+            <div class="text-2xl font-medium text-slate-900">89</div>
+            <div class="text-sm text-slate-500">Retouren</div>
+          </div>
+          <div class="bg-red-100 text-red-800 text-xs font-bold px-2 py-1 rounded w-fit">+ 23 %</div>
+        </div>
+      </div>
+
+      <!-- Filter Section -->
+      <div class="bg-slate-50 border border-slate-200 rounded-lg flex flex-col">
+        <div class="px-4 py-3 border-b border-slate-200 flex justify-between items-center">
+          <span class="font-semibold text-slate-800">Filter</span>
+          <i class="pi pi-chevron-down text-slate-500"></i>
+        </div>
+        <div class="p-4 flex gap-6 items-end">
+          <div class="flex flex-col gap-2 w-64">
+            <label class="text-sm text-slate-600">Zeitraum</label>
+            <DatePicker v-model="dateRange" selectionMode="range" placeholder="Zeitraum wählen" class="w-full" />
+          </div>
+          <div class="flex flex-col gap-2 w-52">
+            <label class="text-sm text-slate-600">Status</label>
+            <Select v-model="selectedStatus" :options="statusOptions" placeholder="Status auswählen" class="w-full" />
           </div>
           <div class="flex flex-col gap-2">
-            <label class="text-sm text-surface-700">Zustand</label>
-            <SelectButton v-model="zustand" :options="['Aktiv', 'Archiv']" />
+            <label class="text-sm text-slate-600">Zustand</label>
+            <SelectButton v-model="selectedZustand" :options="zustandOptions" />
           </div>
         </div>
       </div>
 
-      <!-- Data Table -->
-      <DataTable :value="products" class="border border-surface-200 rounded-lg overflow-hidden">
-        <Column field="name" header="Produkt" class="font-medium" />
-        <Column field="status" header="Status">
-          <template #body="{ data }">
-            <Tag :value="data.status" :severity="getSeverity(data.status)" />
-          </template>
-        </Column>
-        <Column field="date" header="Bestelldatum" />
-        <Column field="total" header="Summe" />
-        <Column field="pieces" header="Stück" />
-        <Column header="Aktionen" bodyStyle="text-align: right">
-          <template #body="{ data }">
-            <Button icon="pi pi-ellipsis-h" variant="text" severity="secondary" rounded @click="toggleActionMenu($event, data)" />
-          </template>
-        </Column>
-      </DataTable>
-      <Menu ref="actionMenu" :model="actionMenuItems" popup />
-    </div>
+      <!-- DataTable -->
+      <div class="bg-white border border-slate-200 rounded-lg overflow-hidden">
+        <DataTable :value="products" responsiveLayout="scroll">
+          <Column field="name" header="Produkt" class="font-medium"></Column>
+          <Column field="status" header="Status">
+            <template #body="{ data }">
+              <Tag :value="data.status" :severity="getStatusSeverity(data.status)" />
+            </template>
+          </Column>
+          <Column field="date" header="Bestelldatum"></Column>
+          <Column field="total" header="Summe"></Column>
+          <Column field="count" header="Stück"></Column>
+          <Column header="Aktionen" bodyStyle="text-align: center">
+            <template #body>
+              <Button icon="pi pi-ellipsis-h" text rounded @click="toggleRowMenu" aria-haspopup="true" aria-controls="row-menu" />
+            </template>
+          </Column>
+        </DataTable>
+        <Menu ref="rowMenu" id="row-menu" :model="rowOptions" :popup="true" />
+      </div>
+    </main>
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue';
-import Button from 'primevue/button';
-import Card from 'primevue/card';
-import Tag from 'primevue/tag';
-import DatePicker from 'primevue/datepicker';
-import Select from 'primevue/select';
-import SelectButton from 'primevue/selectbutton';
-import DataTable from 'primevue/datatable';
-import Column from 'primevue/column';
-import Menu from 'primevue/menu';
+<script setup lang="ts">
+import { ref, useTemplateRef } from 'vue'
+import Button from 'primevue/button'
+import Menu from 'primevue/menu'
+import Select from 'primevue/select'
+import DatePicker from 'primevue/datepicker'
+import SelectButton from 'primevue/selectbutton'
+import DataTable from 'primevue/datatable'
+import Column from 'primevue/column'
+import Tag from 'primevue/tag'
 
-const date = ref(null);
-const status = ref(null);
-const zustand = ref('Aktiv');
-
-const statusOptions = ref(['Angekommen', 'In Bearbeitung', 'Versendet', 'Bezahlt']);
-
-const products = ref([
-  { name: 'Widget Pro', status: 'Angekommen', date: '15.04.2026', total: '12.400 €', pieces: 312 },
-  { name: 'Gadget Mini', status: 'In Bearbeitung', date: '24.04.2026', total: '8.920 €', pieces: 485 },
-  { name: 'Sensor X1', status: 'Versendet', date: '09.05.2026', total: '6.100 €', pieces: 150 },
-  { name: 'System V5', status: 'Bezahlt', date: '12.06.2026', total: '10.250 €', pieces: 2 }
-]);
-
-const getSeverity = (status) => {
-  switch (status) {
-    case 'Angekommen':
-      return 'success';
-    case 'In Bearbeitung':
-      return 'warn';
-    case 'Versendet':
-      return 'secondary';
-    case 'Bezahlt':
-      return 'info';
-    default:
-      return 'info';
-  }
-};
-
-const exportMenu = ref();
-const toggleExportMenu = (event) => {
-  exportMenu.value.toggle(event);
-};
-const exportMenuItems = ref([
+const exportMenu = useTemplateRef('exportMenu')
+const exportOptions = [
   { label: 'Als CSV exportieren', icon: 'pi pi-file-excel' },
   { label: 'Als PDF exportieren', icon: 'pi pi-file-pdf' }
-]);
+]
 
-const actionMenu = ref();
-const selectedProduct = ref();
-const toggleActionMenu = (event, data) => {
-  selectedProduct.value = data;
-  actionMenu.value.toggle(event);
-};
-const actionMenuItems = ref([
+const toggleExportMenu = (event: Event) => {
+  exportMenu.value?.toggle(event)
+}
+
+const dateRange = ref()
+const selectedStatus = ref()
+const statusOptions = ['Bezahlt', 'In Bearbeitung', 'Versendet', 'Angekommen']
+
+const zustandOptions = ['Aktiv', 'Archiv']
+const selectedZustand = ref('Aktiv')
+
+const products = ref([
+  { name: 'Widget Pro', status: 'Angekommen', date: '15.04.2026', total: '12.400 €', count: 312 },
+  { name: 'Gadget Mini', status: 'In Bearbeitung', date: '24.04.2026', total: '8.920 €', count: 485 },
+  { name: 'Sensor X1', status: 'Versendet', date: '09.05.2026', total: '6.100 €', count: 150 },
+  { name: 'System V5', status: 'Bezahlt', date: '12.06.2026', total: '10.250 €', count: 2 }
+])
+
+const rowMenu = useTemplateRef('rowMenu')
+const rowOptions = [
   { label: 'Bearbeiten', icon: 'pi pi-pencil' },
   { label: 'Status aktualisieren', icon: 'pi pi-refresh' },
   { label: 'Löschen', icon: 'pi pi-trash' }
-]);
+]
+
+const toggleRowMenu = (event: Event) => {
+  rowMenu.value?.toggle(event)
+}
+
+const getStatusSeverity = (status: string) => {
+  switch (status) {
+    case 'Angekommen': return 'success'
+    case 'In Bearbeitung': return 'warn'
+    case 'Versendet': return 'secondary'
+    case 'Bezahlt': return 'info'
+    default: return 'info'
+  }
+}
 </script>
