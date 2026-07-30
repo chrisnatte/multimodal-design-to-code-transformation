@@ -1,11 +1,4 @@
 import MediumComponentSidebarMenuWithProfile from '../../../code/components/gt/medium/8.vue'
-import MediumComponentSidebarMenuWithProfileMethodA from './8-a.vue'
-import MediumComponentSidebarMenuWithProfileMethodB1 from './8-b1.vue'
-import MediumComponentSidebarMenuWithProfileMethodB2 from './8-b2.vue'
-import MediumComponentSidebarMenuWithProfileMethodB3 from './8-b3.vue'
-import MediumComponentSidebarMenuWithProfileMethodC1 from './8-c1.vue'
-import MediumComponentSidebarMenuWithProfileMethodC2 from './8-c2.vue'
-import MediumComponentSidebarMenuWithProfileMethodC3 from './8-c3.vue'
 
 export default {
   title: 'Components/Medium/8-Sidebar-Menu-With-Profile',
@@ -14,51 +7,114 @@ export default {
 
 export const Default = {}
 
-export const MethodA = {
-  render: () => ({
-    components: { MediumComponentSidebarMenuWithProfileMethodA },
-    template: '<MediumComponentSidebarMenuWithProfileMethodA />',
-  }),
-}
+// >>> AUTO-GENERATED EVAL STORIES (managed by storybook-generate-stories.ipynb) -- do not edit by hand >>>
+import Comp_b_few_shot_8_b1_claude_sonnet_5_1 from '../../../code/components/b/few_shot/medium/8-b1-claude-sonnet-5-1.vue';
+import Comp_b_few_shot_8_b1_gemini_3_1_pro_preview_1 from '../../../code/components/b/few_shot/medium/8-b1-gemini-3.1-pro-preview-1.vue';
+import Comp_b_few_shot_8_b1_gpt_5_6_terra_1 from '../../../code/components/b/few_shot/medium/8-b1-gpt-5.6-terra-1.vue';
+import Comp_b_few_shot_8_b2_claude_sonnet_5_1 from '../../../code/components/b/few_shot/medium/8-b2-claude-sonnet-5-1.vue';
+import Comp_b_few_shot_8_b2_gemini_3_1_pro_preview_1 from '../../../code/components/b/few_shot/medium/8-b2-gemini-3.1-pro-preview-1.vue';
+import Comp_b_few_shot_8_b2_gpt_5_6_terra_1 from '../../../code/components/b/few_shot/medium/8-b2-gpt-5.6-terra-1.vue';
+import Comp_b_few_shot_8_b3_claude_sonnet_5_1 from '../../../code/components/b/few_shot/medium/8-b3-claude-sonnet-5-1.vue';
+import Comp_b_few_shot_8_b3_gemini_3_1_pro_preview_1 from '../../../code/components/b/few_shot/medium/8-b3-gemini-3.1-pro-preview-1.vue';
+import Comp_b_few_shot_8_b3_gpt_5_6_terra_1 from '../../../code/components/b/few_shot/medium/8-b3-gpt-5.6-terra-1.vue';
+import Comp_b_zero_shot_8_b1_claude_sonnet_5_1 from '../../../code/components/b/zero_shot/medium/8-b1-claude-sonnet-5-1.vue';
+import Comp_b_zero_shot_8_b1_gemini_3_1_pro_preview_1 from '../../../code/components/b/zero_shot/medium/8-b1-gemini-3.1-pro-preview-1.vue';
+import Comp_b_zero_shot_8_b1_gpt_5_6_terra_1 from '../../../code/components/b/zero_shot/medium/8-b1-gpt-5.6-terra-1.vue';
+import Comp_b_zero_shot_8_b2_claude_sonnet_5_1 from '../../../code/components/b/zero_shot/medium/8-b2-claude-sonnet-5-1.vue';
+import Comp_b_zero_shot_8_b2_gemini_3_1_pro_preview_1 from '../../../code/components/b/zero_shot/medium/8-b2-gemini-3.1-pro-preview-1.vue';
+import Comp_b_zero_shot_8_b2_gpt_5_6_terra_1 from '../../../code/components/b/zero_shot/medium/8-b2-gpt-5.6-terra-1.vue';
+import Comp_b_zero_shot_8_b3_claude_sonnet_5_1 from '../../../code/components/b/zero_shot/medium/8-b3-claude-sonnet-5-1.vue';
+import Comp_b_zero_shot_8_b3_gemini_3_1_pro_preview_1 from '../../../code/components/b/zero_shot/medium/8-b3-gemini-3.1-pro-preview-1.vue';
+import Comp_b_zero_shot_8_b3_gpt_5_6_terra_1 from '../../../code/components/b/zero_shot/medium/8-b3-gpt-5.6-terra-1.vue';
+import Comp_c_few_shot_8_c1_claude_sonnet_5_1 from '../../../code/components/c/few_shot/medium/8-c1-claude-sonnet-5-1.vue';
+import Comp_c_few_shot_8_c1_gemini_3_1_pro_preview_1 from '../../../code/components/c/few_shot/medium/8-c1-gemini-3.1-pro-preview-1.vue';
+import Comp_c_few_shot_8_c1_gpt_5_6_terra_1 from '../../../code/components/c/few_shot/medium/8-c1-gpt-5.6-terra-1.vue';
+import Comp_c_few_shot_8_c2_claude_sonnet_5_1 from '../../../code/components/c/few_shot/medium/8-c2-claude-sonnet-5-1.vue';
+import Comp_c_few_shot_8_c2_gemini_3_1_pro_preview_1 from '../../../code/components/c/few_shot/medium/8-c2-gemini-3.1-pro-preview-1.vue';
+import Comp_c_few_shot_8_c2_gpt_5_6_terra_1 from '../../../code/components/c/few_shot/medium/8-c2-gpt-5.6-terra-1.vue';
+import Comp_c_few_shot_8_c3_claude_sonnet_5_1 from '../../../code/components/c/few_shot/medium/8-c3-claude-sonnet-5-1.vue';
+import Comp_c_few_shot_8_c3_gemini_3_1_pro_preview_1 from '../../../code/components/c/few_shot/medium/8-c3-gemini-3.1-pro-preview-1.vue';
+import Comp_c_few_shot_8_c3_gpt_5_6_terra_1 from '../../../code/components/c/few_shot/medium/8-c3-gpt-5.6-terra-1.vue';
+import Comp_c_zero_shot_8_c1_claude_sonnet_5_1 from '../../../code/components/c/zero_shot/medium/8-c1-claude-sonnet-5-1.vue';
+import Comp_c_zero_shot_8_c1_gemini_3_1_pro_preview_1 from '../../../code/components/c/zero_shot/medium/8-c1-gemini-3.1-pro-preview-1.vue';
+import Comp_c_zero_shot_8_c1_gpt_5_6_terra_1 from '../../../code/components/c/zero_shot/medium/8-c1-gpt-5.6-terra-1.vue';
+import Comp_c_zero_shot_8_c2_claude_sonnet_5_1 from '../../../code/components/c/zero_shot/medium/8-c2-claude-sonnet-5-1.vue';
+import Comp_c_zero_shot_8_c2_gemini_3_1_pro_preview_1 from '../../../code/components/c/zero_shot/medium/8-c2-gemini-3.1-pro-preview-1.vue';
+import Comp_c_zero_shot_8_c2_gpt_5_6_terra_1 from '../../../code/components/c/zero_shot/medium/8-c2-gpt-5.6-terra-1.vue';
+import Comp_c_zero_shot_8_c3_claude_sonnet_5_1 from '../../../code/components/c/zero_shot/medium/8-c3-claude-sonnet-5-1.vue';
+import Comp_c_zero_shot_8_c3_gemini_3_1_pro_preview_1 from '../../../code/components/c/zero_shot/medium/8-c3-gemini-3.1-pro-preview-1.vue';
+import Comp_c_zero_shot_8_c3_gpt_5_6_terra_1 from '../../../code/components/c/zero_shot/medium/8-c3-gpt-5.6-terra-1.vue';
+import Comp_d_few_shot_8_d1_claude_sonnet_5_1 from '../../../code/components/d/few_shot/medium/8-d1-claude-sonnet-5-1.vue';
+import Comp_d_few_shot_8_d1_gemini_3_1_pro_preview_1 from '../../../code/components/d/few_shot/medium/8-d1-gemini-3.1-pro-preview-1.vue';
+import Comp_d_few_shot_8_d1_gpt_5_6_terra_1 from '../../../code/components/d/few_shot/medium/8-d1-gpt-5.6-terra-1.vue';
+import Comp_d_few_shot_8_d2_claude_sonnet_5_1 from '../../../code/components/d/few_shot/medium/8-d2-claude-sonnet-5-1.vue';
+import Comp_d_few_shot_8_d2_gemini_3_1_pro_preview_1 from '../../../code/components/d/few_shot/medium/8-d2-gemini-3.1-pro-preview-1.vue';
+import Comp_d_few_shot_8_d2_gpt_5_6_terra_1 from '../../../code/components/d/few_shot/medium/8-d2-gpt-5.6-terra-1.vue';
+import Comp_d_few_shot_8_d3_claude_sonnet_5_1 from '../../../code/components/d/few_shot/medium/8-d3-claude-sonnet-5-1.vue';
+import Comp_d_few_shot_8_d3_gemini_3_1_pro_preview_1 from '../../../code/components/d/few_shot/medium/8-d3-gemini-3.1-pro-preview-1.vue';
+import Comp_d_few_shot_8_d3_gpt_5_6_terra_1 from '../../../code/components/d/few_shot/medium/8-d3-gpt-5.6-terra-1.vue';
+import Comp_d_zero_shot_8_d1_claude_sonnet_5_1 from '../../../code/components/d/zero_shot/medium/8-d1-claude-sonnet-5-1.vue';
+import Comp_d_zero_shot_8_d1_gemini_3_1_pro_preview_1 from '../../../code/components/d/zero_shot/medium/8-d1-gemini-3.1-pro-preview-1.vue';
+import Comp_d_zero_shot_8_d1_gpt_5_6_terra_1 from '../../../code/components/d/zero_shot/medium/8-d1-gpt-5.6-terra-1.vue';
+import Comp_d_zero_shot_8_d2_claude_sonnet_5_1 from '../../../code/components/d/zero_shot/medium/8-d2-claude-sonnet-5-1.vue';
+import Comp_d_zero_shot_8_d2_gemini_3_1_pro_preview_1 from '../../../code/components/d/zero_shot/medium/8-d2-gemini-3.1-pro-preview-1.vue';
+import Comp_d_zero_shot_8_d2_gpt_5_6_terra_1 from '../../../code/components/d/zero_shot/medium/8-d2-gpt-5.6-terra-1.vue';
+import Comp_d_zero_shot_8_d3_claude_sonnet_5_1 from '../../../code/components/d/zero_shot/medium/8-d3-claude-sonnet-5-1.vue';
+import Comp_d_zero_shot_8_d3_gemini_3_1_pro_preview_1 from '../../../code/components/d/zero_shot/medium/8-d3-gemini-3.1-pro-preview-1.vue';
+import Comp_d_zero_shot_8_d3_gpt_5_6_terra_1 from '../../../code/components/d/zero_shot/medium/8-d3-gpt-5.6-terra-1.vue';
 
-export const MethodB1 = {
-  render: () => ({
-    components: { MediumComponentSidebarMenuWithProfileMethodB1 },
-    template: '<MediumComponentSidebarMenuWithProfileMethodB1 />',
-  }),
-}
-
-export const MethodB2 = {
-  render: () => ({
-    components: { MediumComponentSidebarMenuWithProfileMethodB2 },
-    template: '<MediumComponentSidebarMenuWithProfileMethodB2 />',
-  }),
-}
-
-export const MethodB3 = {
-  render: () => ({
-    components: { MediumComponentSidebarMenuWithProfileMethodB3 },
-    template: '<MediumComponentSidebarMenuWithProfileMethodB3 />',
-  }),
-}
-
-export const MethodC1 = {
-  render: () => ({
-    components: { MediumComponentSidebarMenuWithProfileMethodC1 },
-    template: '<MediumComponentSidebarMenuWithProfileMethodC1 />',
-  }),
-}
-
-export const MethodC2 = {
-  render: () => ({
-    components: { MediumComponentSidebarMenuWithProfileMethodC2 },
-    template: '<MediumComponentSidebarMenuWithProfileMethodC2 />',
-  }),
-}
-
-export const MethodC3 = {
-  render: () => ({
-    components: { MediumComponentSidebarMenuWithProfileMethodC3 },
-    template: '<MediumComponentSidebarMenuWithProfileMethodC3 />',
-  }),
-}
+export const b_few_shot_8_b1_claude_sonnet_5_1 = { render: () => ({ components: { Comp_b_few_shot_8_b1_claude_sonnet_5_1 }, template: '<Comp_b_few_shot_8_b1_claude_sonnet_5_1 />' }) };
+export const b_few_shot_8_b1_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_b_few_shot_8_b1_gemini_3_1_pro_preview_1 }, template: '<Comp_b_few_shot_8_b1_gemini_3_1_pro_preview_1 />' }) };
+export const b_few_shot_8_b1_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_b_few_shot_8_b1_gpt_5_6_terra_1 }, template: '<Comp_b_few_shot_8_b1_gpt_5_6_terra_1 />' }) };
+export const b_few_shot_8_b2_claude_sonnet_5_1 = { render: () => ({ components: { Comp_b_few_shot_8_b2_claude_sonnet_5_1 }, template: '<Comp_b_few_shot_8_b2_claude_sonnet_5_1 />' }) };
+export const b_few_shot_8_b2_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_b_few_shot_8_b2_gemini_3_1_pro_preview_1 }, template: '<Comp_b_few_shot_8_b2_gemini_3_1_pro_preview_1 />' }) };
+export const b_few_shot_8_b2_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_b_few_shot_8_b2_gpt_5_6_terra_1 }, template: '<Comp_b_few_shot_8_b2_gpt_5_6_terra_1 />' }) };
+export const b_few_shot_8_b3_claude_sonnet_5_1 = { render: () => ({ components: { Comp_b_few_shot_8_b3_claude_sonnet_5_1 }, template: '<Comp_b_few_shot_8_b3_claude_sonnet_5_1 />' }) };
+export const b_few_shot_8_b3_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_b_few_shot_8_b3_gemini_3_1_pro_preview_1 }, template: '<Comp_b_few_shot_8_b3_gemini_3_1_pro_preview_1 />' }) };
+export const b_few_shot_8_b3_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_b_few_shot_8_b3_gpt_5_6_terra_1 }, template: '<Comp_b_few_shot_8_b3_gpt_5_6_terra_1 />' }) };
+export const b_zero_shot_8_b1_claude_sonnet_5_1 = { render: () => ({ components: { Comp_b_zero_shot_8_b1_claude_sonnet_5_1 }, template: '<Comp_b_zero_shot_8_b1_claude_sonnet_5_1 />' }) };
+export const b_zero_shot_8_b1_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_b_zero_shot_8_b1_gemini_3_1_pro_preview_1 }, template: '<Comp_b_zero_shot_8_b1_gemini_3_1_pro_preview_1 />' }) };
+export const b_zero_shot_8_b1_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_b_zero_shot_8_b1_gpt_5_6_terra_1 }, template: '<Comp_b_zero_shot_8_b1_gpt_5_6_terra_1 />' }) };
+export const b_zero_shot_8_b2_claude_sonnet_5_1 = { render: () => ({ components: { Comp_b_zero_shot_8_b2_claude_sonnet_5_1 }, template: '<Comp_b_zero_shot_8_b2_claude_sonnet_5_1 />' }) };
+export const b_zero_shot_8_b2_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_b_zero_shot_8_b2_gemini_3_1_pro_preview_1 }, template: '<Comp_b_zero_shot_8_b2_gemini_3_1_pro_preview_1 />' }) };
+export const b_zero_shot_8_b2_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_b_zero_shot_8_b2_gpt_5_6_terra_1 }, template: '<Comp_b_zero_shot_8_b2_gpt_5_6_terra_1 />' }) };
+export const b_zero_shot_8_b3_claude_sonnet_5_1 = { render: () => ({ components: { Comp_b_zero_shot_8_b3_claude_sonnet_5_1 }, template: '<Comp_b_zero_shot_8_b3_claude_sonnet_5_1 />' }) };
+export const b_zero_shot_8_b3_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_b_zero_shot_8_b3_gemini_3_1_pro_preview_1 }, template: '<Comp_b_zero_shot_8_b3_gemini_3_1_pro_preview_1 />' }) };
+export const b_zero_shot_8_b3_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_b_zero_shot_8_b3_gpt_5_6_terra_1 }, template: '<Comp_b_zero_shot_8_b3_gpt_5_6_terra_1 />' }) };
+export const c_few_shot_8_c1_claude_sonnet_5_1 = { render: () => ({ components: { Comp_c_few_shot_8_c1_claude_sonnet_5_1 }, template: '<Comp_c_few_shot_8_c1_claude_sonnet_5_1 />' }) };
+export const c_few_shot_8_c1_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_c_few_shot_8_c1_gemini_3_1_pro_preview_1 }, template: '<Comp_c_few_shot_8_c1_gemini_3_1_pro_preview_1 />' }) };
+export const c_few_shot_8_c1_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_c_few_shot_8_c1_gpt_5_6_terra_1 }, template: '<Comp_c_few_shot_8_c1_gpt_5_6_terra_1 />' }) };
+export const c_few_shot_8_c2_claude_sonnet_5_1 = { render: () => ({ components: { Comp_c_few_shot_8_c2_claude_sonnet_5_1 }, template: '<Comp_c_few_shot_8_c2_claude_sonnet_5_1 />' }) };
+export const c_few_shot_8_c2_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_c_few_shot_8_c2_gemini_3_1_pro_preview_1 }, template: '<Comp_c_few_shot_8_c2_gemini_3_1_pro_preview_1 />' }) };
+export const c_few_shot_8_c2_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_c_few_shot_8_c2_gpt_5_6_terra_1 }, template: '<Comp_c_few_shot_8_c2_gpt_5_6_terra_1 />' }) };
+export const c_few_shot_8_c3_claude_sonnet_5_1 = { render: () => ({ components: { Comp_c_few_shot_8_c3_claude_sonnet_5_1 }, template: '<Comp_c_few_shot_8_c3_claude_sonnet_5_1 />' }) };
+export const c_few_shot_8_c3_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_c_few_shot_8_c3_gemini_3_1_pro_preview_1 }, template: '<Comp_c_few_shot_8_c3_gemini_3_1_pro_preview_1 />' }) };
+export const c_few_shot_8_c3_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_c_few_shot_8_c3_gpt_5_6_terra_1 }, template: '<Comp_c_few_shot_8_c3_gpt_5_6_terra_1 />' }) };
+export const c_zero_shot_8_c1_claude_sonnet_5_1 = { render: () => ({ components: { Comp_c_zero_shot_8_c1_claude_sonnet_5_1 }, template: '<Comp_c_zero_shot_8_c1_claude_sonnet_5_1 />' }) };
+export const c_zero_shot_8_c1_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_c_zero_shot_8_c1_gemini_3_1_pro_preview_1 }, template: '<Comp_c_zero_shot_8_c1_gemini_3_1_pro_preview_1 />' }) };
+export const c_zero_shot_8_c1_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_c_zero_shot_8_c1_gpt_5_6_terra_1 }, template: '<Comp_c_zero_shot_8_c1_gpt_5_6_terra_1 />' }) };
+export const c_zero_shot_8_c2_claude_sonnet_5_1 = { render: () => ({ components: { Comp_c_zero_shot_8_c2_claude_sonnet_5_1 }, template: '<Comp_c_zero_shot_8_c2_claude_sonnet_5_1 />' }) };
+export const c_zero_shot_8_c2_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_c_zero_shot_8_c2_gemini_3_1_pro_preview_1 }, template: '<Comp_c_zero_shot_8_c2_gemini_3_1_pro_preview_1 />' }) };
+export const c_zero_shot_8_c2_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_c_zero_shot_8_c2_gpt_5_6_terra_1 }, template: '<Comp_c_zero_shot_8_c2_gpt_5_6_terra_1 />' }) };
+export const c_zero_shot_8_c3_claude_sonnet_5_1 = { render: () => ({ components: { Comp_c_zero_shot_8_c3_claude_sonnet_5_1 }, template: '<Comp_c_zero_shot_8_c3_claude_sonnet_5_1 />' }) };
+export const c_zero_shot_8_c3_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_c_zero_shot_8_c3_gemini_3_1_pro_preview_1 }, template: '<Comp_c_zero_shot_8_c3_gemini_3_1_pro_preview_1 />' }) };
+export const c_zero_shot_8_c3_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_c_zero_shot_8_c3_gpt_5_6_terra_1 }, template: '<Comp_c_zero_shot_8_c3_gpt_5_6_terra_1 />' }) };
+export const d_few_shot_8_d1_claude_sonnet_5_1 = { render: () => ({ components: { Comp_d_few_shot_8_d1_claude_sonnet_5_1 }, template: '<Comp_d_few_shot_8_d1_claude_sonnet_5_1 />' }) };
+export const d_few_shot_8_d1_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_d_few_shot_8_d1_gemini_3_1_pro_preview_1 }, template: '<Comp_d_few_shot_8_d1_gemini_3_1_pro_preview_1 />' }) };
+export const d_few_shot_8_d1_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_d_few_shot_8_d1_gpt_5_6_terra_1 }, template: '<Comp_d_few_shot_8_d1_gpt_5_6_terra_1 />' }) };
+export const d_few_shot_8_d2_claude_sonnet_5_1 = { render: () => ({ components: { Comp_d_few_shot_8_d2_claude_sonnet_5_1 }, template: '<Comp_d_few_shot_8_d2_claude_sonnet_5_1 />' }) };
+export const d_few_shot_8_d2_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_d_few_shot_8_d2_gemini_3_1_pro_preview_1 }, template: '<Comp_d_few_shot_8_d2_gemini_3_1_pro_preview_1 />' }) };
+export const d_few_shot_8_d2_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_d_few_shot_8_d2_gpt_5_6_terra_1 }, template: '<Comp_d_few_shot_8_d2_gpt_5_6_terra_1 />' }) };
+export const d_few_shot_8_d3_claude_sonnet_5_1 = { render: () => ({ components: { Comp_d_few_shot_8_d3_claude_sonnet_5_1 }, template: '<Comp_d_few_shot_8_d3_claude_sonnet_5_1 />' }) };
+export const d_few_shot_8_d3_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_d_few_shot_8_d3_gemini_3_1_pro_preview_1 }, template: '<Comp_d_few_shot_8_d3_gemini_3_1_pro_preview_1 />' }) };
+export const d_few_shot_8_d3_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_d_few_shot_8_d3_gpt_5_6_terra_1 }, template: '<Comp_d_few_shot_8_d3_gpt_5_6_terra_1 />' }) };
+export const d_zero_shot_8_d1_claude_sonnet_5_1 = { render: () => ({ components: { Comp_d_zero_shot_8_d1_claude_sonnet_5_1 }, template: '<Comp_d_zero_shot_8_d1_claude_sonnet_5_1 />' }) };
+export const d_zero_shot_8_d1_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_d_zero_shot_8_d1_gemini_3_1_pro_preview_1 }, template: '<Comp_d_zero_shot_8_d1_gemini_3_1_pro_preview_1 />' }) };
+export const d_zero_shot_8_d1_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_d_zero_shot_8_d1_gpt_5_6_terra_1 }, template: '<Comp_d_zero_shot_8_d1_gpt_5_6_terra_1 />' }) };
+export const d_zero_shot_8_d2_claude_sonnet_5_1 = { render: () => ({ components: { Comp_d_zero_shot_8_d2_claude_sonnet_5_1 }, template: '<Comp_d_zero_shot_8_d2_claude_sonnet_5_1 />' }) };
+export const d_zero_shot_8_d2_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_d_zero_shot_8_d2_gemini_3_1_pro_preview_1 }, template: '<Comp_d_zero_shot_8_d2_gemini_3_1_pro_preview_1 />' }) };
+export const d_zero_shot_8_d2_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_d_zero_shot_8_d2_gpt_5_6_terra_1 }, template: '<Comp_d_zero_shot_8_d2_gpt_5_6_terra_1 />' }) };
+export const d_zero_shot_8_d3_claude_sonnet_5_1 = { render: () => ({ components: { Comp_d_zero_shot_8_d3_claude_sonnet_5_1 }, template: '<Comp_d_zero_shot_8_d3_claude_sonnet_5_1 />' }) };
+export const d_zero_shot_8_d3_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_d_zero_shot_8_d3_gemini_3_1_pro_preview_1 }, template: '<Comp_d_zero_shot_8_d3_gemini_3_1_pro_preview_1 />' }) };
+export const d_zero_shot_8_d3_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_d_zero_shot_8_d3_gpt_5_6_terra_1 }, template: '<Comp_d_zero_shot_8_d3_gpt_5_6_terra_1 />' }) };
+// <<< AUTO-GENERATED EVAL STORIES <<<
