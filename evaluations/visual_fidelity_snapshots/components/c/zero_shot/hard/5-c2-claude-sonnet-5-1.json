@@ -1,0 +1,143 @@
+{
+  "elements": [
+    {
+      "tag": "DIV",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "",
+      "bbox": {
+        "x": 16,
+        "y": 16,
+        "width": 736,
+        "height": 768
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 0,
+      "path": "0"
+    },
+    {
+      "tag": "DIV",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "",
+      "bbox": {
+        "x": 16,
+        "y": 16,
+        "width": 736,
+        "height": 768
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "oklch(0.707 0.022 261.325)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "flex",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 1,
+      "path": "0.0"
+    },
+    {
+      "tag": "BUTTON",
+      "pc_name": "button",
+      "pc_section": "root",
+      "text": "",
+      "bbox": {
+        "x": 325.265625,
+        "y": 379,
+        "width": 117.46875,
+        "height": 42
+      },
+      "styles": {
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(16, 185, 129)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "8px 12px",
+        "margin": "0px",
+        "borderRadius": "6px",
+        "display": "flex",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": "8px",
+        "borderColor": "rgb(16, 185, 129)",
+        "borderWidth": "1px",
+        "textAlign": "center"
+      },
+      "depth": 2,
+      "path": "0.0.0"
+    },
+    {
+      "tag": "SPAN",
+      "pc_name": null,
+      "pc_section": "label",
+      "text": "Show Dialog",
+      "bbox": {
+        "x": 338.265625,
+        "y": 388,
+        "width": 91.46875,
+        "height": 24
+      },
+      "styles": {
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "500",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderWidth": "0px",
+        "textAlign": "center"
+      },
+      "depth": 3,
+      "path": "0.0.0.0"
+    }
+  ],
+  "viewport": {
+    "width": 768,
+    "height": 768
+  },
+  "meta": {
+    "storyFile": "dataset/storybook/src/stories/components/hard/5.stories.ts",
+    "importPath": "./src/stories/components/hard/5.stories.ts",
+    "exportName": "c_zero_shot_5_c2_claude_sonnet_5_1",
+    "approach": "c",
+    "prompt_strategy": "zero_shot",
+    "complexity": "hard",
+    "variant": null,
+    "index": "5",
+    "stem": "5-c2-claude-sonnet-5-1",
+    "vuePath": "dataset/storybook/src/code/components/c/zero_shot/hard/5-c2-claude-sonnet-5-1.vue",
+    "viewportWidth": 768,
+    "viewportHeight": 768,
+    "storyId": "components-hard-5-step-formular-dialog--c-zero-shot-5-c-2-claude-sonnet-5-1"
+  }
+}

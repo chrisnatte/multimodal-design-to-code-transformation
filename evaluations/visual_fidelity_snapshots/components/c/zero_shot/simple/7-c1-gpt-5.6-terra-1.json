@@ -1,0 +1,203 @@
+{
+  "elements": [
+    {
+      "tag": "DIV",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "",
+      "bbox": {
+        "x": 16,
+        "y": 16,
+        "width": 528,
+        "height": 160
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 0,
+      "path": "0"
+    },
+    {
+      "tag": "DIV",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "",
+      "bbox": {
+        "x": 16,
+        "y": 16,
+        "width": 528,
+        "height": 160
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "24px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "flex",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 1,
+      "path": "0.0"
+    },
+    {
+      "tag": "DIV",
+      "pc_name": "skeleton",
+      "pc_section": "root",
+      "text": "",
+      "bbox": {
+        "x": 40,
+        "y": 40,
+        "width": 480,
+        "height": 16
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(226, 232, 240)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "50%",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 2,
+      "path": "0.0.0"
+    },
+    {
+      "tag": "DIV",
+      "pc_name": "skeleton",
+      "pc_section": "root",
+      "text": "",
+      "bbox": {
+        "x": 40,
+        "y": 72,
+        "width": 480,
+        "height": 16
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(226, 232, 240)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "16px 0px 0px",
+        "borderRadius": "6px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 2,
+      "path": "0.0.1"
+    },
+    {
+      "tag": "DIV",
+      "pc_name": "skeleton",
+      "pc_section": "root",
+      "text": "",
+      "bbox": {
+        "x": 40,
+        "y": 104,
+        "width": 480,
+        "height": 16
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(226, 232, 240)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "16px 0px 0px",
+        "borderRadius": "6px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 2,
+      "path": "0.0.2"
+    },
+    {
+      "tag": "DIV",
+      "pc_name": "skeleton",
+      "pc_section": "root",
+      "text": "",
+      "bbox": {
+        "x": 40,
+        "y": 136,
+        "width": 480,
+        "height": 16
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(226, 232, 240)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "16px 0px 0px",
+        "borderRadius": "6px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 2,
+      "path": "0.0.3"
+    }
+  ],
+  "viewport": {
+    "width": 560,
+    "height": 272
+  },
+  "meta": {
+    "storyFile": "dataset/storybook/src/stories/components/simple/7.stories.ts",
+    "importPath": "./src/stories/components/simple/7.stories.ts",
+    "exportName": "c_zero_shot_7_c1_gpt_5_6_terra_1",
+    "approach": "c",
+    "prompt_strategy": "zero_shot",
+    "complexity": "simple",
+    "variant": null,
+    "index": "7",
+    "stem": "7-c1-gpt-5.6-terra-1",
+    "vuePath": "dataset/storybook/src/code/components/c/zero_shot/simple/7-c1-gpt-5.6-terra-1.vue",
+    "viewportWidth": 560,
+    "viewportHeight": 272,
+    "storyId": "components-simple-7-loading-state--c-zero-shot-7-c-1-gpt-5-6-terra-1"
+  }
+}

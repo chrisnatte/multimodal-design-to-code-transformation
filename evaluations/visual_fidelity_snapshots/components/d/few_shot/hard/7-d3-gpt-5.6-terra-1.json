@@ -1,0 +1,53 @@
+{
+  "elements": [
+    {
+      "tag": "DIV",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 688,
+        "height": 0
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 0,
+      "path": "0"
+    }
+  ],
+  "viewport": {
+    "width": 688,
+    "height": 662
+  },
+  "meta": {
+    "storyFile": "dataset/storybook/src/stories/components/hard/7.stories.ts",
+    "importPath": "./src/stories/components/hard/7.stories.ts",
+    "exportName": "d_few_shot_7_d3_gpt_5_6_terra_1",
+    "approach": "d",
+    "prompt_strategy": "few_shot",
+    "complexity": "hard",
+    "variant": null,
+    "index": "7",
+    "stem": "7-d3-gpt-5.6-terra-1",
+    "vuePath": "dataset/storybook/src/code/components/d/few_shot/hard/7-d3-gpt-5.6-terra-1.vue",
+    "viewportWidth": 688,
+    "viewportHeight": 662,
+    "storyId": "components-hard-7-notifications-list--d-few-shot-7-d-3-gpt-5-6-terra-1"
+  }
+}

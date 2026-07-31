@@ -1,0 +1,53 @@
+{
+  "elements": [
+    {
+      "tag": "DIV",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 536,
+        "height": 0
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 0,
+      "path": "0"
+    }
+  ],
+  "viewport": {
+    "width": 536,
+    "height": 321
+  },
+  "meta": {
+    "storyFile": "dataset/storybook/src/stories/components/hard/8.stories.ts",
+    "importPath": "./src/stories/components/hard/8.stories.ts",
+    "exportName": "b_few_shot_8_b1_gpt_5_6_terra_1",
+    "approach": "b",
+    "prompt_strategy": "few_shot",
+    "complexity": "hard",
+    "variant": null,
+    "index": "8",
+    "stem": "8-b1-gpt-5.6-terra-1",
+    "vuePath": "dataset/storybook/src/code/components/b/few_shot/hard/8-b1-gpt-5.6-terra-1.vue",
+    "viewportWidth": 536,
+    "viewportHeight": 321,
+    "storyId": "components-hard-8-advanced-product-detail-view--b-few-shot-8-b-1-gpt-5-6-terra-1"
+  }
+}

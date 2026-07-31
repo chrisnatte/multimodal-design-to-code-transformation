@@ -1,0 +1,53 @@
+{
+  "elements": [
+    {
+      "tag": "DIV",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 560,
+        "height": 0
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 0,
+      "path": "0"
+    }
+  ],
+  "viewport": {
+    "width": 560,
+    "height": 270
+  },
+  "meta": {
+    "storyFile": "dataset/storybook/src/stories/components/medium/10.stories.ts",
+    "importPath": "./src/stories/components/medium/10.stories.ts",
+    "exportName": "d_few_shot_10_d3_gemini_3_1_pro_preview_1",
+    "approach": "d",
+    "prompt_strategy": "few_shot",
+    "complexity": "medium",
+    "variant": null,
+    "index": "10",
+    "stem": "10-d3-gemini-3.1-pro-preview-1",
+    "vuePath": "dataset/storybook/src/code/components/d/few_shot/medium/10-d3-gemini-3.1-pro-preview-1.vue",
+    "viewportWidth": 560,
+    "viewportHeight": 270,
+    "storyId": "components-medium-10-info-card-with-progress--d-few-shot-10-d-3-gemini-3-1-pro-preview-1"
+  }
+}

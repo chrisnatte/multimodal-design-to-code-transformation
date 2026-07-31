@@ -1,0 +1,53 @@
+{
+  "elements": [
+    {
+      "tag": "DIV",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 304,
+        "height": 0
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 0,
+      "path": "0"
+    }
+  ],
+  "viewport": {
+    "width": 304,
+    "height": 286
+  },
+  "meta": {
+    "storyFile": "dataset/storybook/src/stories/components/medium/7.stories.ts",
+    "importPath": "./src/stories/components/medium/7.stories.ts",
+    "exportName": "c_zero_shot_7_c3_claude_sonnet_5_1",
+    "approach": "c",
+    "prompt_strategy": "zero_shot",
+    "complexity": "medium",
+    "variant": null,
+    "index": "7",
+    "stem": "7-c3-claude-sonnet-5-1",
+    "vuePath": "dataset/storybook/src/code/components/c/zero_shot/medium/7-c3-claude-sonnet-5-1.vue",
+    "viewportWidth": 304,
+    "viewportHeight": 286,
+    "storyId": "components-medium-7-paket-list--c-zero-shot-7-c-3-claude-sonnet-5-1"
+  }
+}

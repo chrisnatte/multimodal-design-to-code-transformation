@@ -1,0 +1,53 @@
+{
+  "elements": [
+    {
+      "tag": "DIV",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 536,
+        "height": 0
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 0,
+      "path": "0"
+    }
+  ],
+  "viewport": {
+    "width": 536,
+    "height": 552
+  },
+  "meta": {
+    "storyFile": "dataset/storybook/src/stories/components/medium/1.stories.ts",
+    "importPath": "./src/stories/components/medium/1.stories.ts",
+    "exportName": "d_few_shot_1_d3_gemini_3_1_pro_preview_1",
+    "approach": "d",
+    "prompt_strategy": "few_shot",
+    "complexity": "medium",
+    "variant": null,
+    "index": "1",
+    "stem": "1-d3-gemini-3.1-pro-preview-1",
+    "vuePath": "dataset/storybook/src/code/components/d/few_shot/medium/1-d3-gemini-3.1-pro-preview-1.vue",
+    "viewportWidth": 536,
+    "viewportHeight": 552,
+    "storyId": "components-medium-1-login-card--d-few-shot-1-d-3-gemini-3-1-pro-preview-1"
+  }
+}

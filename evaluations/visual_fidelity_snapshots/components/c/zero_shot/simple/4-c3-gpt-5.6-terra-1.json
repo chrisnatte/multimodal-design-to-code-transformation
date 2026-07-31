@@ -1,0 +1,53 @@
+{
+  "elements": [
+    {
+      "tag": "DIV",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "",
+      "bbox": {
+        "x": 8,
+        "y": 8,
+        "width": 112,
+        "height": 0
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 0,
+      "path": "0"
+    }
+  ],
+  "viewport": {
+    "width": 128,
+    "height": 181
+  },
+  "meta": {
+    "storyFile": "dataset/storybook/src/stories/components/simple/4.stories.ts",
+    "importPath": "./src/stories/components/simple/4.stories.ts",
+    "exportName": "c_zero_shot_4_c3_gpt_5_6_terra_1",
+    "approach": "c",
+    "prompt_strategy": "zero_shot",
+    "complexity": "simple",
+    "variant": null,
+    "index": "4",
+    "stem": "4-c3-gpt-5.6-terra-1",
+    "vuePath": "dataset/storybook/src/code/components/c/zero_shot/simple/4-c3-gpt-5.6-terra-1.vue",
+    "viewportWidth": 128,
+    "viewportHeight": 181,
+    "storyId": "components-simple-4-option-selection--c-zero-shot-4-c-3-gpt-5-6-terra-1"
+  }
+}
