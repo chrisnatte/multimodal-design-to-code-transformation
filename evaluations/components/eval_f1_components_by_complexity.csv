@@ -1,4 +1,7 @@
 approach,strategy,prompt_strategy,model,complexity,precision_macro,recall_macro,f1_macro,precision_micro,recall_micro,f1_micro,n
+a,a,,,simple,1.0,0.9318,0.9567,1.0,0.907,0.9512,10
+a,a,,,medium,1.0,0.8924,0.9243,1.0,0.8675,0.929,10
+a,a,,,hard,0.9022,0.88,0.8703,0.8878,0.7699,0.8246,10
 b,b1,few_shot,claude-sonnet-5,simple,0.9417,0.8833,0.8957,0.95,0.8837,0.9157,10
 b,b1,few_shot,claude-sonnet-5,medium,0.9769,0.9727,0.9712,0.9625,0.9277,0.9448,10
 b,b1,few_shot,claude-sonnet-5,hard,0.9603,0.8424,0.8705,0.9398,0.6903,0.7959,10

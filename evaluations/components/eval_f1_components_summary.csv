@@ -1,4 +1,5 @@
 approach,strategy,prompt_strategy,model,precision_macro,recall_macro,f1_macro,precision_micro,recall_micro,f1_micro,n,avg_unrecognized_n,avg_native_element_n
+a,a,,,0.9674,0.9014,0.9171,0.9474,0.8285,0.8839,30,0.0,6.0
 b,b1,few_shot,claude-sonnet-5,0.9596,0.8995,0.9124,0.9507,0.8075,0.8733,30,0.0,8.8667
 b,b1,zero_shot,claude-sonnet-5,0.9294,0.8389,0.8674,0.9215,0.7364,0.8186,30,0.0333,9.6667
 b,b1,few_shot,gemini-3.1-pro-preview,0.9926,0.9249,0.9454,0.9896,0.7992,0.8843,30,0.0,7.9667
