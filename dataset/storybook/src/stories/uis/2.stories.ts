@@ -8,6 +8,8 @@ export default {
 export const Default = {}
 
 // >>> AUTO-GENERATED EVAL STORIES (managed by storybook-generate-stories.ipynb) -- do not edit by hand >>>
+import Comp_a_messy_2_a from '../../code/uis/a/messy/2-a.vue';
+import Comp_a_pretty_2_a from '../../code/uis/a/pretty/2-a.vue';
 import Comp_b_few_shot_messy_2_b1_claude_sonnet_5_1 from '../../code/uis/b/few_shot/messy/2-b1-claude-sonnet-5-1.vue';
 import Comp_b_few_shot_messy_2_b1_gemini_3_1_pro_preview_1 from '../../code/uis/b/few_shot/messy/2-b1-gemini-3.1-pro-preview-1.vue';
 import Comp_b_few_shot_messy_2_b1_gpt_5_6_terra_1 from '../../code/uis/b/few_shot/messy/2-b1-gpt-5.6-terra-1.vue';
@@ -117,6 +119,8 @@ import Comp_d_zero_shot_pretty_2_d3_claude_sonnet_5_1 from '../../code/uis/d/zer
 import Comp_d_zero_shot_pretty_2_d3_gemini_3_1_pro_preview_1 from '../../code/uis/d/zero_shot/pretty/2-d3-gemini-3.1-pro-preview-1.vue';
 import Comp_d_zero_shot_pretty_2_d3_gpt_5_6_terra_1 from '../../code/uis/d/zero_shot/pretty/2-d3-gpt-5.6-terra-1.vue';
 
+export const a_messy_2_a = { render: () => ({ components: { Comp_a_messy_2_a }, template: '<Comp_a_messy_2_a />' }) };
+export const a_pretty_2_a = { render: () => ({ components: { Comp_a_pretty_2_a }, template: '<Comp_a_pretty_2_a />' }) };
 export const b_few_shot_messy_2_b1_claude_sonnet_5_1 = { render: () => ({ components: { Comp_b_few_shot_messy_2_b1_claude_sonnet_5_1 }, template: '<Comp_b_few_shot_messy_2_b1_claude_sonnet_5_1 />' }) };
 export const b_few_shot_messy_2_b1_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_b_few_shot_messy_2_b1_gemini_3_1_pro_preview_1 }, template: '<Comp_b_few_shot_messy_2_b1_gemini_3_1_pro_preview_1 />' }) };
 export const b_few_shot_messy_2_b1_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_b_few_shot_messy_2_b1_gpt_5_6_terra_1 }, template: '<Comp_b_few_shot_messy_2_b1_gpt_5_6_terra_1 />' }) };

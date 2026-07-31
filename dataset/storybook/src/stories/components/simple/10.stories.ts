@@ -8,6 +8,7 @@ export default {
 export const Default = {}
 
 // >>> AUTO-GENERATED EVAL STORIES (managed by storybook-generate-stories.ipynb) -- do not edit by hand >>>
+import Comp_a_10_a from '../../../code/components/a/simple/10-a.vue';
 import Comp_b_few_shot_10_b1_claude_sonnet_5_1 from '../../../code/components/b/few_shot/simple/10-b1-claude-sonnet-5-1.vue';
 import Comp_b_few_shot_10_b1_gemini_3_1_pro_preview_1 from '../../../code/components/b/few_shot/simple/10-b1-gemini-3.1-pro-preview-1.vue';
 import Comp_b_few_shot_10_b1_gpt_5_6_terra_1 from '../../../code/components/b/few_shot/simple/10-b1-gpt-5.6-terra-1.vue';
@@ -63,6 +64,7 @@ import Comp_d_zero_shot_10_d3_claude_sonnet_5_1 from '../../../code/components/d
 import Comp_d_zero_shot_10_d3_gemini_3_1_pro_preview_1 from '../../../code/components/d/zero_shot/simple/10-d3-gemini-3.1-pro-preview-1.vue';
 import Comp_d_zero_shot_10_d3_gpt_5_6_terra_1 from '../../../code/components/d/zero_shot/simple/10-d3-gpt-5.6-terra-1.vue';
 
+export const a_10_a = { render: () => ({ components: { Comp_a_10_a }, template: '<Comp_a_10_a />' }) };
 export const b_few_shot_10_b1_claude_sonnet_5_1 = { render: () => ({ components: { Comp_b_few_shot_10_b1_claude_sonnet_5_1 }, template: '<Comp_b_few_shot_10_b1_claude_sonnet_5_1 />' }) };
 export const b_few_shot_10_b1_gemini_3_1_pro_preview_1 = { render: () => ({ components: { Comp_b_few_shot_10_b1_gemini_3_1_pro_preview_1 }, template: '<Comp_b_few_shot_10_b1_gemini_3_1_pro_preview_1 />' }) };
 export const b_few_shot_10_b1_gpt_5_6_terra_1 = { render: () => ({ components: { Comp_b_few_shot_10_b1_gpt_5_6_terra_1 }, template: '<Comp_b_few_shot_10_b1_gpt_5_6_terra_1 />' }) };
