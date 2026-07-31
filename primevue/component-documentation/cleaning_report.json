@@ -1,0 +1,212 @@
+{
+    "summary": {
+        "total_files": 25,
+        "total_bytes_before": 603083,
+        "total_bytes_after": 140052,
+        "average_reduction_percent": 76.78,
+        "total_tokens_before": 150770,
+        "total_tokens_after": 35013
+    },
+    "files": [
+        {
+            "component": "accordion",
+            "bytes_before": 32365,
+            "bytes_after": 7245,
+            "tokens_before": 8091,
+            "tokens_after": 1811,
+            "reduction_percent": 77.6
+        },
+        {
+            "component": "avatar",
+            "bytes_before": 10949,
+            "bytes_after": 1729,
+            "tokens_before": 2737,
+            "tokens_after": 432,
+            "reduction_percent": 84.2
+        },
+        {
+            "component": "badge",
+            "bytes_before": 7442,
+            "bytes_after": 1135,
+            "tokens_before": 1860,
+            "tokens_after": 283,
+            "reduction_percent": 84.7
+        },
+        {
+            "component": "breadcrumb",
+            "bytes_before": 3953,
+            "bytes_after": 677,
+            "tokens_before": 988,
+            "tokens_after": 169,
+            "reduction_percent": 82.9
+        },
+        {
+            "component": "button",
+            "bytes_before": 58691,
+            "bytes_after": 15283,
+            "tokens_before": 14672,
+            "tokens_after": 3820,
+            "reduction_percent": 74.0
+        },
+        {
+            "component": "card",
+            "bytes_before": 5705,
+            "bytes_after": 2005,
+            "tokens_before": 1426,
+            "tokens_after": 501,
+            "reduction_percent": 64.9
+        },
+        {
+            "component": "checkbox",
+            "bytes_before": 17657,
+            "bytes_after": 2507,
+            "tokens_before": 4414,
+            "tokens_after": 626,
+            "reduction_percent": 85.8
+        },
+        {
+            "component": "datatable",
+            "bytes_before": 82659,
+            "bytes_after": 9920,
+            "tokens_before": 20664,
+            "tokens_after": 2480,
+            "reduction_percent": 88.0
+        },
+        {
+            "component": "datepicker",
+            "bytes_before": 47012,
+            "bytes_after": 7020,
+            "tokens_before": 11753,
+            "tokens_after": 1755,
+            "reduction_percent": 85.1
+        },
+        {
+            "component": "dialog",
+            "bytes_before": 38670,
+            "bytes_after": 5397,
+            "tokens_before": 9667,
+            "tokens_after": 1349,
+            "reduction_percent": 86.0
+        },
+        {
+            "component": "divider",
+            "bytes_before": 19508,
+            "bytes_after": 2902,
+            "tokens_before": 4877,
+            "tokens_after": 725,
+            "reduction_percent": 85.1
+        },
+        {
+            "component": "inputnumber",
+            "bytes_before": 28045,
+            "bytes_after": 6536,
+            "tokens_before": 7011,
+            "tokens_after": 1634,
+            "reduction_percent": 76.7
+        },
+        {
+            "component": "inputtext",
+            "bytes_before": 26659,
+            "bytes_after": 14599,
+            "tokens_before": 6664,
+            "tokens_after": 3649,
+            "reduction_percent": 45.2
+        },
+        {
+            "component": "menu",
+            "bytes_before": 12961,
+            "bytes_after": 2158,
+            "tokens_before": 3240,
+            "tokens_after": 539,
+            "reduction_percent": 83.4
+        },
+        {
+            "component": "password",
+            "bytes_before": 32331,
+            "bytes_after": 18004,
+            "tokens_before": 8082,
+            "tokens_after": 4501,
+            "reduction_percent": 44.3
+        },
+        {
+            "component": "popover",
+            "bytes_before": 15438,
+            "bytes_after": 3045,
+            "tokens_before": 3859,
+            "tokens_after": 761,
+            "reduction_percent": 80.3
+        },
+        {
+            "component": "progressbar",
+            "bytes_before": 4692,
+            "bytes_after": 1088,
+            "tokens_before": 1173,
+            "tokens_after": 272,
+            "reduction_percent": 76.8
+        },
+        {
+            "component": "radiobutton",
+            "bytes_before": 17132,
+            "bytes_after": 2287,
+            "tokens_before": 4283,
+            "tokens_after": 571,
+            "reduction_percent": 86.7
+        },
+        {
+            "component": "select",
+            "bytes_before": 45112,
+            "bytes_after": 8262,
+            "tokens_before": 11278,
+            "tokens_after": 2065,
+            "reduction_percent": 81.7
+        },
+        {
+            "component": "skeleton",
+            "bytes_before": 12539,
+            "bytes_after": 1752,
+            "tokens_before": 3134,
+            "tokens_after": 438,
+            "reduction_percent": 86.0
+        },
+        {
+            "component": "slider",
+            "bytes_before": 10755,
+            "bytes_after": 1951,
+            "tokens_before": 2688,
+            "tokens_after": 487,
+            "reduction_percent": 81.9
+        },
+        {
+            "component": "tabs",
+            "bytes_before": 29020,
+            "bytes_after": 6564,
+            "tokens_before": 7255,
+            "tokens_after": 1641,
+            "reduction_percent": 77.4
+        },
+        {
+            "component": "tag",
+            "bytes_before": 7866,
+            "bytes_after": 1440,
+            "tokens_before": 1966,
+            "tokens_after": 360,
+            "reduction_percent": 81.7
+        },
+        {
+            "component": "textarea",
+            "bytes_before": 25150,
+            "bytes_after": 14198,
+            "tokens_before": 6287,
+            "tokens_after": 3549,
+            "reduction_percent": 43.5
+        },
+        {
+            "component": "toggleswitch",
+            "bytes_before": 10772,
+            "bytes_after": 2348,
+            "tokens_before": 2693,
+            "tokens_after": 587,
+            "reduction_percent": 78.2
+        }
+    ]
+}
