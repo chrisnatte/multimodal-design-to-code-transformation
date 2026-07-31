@@ -1,4 +1,5 @@
 approach,strategy,prompt_strategy,model,prop_accuracy_macro,prop_accuracy_micro,missing_rate_macro,missing_rate_micro,n,n_resolved_acc,n_resolved_mr
+a,a,,,0.5241,0.5042,0.6325,0.6597,30,28,30
 b,b1,few_shot,claude-sonnet-5,0.6116,0.5833,0.2658,0.2824,30,30,30
 b,b1,zero_shot,claude-sonnet-5,0.4456,0.4029,0.4443,0.4816,30,30,30
 b,b1,few_shot,gemini-3.1-pro-preview,0.6393,0.5672,0.2956,0.3537,30,30,30

@@ -1,4 +1,7 @@
 approach,strategy,prompt_strategy,model,complexity,prop_accuracy_macro,prop_accuracy_micro,missing_rate_macro,missing_rate_micro,n
+a,a,,,simple,0.5029,0.5088,0.6278,0.6509,10
+a,a,,,medium,0.5423,0.4762,0.5744,0.6364,10
+a,a,,,hard,0.5268,0.5258,0.6952,0.6806,10
 b,b1,few_shot,claude-sonnet-5,simple,0.5944,0.525,0.2918,0.2872,10
 b,b1,few_shot,claude-sonnet-5,medium,0.5991,0.592,0.2349,0.2628,10
 b,b1,few_shot,claude-sonnet-5,hard,0.6413,0.6084,0.2707,0.2968,10

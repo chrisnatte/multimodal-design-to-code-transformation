@@ -1,4 +1,5 @@
 approach,strategy,prompt_strategy,model,prop_accuracy_simple,prop_accuracy_medium,prop_accuracy_hard,degradation_factor_medium,degradation_factor_hard
+a,a,,,0.5029,0.5423,0.5268,1.0783,1.0475
 b,b1,few_shot,claude-sonnet-5,0.5944,0.5991,0.6413,1.0079,1.0789
 b,b1,zero_shot,claude-sonnet-5,0.476,0.4976,0.3632,1.0454,0.763
 b,b1,few_shot,gemini-3.1-pro-preview,0.7032,0.5632,0.6514,0.8009,0.9263
