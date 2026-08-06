@@ -1,6 +1,6 @@
 approach,strategy,prompt_strategy,model,complexity,precision_macro,recall_macro,f1_macro,precision_micro,recall_micro,f1_micro,n
 a,a,,,simple,1.0,0.9318,0.9567,1.0,0.907,0.9512,10
-a,a,,,medium,1.0,0.8924,0.9243,1.0,0.8675,0.929,10
+a,a,,,medium,0.98,0.8924,0.9132,0.9863,0.8675,0.9231,10
 a,a,,,hard,0.9022,0.88,0.8703,0.8878,0.7699,0.8246,10
 b,b1,few_shot,claude-sonnet-5,simple,0.9417,0.8833,0.8957,0.95,0.8837,0.9157,10
 b,b1,few_shot,claude-sonnet-5,medium,0.9769,0.9727,0.9712,0.9625,0.9277,0.9448,10
@@ -36,7 +36,7 @@ b,b2,few_shot,gpt-5.6-terra,simple,1.0,0.95,0.9667,1.0,0.9535,0.9762,10
 b,b2,few_shot,gpt-5.6-terra,medium,0.975,0.9286,0.9453,0.9605,0.8795,0.9182,10
 b,b2,few_shot,gpt-5.6-terra,hard,0.9375,0.8762,0.8887,0.9149,0.7611,0.8309,10
 b,b2,zero_shot,gpt-5.6-terra,simple,0.95,0.8818,0.9067,0.9744,0.8837,0.9268,10
-b,b2,zero_shot,gpt-5.6-terra,medium,0.9769,0.9623,0.965,0.9615,0.9036,0.9317,10
+b,b2,zero_shot,gpt-5.6-terra,medium,0.9769,0.9682,0.968,0.962,0.9157,0.9383,10
 b,b2,zero_shot,gpt-5.6-terra,hard,0.9099,0.8762,0.8724,0.8958,0.7611,0.823,10
 b,b3,few_shot,claude-sonnet-5,simple,0.9917,0.9333,0.9456,0.975,0.907,0.9398,10
 b,b3,few_shot,claude-sonnet-5,medium,0.9769,0.9727,0.9712,0.9625,0.9277,0.9448,10
