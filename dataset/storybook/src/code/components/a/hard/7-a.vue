@@ -10,9 +10,7 @@
               <span>Vor 5 Minuten</span>
             </div>
           </div>
-        </template>
-        <template #header>
-          <Tag value="Einladung" severity="info" />
+           <Tag value="Einladung" severity="info" />
         </template>
         <Divider />
         <template #content>
@@ -21,8 +19,6 @@
         <Divider />
         <template #footer>
           <Button label="Ablehnen" severity="secondary" />
-        </template>
-        <template #footer>
           <Button label="Akzeptieren" />
         </template>
       </Card>
@@ -35,8 +31,6 @@
               <span>Vor 24 Minuten</span>
             </div>
           </div>
-        </template>
-        <template #header>
           <Tag value="Review" severity="warn" />
         </template>
         <Divider />
@@ -46,8 +40,6 @@
         <Divider />
         <template #footer>
           <Button label="Ablehnen" severity="secondary" />
-        </template>
-        <template #footer>
           <Button label="Akzeptieren" />
         </template>
       </Card>
@@ -60,8 +52,6 @@
               <span>Vor 1 Stunde</span>
             </div>
           </div>
-        </template>
-        <template #header>
           <Tag value="Zugriff" severity="danger" />
         </template>
         <Divider />
@@ -71,8 +61,6 @@
         <Divider />
         <template #footer>
           <Button label="Ablehnen" severity="secondary" />
-        </template>
-        <template #footer>
           <Button label="Akzeptieren" />
         </template>
       </Card>

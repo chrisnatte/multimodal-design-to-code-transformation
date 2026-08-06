@@ -41,5 +41,5 @@ import Dialog from 'primevue/dialog'
 import InputText from 'primevue/inputtext'
 import Select from 'primevue/select'
 
-const _state = reactive({ n26_1325Visible: null, n26_1350: null, n26_1409: null, n28_3129: null })
+const _state = reactive({ n26_1325Visible: true, n26_1350: null, n26_1409: null, n28_3129: null })
 </script>

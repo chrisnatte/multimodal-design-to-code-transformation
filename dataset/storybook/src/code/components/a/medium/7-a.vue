@@ -7,11 +7,7 @@
       </div>
       <template #content>
         <Checkbox v-model="_state.n17_2611" binary />
-      </template>
-      <template #content>
         <Checkbox v-model="_state.n17_2615" binary />
-      </template>
-      <template #content>
         <Checkbox v-model="_state.n17_2619" binary />
       </template>
       <template #footer>

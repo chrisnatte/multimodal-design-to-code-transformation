@@ -56,7 +56,7 @@
 </template>
 
 <script setup>
-import { nextTick, onMounted, ref } from 'vue';
+import { ref } from 'vue';
 import Button from 'primevue/button';
 import DatePicker from 'primevue/datepicker';
 import InputNumber from 'primevue/inputnumber';
@@ -75,10 +75,4 @@ const destinations = ref([
     'Barcelona',
     'Paris'
 ]);
-
-onMounted(async () => {
-    await nextTick();
-    destinationSelect.value?.show();
-    travelDatePicker.value?.show();
-});
 </script>

@@ -3,8 +3,6 @@
     <Card>
       <template #header>
         <Avatar label="B" size="xlarge" />
-      </template>
-      <template #header>
         <span class="text-2xl">Benutzername</span>
       </template>
       <Tabs value="0">

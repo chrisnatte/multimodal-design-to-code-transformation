@@ -6,7 +6,7 @@
     }"
   >
     <template #header>
-      <img src="/images/primevue.png" alt="primevue" />
+      <img :src="'/images/primevue.png'" alt="primevue" />
     </template>
 
     <template #title>Produkt1 <Tag value="Neu" /></template>

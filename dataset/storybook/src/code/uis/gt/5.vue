@@ -1,22 +1,23 @@
 <template>
   <div class="mx-auto max-w-5xl p-8">
     <div class="mb-8 flex items-center gap-4">
-      <Button icon="pi pi-times-circle" rounded text severity="secondary" class="!text-2xl" />
+      <Button icon="pi pi-times-circle" rounded severity="secondary" size="large" />
+
       <div>
         <h1 class="text-surface-900 text-3xl font-bold">Termin buchen</h1>
         <p class="text-surface-500 mt-1">Buche einen Termin für dich bei uns.</p>
       </div>
     </div>
 
-    <div class="mb-6 grid grid-cols-3 gap-4">
-      <Card>
+    <div class="mb-6 grid grid-cols-2 gap-4">
+      <Card class="!bg-gray-100">
         <template #title>Datum wählen</template>
         <template #content>
           <DatePicker v-model="selectedDate" inline show-week />
         </template>
       </Card>
 
-      <Card>
+      <Card class="!bg-gray-100">
         <template #title>Zeitslot wählen</template>
         <template #content>
           <div class="mb-4 flex flex-col gap-3">
@@ -33,10 +34,10 @@
         </template>
       </Card>
 
-      <Card>
+      <Card class="col-span-2 !bg-gray-100">
         <template #title>Deine Daten</template>
         <template #content>
-          <div class="flex flex-col gap-4">
+          <div class="grid w-full grid-cols-2 gap-4">
             <div class="flex flex-col gap-2">
               <label for="name" class="text-surface-700 text-sm">Name</label>
               <InputText id="name" v-model="customer.name" placeholder="Name eingeben" />
@@ -47,7 +48,7 @@
               <InputText id="email" v-model="customer.email" placeholder="E-Mail eingeben" />
             </div>
 
-            <div class="flex flex-col gap-2">
+            <div class="col-span-2 flex flex-col gap-2">
               <label for="notes" class="text-surface-700 text-sm">Anmerkungen</label>
               <Textarea
                 id="notes"
@@ -57,7 +58,7 @@
               />
             </div>
 
-            <div class="flex items-start gap-3">
+            <div class="col-span-2 flex items-start gap-3">
               <ToggleSwitch v-model="sendReminder" />
               <div>
                 <p class="text-surface-900 font-medium">Erinnerung senden</p>
@@ -73,47 +74,36 @@
 
     <div class="flex justify-end gap-3">
       <Button label="Abbrechen" severity="secondary" />
-      <Button label="Buchen" severity="success" @click="confirmVisible = true" />
+      <Button label="Buchen" @click="confirmVisible = true" />
+    </div>
+  </div>
+
+  <Dialog
+    v-model:visible="confirmVisible"
+    modal
+    header="Buchung bestätigen"
+    :pt="{ root: 'w-full max-w-md' }"
+  >
+    <div class="flex flex-col gap-3">
+      <div class="flex justify-between">
+        <span class="text-surface-600 text-sm">Datum:</span>
+        <span class="text-surface-900 text-sm font-semibold">15. Juni 2029</span>
+      </div>
+      <div class="flex justify-between">
+        <span class="text-surface-600 text-sm">Zeit</span>
+        <span class="text-surface-900 text-sm font-semibold">{{ selectedSlot }}</span>
+      </div>
+      <div class="flex justify-between">
+        <span class="text-surface-600 text-sm">Dienstleistung</span>
+        <span class="text-surface-900 text-sm font-semibold">{{ service }}</span>
+      </div>
     </div>
 
-    <Dialog
-      v-model:visible="confirmVisible"
-      modal
-      :show-header="false"
-      :pt="{ root: 'w-full max-w-md' }"
-    >
-      <div class="border-surface-200 flex items-center justify-between border-b p-4">
-        <h2 class="text-surface-900 font-semibold">Buchung bestätigen</h2>
-        <Button
-          icon="pi pi-times"
-          text
-          rounded
-          severity="secondary"
-          @click="confirmVisible = false"
-        />
-      </div>
-
-      <div class="flex flex-col gap-3 p-4">
-        <div class="flex justify-between">
-          <span class="text-surface-600">Datum:</span>
-          <span class="text-surface-900 font-semibold">15. Juni 2029</span>
-        </div>
-        <div class="flex justify-between">
-          <span class="text-surface-600">Zeit</span>
-          <span class="text-surface-900 font-semibold">{{ selectedSlot }}</span>
-        </div>
-        <div class="flex justify-between">
-          <span class="text-surface-600">Dienstleistung</span>
-          <span class="text-surface-900 font-semibold">{{ service }}</span>
-        </div>
-      </div>
-
-      <template #footer>
-        <Button label="Abbrechen" severity="secondary" @click="confirmVisible = false" />
-        <Button label="Bestätigen" severity="success" @click="confirmVisible = false" />
-      </template>
-    </Dialog>
-  </div>
+    <template #footer>
+      <Button label="Abbrechen" severity="secondary" @click="confirmVisible = false" />
+      <Button label="Bestätigen" @click="confirmVisible = false" />
+    </template>
+  </Dialog>
 </template>
 
 <script setup lang="ts">

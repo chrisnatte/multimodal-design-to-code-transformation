@@ -23,8 +23,6 @@
       </template>
       <template #footer>
         <Button label="Merken" severity="secondary" />
-      </template>
-      <template #footer>
         <Button label="In den Warenkorb" />
       </template>
     </Card>

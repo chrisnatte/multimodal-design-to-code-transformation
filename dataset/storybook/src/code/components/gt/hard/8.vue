@@ -2,13 +2,12 @@
   <Card
     :pt="{
       root: 'w-full max-w-lg overflow-hidden',
-      header: 'absolute',
       body: '!p-0 !pb-4',
       footer: 'flex justify-end gap-2 px-4',
     }"
   >
     <template #header>
-      <!--<img src="/images/primevue.png" alt="primevue" />-->
+      <img :src="'/images/primevue.png'" alt="primevue" class="w-full" />
     </template>
 
     <template #content>

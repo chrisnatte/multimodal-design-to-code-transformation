@@ -9,11 +9,7 @@
       }"
     >
       <template #header>
-        <img
-          src="/images/login-hero.png"
-          alt=""
-          class="h-full w-full object-cover"
-        />
+        <img :src="'/images/primevue.png'" alt="" class="h-full w-full object-cover" />
       </template>
 
       <template #content>

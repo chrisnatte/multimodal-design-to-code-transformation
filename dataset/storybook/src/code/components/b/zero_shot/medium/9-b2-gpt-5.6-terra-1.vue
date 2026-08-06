@@ -46,7 +46,7 @@
                 <TabPanel value="2" class="p-0">
                     <div class="flex flex-col gap-6">
                         <div class="flex flex-col justify-center px-4 py-4">
-                            <InputTextarea v-model="message" rows="1" class="h-8 w-full resize-none" />
+                            <Textarea v-model="message" rows="1" class="h-8 w-full resize-none" />
                         </div>
 
                         <div class="flex justify-end">
@@ -62,7 +62,7 @@
 <script setup>
 import { ref } from 'vue';
 import Button from 'primevue/button';
-import InputTextarea from 'primevue/inputtextarea';
+import Textarea from 'primevue/textarea'
 import RadioButton from 'primevue/radiobutton';
 import Slider from 'primevue/slider';
 import Tab from 'primevue/tab';

@@ -6,21 +6,11 @@
     </div>
     <template #content>
       <InputText placeholder="Placeholder" v-model="_state.n12_1032" />
-    </template>
-    <template #content>
       <Password v-model="_state.n12_1182" :toggleMask="true" />
-    </template>
-    <template #content>
       <Checkbox v-model="_state.n12_1376" binary />
     </template>
     <template #footer>
-      <Button
-        label="Abbrechen"
-        severity="secondary"
-        :rounded="true"
-       />
-    </template>
-    <template #footer>
+      <Button label="Abbrechen" severity="secondary" :rounded="true" />
       <Button label="Anmelden" :rounded="true" />
     </template>
   </Card>

@@ -24,8 +24,6 @@
             <RadioButton v-model="_state.n110_6261" value="option1" />
             <RadioButton v-model="_state.n110_6269" value="option1" />
           </div>
-        </template>
-        <template #content>
           <div class="flex flex-col gap-2">
             <label>Dienstleistung</label>
             <Select
@@ -42,11 +40,7 @@
         </div>
         <template #content>
           <InputText placeholder="Placeholder" v-model="_state.n110_6308" />
-        </template>
-        <template #content>
           <InputText placeholder="Placeholder" v-model="_state.n110_6309" />
-        </template>
-        <template #content>
           <div class="flex flex-col gap-3">
             <span class="text-sm">Anmerkungen</span>
             <Textarea
@@ -55,8 +49,6 @@
               rows="4"
              />
           </div>
-        </template>
-        <template #content>
           <div class="flex gap-3 px-1 items-center">
             <ToggleSwitch v-model="_state.n110_6406" />
             <div class="flex flex-col">

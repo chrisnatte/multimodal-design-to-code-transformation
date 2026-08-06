@@ -7,8 +7,6 @@
       </div>
       <template #content>
         <ProgressBar :value="50" />
-      </template>
-      <template #content>
         <span class="text-xs">Projektmetriken werden analysiert</span>
       </template>
       <template #footer>

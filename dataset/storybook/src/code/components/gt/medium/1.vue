@@ -8,7 +8,7 @@
     }"
   >
     <template #header>
-      <img src="/images/primevue.png" alt="primevue" />
+      <img :src="'/images/primevue.png'" alt="primevue" />
     </template>
 
     <template #title>Anmelden</template>

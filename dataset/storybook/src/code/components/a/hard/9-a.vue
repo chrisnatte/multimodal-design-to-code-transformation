@@ -52,5 +52,5 @@ import Dialog from 'primevue/dialog'
 import Divider from 'primevue/divider'
 import Textarea from 'primevue/textarea'
 
-const _state = reactive({ n32_2636Visible: null, n32_2760: null, n32_2925: null, n32_2944: null })
+const _state = reactive({ n32_2636Visible: true, n32_2760: null, n32_2925: null, n32_2944: null })
 </script>

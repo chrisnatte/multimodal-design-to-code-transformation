@@ -85,7 +85,7 @@
 </template>
 
 <script setup>
-import { nextTick, onMounted, ref } from 'vue'
+import { ref } from 'vue'
 import Button from 'primevue/button'
 import DatePicker from 'primevue/datepicker'
 import InputNumber from 'primevue/inputnumber'
@@ -104,10 +104,4 @@ const people = ref(2)
 const destinationSelect = ref()
 const travelDatePicker = ref()
 const july2024 = ref(new Date(2024, 6, 1))
-
-onMounted(async () => {
-  await nextTick()
-  destinationSelect.value?.show()
-  travelDatePicker.value?.show()
-})
 </script>

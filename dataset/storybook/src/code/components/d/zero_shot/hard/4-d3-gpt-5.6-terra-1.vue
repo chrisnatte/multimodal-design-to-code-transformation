@@ -73,7 +73,7 @@
 </template>
 
 <script setup>
-import { nextTick, onMounted, ref } from 'vue'
+import { ref } from 'vue'
 import Button from 'primevue/button'
 import Column from 'primevue/column'
 import DataTable from 'primevue/datatable'
@@ -95,12 +95,4 @@ const toggleActions = (event, project) => {
     activeProject.value = project
     actionsPopover.value.toggle(event)
 }
-
-onMounted(async () => {
-    await nextTick()
-
-    if (actionButton.value) {
-        actionsPopover.value.show({ currentTarget: actionButton.value })
-    }
-})
 </script>

@@ -55,5 +55,5 @@ import TabPanels from 'primevue/tabpanels'
 import Tabs from 'primevue/tabs'
 import ToggleSwitch from 'primevue/toggleswitch'
 
-const _state = reactive({ n31_1543Visible: null, n31_2021: null, n31_2053: null })
+const _state = reactive({ n31_1543Visible: true, n31_2021: null, n31_2053: null })
 </script>

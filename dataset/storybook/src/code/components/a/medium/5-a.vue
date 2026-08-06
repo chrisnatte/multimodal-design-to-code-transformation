@@ -14,9 +14,8 @@
           v-model="_state.n16_2409"
           showButtons
           value="1"
-         />
-      </template>
-      <template #footer>
+        />
+        <InputNumber buttonLayout="stacked" v-model="_state.n16_2409" showButtons value="1" />
         <Button label="Hinzufügen" />
       </template>
     </Card>
