@@ -66,5 +66,5 @@ import TabPanels from 'primevue/tabpanels'
 import Tabs from 'primevue/tabs'
 import Tag from 'primevue/tag'
 
-const _state = reactive({ n106_7264Visible: null, n106_7428: null, n106_7429: null, n106_7430: null, n106_7439: null })
+const _state = reactive({ n106_7264Visible: true, n106_7428: null, n106_7429: null, n106_7430: null, n106_7439: null })
 </script>
