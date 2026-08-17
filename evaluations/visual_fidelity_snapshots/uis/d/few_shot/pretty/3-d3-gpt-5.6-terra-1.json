@@ -1,7 +1,7 @@
 {
   "elements": [
     {
-      "tag": "DIV",
+      "tag": "BODY",
       "pc_name": null,
       "pc_section": null,
       "text": "",
@@ -28,7 +28,566 @@
         "textAlign": "start"
       },
       "depth": 0,
-      "path": "0"
+      "path": "0",
+      "teleported": true
+    },
+    {
+      "tag": "DIV",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(246, 249, 252)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "40px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 1,
+      "path": "0.3",
+      "teleported": true
+    },
+    {
+      "tag": "DIV",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "",
+      "bbox": {
+        "x": 40,
+        "y": 40,
+        "width": 1840,
+        "height": 1000
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "24px",
+        "margin": "0px",
+        "borderRadius": "6px",
+        "display": "flex",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "24px",
+        "borderColor": "rgb(255, 0, 0)",
+        "borderWidth": "1px",
+        "textAlign": "start"
+      },
+      "depth": 2,
+      "path": "0.3.0",
+      "teleported": true
+    },
+    {
+      "tag": "H1",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "e.getBoundingClientRect is not a function",
+      "bbox": {
+        "x": 65,
+        "y": 65,
+        "width": 1790,
+        "height": 30
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontSize": "22px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 3,
+      "path": "0.3.0.0",
+      "teleported": true
+    },
+    {
+      "tag": "P",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "The component failed to render properly, likely due to a configuration issue in Storybook.\n      Here are some common causes and how you can address them:",
+      "bbox": {
+        "x": 65,
+        "y": 119,
+        "width": 1790,
+        "height": 19
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 3,
+      "path": "0.3.0.1",
+      "teleported": true
+    },
+    {
+      "tag": "OL",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "",
+      "bbox": {
+        "x": 65,
+        "y": 162,
+        "width": 1790,
+        "height": 81
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "0px 0px 0px 18px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 3,
+      "path": "0.3.0.2",
+      "teleported": true
+    },
+    {
+      "tag": "LI",
+      "pc_name": null,
+      "pc_section": null,
+      "text": ": You can use decorators to supply specific\n        contexts or providers, which are sometimes necessary for components to render correctly. For\n        detailed instructions on using decorators, please visit the .",
+      "bbox": {
+        "x": 83,
+        "y": 162,
+        "width": 1772,
+        "height": 19
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "list-item",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 4,
+      "path": "0.3.0.2.0",
+      "teleported": true
+    },
+    {
+      "tag": "STRONG",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "Missing Context/Providers",
+      "bbox": {
+        "x": 83,
+        "y": 162,
+        "width": 171.09375,
+        "height": 19
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontSize": "14px",
+        "fontWeight": "700",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "inline",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 5,
+      "path": "0.3.0.2.0.0",
+      "teleported": true
+    },
+    {
+      "tag": "A",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "Decorators documentation",
+      "bbox": {
+        "x": 1466.140625,
+        "y": 162,
+        "width": 166.09375,
+        "height": 19
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "inline",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 5,
+      "path": "0.3.0.2.0.1",
+      "teleported": true
+    },
+    {
+      "tag": "LI",
+      "pc_name": null,
+      "pc_section": null,
+      "text": ": Verify that Storybook picks up all necessary\n        settings for loaders, plugins, and other relevant parameters. You can find step-by-step\n        guides for configuring or with Storybook.",
+      "bbox": {
+        "x": 83,
+        "y": 181,
+        "width": 1772,
+        "height": 31
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "12px 0px 0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "list-item",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 4,
+      "path": "0.3.0.2.1",
+      "teleported": true
+    },
+    {
+      "tag": "STRONG",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "Misconfigured Webpack or Vite",
+      "bbox": {
+        "x": 83,
+        "y": 193,
+        "width": 203.953125,
+        "height": 19
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontSize": "14px",
+        "fontWeight": "700",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "inline",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 5,
+      "path": "0.3.0.2.1.0",
+      "teleported": true
+    },
+    {
+      "tag": "A",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "Webpack",
+      "bbox": {
+        "x": 1252.546875,
+        "y": 193,
+        "width": 59.265625,
+        "height": 19
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "inline",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 5,
+      "path": "0.3.0.2.1.1",
+      "teleported": true
+    },
+    {
+      "tag": "A",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "Vite",
+      "bbox": {
+        "x": 1331.8125,
+        "y": 193,
+        "width": 25.1875,
+        "height": 19
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "inline",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 5,
+      "path": "0.3.0.2.1.2",
+      "teleported": true
+    },
+    {
+      "tag": "LI",
+      "pc_name": null,
+      "pc_section": null,
+      "text": ": Your Storybook may require specific\n        environment variables to function as intended. You can set up custom environment variables\n        as outlined in the .",
+      "bbox": {
+        "x": 83,
+        "y": 212,
+        "width": 1772,
+        "height": 31
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "12px 0px 0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "list-item",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 4,
+      "path": "0.3.0.2.2",
+      "teleported": true
+    },
+    {
+      "tag": "STRONG",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "Missing Environment Variables",
+      "bbox": {
+        "x": 83,
+        "y": 224,
+        "width": 200.390625,
+        "height": 19
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontSize": "14px",
+        "fontWeight": "700",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "inline",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 5,
+      "path": "0.3.0.2.2.0",
+      "teleported": true
+    },
+    {
+      "tag": "A",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "Environment Variables documentation",
+      "bbox": {
+        "x": 1207.875,
+        "y": 224,
+        "width": 238.890625,
+        "height": 19
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "inline",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 5,
+      "path": "0.3.0.2.2.1",
+      "teleported": true
+    },
+    {
+      "tag": "PRE",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "",
+      "bbox": {
+        "x": 65,
+        "y": 267,
+        "width": 1790,
+        "height": 748
+      },
+      "styles": {
+        "color": "rgb(198, 198, 198)",
+        "backgroundColor": "rgb(36, 36, 36)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "10px",
+        "margin": "0px",
+        "borderRadius": "4px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(198, 198, 198)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 3,
+      "path": "0.3.0.3",
+      "teleported": true
+    },
+    {
+      "tag": "CODE",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "TypeError: e.getBoundingClientRect is not a function\n    at D (http://localhost:6006/node_modules/.cache/storybook/10.3.5/b4a109358a79cdfe27d9e4f1c7220b4a1b094ca1bad3b4955890a88b4596cde0/sb-vite/deps/style-CphO-V66.js?v=0cf07a4c:371:85)\n    at Proxy.alignOverlay (http://localhost:6006/node_modules/.cache/storybook/10.3.5/b4a109358a79cdfe27d9e4f1c7220b4a1b094ca1bad3b4955890a88b4596cde0/sb-vite/deps/primevue_popover.js?v=0cf07a4c:152:4)\n    at Proxy.onEnter (http://localhost:6006/node_modules/.cache/storybook/10.3.5/b4a109358a79cdfe27d9e4f1c7220b4a1b094ca1bad3b4955890a88b4596cde0/sb-vite/deps/primevue_popover.js?v=0cf07a4c:124:9)\n    at callHook (http://localhost:6006/node_modules/.cache/storybook/10.3.5/b4a109358a79cdfe27d9e4f1c7220b4a1b094ca1bad3b4955890a88b4596cde0/sb-vite/deps/vue.esm-bundler-ErSK1K2t.js?v=0cf07a4c:7435:17)\n    at http://localhost:6006/node_modules/.cache/storybook/10.3.5/b4a109358a79cdfe27d9e4f1c7220b4a1b094ca1bad3b4955890a88b4596cde0/sb-vite/deps/vue.esm-bundler-ErSK1K2t.js?v=0cf07a4c:7466:4\n    at callWithErrorHandling (http://localhost:6006/node_modules/.cache/storybook/10.3.5/b4a109358a79cdfe27d9e4f1c7220b4a1b094ca1bad3b4955890a88b4596cde0/sb-vite/deps/vue.esm-bundler-ErSK1K2t.js?v=0cf07a4c:1946:17)\n    at callWithAsyncErrorHandling (http://localhost:6006/node_modules/.cache/storybook/10.3.5/b4a109358a79cdfe27d9e4f1c7220b4a1b094ca1bad3b4955890a88b4596cde0/sb-vite/deps/vue.esm-bundler-ErSK1K2t.js?v=0cf07a4c:1953:15)\n    at callHook (http://localhost:6006/node_modules/.cache/storybook/10.3.5/b4a109358a79cdfe27d9e4f1c7220b4a1b094ca1bad3b4955890a88b4596cde0/sb-vite/deps/vue.esm-bundler-ErSK1K2t.js?v=0cf07a4c:2830:11)\n    at callAsyncHook (http://localhost:6006/node_modules/.cache/storybook/10.3.5/b4a109358a79cdfe27d9e4f1c7220b4a1b094ca1bad3b4955890a88b4596cde0/sb-vite/deps/vue.esm-bundler-ErSK1K2t.js?v=0cf07a4c:2834:3)\n    at Object.enter (http://localhost:6006/node_modules/.cache/storybook/10.3.5/b4a109358a79cdfe27d9e4f1c7220b4a1b094ca1bad3b4955890a88b4596cde0/sb-vite/deps/vue.esm-bundler-ErSK1K2t.js?v=0cf07a4c:2871:14)",
+      "bbox": {
+        "x": 75,
+        "y": 278,
+        "width": 1685.703125,
+        "height": 217
+      },
+      "styles": {
+        "color": "rgb(198, 198, 198)",
+        "backgroundColor": "rgb(36, 36, 36)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "inline",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(198, 198, 198)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 4,
+      "path": "0.3.0.3.0",
+      "teleported": true
+    },
+    {
+      "tag": "DIV",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 1,
+      "path": "0.4",
+      "teleported": false
     },
     {
       "tag": "MAIN",
@@ -57,8 +616,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 1,
-      "path": "0.0"
+      "depth": 2,
+      "path": "0.4.0",
+      "teleported": false
     },
     {
       "tag": "HEADER",
@@ -87,8 +647,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 2,
-      "path": "0.0.0"
+      "depth": 3,
+      "path": "0.4.0.0",
+      "teleported": false
     },
     {
       "tag": "BUTTON",
@@ -117,8 +678,9 @@
         "borderWidth": "1px",
         "textAlign": "center"
       },
-      "depth": 3,
-      "path": "0.0.0.0"
+      "depth": 4,
+      "path": "0.4.0.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -147,8 +709,9 @@
         "borderWidth": "0px",
         "textAlign": "center"
       },
-      "depth": 4,
-      "path": "0.0.0.0.0"
+      "depth": 5,
+      "path": "0.4.0.0.0.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -177,8 +740,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 3,
-      "path": "0.0.0.1"
+      "depth": 4,
+      "path": "0.4.0.0.1",
+      "teleported": false
     },
     {
       "tag": "H1",
@@ -207,8 +771,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 4,
-      "path": "0.0.0.1.0"
+      "depth": 5,
+      "path": "0.4.0.0.1.0",
+      "teleported": false
     },
     {
       "tag": "P",
@@ -237,8 +802,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 4,
-      "path": "0.0.0.1.1"
+      "depth": 5,
+      "path": "0.4.0.0.1.1",
+      "teleported": false
     },
     {
       "tag": "STRONG",
@@ -267,8 +833,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 5,
-      "path": "0.0.0.1.1.0"
+      "depth": 6,
+      "path": "0.4.0.0.1.1.0",
+      "teleported": false
     },
     {
       "tag": "NAV",
@@ -297,8 +864,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 2,
-      "path": "0.0.1"
+      "depth": 3,
+      "path": "0.4.0.1",
+      "teleported": false
     },
     {
       "tag": "OL",
@@ -327,8 +895,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 3,
-      "path": "0.0.1.0"
+      "depth": 4,
+      "path": "0.4.0.1.0",
+      "teleported": false
     },
     {
       "tag": "LI",
@@ -357,8 +926,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 4,
-      "path": "0.0.1.0.0"
+      "depth": 5,
+      "path": "0.4.0.1.0.0",
+      "teleported": false
     },
     {
       "tag": "A",
@@ -387,8 +957,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 5,
-      "path": "0.0.1.0.0.0"
+      "depth": 6,
+      "path": "0.4.0.1.0.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -417,8 +988,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 6,
-      "path": "0.0.1.0.0.0.0"
+      "depth": 7,
+      "path": "0.4.0.1.0.0.0.0",
+      "teleported": false
     },
     {
       "tag": "LI",
@@ -447,8 +1019,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 4,
-      "path": "0.0.1.0.1"
+      "depth": 5,
+      "path": "0.4.0.1.0.1",
+      "teleported": false
     },
     {
       "tag": "I",
@@ -477,8 +1050,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 5,
-      "path": "0.0.1.0.1.0"
+      "depth": 6,
+      "path": "0.4.0.1.0.1.0",
+      "teleported": false
     },
     {
       "tag": "LI",
@@ -507,8 +1081,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 4,
-      "path": "0.0.1.0.2"
+      "depth": 5,
+      "path": "0.4.0.1.0.2",
+      "teleported": false
     },
     {
       "tag": "A",
@@ -537,8 +1112,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 5,
-      "path": "0.0.1.0.2.0"
+      "depth": 6,
+      "path": "0.4.0.1.0.2.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -567,8 +1143,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 6,
-      "path": "0.0.1.0.2.0.0"
+      "depth": 7,
+      "path": "0.4.0.1.0.2.0.0",
+      "teleported": false
     },
     {
       "tag": "LI",
@@ -597,8 +1174,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 4,
-      "path": "0.0.1.0.3"
+      "depth": 5,
+      "path": "0.4.0.1.0.3",
+      "teleported": false
     },
     {
       "tag": "I",
@@ -627,8 +1205,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 5,
-      "path": "0.0.1.0.3.0"
+      "depth": 6,
+      "path": "0.4.0.1.0.3.0",
+      "teleported": false
     },
     {
       "tag": "LI",
@@ -657,8 +1236,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 4,
-      "path": "0.0.1.0.4"
+      "depth": 5,
+      "path": "0.4.0.1.0.4",
+      "teleported": false
     },
     {
       "tag": "A",
@@ -687,8 +1267,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 5,
-      "path": "0.0.1.0.4.0"
+      "depth": 6,
+      "path": "0.4.0.1.0.4.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -717,8 +1298,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 6,
-      "path": "0.0.1.0.4.0.0"
+      "depth": 7,
+      "path": "0.4.0.1.0.4.0.0",
+      "teleported": false
     },
     {
       "tag": "LI",
@@ -747,8 +1329,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 4,
-      "path": "0.0.1.0.5"
+      "depth": 5,
+      "path": "0.4.0.1.0.5",
+      "teleported": false
     },
     {
       "tag": "I",
@@ -777,8 +1360,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 5,
-      "path": "0.0.1.0.5.0"
+      "depth": 6,
+      "path": "0.4.0.1.0.5.0",
+      "teleported": false
     },
     {
       "tag": "LI",
@@ -807,8 +1391,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 4,
-      "path": "0.0.1.0.6"
+      "depth": 5,
+      "path": "0.4.0.1.0.6",
+      "teleported": false
     },
     {
       "tag": "A",
@@ -837,8 +1422,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 5,
-      "path": "0.0.1.0.6.0"
+      "depth": 6,
+      "path": "0.4.0.1.0.6.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -867,8 +1453,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 6,
-      "path": "0.0.1.0.6.0.0"
+      "depth": 7,
+      "path": "0.4.0.1.0.6.0.0",
+      "teleported": false
     },
     {
       "tag": "SECTION",
@@ -897,8 +1484,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 2,
-      "path": "0.0.2"
+      "depth": 3,
+      "path": "0.4.0.2",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -927,8 +1515,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 3,
-      "path": "0.0.2.0"
+      "depth": 4,
+      "path": "0.4.0.2.0",
+      "teleported": false
     },
     {
       "tag": "LABEL",
@@ -957,8 +1546,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 4,
-      "path": "0.0.2.0.0"
+      "depth": 5,
+      "path": "0.4.0.2.0.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -987,8 +1577,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 4,
-      "path": "0.0.2.0.1"
+      "depth": 5,
+      "path": "0.4.0.2.0.1",
+      "teleported": false
     },
     {
       "tag": "I",
@@ -1017,8 +1608,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 5,
-      "path": "0.0.2.0.1.0"
+      "depth": 6,
+      "path": "0.4.0.2.0.1.0",
+      "teleported": false
     },
     {
       "tag": "INPUT",
@@ -1047,8 +1639,9 @@
         "borderWidth": "1px",
         "textAlign": "start"
       },
-      "depth": 5,
-      "path": "0.0.2.0.1.1"
+      "depth": 6,
+      "path": "0.4.0.2.0.1.1",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -1077,8 +1670,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 3,
-      "path": "0.0.2.1"
+      "depth": 4,
+      "path": "0.4.0.2.1",
+      "teleported": false
     },
     {
       "tag": "LABEL",
@@ -1107,8 +1701,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 4,
-      "path": "0.0.2.1.0"
+      "depth": 5,
+      "path": "0.4.0.2.1.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -1137,8 +1732,9 @@
         "borderWidth": "1px",
         "textAlign": "start"
       },
-      "depth": 4,
-      "path": "0.0.2.1.1"
+      "depth": 5,
+      "path": "0.4.0.2.1.1",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -1167,8 +1763,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 5,
-      "path": "0.0.2.1.1.0"
+      "depth": 6,
+      "path": "0.4.0.2.1.1.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -1197,8 +1794,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 5,
-      "path": "0.0.2.1.1.1"
+      "depth": 6,
+      "path": "0.4.0.2.1.1.1",
+      "teleported": false
     },
     {
       "tag": "svg",
@@ -1227,8 +1825,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 6,
-      "path": "0.0.2.1.1.1.0"
+      "depth": 7,
+      "path": "0.4.0.2.1.1.1.0",
+      "teleported": false
     },
     {
       "tag": "path",
@@ -1257,8 +1856,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 7,
-      "path": "0.0.2.1.1.1.0.0"
+      "depth": 8,
+      "path": "0.4.0.2.1.1.1.0.0",
+      "teleported": false
     },
     {
       "tag": "SECTION",
@@ -1287,8 +1887,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 2,
-      "path": "0.0.3"
+      "depth": 3,
+      "path": "0.4.0.3",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -1317,8 +1918,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 3,
-      "path": "0.0.3.0"
+      "depth": 4,
+      "path": "0.4.0.3.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -1347,8 +1949,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 4,
-      "path": "0.0.3.0.0"
+      "depth": 5,
+      "path": "0.4.0.3.0.0",
+      "teleported": false
     },
     {
       "tag": "TABLE",
@@ -1377,8 +1980,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 5,
-      "path": "0.0.3.0.0.0"
+      "depth": 6,
+      "path": "0.4.0.3.0.0.0",
+      "teleported": false
     },
     {
       "tag": "THEAD",
@@ -1407,8 +2011,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 6,
-      "path": "0.0.3.0.0.0.0"
+      "depth": 7,
+      "path": "0.4.0.3.0.0.0.0",
+      "teleported": false
     },
     {
       "tag": "TR",
@@ -1437,8 +2042,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 7,
-      "path": "0.0.3.0.0.0.0.0"
+      "depth": 8,
+      "path": "0.4.0.3.0.0.0.0.0",
+      "teleported": false
     },
     {
       "tag": "TH",
@@ -1467,8 +2073,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.0.0.0"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.0.0.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -1497,8 +2104,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.0.0.0.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.0.0.0.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -1527,8 +2135,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.0.0.0.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.0.0.0.0.0",
+      "teleported": false
     },
     {
       "tag": "INPUT",
@@ -1557,8 +2166,9 @@
         "borderWidth": "1px",
         "textAlign": "start"
       },
-      "depth": 11,
-      "path": "0.0.3.0.0.0.0.0.0.0.0.0"
+      "depth": 12,
+      "path": "0.4.0.3.0.0.0.0.0.0.0.0.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -1587,8 +2197,9 @@
         "borderWidth": "1px",
         "textAlign": "start"
       },
-      "depth": 11,
-      "path": "0.0.3.0.0.0.0.0.0.0.0.1"
+      "depth": 12,
+      "path": "0.4.0.3.0.0.0.0.0.0.0.0.1",
+      "teleported": false
     },
     {
       "tag": "TH",
@@ -1617,8 +2228,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.0.0.1"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.0.0.1",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -1647,8 +2259,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.0.0.1.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.0.0.1.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -1677,8 +2290,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.0.0.1.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.0.0.1.0.0",
+      "teleported": false
     },
     {
       "tag": "TH",
@@ -1707,8 +2321,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.0.0.2"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.0.0.2",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -1737,8 +2352,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.0.0.2.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.0.0.2.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -1767,8 +2383,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.0.0.2.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.0.0.2.0.0",
+      "teleported": false
     },
     {
       "tag": "TH",
@@ -1797,8 +2414,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.0.0.3"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.0.0.3",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -1827,8 +2445,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.0.0.3.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.0.0.3.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -1857,8 +2476,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.0.0.3.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.0.0.3.0.0",
+      "teleported": false
     },
     {
       "tag": "TH",
@@ -1887,8 +2507,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.0.0.4"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.0.0.4",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -1917,8 +2538,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.0.0.4.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.0.0.4.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -1947,8 +2569,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.0.0.4.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.0.0.4.0.0",
+      "teleported": false
     },
     {
       "tag": "TH",
@@ -1977,8 +2600,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.0.0.5"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.0.0.5",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -2007,8 +2631,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.0.0.5.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.0.0.5.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -2037,8 +2662,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.0.0.5.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.0.0.5.0.0",
+      "teleported": false
     },
     {
       "tag": "TH",
@@ -2067,8 +2693,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.0.0.6"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.0.0.6",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -2097,8 +2724,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.0.0.6.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.0.0.6.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -2127,8 +2755,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.0.0.6.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.0.0.6.0.0",
+      "teleported": false
     },
     {
       "tag": "TBODY",
@@ -2157,8 +2786,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 6,
-      "path": "0.0.3.0.0.0.1"
+      "depth": 7,
+      "path": "0.4.0.3.0.0.0.1",
+      "teleported": false
     },
     {
       "tag": "TR",
@@ -2187,8 +2817,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 7,
-      "path": "0.0.3.0.0.0.1.0"
+      "depth": 8,
+      "path": "0.4.0.3.0.0.0.1.0",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -2217,8 +2848,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.0.0"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.0.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -2247,8 +2879,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.0.0.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.0.0.0",
+      "teleported": false
     },
     {
       "tag": "INPUT",
@@ -2277,8 +2910,9 @@
         "borderWidth": "1px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.0.0.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.0.0.0.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -2307,8 +2941,9 @@
         "borderWidth": "1px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.0.0.0.1"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.0.0.0.1",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -2337,8 +2972,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.0.1"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.0.1",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -2367,8 +3003,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.0.2"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.0.2",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -2397,8 +3034,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.0.2.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.0.2.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -2427,8 +3065,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.0.2.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.0.2.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -2457,8 +3096,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 11,
-      "path": "0.0.3.0.0.0.1.0.2.0.0.0"
+      "depth": 12,
+      "path": "0.4.0.3.0.0.0.1.0.2.0.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -2487,8 +3127,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.0.2.0.1"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.0.2.0.1",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -2517,8 +3158,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.0.3"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.0.3",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -2547,8 +3189,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.0.3.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.0.3.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -2577,8 +3220,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.0.3.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.0.3.0.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -2607,8 +3251,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 11,
-      "path": "0.0.3.0.0.0.1.0.3.0.0.0"
+      "depth": 12,
+      "path": "0.4.0.3.0.0.0.1.0.3.0.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -2637,8 +3282,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.0.3.0.1"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.0.3.0.1",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -2667,8 +3313,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.0.4"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.0.4",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -2697,8 +3344,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.0.4.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.0.4.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -2727,8 +3375,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.0.4.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.0.4.0.0",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -2757,8 +3406,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.0.5"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.0.5",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -2787,8 +3437,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.0.5.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.0.5.0",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -2817,8 +3468,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.0.6"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.0.6",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -2847,8 +3499,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.0.6.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.0.6.0",
+      "teleported": false
     },
     {
       "tag": "BUTTON",
@@ -2877,8 +3530,9 @@
         "borderWidth": "1px",
         "textAlign": "center"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.0.6.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.0.6.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -2907,8 +3561,9 @@
         "borderWidth": "0px",
         "textAlign": "center"
       },
-      "depth": 11,
-      "path": "0.0.3.0.0.0.1.0.6.0.0.0"
+      "depth": 12,
+      "path": "0.4.0.3.0.0.0.1.0.6.0.0.0",
+      "teleported": false
     },
     {
       "tag": "TR",
@@ -2937,8 +3592,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 7,
-      "path": "0.0.3.0.0.0.1.1"
+      "depth": 8,
+      "path": "0.4.0.3.0.0.0.1.1",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -2967,8 +3623,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.1.0"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.1.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -2997,8 +3654,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.1.0.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.1.0.0",
+      "teleported": false
     },
     {
       "tag": "INPUT",
@@ -3027,8 +3685,9 @@
         "borderWidth": "1px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.1.0.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.1.0.0.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -3057,8 +3716,9 @@
         "borderWidth": "1px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.1.0.0.1"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.1.0.0.1",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -3087,8 +3747,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.1.1"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.1.1",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -3117,8 +3778,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.1.2"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.1.2",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -3147,8 +3809,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.1.2.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.1.2.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -3177,8 +3840,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.1.2.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.1.2.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -3207,8 +3871,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 11,
-      "path": "0.0.3.0.0.0.1.1.2.0.0.0"
+      "depth": 12,
+      "path": "0.4.0.3.0.0.0.1.1.2.0.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -3237,8 +3902,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.1.2.0.1"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.1.2.0.1",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -3267,8 +3933,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.1.3"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.1.3",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -3297,8 +3964,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.1.3.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.1.3.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -3327,8 +3995,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.1.3.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.1.3.0.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -3357,8 +4026,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 11,
-      "path": "0.0.3.0.0.0.1.1.3.0.0.0"
+      "depth": 12,
+      "path": "0.4.0.3.0.0.0.1.1.3.0.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -3387,8 +4057,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.1.3.0.1"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.1.3.0.1",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -3417,8 +4088,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.1.4"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.1.4",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -3447,8 +4119,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.1.4.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.1.4.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -3477,8 +4150,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.1.4.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.1.4.0.0",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -3507,8 +4181,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.1.5"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.1.5",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -3537,8 +4212,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.1.5.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.1.5.0",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -3567,8 +4243,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.1.6"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.1.6",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -3597,8 +4274,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.1.6.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.1.6.0",
+      "teleported": false
     },
     {
       "tag": "BUTTON",
@@ -3627,8 +4305,9 @@
         "borderWidth": "1px",
         "textAlign": "center"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.1.6.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.1.6.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -3657,8 +4336,9 @@
         "borderWidth": "0px",
         "textAlign": "center"
       },
-      "depth": 11,
-      "path": "0.0.3.0.0.0.1.1.6.0.0.0"
+      "depth": 12,
+      "path": "0.4.0.3.0.0.0.1.1.6.0.0.0",
+      "teleported": false
     },
     {
       "tag": "TR",
@@ -3687,8 +4367,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 7,
-      "path": "0.0.3.0.0.0.1.2"
+      "depth": 8,
+      "path": "0.4.0.3.0.0.0.1.2",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -3717,8 +4398,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.2.0"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.2.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -3747,8 +4429,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.2.0.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.2.0.0",
+      "teleported": false
     },
     {
       "tag": "INPUT",
@@ -3777,8 +4460,9 @@
         "borderWidth": "1px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.2.0.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.2.0.0.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -3807,8 +4491,9 @@
         "borderWidth": "1px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.2.0.0.1"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.2.0.0.1",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -3837,8 +4522,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.2.1"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.2.1",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -3867,8 +4553,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.2.2"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.2.2",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -3897,8 +4584,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.2.2.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.2.2.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -3927,8 +4615,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.2.2.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.2.2.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -3957,8 +4646,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 11,
-      "path": "0.0.3.0.0.0.1.2.2.0.0.0"
+      "depth": 12,
+      "path": "0.4.0.3.0.0.0.1.2.2.0.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -3987,8 +4677,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.2.2.0.1"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.2.2.0.1",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -4017,8 +4708,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.2.3"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.2.3",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -4047,8 +4739,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.2.3.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.2.3.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -4077,8 +4770,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.2.3.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.2.3.0.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -4107,8 +4801,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 11,
-      "path": "0.0.3.0.0.0.1.2.3.0.0.0"
+      "depth": 12,
+      "path": "0.4.0.3.0.0.0.1.2.3.0.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -4137,8 +4832,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.2.3.0.1"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.2.3.0.1",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -4167,8 +4863,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.2.4"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.2.4",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -4197,8 +4894,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.2.4.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.2.4.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -4227,8 +4925,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.2.4.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.2.4.0.0",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -4257,8 +4956,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.2.5"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.2.5",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -4287,8 +4987,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.2.5.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.2.5.0",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -4317,8 +5018,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.2.6"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.2.6",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -4347,8 +5049,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.2.6.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.2.6.0",
+      "teleported": false
     },
     {
       "tag": "BUTTON",
@@ -4377,8 +5080,9 @@
         "borderWidth": "1px",
         "textAlign": "center"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.2.6.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.2.6.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -4407,8 +5111,9 @@
         "borderWidth": "0px",
         "textAlign": "center"
       },
-      "depth": 11,
-      "path": "0.0.3.0.0.0.1.2.6.0.0.0"
+      "depth": 12,
+      "path": "0.4.0.3.0.0.0.1.2.6.0.0.0",
+      "teleported": false
     },
     {
       "tag": "TR",
@@ -4437,8 +5142,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 7,
-      "path": "0.0.3.0.0.0.1.3"
+      "depth": 8,
+      "path": "0.4.0.3.0.0.0.1.3",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -4467,8 +5173,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.3.0"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.3.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -4497,8 +5204,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.3.0.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.3.0.0",
+      "teleported": false
     },
     {
       "tag": "INPUT",
@@ -4527,8 +5235,9 @@
         "borderWidth": "1px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.3.0.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.3.0.0.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -4557,8 +5266,9 @@
         "borderWidth": "1px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.3.0.0.1"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.3.0.0.1",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -4587,8 +5297,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.3.1"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.3.1",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -4617,8 +5328,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.3.2"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.3.2",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -4647,8 +5359,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.3.2.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.3.2.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -4677,8 +5390,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.3.2.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.3.2.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -4707,8 +5421,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 11,
-      "path": "0.0.3.0.0.0.1.3.2.0.0.0"
+      "depth": 12,
+      "path": "0.4.0.3.0.0.0.1.3.2.0.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -4737,8 +5452,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.3.2.0.1"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.3.2.0.1",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -4767,8 +5483,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.3.3"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.3.3",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -4797,8 +5514,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.3.3.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.3.3.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -4827,8 +5545,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.3.3.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.3.3.0.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -4857,8 +5576,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 11,
-      "path": "0.0.3.0.0.0.1.3.3.0.0.0"
+      "depth": 12,
+      "path": "0.4.0.3.0.0.0.1.3.3.0.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -4887,8 +5607,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.3.3.0.1"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.3.3.0.1",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -4917,8 +5638,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.3.4"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.3.4",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -4947,8 +5669,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.3.4.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.3.4.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -4977,8 +5700,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.3.4.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.3.4.0.0",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -5007,8 +5731,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.3.5"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.3.5",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -5037,8 +5762,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.3.5.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.3.5.0",
+      "teleported": false
     },
     {
       "tag": "TD",
@@ -5067,8 +5793,9 @@
         "borderWidth": "0px 0px 1px",
         "textAlign": "start"
       },
-      "depth": 8,
-      "path": "0.0.3.0.0.0.1.3.6"
+      "depth": 9,
+      "path": "0.4.0.3.0.0.0.1.3.6",
+      "teleported": false
     },
     {
       "tag": "DIV",
@@ -5097,8 +5824,9 @@
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 9,
-      "path": "0.0.3.0.0.0.1.3.6.0"
+      "depth": 10,
+      "path": "0.4.0.3.0.0.0.1.3.6.0",
+      "teleported": false
     },
     {
       "tag": "BUTTON",
@@ -5127,8 +5855,9 @@
         "borderWidth": "1px",
         "textAlign": "center"
       },
-      "depth": 10,
-      "path": "0.0.3.0.0.0.1.3.6.0.0"
+      "depth": 11,
+      "path": "0.4.0.3.0.0.0.1.3.6.0.0",
+      "teleported": false
     },
     {
       "tag": "SPAN",
@@ -5157,38 +5886,877 @@
         "borderWidth": "0px",
         "textAlign": "center"
       },
-      "depth": 11,
-      "path": "0.0.3.0.0.0.1.3.6.0.0.0"
+      "depth": 12,
+      "path": "0.4.0.3.0.0.0.1.3.6.0.0.0",
+      "teleported": false
     },
     {
       "tag": "DIV",
       "pc_name": null,
-      "pc_section": "columnresizeindicator",
+      "pc_section": "overlay",
+      "text": "",
+      "bbox": {
+        "x": 328,
+        "y": 239,
+        "width": 216,
+        "height": 176
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "2px 0px 0px",
+        "borderRadius": "6px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(226, 232, 240)",
+        "borderWidth": "1px",
+        "textAlign": "start"
+      },
+      "depth": 1,
+      "path": "0.9",
+      "teleported": true
+    },
+    {
+      "tag": "SPAN",
+      "pc_name": null,
+      "pc_section": "hiddenfirstfocusableel",
+      "text": "",
+      "bbox": {
+        "x": 328,
+        "y": 239,
+        "width": 1,
+        "height": 1
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "-1px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(51, 65, 85)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 2,
+      "path": "0.9.0",
+      "teleported": true
+    },
+    {
+      "tag": "DIV",
+      "pc_name": null,
+      "pc_section": "listcontainer",
+      "text": "",
+      "bbox": {
+        "x": 329,
+        "y": 240,
+        "width": 214,
+        "height": 174
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(51, 65, 85)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 2,
+      "path": "0.9.1",
+      "teleported": true
+    },
+    {
+      "tag": "UL",
+      "pc_name": null,
+      "pc_section": "list",
+      "text": "",
+      "bbox": {
+        "x": 329,
+        "y": 240,
+        "width": 214,
+        "height": 174
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "4px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "flex",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "2px",
+        "borderColor": "rgb(51, 65, 85)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 3,
+      "path": "0.9.1.0",
+      "teleported": true
+    },
+    {
+      "tag": "LI",
+      "pc_name": null,
+      "pc_section": "option",
+      "text": "",
+      "bbox": {
+        "x": 333,
+        "y": 244,
+        "width": 206,
+        "height": 40
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "8px 12px",
+        "margin": "0px",
+        "borderRadius": "4px",
+        "display": "flex",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "gap": "normal",
+        "borderColor": "rgb(51, 65, 85)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 4,
+      "path": "0.9.1.0.0",
+      "teleported": true
+    },
+    {
+      "tag": "SPAN",
+      "pc_name": null,
+      "pc_section": "optionlabel",
+      "text": "Offen",
+      "bbox": {
+        "x": 345,
+        "y": 252,
+        "width": 39.5,
+        "height": 24
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(51, 65, 85)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 5,
+      "path": "0.9.1.0.0.0",
+      "teleported": true
+    },
+    {
+      "tag": "LI",
+      "pc_name": null,
+      "pc_section": "option",
+      "text": "",
+      "bbox": {
+        "x": 333,
+        "y": 286,
+        "width": 206,
+        "height": 40
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "8px 12px",
+        "margin": "0px",
+        "borderRadius": "4px",
+        "display": "flex",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "gap": "normal",
+        "borderColor": "rgb(51, 65, 85)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 4,
+      "path": "0.9.1.0.1",
+      "teleported": true
+    },
+    {
+      "tag": "SPAN",
+      "pc_name": null,
+      "pc_section": "optionlabel",
+      "text": "In Arbeit",
+      "bbox": {
+        "x": 345,
+        "y": 294,
+        "width": 60.65625,
+        "height": 24
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(51, 65, 85)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 5,
+      "path": "0.9.1.0.1.0",
+      "teleported": true
+    },
+    {
+      "tag": "LI",
+      "pc_name": null,
+      "pc_section": "option",
+      "text": "",
+      "bbox": {
+        "x": 333,
+        "y": 328,
+        "width": 206,
+        "height": 40
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "8px 12px",
+        "margin": "0px",
+        "borderRadius": "4px",
+        "display": "flex",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "gap": "normal",
+        "borderColor": "rgb(51, 65, 85)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 4,
+      "path": "0.9.1.0.2",
+      "teleported": true
+    },
+    {
+      "tag": "SPAN",
+      "pc_name": null,
+      "pc_section": "optionlabel",
+      "text": "Blockiert",
+      "bbox": {
+        "x": 345,
+        "y": 336,
+        "width": 61,
+        "height": 24
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(51, 65, 85)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 5,
+      "path": "0.9.1.0.2.0",
+      "teleported": true
+    },
+    {
+      "tag": "LI",
+      "pc_name": null,
+      "pc_section": "option",
+      "text": "",
+      "bbox": {
+        "x": 333,
+        "y": 370,
+        "width": 206,
+        "height": 40
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "8px 12px",
+        "margin": "0px",
+        "borderRadius": "4px",
+        "display": "flex",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "gap": "normal",
+        "borderColor": "rgb(51, 65, 85)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 4,
+      "path": "0.9.1.0.3",
+      "teleported": true
+    },
+    {
+      "tag": "SPAN",
+      "pc_name": null,
+      "pc_section": "optionlabel",
+      "text": "Fertig",
+      "bbox": {
+        "x": 345,
+        "y": 378,
+        "width": 40.46875,
+        "height": 24
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(51, 65, 85)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 5,
+      "path": "0.9.1.0.3.0",
+      "teleported": true
+    },
+    {
+      "tag": "SPAN",
+      "pc_name": null,
+      "pc_section": "hiddenselectedmessage",
+      "text": "No selected item",
+      "bbox": {
+        "x": 328,
+        "y": 413,
+        "width": 1,
+        "height": 1
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "-1px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(51, 65, 85)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 2,
+      "path": "0.9.2",
+      "teleported": true
+    },
+    {
+      "tag": "SPAN",
+      "pc_name": null,
+      "pc_section": "hiddenlastfocusableel",
+      "text": "",
+      "bbox": {
+        "x": 328,
+        "y": 413,
+        "width": 1,
+        "height": 1
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "-1px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(51, 65, 85)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 2,
+      "path": "0.9.3",
+      "teleported": true
+    },
+    {
+      "tag": "DIV",
+      "pc_name": "popover",
+      "pc_section": "root",
       "text": "",
       "bbox": {
         "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "y": 10,
+        "width": 199,
+        "height": 143
       },
       "styles": {
-        "color": "oklch(0.372 0.044 257.287)",
-        "backgroundColor": "rgb(16, 185, 129)",
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "10px 0px 0px",
+        "borderRadius": "6px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(226, 232, 240)",
+        "borderWidth": "1px",
+        "textAlign": "start"
+      },
+      "depth": 1,
+      "path": "0.10",
+      "teleported": true
+    },
+    {
+      "tag": "SPAN",
+      "pc_name": null,
+      "pc_section": "firstfocusableelement",
+      "text": "",
+      "bbox": {
+        "x": 0,
+        "y": 10,
+        "width": 1,
+        "height": 1
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "-1px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(51, 65, 85)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 2,
+      "path": "0.10.0",
+      "teleported": true
+    },
+    {
+      "tag": "DIV",
+      "pc_name": null,
+      "pc_section": "content",
+      "text": "",
+      "bbox": {
+        "x": 1,
+        "y": 11,
+        "width": 197,
+        "height": 141
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "10px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(51, 65, 85)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 2,
+      "path": "0.10.1",
+      "teleported": true
+    },
+    {
+      "tag": "DIV",
+      "pc_name": null,
+      "pc_section": null,
+      "text": "",
+      "bbox": {
+        "x": 11,
+        "y": 21,
+        "width": 177,
+        "height": 121
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "flex",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "8px",
+        "borderColor": "rgb(51, 65, 85)",
+        "borderWidth": "0px",
+        "textAlign": "start"
+      },
+      "depth": 3,
+      "path": "0.10.1.0",
+      "teleported": true
+    },
+    {
+      "tag": "BUTTON",
+      "pc_name": "button",
+      "pc_section": "root",
+      "text": "",
+      "bbox": {
+        "x": 11,
+        "y": 21,
+        "width": 177,
+        "height": 35
+      },
+      "styles": {
+        "color": "rgb(100, 116, 139)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "6px 10px",
+        "margin": "0px",
+        "borderRadius": "6px",
+        "display": "flex",
+        "justifyContent": "flex-start",
+        "alignItems": "center",
+        "gap": "8px",
+        "borderColor": "rgb(226, 232, 240)",
+        "borderWidth": "1px",
+        "textAlign": "center"
+      },
+      "depth": 4,
+      "path": "0.10.1.0.0",
+      "teleported": true
+    },
+    {
+      "tag": "SPAN",
+      "pc_name": null,
+      "pc_section": "icon",
+      "text": "",
+      "bbox": {
+        "x": 22,
+        "y": 31.5,
+        "width": 14,
+        "height": 14
+      },
+      "styles": {
+        "color": "rgb(100, 116, 139)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
         "fontSize": "14px",
         "fontWeight": "400",
         "padding": "0px",
         "margin": "0px",
         "borderRadius": "0px",
-        "display": "none",
+        "display": "block",
         "justifyContent": "normal",
         "alignItems": "normal",
         "gap": "normal",
-        "borderColor": "oklch(0.372 0.044 257.287)",
+        "borderColor": "rgb(100, 116, 139)",
+        "borderWidth": "0px",
+        "textAlign": "center"
+      },
+      "depth": 5,
+      "path": "0.10.1.0.0.0",
+      "teleported": true
+    },
+    {
+      "tag": "SPAN",
+      "pc_name": null,
+      "pc_section": "label",
+      "text": "Bearbeiten",
+      "bbox": {
+        "x": 44,
+        "y": 28,
+        "width": 68.5,
+        "height": 21
+      },
+      "styles": {
+        "color": "rgb(100, 116, 139)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(100, 116, 139)",
+        "borderWidth": "0px",
+        "textAlign": "center"
+      },
+      "depth": 5,
+      "path": "0.10.1.0.0.1",
+      "teleported": true
+    },
+    {
+      "tag": "BUTTON",
+      "pc_name": "button",
+      "pc_section": "root",
+      "text": "",
+      "bbox": {
+        "x": 11,
+        "y": 64,
+        "width": 177,
+        "height": 35
+      },
+      "styles": {
+        "color": "rgb(100, 116, 139)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "6px 10px",
+        "margin": "0px",
+        "borderRadius": "6px",
+        "display": "flex",
+        "justifyContent": "flex-start",
+        "alignItems": "center",
+        "gap": "8px",
+        "borderColor": "rgb(226, 232, 240)",
+        "borderWidth": "1px",
+        "textAlign": "center"
+      },
+      "depth": 4,
+      "path": "0.10.1.0.1",
+      "teleported": true
+    },
+    {
+      "tag": "SPAN",
+      "pc_name": null,
+      "pc_section": "icon",
+      "text": "",
+      "bbox": {
+        "x": 22,
+        "y": 74.5,
+        "width": 14,
+        "height": 14
+      },
+      "styles": {
+        "color": "rgb(100, 116, 139)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(100, 116, 139)",
+        "borderWidth": "0px",
+        "textAlign": "center"
+      },
+      "depth": 5,
+      "path": "0.10.1.0.1.0",
+      "teleported": true
+    },
+    {
+      "tag": "SPAN",
+      "pc_name": null,
+      "pc_section": "label",
+      "text": "Status aktualisieren",
+      "bbox": {
+        "x": 44,
+        "y": 71,
+        "width": 122.90625,
+        "height": 21
+      },
+      "styles": {
+        "color": "rgb(100, 116, 139)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(100, 116, 139)",
+        "borderWidth": "0px",
+        "textAlign": "center"
+      },
+      "depth": 5,
+      "path": "0.10.1.0.1.1",
+      "teleported": true
+    },
+    {
+      "tag": "BUTTON",
+      "pc_name": "button",
+      "pc_section": "root",
+      "text": "",
+      "bbox": {
+        "x": 11,
+        "y": 107,
+        "width": 177,
+        "height": 35
+      },
+      "styles": {
+        "color": "rgb(100, 116, 139)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "6px 10px",
+        "margin": "0px",
+        "borderRadius": "6px",
+        "display": "flex",
+        "justifyContent": "flex-start",
+        "alignItems": "center",
+        "gap": "8px",
+        "borderColor": "rgb(226, 232, 240)",
+        "borderWidth": "1px",
+        "textAlign": "center"
+      },
+      "depth": 4,
+      "path": "0.10.1.0.2",
+      "teleported": true
+    },
+    {
+      "tag": "SPAN",
+      "pc_name": null,
+      "pc_section": "icon",
+      "text": "",
+      "bbox": {
+        "x": 22,
+        "y": 117.5,
+        "width": 14,
+        "height": 14
+      },
+      "styles": {
+        "color": "rgb(100, 116, 139)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(100, 116, 139)",
+        "borderWidth": "0px",
+        "textAlign": "center"
+      },
+      "depth": 5,
+      "path": "0.10.1.0.2.0",
+      "teleported": true
+    },
+    {
+      "tag": "SPAN",
+      "pc_name": null,
+      "pc_section": "label",
+      "text": "L\u00f6schen",
+      "bbox": {
+        "x": 44,
+        "y": 114,
+        "width": 51.578125,
+        "height": 21
+      },
+      "styles": {
+        "color": "rgb(100, 116, 139)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(100, 116, 139)",
+        "borderWidth": "0px",
+        "textAlign": "center"
+      },
+      "depth": 5,
+      "path": "0.10.1.0.2.1",
+      "teleported": true
+    },
+    {
+      "tag": "SPAN",
+      "pc_name": null,
+      "pc_section": "lastfocusableelement",
+      "text": "",
+      "bbox": {
+        "x": 0,
+        "y": 151,
+        "width": 1,
+        "height": 1
+      },
+      "styles": {
+        "color": "rgb(51, 65, 85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "padding": "0px",
+        "margin": "-1px",
+        "borderRadius": "0px",
+        "display": "block",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal",
+        "borderColor": "rgb(51, 65, 85)",
         "borderWidth": "0px",
         "textAlign": "start"
       },
-      "depth": 4,
-      "path": "0.0.3.0.1"
+      "depth": 2,
+      "path": "0.10.2",
+      "teleported": true
     }
   ],
   "viewport": {
