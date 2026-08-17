@@ -8,17 +8,29 @@ Der metadatenbasierte LLM-Ansatz (Ansatz B) überführt die regelbasierte Transf
 
 **Interne Kernhypothese (B1 → B2 → B3):** Die drei Strategien messen zwei unabhängige Effekte: (1) Wie viel bringt Dokumentation als Kontext überhaupt? (B1 vs. B2). (2) Wie viel bringt das Bereinigen der Docs? (B2 vs. B3).
 
-Stand der Implementierung: Der Prototyp testet drei Kontext-Strategien (B1, B2, B3) in einer gemeinsamen Pipeline. Alle drei nutzen dasselbe Modell (GPT-5.3-Codex / GPT-5.4), denselben Prompt und denselben Input-Datensatz wie Ansatz A, was einen direkten Methodenvergleich ermöglicht. GPT-5.3-Codex / GPT-5.4 wird auch in Ansatz C eingesetzt — damit ist das Modell die kontrollierte Variable und die Eingabemodalität die einzige unabhängige Variable zwischen den Ansätzen.
+Stand der Implementierung: Der Prototyp testet drei Kontext-Strategien (B1, B2, B3) in einer gemeinsamen Pipeline, denselben Input-Datensatz wie Ansatz A vorausgesetzt (`TYPE`/`VARIANT`-Konfiguration, siehe Ansatz-A-Doku Kapitel 1). Die Pipeline läuft nicht gegen ein einzelnes festes Modell, sondern gegen die **OpenRouter-API** (`https://openrouter.ai/api/v1/chat/completions`), die mehrere Provider (OpenAI, Anthropic, Google) über ein einheitliches, OpenAI-kompatibles Schema anspricht. Aktuell werden drei Modelle in derselben Pipeline durchlaufen:
+
+```python
+API_MODELS = {
+    'claude-sonnet-5':         'anthropic/claude-sonnet-5',
+    'gpt-5.6-terra':           'openai/gpt-5.6-terra',
+    'gemini-3.1-pro-preview':  'google/gemini-3.1-pro-preview',
+}
+```
+
+Jede Kombination aus Modell × Kontext-Strategie (B1/B2/B3) × Mockup wird durchlaufen. Das Modell ist damit **nicht mehr die kontrollierte Variable** zwischen Ansatz B und C, sondern selbst eine zu vergleichende Dimension innerhalb Ansatz B.
+
+Zusätzlich zur Kontext-Strategie existiert eine zweite Konfigurationsmöglichlkeit: `PROMPT_STRATEGY` (`'zero_shot'` oder `'few_shot'`) — siehe Kapitel 3.4.
 
 ### Designprinzipien
 
-| Prinzip                       | Umsetzung                                                                                   |
-|-------------------------------|---------------------------------------------------------------------------------------------|
-| Sprachliche Flexibilität      | LLM toleriert Naming-Abweichungen ohne explizite Regeln                                     |
-| Kontext-Steuerung             | Qualität und Kosten werden über den Dokumentations-Kontext gesteuert                        |
-| Vergleichbarkeit              | Identische Eingaben, identische Output-Struktur wie Ansatz A                                |
-| Modell-Kontrolle              | Dasselbe Modell (GPT-5.3-Codex / GPT-5.4) in Ansatz B und C → Eingabemodalität als Variable |
-| Reproduzierbarkeit (begrenzt) | Gleicher Prompt → gleicher Kontext, aber Ausgabe ist nicht deterministisch                  |
+| Prinzip                       | Umsetzung                                                                                |
+|-------------------------------|------------------------------------------------------------------------------------------|
+| Sprachliche Flexibilität      | LLM toleriert Naming-Abweichungen ohne explizite Regeln                                  |
+| Kontext-Steuerung             | Qualität und Kosten werden über den Dokumentations-Kontext gesteuert                     |
+| Vergleichbarkeit              | Identische Eingaben, identische Output-Struktur wie Ansatz A                             |
+| Modell-Vergleich              | Mehrere Modelle (Claude Sonnet 5, GPT-5.6-Terra, Gemini 3.1 Pro Preview) über OpenRouter |
+| Reproduzierbarkeit (begrenzt) | `temperature=0.0` reduziert Varianz, Ausgabe bleibt aber nicht-deterministisch           |
 
 ---
 
@@ -31,41 +43,45 @@ Stand der Implementierung: Der Prototyp testet drei Kontext-Strategien (B1, B2, 
             ▼
 ┌─────────────────────────┐
 │  Komponenten-Erkennung  │  B2/B3: Figma-JSON → erkannte Komponenten
-│  (detect_components)    │  B1: entfällt (kein Kontext)
+│  (detect_components)    │  B1: entfällt (kein Doku-Kontext)
 └───────────┬─────────────┘
             ▼
 ┌─────────────────────────────────────────────────────┐
 │  Kontext-Builder                                    │  Schritt 1
-│  ├─ B1: Kein Kontext              (0 Tokens)        │  Reines Modell-Vorwissen
+│  ├─ B1: Kein Doku-Kontext         (0 Tokens)        │  Reines Modell-Vorwissen
 │  ├─ B2: RAW-Docs erkannter Komp.  (~5–50k Tokens)   │  Vollständige Doku, selektiv
 │  └─ B3: CLEANED-Docs erkannter K. (~1–10k Tokens)   │  Bereinigte Doku, selektiv
 └───────────┬─────────────────────────────────────────┘
             ▼
-┌─────────────────────────┐
-│  Prompt-Builder         │  Schritt 2: System + User Prompt
-└───────────┬─────────────┘
+┌─────────────────────────────────────────────────────┐
+│  Prompt-Builder                                      │  Schritt 2: System-Message
+│  (build_messages)                                    │  + optionale Few-Shot-Turns
+│                                                       │  + Doku-Block + User-Block
+└───────────┬─────────────────────────────────────────┘
             ▼
-┌─────────────────────────┐
-│  LLM API-Aufruf         │  Schritt 3: GPT-5.3-Codex / GPT-5.4 (Zero-Shot)
-│  (call_llm)             │  → Antwort mit rohem Vue-Code
-└───────────┬─────────────┘
+┌─────────────────────────────────────────────────────┐
+│  LLM API-Aufruf                                      │  Schritt 3: OpenRouter, je Modell
+│  (call_llm)                                          │  aus API_MODELS (Claude Sonnet 5,
+│                                                       │  GPT-5.6-Terra, Gemini 3.1 Pro Prev.)
+└───────────┬─────────────────────────────────────────┘
             ▼
 ┌─────────────────────────┐
 │  Antwort-Parser         │  Schritt 4: SFC aus Antwort extrahieren
-│  (extract_sfc)          │  Template / Code-Block / Fallback
+│  (extract_sfc)          │  längster Template-Codeblock / Fallback
 └───────────┬─────────────┘
             ▼
-┌─────────────────────────┐
-│  Metrik-Erfassung       │  Schritt 5: Tokens, Kosten, Timing, Parse-OK
-│  (_metrics_b, Report)   │  → metrics_report_b.json
-└───────────┬─────────────┘
+┌───────────────────────────────────────────────────────────┐
+│  Metrik-Erfassung                                         │  Schritt 5: Tokens, Kosten, Cache,
+│  (_metrics_b, resumable CSV-Report)                       │  Timing, Parse-OK
+│  → results/results_b_<type>_<variant>_<prompt_strategy>.csv│
+└───────────┬─────────────────────────────────────────────────┘
             ▼
 ┌─────────────────────────┐
-│  Vue 3 SFC mit PrimeVue │  Ausgabe (01-b1.vue / 01-b2.vue / 01-b3.vue)
+│  Vue 3 SFC mit PrimeVue │  Ausgabe: <mockup>-<b1|b2|b3>-<modell>-<run>.vue
 └─────────────────────────┘
 ```
 
-Im Gegensatz zu Ansatz A gibt es keine explizite IR-Schicht. Das LLM erzeugt den Ziel-Code direkt aus dem Quell-JSON — die "Transformation" findet im Modell statt, nicht in einem programmatisch aufgebauten AST.
+Im Gegensatz zu Ansatz A gibt es keine explizite IR-Schicht. Das LLM erzeugt den Ziel-Code direkt aus dem Quell-JSON — die "Transformation" findet im Modell statt, nicht in einem programmatisch aufgebauten AST. Jede Kombination aus Modell (aus `API_MODELS`) × Kontext-Strategie (B1/B2/B3) × Mockup wird in der Pipeline durchlaufen (siehe Kapitel 6.1).
 
 ---
 
@@ -75,60 +91,101 @@ Der Prompt ist die zentrale Steuerungsebene von Ansatz B. Er besteht aus zwei Te
 
 ### 3.1 System-Prompt
 
-Der System-Prompt definiert die Rolle des LLMs, den Output-Kontrakt und die Transformationsregeln. Er enthält außerdem den strategie-abhängigen Dokumentations-Kontext:
+Der System-Prompt (`SYSTEM_INSTRUCTIONS`) definiert die Rolle des LLMs, den Output-Kontrakt und die Transformationsregeln. Er enthält **keinen** eingebetteten Dokumentations-Kontext, dieser wird als separater, cache-markierter User-Block übergeben (siehe unten):
 
 ```
 You are an expert Vue 3 and PrimeVue developer.
-Transform the given Figma design JSON into a complete, working Vue 3 SFC.
+Analyse the given Figma mockup JSON data and transform it into a complete, working
+Vue 3 Single File Component with PrimeVue 4 components. Use the provided PrimeVue
+documentation if given as reference for component usage and props.
 
 STRICT REQUIREMENTS:
 - Use PrimeVue 4 components exclusively for UI elements
 - Use <script setup> syntax (no Options API)
 - Import every PrimeVue component used: import Button from 'primevue/button'
 - Use Tailwind CSS utility classes for layout and spacing
-- Use reactive() from Vue for all form/input state
+- Use ref() from Vue for all form/input state
 - Map Figma Auto-Layout (HORIZONTAL/VERTICAL) to flex/flex-col
 - Map itemSpacing to gap-*, padding values to p-*/px-*/py-*
 - Output ONLY the Vue SFC — no explanation, no markdown fences, no prose
-- Return exactly one complete Vue SFC, starting directly with <template>
-  and ending with </script>
-- If required details are missing or ambiguous, do not invent unsupported
-  behavior; use the closest valid structural mapping
-- Treat the transformation as incomplete until all eligible non-ignored
-  nodes are represented in the output
-- Before finalizing, verify that the SFC is syntactically valid, all used
-  PrimeVue components are imported, and all form/input state uses reactive()
+- Return exactly one complete Vue SFC, starting directly with <template> and ending with </script>
+- If required details are missing or ambiguous, do not invent unsupported behavior; use the closest valid structural mapping supported by the Figma JSON
+- Treat the transformation as incomplete until all eligible non-ignored nodes are represented in the output
+- Before finalizing, verify that the SFC is syntactically valid, all used PrimeVue components are imported, and all form/input state uses ref()
+- Assume PrimeVue Aura theme as baseline for styling; do not generate custom theme CSS unless explicitly required by Figma mockup JSON data
 
-FIGMA JSON STRUCTURE:
+FIGMA JSON DATA STRUCTURE:
 - type=INSTANCE, name=<component>: a PrimeVue component instance
-- componentProperties: Figma design properties → map to PrimeVue props
+- componentProperties: Figma design properties to map to PrimeVue props
 - type=FRAME: layout container → <div> with Tailwind classes
 - type=TEXT: standalone text → <span> or semantic element
 - Nodes with name starting with '_' are internal sub-instances (ignore them)
-
-PrimeVue DOCUMENTATION:
-{context}       ← strategie-abhängiger Kontext (B1: leer / B2: RAW / B3: CLEANED)
 ```
 
-Bei B1 (kein Kontext) wird `{context}` durch den Hinweis `(No documentation provided use pretrained knowledge)` ersetzt.
+Der System-Prompt trägt zusätzlich einen Cache-Breakpoint (`cache_control: {'type': 'ephemeral'}`), da er über alle Aufrufe hinweg identisch ist und sich damit für Prompt-Caching eignet (siehe Kapitel 3.5).
 
-### 3.2 User-Prompt
+### 3.2 Dokumentations-Kontext als separater User-Block
 
-Der User-Prompt enthält ausschließlich das Figma-JSON des zu transformierenden Mockups:
+Sofern eine Kontext-Strategie (B2/B3) Dokumentation liefert, wird diese als eigener, dem Mockup vorangestellter User-Content-Block übergeben:
 
 ```
-Transform this Figma mockup into a Vue 3 SFC with PrimeVue.
-Use the PrimeVue documentation above to select the correct components and props.
+PrimeVue documentation for reference:
+{context}
+```
 
-Figma Mockup JSON:
+Dieser Block trägt ebenfalls einen eigenen Cache-Breakpoint, da derselbe Doku-Kontext (dieselbe Komponentenmenge) über mehrere Mockups hinweg wiederkehren kann. Bei B1 entfällt der Block vollständig, die Nachricht besteht hierbei nur aus dem Mockup-Block.
+
+### 3.3 User-Prompt (Mockup)
+
+Der abschließende User-Block enthält das Figma-JSON des zu transformierenden Mockups:
+
+```
+Transform the following Figma mockup JSON data into a Vue 3 Single File Component using PrimeVue components.
+
+Figma mockup JSON data:
+```json
 {figma_json}
 ```
+```
 
-### 3.3 Prompt-Strategie: Zero-Shot
+Dieser Block wird **nie** gecacht, da er sich bei jedem Aufruf ändert.
 
-Ansatz B verwendet **Zero-Shot**-Prompting — der Prompt enthält weder Beispiele (Few-Shot) noch explizite Denkanweisungen (Chain-of-Thought). Diese Entscheidung dient der methodischen Reinheit des Vergleichs: Das LLM soll ausschließlich aus Figma-JSON und (je nach Strategie) Dokumentation transformieren, ohne durch Beispiele auf eine bestimmte Stilistik konditioniert zu werden.
+### 3.4 Prompt-Strategie: konfigurierbar zwischen Zero-Shot und Few-Shot
 
-**Konsequenz für die Evaluation:** Abweichungen zwischen B-Output und Ground Truth sind ausschließlich auf das Kontext-Verständnis des Modells zurückzuführen, nicht auf Beispiel-Überanpassung.
+Bei `PROMPT_STRATEGY = 'few_shot'` baut `build_few_shot_turns()` drei fest hinterlegte Beispiele, je eines pro Komplexitätsstufe (`simple`, `medium`, `hard`) aus `FEW_SHOT_EXAMPLES`, als abwechselnde User/Assistant-Turns vor der eigentlichen Anfrage auf:
+
+```python
+def build_few_shot_turns() -> list[dict]:
+    turns: list[dict] = []
+    for level in ('simple', 'medium', 'hard'):
+        example = FEW_SHOT_EXAMPLES.get(level)
+        ...
+        turns.append({'role': 'user', 'content': [{'type': 'text', 'text': example_user_text}]})
+        turns.append({'role': 'assistant', 'content': [{'type': 'text', 'text': f"```vue\n{example['vue_code']}\n```"}]})
+
+    if turns:
+        turns[-1]['content'][-1]['cache_control'] = {'type': 'ephemeral'}  # Breakpoint 2
+    return turns
+```
+
+Die drei Few-Shot-Beispiele zeigen fertige, handgeschriebene Referenz-SFCs (u.a. mit `:pt`-Passthrough-Klassen, `<script setup lang="ts">`, `ref()`-State) für je eine Komplexitätsstufe, dieselben Stufen, die auch im Evaluations-Datensatz verwendet werden.
+
+Bei `PROMPT_STRATEGY = 'zero_shot'` bleibt `FEW_SHOT_TURNS` leer und der Prompt entspricht (abgesehen vom in 3.1/3.2 beschriebenen Kontext-Aufbau) der Zero-Shot-Logik.
+
+B1 bezieht sich nur noch auf das Fehlen von *API-Dokumentation*, nicht auf das Fehlen jeglichen Kontexts. Ebenso ist die folgende Konsequenz-Aussage für die Evaluation nur noch für `PROMPT_STRATEGY='zero_shot'` uneingeschränkt gültig:
+
+**Konsequenz für die Evaluation (nur bei Zero-Shot uneingeschränkt gültig):** Abweichungen zwischen B-Output und Ground Truth sind ausschließlich auf das Kontext-Verständnis des Modells zurückzuführen, nicht auf Beispiel-Überanpassung. Bei `PROMPT_STRATEGY='few_shot' ist ein Teil der Qualität stattdessen auf Stil-Konditionierung durch die drei Referenzbeispiele zurückzuführen, was bei der Interpretation der Ergebnisse zu berücksichtigen ist.
+
+### 3.5 Message-Aufbau und Prompt-Caching
+
+`build_messages()` setzt die vollständige Nachrichtenliste aus vier Teilen zusammen, mit drei Cache-Breakpoints (`cache_control: {'type': 'ephemeral'}`) nach dem statischen Präfix:
+
+1. System-Message (Anweisungen) → **Breakpoint 1**, über alle Aufrufe identisch
+2. Few-Shot-Turns (nur bei `PROMPT_STRATEGY='few_shot'`) → **Breakpoint 2** auf dem letzten Block
+3. Doku-Kontext-Block (nur B2/B3) → **Breakpoint 3**, wiederholt sich pro Komponenten-Kombination
+4. Mockup-JSON-Block → nie gecacht, ändert sich bei jedem Aufruf
+
+`cache_control` wird von OpenRouter für Provider ausgewertet, die explizites Caching benötigen (Anthropic, Gemini), und ist für Provider mit automatischem Caching (OpenAI) wirkungslos, aber unschädlich.
 
 ---
 
@@ -145,8 +202,10 @@ Das LLM erhält keine PrimeVue-Dokumentation und muss ausschließlich auf sein V
 
 ```python
 if strategy == 'b1':
-    return '', []   # Leerer Kontext, keine Komponenten
+    return '', []  # No context for B1
 ```
+
+**Hinweis:** "Kein Kontext" bezieht sich hier ausschließlich auf den Dokumentations-Kontext. Bei `PROMPT_STRATEGY='few_shot'` erhält B1 dennoch dieselben drei Few-Shot-Referenzbeispiele wie B2/B3, "reines Modell-Vorwissen" gilt also nur für den Docs-Anteil, nicht für den gesamten Prompt.
 
 | Eigenschaft       | Wert                               |
 |-------------------|------------------------------------|
@@ -155,7 +214,7 @@ if strategy == 'b1':
 | LLM-Wissen        | nur aus Vortraining                |
 | Selektionsfehler  | keine (kein Kontext = kein Fehler) |
 
-**Hypothese:** B1 dient als Baseline für den Informationswert der Dokumentation. GPT-5.3-Codex / GPT-5.4 hat PrimeVue in seinen Trainingsdaten und erzeugt auch ohne expliziten Kontext verwendbaren Code — die Frage ist, ob die Qualität signifikant unter B2/B3 liegt.
+**Hypothese:** B1 dient als Baseline für den Informationswert der Dokumentation. Die getesteten Modelle (Claude Sonnet 5, GPT-5.6-Terra, Gemini 3.1 Pro Preview) haben PrimeVue mutmaßlich in ihren Trainingsdaten und erzeugen auch ohne expliziten Kontext verwendbaren Code. Die Frage ist, ob die Qualität signifikant unter B2/B3 liegt, und ob sich dieser Effekt zwischen den Modellen unterscheidet.
 
 ### 4.2 B2 — RAW-Docs erkannter Komponenten
 
@@ -202,7 +261,7 @@ for comp in sorted(detected):
 #### Komponenten-Erkennungslogik (B2 und B3)
 
 ```python
-KNOWN_COMPONENTS = set(RAW_DOCS.keys()) | set(CLEANED_DOCS.keys())
+KNOWN_COMPONENTS = set(CLEANED_DOCS.keys())
 
 DOC_ALIASES = {
     'calendar':    'datepicker',
@@ -226,7 +285,7 @@ def detect_components(figma_node, found=None):
         detect_components(child, found)
 ```
 
-`DOC_ALIASES` übersetzt bekannte Figma-Aliasnamen auf den kanonischen Doc-Dateinamen (`overlaybadge → badge`, `calendar → datepicker`). `KNOWN_COMPONENTS` entspricht der Menge aller `.md`-Dateinamen.
+`DOC_ALIASES` übersetzt bekannte Figma-Aliasnamen auf den kanonischen Doc-Dateinamen (`overlaybadge → badge`, `calendar → datepicker`). `KNOWN_COMPONENTS` wird nur aus den bereinigten (`CLEANED_DOCS`) Dateinamen gebildet, ein vorgelagerter Assert beim Laden der Dokumentation (Kapitel 1.2 im Notebook) stellt sicher, dass `RAW_DOCS` und `CLEANED_DOCS` exakt dieselben Schlüsselmenge besitzen, sodass beide Quellen hier austauschbar sind.
 
 
 ### 4.4 Strategie-Vergleich
@@ -246,141 +305,197 @@ def detect_components(figma_node, found=None):
 
 ### 5.1 API-Aufruf
 
-Die Funktion `call_llm` führt einen einzigen OpenAI-API-Aufruf durch. Das Modell ist `GPT-5.3-Codex / gpt-5.4` — dieselbe Modellgeneration, die auch in Ansatz C (Vision) eingesetzt wird, was die modellseitige Variable im Methodenvergleich kontrolliert.
+Die Funktion `call_llm` führt pro Mockup einen API-Aufruf gegen **OpenRouter** durch. OpenRouter bietet ein einheitliches, OpenAI-kompatibles Schema für mehrere Provider, sodass `call_llm` unverändert für alle drei konfigurierten Modelle (Claude Sonnet 5, GPT-5.6-Terra, Gemini 3.1 Pro Preview) funktioniert:
 
 ```python
-payload = {
-    'model':      'GPT-5.3-Codex / gpt-5.4',
-    'max_tokens': 4096,
-    'messages': [
-        {'role': 'system', 'content': system_prompt},
-        {'role': 'user',   'content': user_prompt},
-    ],
-}
+payload = json.dumps({
+    'model':       model_id,               # z.B. 'anthropic/claude-sonnet-5'
+    'temperature': API_TEMPERATURE,        # 0.0
+    'max_tokens':  API_MAX_TOKENS,         # 8192
+    'reasoning':   {'effort': API_REASONING_EFFORT},   # 'medium'
+    'metadata':    {'strategy': strategy, 'mockup_key': key, 'model': model_id},
+    'usage':       {'include': True},
+    'session_id':  f'{model_id}/{strategy}/{PROMPT_STRATEGY}',
+    'messages':    messages,
+}).encode('utf-8')
 ```
 
-Die Funktion gibt ein Dictionary zurück:
+`max_tokens` wurde auf **8192** gesetzt und zusätzlich steuert `reasoning.effort` das Reasoning-Budget für Modelle, die dies unterstützen, und `session_id` gruppiert Cache-Treffer pro Modell/Strategie/Prompt-Strategie-Kombination.
+
+Die Funktion gibt ein Dictionary zurück, das die OpenRouter-spezifischen Zusatzfelder (Provider, Cache-Nutzung, Kostenaufschlüsselung) enthält:
+
 ```python
 {
-    'content':      str,     # Rohtext der LLM-Antwort
-    'input_tokens': int,     # tatsächlich verbrauchte Input-Tokens
-    'output_tokens':int,     # generierte Output-Tokens
-    'stop_reason':  str,     # 'stop' | 'length' | ...
-    'duration':     float,   # API-Antwortzeit in Sekunden
+    'provider':             str,    # tatsächlich ausführender Provider
+    'model':                str,    # vom Provider gemeldeter Modellname
+
+    'generation_id':        str,    # OpenRouter-Generation-ID
+
+    'content':              str,    # Rohtext der LLM-Antwort
+
+    'input_tokens':         int,
+    'output_tokens':        int,
+    'total_tokens':         int,
+
+    'cached_tokens':        int,    # aus Prompt-Cache bediente Tokens
+    'cache_write_tokens':   int,    # neu ins Cache geschriebene Tokens
+    'reasoning_tokens':     int,
+
+    'cost_usd':             float,
+    'cost_prompt_usd':      float,
+    'cost_completion_usd':  float,
+
+    'stop_reason':          str,    # OpenRouter-normalisierter finish_reason
+    'native_finish_reason': str,    # Provider-natives Finish-Signal
+    'refusal':               str | None,
+
+    'duration':             float,  # API-Antwortzeit in Sekunden
 }
 ```
 
-`stop_reason == 'length'` ist ein Indikator für abgeschnittene Outputs — ein Qualitätsindikator, der im Metrik-Report erfasst wird.
+`stop_reason` und zusätzlich `native_finish_reason` sind Indikatoren für abgeschnittene Outputs, `native_finish_reason in {'MAX_TOKENS', 'length'}` wird in der Pipeline direkt als `truncated`-Flag erfasst (siehe Kapitel 6).
 
-Fehlerbehandlung: HTTP-Fehler werden abgefangen und der Response-Body wird ausgelesen, um die genaue OpenAI-Fehlermeldung im Report zu erfassen:
+Fehlerbehandlung: Sowohl HTTP-Fehler (`urllib.error.HTTPError`, inkl. Auslesen des OpenRouter-Fehlerkörpers) als auch Netzwerkfehler (`urllib.error.URLError`) werden abgefangen und in eine einheitliche `RuntimeError`-Meldung überführt:
 
 ```python
 except urllib.error.HTTPError as e:
-    error_body = json.loads(e.read().decode('utf-8'))
-    raise RuntimeError(
-        f"OpenAI API Fehler {e.code}: {error_body.get('error', {}).get('message', str(e))}"
-    )
+    error_text = e.read().decode('utf-8', errors='ignore')
+    detail = json.loads(error_text).get('error', {}).get('message', error_text)
+    raise RuntimeError(f'OpenRouter API Fehler {e.code}: {detail}') from e
+except urllib.error.URLError as e:
+    raise RuntimeError(f'Netzwerkfehler: {e.reason}') from e
 ```
 
 ### 5.2 SFC-Extraktion
 
-LLMs geben den Code nicht immer in identischer Form aus. `extract_sfc` behandelt drei Fälle in Prioritätsreihenfolge:
+LLMs geben den Code nicht immer in identischer Form aus. `extract_sfc` sucht **alle** Code-Blöcke (mit oder ohne `vue`-Annotation), filtert auf Blöcke, die `<template>` enthalten, und wählt bei mehreren Treffern den **längsten** Kandidaten, das reduziert das Risiko, versehentlich einen unvollständigen Zwischen-Codeblock zu erwischen, falls das Modell mehrere Codeblöcke ausgibt:
 
 ```python
-def extract_sfc(raw: str) -> str:
-    # 1. Code-Block mit Sprach-Annotation (häufigster Fall)
-    m = re.search(r'```vue\s*\n(.+?)```', raw, re.DOTALL)
-    if m: return m.group(1).strip()
+def extract_sfc(raw: str) -> tuple[str, bool]:
+    """Returns (sfc, extraction_ok)."""
+    blocks = re.findall(r'```(?:vue)?\s*\n(.+?)```', raw, re.DOTALL)
+    candidates = [b.strip() for b in blocks if '<template>' in b]
 
-    # 2. Generischer Code-Block mit <template>-Inhalt
-    m = re.search(r'```\s*\n(.+?)```', raw, re.DOTALL)
-    if m and '<template>' in m.group(1):
-        return m.group(1).strip()
+    if candidates:
+        longest = max(candidates, key=len)
+        return _trim_to_last_close_tag(longest), True
 
-    # 3. Direkte SFC-Ausgabe (beginnt mit <template>)
     if '<template>' in raw:
-        return raw[raw.index('<template>'):].strip()
+        start = raw.index('<template>')
+        return _trim_to_last_close_tag(raw[start:].strip()), True
 
-    # Fallback: Fehler-Kommentar
-    return f'<!-- SFC-Extraktion fehlgeschlagen -->\n<!-- RAW:\n{raw[:500]}\n-->'
+    return f'<!-- SFC-Extraktion failed -->\n<!-- RAW:\n{raw[:500]}\n-->', False
+
+
+def _trim_to_last_close_tag(sfc: str) -> str:
+    for tag in ('</style>', '</script>'):
+        idx = sfc.rfind(tag)
+        if idx != -1:
+            return sfc[: idx + len(tag)]
+    return sfc
 ```
 
-**`parse_ok`-Flag:** Als Boolean gesetzt, wenn `<template>` und `<script` beide im extrahierten SFC vorhanden sind. Wird als Primärmetrik für die Strukturintegrität des Outputs erfasst.
+Der extrahierte Text wird zusätzlich über `_trim_to_last_close_tag` auf das letzte `</style>` bzw. `</script>` zurückgeschnitten, um nachgestellten Text nach dem eigentlichen SFC zu entfernen. `extract_sfc` gibt ein Tupel `(sfc, extraction_ok)` zurück, `extraction_ok` markiert, ob überhaupt ein `<template>`-haltiger Block gefunden wurde.
+
+**`extraction_ok` vs. `parse_ok`:** `extraction_ok` (aus `extract_sfc`) prüft nur, ob ein Template-Block gefunden wurde. `parse_ok` wird separat in `generate_sfc_b` berechnet und prüft zusätzlich, ob **sowohl** `<template>` **als auch** `<script` im extrahierten SFC vorhanden sind (feinere Metrik für die Strukturintegrität des Outputs).
 
 ---
 
 ## 6. Metrik-Erfassung
 
-Ansatz B erweitert die Metrik-Struktur von Ansatz A um LLM-spezifische Felder. Das `_metrics_b`-Dictionary wird zu Beginn jedes `generate_sfc_b()`-Aufrufs zurückgesetzt.
+Ansatz B erweitert die Metrik-Struktur von Ansatz A um LLM-spezifische Felder. Das `_metrics_b`-Dictionary wird zu Beginn jedes `generate_sfc_b()`-Aufrufs über `_reset_metrics_b()` zurückgesetzt:
 
 ```python
-{
-    # Basis
-    'input':               '01.json',
-    'output':              '01-b1.vue',
-    'complexity':          'simple',
-    'strategy':            'b1',
-    'duration_ms':         2143.5,      # API-Latenz dominiert
-    'sfc_bytes':           680,
-    'sfc_lines':           31,
-    'ast_depth_approx':    5,
-    'parse_ok':            True,
+_metrics_b = {
+    'provider': '',
+    'model': '',
+    'model_reported': '',
 
-    # LLM-spezifisch
-    'input_tokens':        4230,        # tatsächlich verbrauchte Tokens
-    'output_tokens':       412,
-    'context_tokens':      0,           # B1: 0, B2/B3: variabel
-    'context_components':  0,           # B1: 0, B2/B3: Anzahl erkannter Docs
-    'stop_reason':         'stop',
-    'cost_usd':            0.0037,
-    'error':               None,
+    'generation_id': '',
+
+    'context_tokens': 0,
+    'context_components': 0,
+
+    'duration': 0,
+
+    'input_tokens': 0,
+    'output_tokens': 0,
+    'total_tokens': 0,
+    'cached_tokens': 0,
+    'cache_write_tokens': 0,
+    'reasoning_tokens': 0,
+
+    'cost_usd': 0,
+    'cost_prompt_usd': 0,
+    'cost_completion_usd': 0,
+
+    'sfc_bytes': 0,
+    'sfc_lines': 0,
+
+    'extraction_ok': False,
+    'parse_ok': False,
+    'truncated': False,
+
+    'stop_reason': '',
+    'native_finish_reason': '',
+    'refusal': 0,
 }
 ```
 
-**Besonderheiten gegenüber Ansatz A:**
+**Änderungen gegenüber Ansatz A:**
 
-`duration_ms` misst hier die API-Latenz des LLM-Aufrufs (Sekunden-Bereich), nicht die reine Transformationslogik wie in Ansatz A (Millisekunden-Bereich). Beide Werte werden im Report erfasst, aber in der Auswertung getrennt betrachtet.
+- `duration` hält die rohe API-Latenz in **Sekunden**; erst beim Schreiben in die Ergebnis-CSV wird sie mit `round(duration * 1000, 4)` in Millisekunden umgerechnet (Feldname dort: `duration`, siehe Kapitel 6.1). Die API-Latenz (Sekundenbereich) dominiert gegenüber der reinen Transformationslogik aus Ansatz A (Millisekundenbereich).
 
-`ast_depth_approx` wird nicht durch AST-Traversal berechnet (kein programmatischer AST), sondern über Tag-Zählung im Quelltext geschätzt:
+### 6.1 Persistenz: Resumable CSV-Report (analog Ansatz A)
+
+Wie in Ansatz A wird kein aggregiertes JSON-Report-Objekt mehr geschrieben. Stattdessen persistiert die Pipeline pro Datei/Modell/Strategie-Kombination eine Zeile in eine CSV:
 
 ```python
-def _ast_depth_approx(sfc: str) -> int:
-    depth, max_depth = 0, 0
-    in_template = False
-    for line in sfc.splitlines():
-        if '<template>' in line:
-            in_template = True
-        if not in_template:
-            continue
-        depth += line.count('<') - line.count('</') - line.count('/>')
-        max_depth = max(max_depth, depth)
-    return max(0, max_depth)
+RESULTS_CSV_PATH = Path('results') / (
+    f'results_b_{TYPE}_{VARIANT + "_" if VARIANT else ""}{PROMPT_STRATEGY}.csv'
+)
 ```
 
-### Report-Aggregation
+Beispiel: `results/results_b_uis_pretty_few_shot.csv`. Das Dateischema (`RESULT_FIELDNAMES`) umfasst neben den `_metrics_b`-Feldern zusätzliche Lauf- und Konfigurationsinformationen:
 
-Der Report enthält zwei Aggregationsebenen — pro Strategie und pro Strategie × Komplexität:
-
-```json
-{
-  "method": "B",
-  "model": "GPT-5.3-Codex / gpt-5.4",
-  "per_strategy": {
-    "b1": { "avg_input_tokens": 4200,  "total_cost_usd": 0.11, ... },
-    "b2": { "avg_input_tokens": 18000, "total_cost_usd": 1.31, ... },
-    "b3": { "avg_input_tokens": 6500,  "total_cost_usd": 0.42, ... }
-  },
-  "per_strategy_complexity": {
-    "b3": {
-      "simple": { "avg_cost_usd": 0.008, ... },
-      "medium": { "avg_cost_usd": 0.014, ... },
-      "hard":   { "avg_cost_usd": 0.022, ... }
-    }
-  }
-}
+```python
+RESULT_FIELDNAMES = [
+    'input', 'output',
+    'type', 'variant', 'prompt_strategy',
+    'temperature', 'reasoning_effort', 'image_detail',
+    'strategy', 'complexity',
+    'provider', 'model', 'model_reported',
+    'run', 'attempt', 'generation_id',
+    'context_tokens', 'context_components',
+    'duration',
+    'input_tokens', 'output_tokens', 'total_tokens',
+    'cached_tokens', 'cache_write_tokens', 'reasoning_tokens',
+    'cost_usd', 'cost_prompt_usd', 'cost_completion_usd',
+    'extraction_ok', 'parse_ok', 'truncated',
+    'sfc_bytes', 'sfc_lines',
+    'stop_reason', 'native_finish_reason', 'refusal', 'error',
+    'created_at',
+]
 ```
 
-Die `per_strategy_complexity`-Aufschlüsselung zeigt, wie die Kosten mit der Mockup-Komplexität steigen — ein Robustheits-Indikator für UF5.
+Wichtige Felder im Überblick:
+
+- `model`: der interne Kurzname aus `API_MODELS` (z.B. `'gpt-5.6-terra'`); `model_reported`: der von OpenRouter tatsächlich zurückgemeldete Modellname (kann bei Provider-Routing abweichen)
+- `prompt_strategy`, `temperature`, `reasoning_effort`, `image_detail`: die zum Zeitpunkt des Laufs aktiven globalen API-Parameter (`image_detail` ist für Ansatz B aktuell ungenutzt, da kein Bild-Input — relevant erst für Ansatz C)
+- `attempt`: für künftige Retry-Logik reserviert, aktuell immer `1` (es findet noch kein automatischer Retry bei Fehlern statt)
+- `run`: die `RUN_ID`, ermöglicht mehrere Wiederholungen für stabilere Metriken
+
+Die Pipeline ist **resumable**, allerdings mit einem erweiterten Schlüssel gegenüber Ansatz A: Da nun mehrere Modelle in derselben Pipeline laufen, umfasst der Completed-Key das Tupel `(model, strategy, input, variant, run)` statt nur `(input, run)`. Bereits erfolgreich verarbeitete Kombinationen werden übersprungen, Fehlversuche (`error` gesetzt) werden erneut versucht.
+
+Die Output-Datei je Mockup/Strategie/Modell/Lauf wird unter folgendem Namensschema abgelegt:
+
+```
+<OUTPUT_DIR>/b/<prompt_strategy>/<complexity>/<mockup>-<b1|b2|b3>-<model_name>-<run_id>.vue
+```
+
+z.B. `dataset/storybook/src/code/uis/pretty/b/few_shot/simple/01-b1-claude-sonnet-5-1.vue`. Das ursprünglich dokumentierte einfache Schema (`01-b1.vue`) berücksichtigte weder die Prompt-Strategie noch die Modell-Dimension und ist damit überholt (siehe auch Kapitel 8).
+
+Eine strategie- bzw. modellübergreifende Aggregation (z.B. `avg_cost_usd` pro Strategie × Komplexität, wird von der Pipeline selbst nicht berechnet. Die CSV enthält mit `model`, `strategy` und `complexity` alle nötigen Spalten für eine nachgelagerte Auswertung, analog zu Ansatz A.
 
 ---
 
@@ -398,15 +513,16 @@ Die `per_strategy_complexity`-Aufschlüsselung zeigt, wie die Kosten mit der Moc
 
 ### 7.2 Limitationen
 
-| Limitation                                 | Auswirkung                                                                           | Adressierbar durch                            |
-|--------------------------------------------|--------------------------------------------------------------------------------------|-----------------------------------------------|
-| **Nicht-Determinismus**                    | Gleicher Input kann unterschiedliche Outputs erzeugen                                | Temperature=0 (annähernder Determinismus)     |
-| **Token-Kosten**                           | B2 kostet deutlich mehr pro Mockup als B1/B3                                         | Strategie-Wahl, Prompt-Komprimierung          |
-| **Halluzinierung von Props**               | LLM kann nicht-existente PrimeVue-Props generieren                                   | PrimeVue-API-Konformitäts-Metrik (Evaluation) |
-| **Kontextfenster-Grenzen**                 | Sehr große Mockups könnten mit B2-Kontext das 128k-Fenster annähern                  | B3 als Fallback                               |
-| **Abgeschnittene Outputs**                 | Bei komplexen Mockups kann `max_tokens=4096` nicht ausreichen → `stop_reason=length` | `max_tokens` erhöhen                          |
-| **Keine Strukturgarantien**                | `parse_ok=False` möglich wenn LLM Prosa oder unvollständigen Code ausgibt            | Retry-Logik, robustere Parsing-Heuristiken    |
-| **Keine programmatische Metrik-Erfassung** | `instances_mapped`/`frames_compound` wie in A sind ohne AST nicht direkt berechenbar | LLM-as-Judge oder manueller Vergleich         |
+| Limitation                                 | Auswirkung                                                                                                                                                                                                                                                         | Adressierbar durch                                                                               |
+|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| **Nicht-Determinismus**                    | Gleicher Input kann unterschiedliche Outputs erzeugen                                                                                                                                                                                                              | Temperature=0 (annähernder Determinismus)                                                        |
+| **Token-Kosten**                           | B2 kostet deutlich mehr pro Mockup als B1/B3                                                                                                                                                                                                                       | Strategie-Wahl, Prompt-Komprimierung                                                             |
+| **Halluzinierung von Props**               | LLM kann nicht-existente PrimeVue-Props generieren                                                                                                                                                                                                                 | PrimeVue-API-Konformitäts-Metrik (Evaluation)                                                    |
+| **Kontextfenster-Grenzen**                 | Sehr große Mockups könnten mit B2-Kontext das 128k-Fenster annähern                                                                                                                                                                                                | B3 als Fallback                                                                                  |
+| **Abgeschnittene Outputs**                 | Bei komplexen Mockups kann `max_tokens=8192` nicht ausreichen → `truncated=True`                                                                                                                                                                                   | `max_tokens` weiter erhöhen                                                                      |
+| **Keine Strukturgarantien**                | `parse_ok=False` möglich wenn LLM Prosa oder unvollständigen Code ausgibt                                                                                                                                                                                          | Retry-Logik (Feld `attempt` ist vorbereitet, aber noch ungenutzt), robustere Parsing-Heuristiken |
+| **Keine programmatische Metrik-Erfassung** | `instances_mapped`/`frames_compound` wie in A sind ohne AST nicht direkt berechenbar; auch die zuvor geplante `ast_depth_approx`-Schätzung ist im aktuellen Code entfernt                                                                                          | LLM-as-Judge oder manueller Vergleich                                                            |
+| **Few-Shot / Zero-Shot**                   | `PROMPT_STRATEGY='few_shot'` (Default) konditioniert das Modell auf die drei mitgelieferten Referenzbeispiele — die ursprünglich angestrebte methodische Reinheit des Zero-Shot-Vergleichs (Kapitel 3.4) gilt nur noch bei expliziter Umstellung auf `'zero_shot'` | `PROMPT_STRATEGY='zero_shot'` setzen für den reinen Kontext-Vergleich                            |
 
 ### 7.3 Hypothesen für den Methodenvergleich
 
@@ -418,7 +534,7 @@ Die `per_strategy_complexity`-Aufschlüsselung zeigt, wie die Kosten mit der Moc
 
 **Intern (B1 ↔ B2 ↔ B3):**
 
-- **B1 vs. B2**: B2 sollte signifikant besser bei Prop-Genauigkeit sein (explizite API-Info). Falls B1 ≈ B2, hat GPT-4o ausreichendes Vortraining über PrimeVue
+- **B1 vs. B2**: B2 sollte signifikant besser bei Prop-Genauigkeit sein (explizite API-Info). Falls B1 ≈ B2, hat das jeweilige Modell ausreichendes Vortraining über PrimeVue
 - **B2 vs. B3**: B3 sollte mindestens gleichwertig sein — bei höherer Token-Effizienz. Falls B3 > B2, bestätigt das den Wert der Docs-Bereinigung (weniger Rauschen = besserer Fokus)
 - **Kosten-Rangfolge**: B1 < B3 < B2 (gesichert durch Design)
 
@@ -458,9 +574,9 @@ Dieselbe Password-Eingabe wie in Ansatz A — zeigt, worin sich ein typischer B-
       <label for="password" class="text-sm font-medium">Passwort</label>
       <Password
         id="password"
-        v-model="form.password"
+        v-model="password"
         placeholder="Passwort eingeben"
-        :toggleMask="true"
+        toggle-mask
         :feedback="false"
         class="w-full"
       />
@@ -473,27 +589,25 @@ Dieselbe Password-Eingabe wie in Ansatz A — zeigt, worin sich ein typischer B-
   </div>
 </template>
 
-<script setup>
-import { reactive } from 'vue'
+<script setup lang="ts">
+import { ref } from 'vue'
 import Password from 'primevue/password'
 import Button from 'primevue/button'
 
-const form = reactive({
-  password: '',
-})
+const password = ref('')
 </script>
 ```
 
 ### 8.3 Vergleich A ↔ B
 
-| Aspekt              | Ansatz A                         | Ansatz B (typisch)                       |
-|---------------------|----------------------------------|------------------------------------------|
-| State-Variable      | `_state.n10_4744: null`          | `form.password: ''` ← semantischer Name  |
-| Label               | *(nicht generiert)*              | `<label for="password">Passwort</label>` |
-| HTML-Semantik       | `<span>`                         | `<label>`, `type="submit"` etc.          |
-| Zusatz-Props        | exakt nach Mapping-Regel         | `:feedback="false"`, `class="w-full"`    |
-| äußerer Wrapper     | automatisch entfernt             | modell-abhängig (manchmal erhalten)      |
-| Reproduzierbarkeit  | 100% identisch                   | geringe Varianz zwischen Aufrufen        |
+| Aspekt             | Ansatz A                 | Ansatz B (typisch)                                                                         |
+|--------------------|--------------------------|--------------------------------------------------------------------------------------------|
+| State-Variable     | `_state.n10_4744: null`  | `password` (`ref('')`) ← semantischer Name                                                 |
+| Label              | *(nicht generiert)*      | `<label for="password">Passwort</label>`                                                   |
+| HTML-Semantik      | `<span>`                 | `<label>`, `type="submit"` etc.                                                            |
+| Zusatz-Props       | exakt nach Mapping-Regel | `:feedback="false"`, `class="w-full"`                                                      |
+| äußerer Wrapper    | automatisch entfernt     | modell-abhängig (manchmal erhalten)                                                        |
+| Reproduzierbarkeit | 100% identisch           | geringe Varianz zwischen Aufrufen (`temperature=0.0` reduziert, eliminiert sie aber nicht) |
 
 ---
 
@@ -501,21 +615,24 @@ const form = reactive({
 
 Ansatz B fügt dem Evaluations-Framework eine Wirtschaftlichkeits-Dimension hinzu, die bei Ansatz A nicht existiert. Die Gegenüberstellung der drei Strategien bildet einen eigenständigen Teilbefund für die Thesis.
 
-**Kostenstruktur pro Strategie (GPT-4o-Preise):**
+**Kostenstruktur pro Strategie:** Die Pipeline durchläuft drei unterschiedliche Modelle über OpenRouter (Kapitel 1), sodass sich die Kostenstruktur nicht auf eine einzelne, feste Preistabelle reduzieren lässt, die tatsächlichen USD-Kosten hängen zusätzlich vom gewählten Modell ab und variieren je nach Provider-Preisliste. Die Grundtendenz (Kontext-Tokens je Strategie) bleibt jedoch modellunabhängig gültig:
 
 ```
-Strategie   Kontext-Quelle             Kontext-Tokens   Ø Kosten/Mockup
----------   --------------------------  ---------------  ---------------
-B1          Kein Kontext               0                ~$0.001
-B2          RAW-Docs (erkannt)         5k–50k           ~$0.02–0.15
-B3          CLEANED-Docs (erkannt)     1k–10k           ~$0.005–0.03
+Strategie   Kontext-Quelle             Kontext-Tokens (ca.)
+---------   --------------------------  ---------------------
+B1          Kein Doku-Kontext          0
+B2          RAW-Docs (erkannt)         5k–50k
+B3          CLEANED-Docs (erkannt)     1k–10k
 ```
+
+Die tatsächlichen Kosten pro Mockup — inkl. Cache-Rabatten durch die in Kapitel 3.5 beschriebenen Breakpoints, werden pro Zeile in der Ergebnis-CSV erfasst (`cost_usd`, `cost_prompt_usd`, `cost_completion_usd`, dazu `cached_tokens`/`cache_write_tokens`) und lassen sich dort je Modell auswerten, statt sie hier als fixe Schätzwerte zu pflegen.
 
 **Für die Evaluation relevante Befunde:**
 
-- Falls B1 ≈ B2 ≈ B3 bei Qualität: GPT-4o hat ausreichendes Vorwissen, expliziter Kontext ist überflüssig → Dokumentations-Kosten sind verschwendet
+- Falls B1 ≈ B2 ≈ B3 bei Qualität: das jeweilige Modell hat ausreichendes Vorwissen, expliziter Kontext ist überflüssig → Dokumentations-Kosten sind verschwendet
 - Falls B2 > B1 aber B3 ≈ B2: Bereinigung lohnt sich — gleiche Qualität bei ~80% weniger Tokens
 - Falls B2 > B3 > B1: Dreistufige Hierarchie — jede Informationsschicht bringt messbaren Mehrwert
+- Zusätzlich modellübergreifend interessant: Unterscheiden sich diese Effekte je nach Modell (Claude Sonnet 5 / GPT-5.6-Terra / Gemini 3.1 Pro Preview)?
 
 ---
 
@@ -534,7 +651,7 @@ Neue PrimeVue-Komponenten erfordern ausschließlich aktualisierte `.md`-Dateien 
 Falls der LLM-Output systematisch von der PrimeVue-API abweicht:
 
 ```python
-SYSTEM_PROMPT_TEMPLATE_ZERO_SHOT = """...
+SYSTEM_INSTRUCTIONS = """...
 STRICT REQUIREMENTS:
 ...
 - [Neue Regel hinzufügen]   ← Constraint-Ergänzung
@@ -542,37 +659,40 @@ STRICT REQUIREMENTS:
 """
 ```
 
-Änderungen am System-Prompt gelten für alle drei Strategien gleichzeitig.
+Änderungen am System-Prompt gelten für alle drei Kontext-Strategien (B1/B2/B3) und beide Prompt-Strategien (Zero-Shot/Few-Shot) gleichzeitig, da `SYSTEM_INSTRUCTIONS` global definiert ist.
 
-### 10.3 Modell-Wechsel
+### 10.3 Modell-Wechsel bzw. -Erweiterung
 
-Der Modell-Name ist in `API_MODEL` zentralisiert:
+Die Modelle sind als Dictionary `API_MODELS` festgelegt, das die Pipeline durchläuft **alle** darin enthaltenen Modelle nacheinander:
 
 ```python
-API_MODEL = 'GPT-5.3-Codex / gpt-5.4'
-# Alternativ für Kostensenkung:
-# API_MODEL = 'gpt-5.4-mini'
+API_MODELS = {
+    'claude-sonnet-5':         'anthropic/claude-sonnet-5',
+    'gpt-5.6-terra':           'openai/gpt-5.6-terra',
+    'gemini-3.1-pro-preview':  'google/gemini-3.1-pro-preview',
+}
 ```
 
-Ein Modell-Wechsel wirkt sich auf alle Strategien gleichermaßen aus. Wichtig: Bei Modell-Wechsel muss auch Ansatz C auf dasselbe Modell umgestellt werden, um die Modell-Variable kontrolliert zu halten.
+Der Dictionary-Key ist der interne Kurzname (taucht als `model`-Spalte in der Ergebnis-CSV auf, siehe Kapitel 6.1), der Wert die OpenRouter-Modell-ID. Ein Modell hinzuzufügen oder zu entfernen genügt, um es in den nächsten Pipeline-Lauf ein- oder auszuschließen — ein Code-Eingriff über `API_MODELS` hinaus ist nicht nötig, da `call_llm` modellagnostisch über OpenRouter arbeitet (Kapitel 5.1).
 
 ---
 
 ## 11. Position im methodischen Gesamtvergleich
 
-| Aspekt                   | Ansatz A (Regelbasiert)             | Ansatz B (Metadaten-LLM)              | Ansatz C (Vision-LLM)               |
-|--------------------------|-------------------------------------|---------------------------------------|-------------------------------------|
-| Eingabe                  | Figma-JSON                          | Figma-JSON + Doku-Kontext             | Figma-PNG + Doku-Kontext            |
-| Modell                   | keines                              | GPT-5.3-Codex / GPT-5.4               | GPT-5.3-Codex / GPT-5.4 (identisch) |
-| Entscheidungslogik       | Deterministisch                     | Probabilistisch                       | Probabilistisch                     |
-| Kontext-Steuerung        | `COMPONENT_MAP`/`FRAME_MAP`         | B1 (kein) / B2 (RAW) / B3 (CLEANED)   | Dokumentations-Kontext              |
-| Erweiterbarkeit          | Manuell, regelbasiert               | `.md`-Datei ergänzen → fertig         | `.md`-Datei ergänzen → fertig       |
-| Reproduzierbarkeit       | 100%                                | ~hoch (geringe LLM-Varianz)           | ~hoch                               |
-| Externe Abhängigkeiten   | Keine                               | OpenAI-API                            | OpenAI-API                          |
-| Kosten pro Mockup        | ~$0                                 | B1: ~$0.001 / B2: ~$0.08 / B3: ~$0.02 | ~$0.05–0.15 (Bild-Tokens)           |
-| Metrik-Erfassung         | 12 Werte (Coverage, Tiefe, Timing)  | 14 Werte + Tokens + Kosten            | 14 Werte + Tokens + Kosten          |
-| Strukturgarantie         | Ja (deterministischer AST)          | Nein (`parse_ok`-Flag nötig)          | Nein                                |
-| Erwarteter Hauptvorteil  | Präzision, Kosten, Geschwindigkeit  | Sprachflexibilität, Semantik          | Visuelles Verständnis               |
-| Erwarteter Hauptnachteil | Sprödigkeit bei Naming-Abweichungen | Token-Kosten (B2), Varianz            | Pixel-Approximation, hohe Kosten    |
+| Aspekt                   | Ansatz A (Regelbasiert)             | Ansatz B (Metadaten-LLM)                                                                                                | Ansatz C (Vision-LLM)            |
+|--------------------------|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
+| Eingabe                  | Figma-JSON                          | Figma-JSON + Doku-Kontext (B2/B3) + optional Few-Shot                                                                   | Figma-PNG + Doku-Kontext         |
+| Modell                   | keines                              | 3 Modelle über OpenRouter (Claude Sonnet 5, GPT-5.6-Terra, Gemini 3.1 Pro Preview)                                      | mit Ansatz B abzugleichen        |
+| Prompt-Strategie         | –                                   | konfigurierbar: Zero-Shot / Few-Shot (Default: Few-Shot)                                                                | –                                |
+| Entscheidungslogik       | Deterministisch                     | Probabilistisch                                                                                                         | Probabilistisch                  |
+| Kontext-Steuerung        | `COMPONENT_MAP`/`FRAME_MAP`         | B1 (kein Doku-Kontext) / B2 (RAW) / B3 (CLEANED)                                                                        | Dokumentations-Kontext           |
+| Erweiterbarkeit          | Manuell, regelbasiert               | `.md`-Datei ergänzen → fertig; Modell per `API_MODELS`-Eintrag ergänzen                                                 | `.md`-Datei ergänzen → fertig    |
+| Reproduzierbarkeit       | 100%                                | ~hoch (`temperature=0.0`, aber weiterhin LLM-Varianz)                                                                   | ~hoch                            |
+| Externe Abhängigkeiten   | Keine                               | OpenRouter-API                                                                                                          | mit Ansatz B abzugleichen        |
+| Kosten pro Mockup        | ~$0                                 | modellabhängig, pro Zeile in Ergebnis-CSV erfasst (`cost_usd` u.a.), grobe Größenordnung B1 < B3 < B2 (siehe Kapitel 9) | mit Ansatz B abzugleichen        |
+| Metrik-Erfassung         | 20 Felder, resumable CSV            | ~34 Felder, resumable CSV, inkl. Tokens, Cache- und Kostenaufschlüsselung                                               | mit Ansatz B abzugleichen        |
+| Strukturgarantie         | Ja (deterministischer AST)          | Nein (`parse_ok`/`extraction_ok`-Flags nötig)                                                                           | Nein                             |
+| Erwarteter Hauptvorteil  | Präzision, Kosten, Geschwindigkeit  | Sprachflexibilität, Semantik                                                                                            | Visuelles Verständnis            |
+| Erwarteter Hauptnachteil | Sprödigkeit bei Naming-Abweichungen | Token-Kosten (B2), Varianz                                                                                              | Pixel-Approximation, hohe Kosten |
 
 Ansatz B bildet das mittlere Glied im Methodenvergleich: flexibler als A durch natürlichsprachliches Kontext-Verständnis, aber ohne die visuelle Eingabe von C. Die interne B1/B2/B3-Varianz liefert zusätzlich einen eigenständigen Befund darüber, wie viel (a) Dokumentations-Kontext und (b) Dokumentations-Bereinigung für LLM-basierte Transformationen tatsächlich bringen.

@@ -12,6 +12,13 @@ Die zentrale Eigenschaft dieser Methode ist ihre vollständige Nachvollziehbarke
 
 Stand der Implementierung: Der aktuelle Prototyp mappt regelbasiert sowohl primitive Figma-`INSTANCE`-Komponenten (`COMPONENT_MAP`, 17 Einträge) als auch zusammengesetzte, framebasierte Strukturen (`FRAME_MAP`, 8 Strategien, z.B. `Tabs`, `Dialog`, `DataTable`). Die Pipeline läuft über alle drei Komplexitätsstufen (Simple, Medium, Hard) und erfasst pro Mockup automatisch Coverage- und Timing-Metriken.
 
+Der Input-Datensatz ist über zwei Konfigurationsparameter steuerbar:
+
+- `TYPE`: `'components'` (isolierte Einzelkomponenten) oder `'uis'` (vollständige Mockup-Kompositionen)
+- `VARIANT`: `'messy'` oder `'pretty'` — nur für `TYPE='uis'` relevant und dient dem robustheitsbezogenen Vergleich (vgl. UF5-Hypothese in Kapitel 9.3)
+
+Jeder Pipeline-Lauf wird über eine `RUN_ID` identifiziert; Ergebnisse mehrerer Läufe werden persistiert, um Timing-Werte über Wiederholungen hinweg vergleichbar zu machen (siehe Kapitel 8).
+
 ### Designprinzipien
 
 | Prinzip                           | Umsetzung                                                         |
@@ -54,7 +61,7 @@ Stand der Implementierung: Der aktuelle Prototyp mappt regelbasiert sowohl primi
             ▼
 ┌─────────────────────────┐
 │  Metrik-Erfassung       │  Schritt 5: Timing, Coverage, AST-Tiefe
-│  (_metrics, Report)     │  pro Mockup → metrics_report_a.json
+│  (_metrics, CSV-Report) │  pro Mockup → results/results_a_<type>_<variant>.csv
 └───────────┬─────────────┘
             ▼
 ┌─────────────────────────┐
@@ -182,6 +189,7 @@ Jede einzelne Property in `props` hat das folgende Schema:
         'Success':   'success',
         'Info':      'info',
         'Warning':   'warn',         # Achtung: Figma "Warning" → PrimeVue "warn"
+        'Help':      'help',
         'Danger':    'danger',
         'Contrast':  'contrast',
     },
@@ -227,9 +235,12 @@ ICON_SKIP_INSTANCES = {
     'times', 'ellipsis-h', 'search', 'check', 'plus', 'minus',
     'trash', 'pen-to-square', 'clone', 'flag', 'inbox', 'folder',
     'user', 'shield', 'angle-left', 'angle-right', 'cart-plus',
-    'calendar', 'clock', 'arrow-up-right',
+    'calendar', 'clock', 'arrow-up-right', 'arrow-circle-left',
+    'times-circle', 'user-edit',
 }
 ```
+
+Der Abgleich erfolgt normalisiert (`ICON_SKIP_NORM`, via `_normalize_name()`), da `ICON_SKIP_INSTANCES` Bindestrich-Namen aus Figma enthält, `_normalize_name()` diese Trennzeichen aber entfernt.
 
 ### 4.5 Framebasierte Strategien (`FRAME_MAP`)
 
@@ -373,6 +384,9 @@ Die Funktion `frame_to_classes()` übersetzt Figma-Auto-Layout-Properties in Tai
 | `paddingLeft = paddingRight = paddingTop = paddingBottom = 24` | `p-6`             | symmetrisch            |
 | `paddingLeft = paddingRight = 16`                              | `px-4`            | horizontal symmetrisch |
 | `counterAxisAlignItems: CENTER`                                | `items-center`    |                        |
+| `counterAxisAlignItems: MAX`                                   | `items-end`       |                        |
+| `primaryAxisAlignItems: CENTER`                                | `justify-center`  |                        |
+| `primaryAxisAlignItems: MAX`                                   | `justify-end`     |                        |
 | `primaryAxisAlignItems: SPACE_BETWEEN`                         | `justify-between` |                        |
 
 Die Spacing-Map (`TAILWIND_SPACING`) deckt die häufigsten Werte ab und nutzt für unübliche Werte arbitrary values (`p-[18px]`). Damit ist sichergestellt, dass auch nicht-standardkonforme Abstände im Output erhalten bleiben.
@@ -428,35 +442,28 @@ const _state = reactive({ n10_4744: null })  // automatische State-Initialisieru
 
 Die State-Variablen werden aus dem AST gesammelt (`collect_refs`) und im `_state`-Objekt initialisiert. Der Mechanismus erkennt sowohl `v-model` als auch `v-model:visible` (Dialog-Sonderfall) und weitere `v-model:`-Varianten. Variablennamen werden aus den Figma-IDs abgeleitet, mit `n`-Präfix versehen (gegen führende Ziffern) und Sonderzeichen ersetzt.
 
-Außerdem entfernt `generate_sfc` automatisch den äußeren Canvas-Wrapper-Frame (ein einzelner `<div class="flex flex-col p-6">` ohne weitere Props, der rein als Figma-Mockup-Rahmen dient), sodass der Output direkt mit der eigentlichen Komponente beginnt.
+Außerdem entfernt `generate_sfc_a` automatisch den äußeren Canvas-Wrapper-Frame (ein einzelner `<div class="flex flex-col p-6">` ohne weitere Props, der rein als Figma-Mockup-Rahmen dient), sodass der Output direkt mit der eigentlichen Komponente beginnt.
 
-Der Pipeline-Lauf über alle Mockups und erzeugt dabei parallel einen Report in `reports/metrics_report_a.json` mit Laufzeit-, Coverage- und Strukturmetriken pro Datei.
+Der Pipeline-Lauf iteriert über alle Mockups und erzeugt dabei parallel einen Report in `results/results_a_<type>_<variant>.csv` mit Laufzeit-, Coverage- und Strukturmetriken pro Datei (siehe Kapitel 8).
 
 ---
 
 ## 8. Metrik-Erfassung
 
-Die Pipeline erfasst pro Mockup automatisch Metriken für die spätere Evaluation. Die Zähler werden in einem modulweiten `_metrics`-Dictionary geführt, das zu Beginn jedes `generate_sfc()`-Aufrufs zurückgesetzt wird.
+Die Pipeline erfasst pro Mockup automatisch Metriken für die spätere Evaluation. Ein Teil der Zähler wird in einem modulweiten `_metrics`-Dictionary geführt, das zu Beginn jedes `generate_sfc_a()`-Aufrufs über `_reset_metrics()` zurückgesetzt wird:
 
 ```python
-{
-    'input':                '01.json',
-    'output':               '01-a.vue',
-    'complexity':           'simple',     # aus Ordnerpfad abgeleitet
-    'duration_ms':          0.84,         # nur Transformationszeit, kein I/O
-    'sfc_bytes':            482,
-    'sfc_lines':            24,
-    'instances_total':      4,
-    'instances_mapped':     4,
-    'instances_unmapped':   0,
-    'frames_compound':      0,            # FRAME_MAP-Treffer
-    'frames_fallback':      2,            # generischer <div>-Fallback
-    'mapping_coverage':     1.0,          # mapped / total
-    'pv_components_unique': 3,            # eindeutige PrimeVue-Imports
-    'state_refs_count':     2,            # v-model-Bindings
-    'ast_depth_max':        4,            # maximale AST-Verschachtelung
-}
+def _reset_metrics():
+    global _metrics
+    _metrics = {
+        'instances_mapped':   0,
+        'instances_unmapped': 0,
+        'frames_compound':    0,
+        'frames_fallback':    0,
+    }
 ```
+
+`pv_components_unique`, `state_refs_count` und `ast_depth_max` werden erst am Ende von `generate_sfc_a()` (nach dem Rendering) in dasselbe Dictionary geschrieben.
 
 Inkrement-Stellen im Code:
 
@@ -466,11 +473,49 @@ Inkrement-Stellen im Code:
 | `instances_unmapped`   | `_transform_instance` | Weder COMPONENT_MAP noch FRAME_MAP |
 | `frames_compound`      | `_transform_frame`    | FRAME_MAP + Strategie-Dispatch     |
 | `frames_fallback`      | `_transform_frame`    | Generischer `<div>`-Fallback       |
-| `pv_components_unique` | `generate_sfc`        | Größe des Import-Sets              |
-| `state_refs_count`     | `generate_sfc`        | Anzahl gesammelter v-model-Refs    |
-| `ast_depth_max`        | `generate_sfc`        | Rekursive AST-Tiefenberechnung     |
+| `pv_components_unique` | `generate_sfc_a`      | Größe des Import-Sets              |
+| `state_refs_count`     | `generate_sfc_a`      | Anzahl gesammelter v-model-Refs    |
+| `ast_depth_max`        | `generate_sfc_a`      | Rekursive AST-Tiefenberechnung     |
 
-Timing wird über `time.perf_counter()` gemessen. Nur die `generate_sfc()`-Laufzeit wird erfasst (kein Datei-I/O), was Vergleichbarkeit mit Methode B/C sicherstellt, wo analog nur die API-Antwortzeit gemessen wird. Der aggregierte Report enthält zusätzlich eine `per_complexity`-Aufschlüsselung (avg_coverage, total_unmapped, total_fallback pro Schwierigkeitsstufe) als Datenbasis für UF5.
+Timing wird über `time.perf_counter()` unmittelbar um den `generate_sfc_a()`-Aufruf gemessen (kein Datei-I/O), was Vergleichbarkeit mit Methode B/C sicherstellt, wo analog nur die API-Antwortzeit gemessen wird.
+
+### 8.1 Persistenz: Resumable CSV-Report
+
+Anders als ein reiner In-Memory-Report werden die Metriken pro Datei direkt zeilenweise in eine CSV geschrieben (nicht als aggregiertes JSON). Der Pfad ergibt sich aus der aktiven Konfiguration:
+
+```python
+RESULTS_CSV_PATH = Path('results') / f'results_a_{TYPE}{"_" + VARIANT if VARIANT else ""}.csv'
+```
+
+Beispiel: `results/results_a_uis_pretty.csv`. Das Format spiegelt bewusst das CSV-Schema von Ansatz B (`results_b_*.csv`), um beide Methoden später gemeinsam auszuwerten.
+
+Jede Zeile enthält neben den Kern-Metriken zusätzliche Lauf- und Konfigurationsinformationen:
+
+```python
+RESULT_FIELDNAMES = [
+    'input', 'output',
+    'type', 'variant',
+    'strategy', 'complexity',
+    'run',
+    'duration',
+    'sfc_bytes', 'sfc_lines',
+    'instances_mapped', 'instances_unmapped', 'instances_total', 'mapping_coverage',
+    'frames_compound', 'frames_fallback',
+    'pv_components_unique', 'state_refs_count', 'ast_depth_max',
+    'error',
+    'created_at',
+]
+```
+
+- `type` / `variant`: die aktive `TYPE`/`VARIANT`-Konfiguration (siehe Kapitel 1)
+- `strategy`: konstant `'a'`, dient beim Zusammenführen mit Methode B/C als Unterscheidungsmerkmal
+- `run`: die `RUN_ID` des aktuellen Durchlaufs, ermöglicht mehrere Wiederholungen für stabilere Timing-Werte
+- `error`: `None` bei Erfolg, sonst die Exception-Nachricht — Fehlversuche werden dennoch als Zeile persistiert
+- `created_at`: ISO-Zeitstempel der Verarbeitung
+
+Der Lauf ist **resumable**: Vor der Verarbeitung liest `_load_completed_keys()` die vorhandene CSV und ermittelt alle bereits erfolgreich verarbeiteten `(input, run)`-Kombinationen. Bereits abgeschlossene Dateien werden übersprungen, zuvor fehlgeschlagene (`error` gesetzt) werden erneut versucht. Jede neue Zeile wird sofort über `_append_result()` angehängt, sodass ein Abbruch mitten im Lauf keinen Datenverlust verursacht.
+
+Eine aggregierte `per_complexity`-Auswertung (z.B. avg_coverage pro Schwierigkeitsstufe für UF5) wird von der Pipeline selbst nicht mehr berechnet — die `complexity`-Spalte in der CSV liefert dafür aber die Datenbasis für eine nachgelagerte Auswertung.
 
 ---
 
@@ -586,7 +631,6 @@ const _state = reactive({ n10_4744: null })
 | `Severity: Primary` → *(weggelassen)*                                           | `value_map: {'Primary': None}`                       |
 | `Text#4293:477: "Anmelden"` → `label="Anmelden"`                                | Property-Regel mit `type: 'text'`                    |
 | `layoutMode: VERTICAL, itemSpacing: 24` → `class="flex flex-col gap-6"`         | Layout-Engine                                        |
-| Äußerer `p-6`-Wrapper → *(entfernt)*                                            | Canvas-Wrapper-Unwrap in `generate_sfc`              |
 | `id: 10:4744` → `v-model="_state.n10_4744"`                                     | ID-Sanitization für JS-Identifier                    |
 
 ---
@@ -672,16 +716,16 @@ STRATEGY_DISPATCH['neue_compound'] = _strategy_neue_compound
 
 ## 13. Position im methodischen Gesamtvergleich
 
-| Aspekt                   | Methode A (Regelbasiert)            | Methode B (Metadaten-LLM)       | Methode C (Vision-LLM)            |
-|--------------------------|-------------------------------------|---------------------------------|-----------------------------------|
-| Eingabe                  | Figma-JSON                          | Figma-JSON + Doku-Kontext       | Figma-PNG + Doku-Kontext          |
-| Entscheidungslogik       | Deterministisch                     | Probabilistisch                 | Probabilistisch                   |
-| Erweiterbarkeit          | Manuell, regelbasiert               | Prompt-Engineering, Fine-Tuning | Prompt-Engineering, Fine-Tuning   |
-| Reproduzierbarkeit       | 100%                                | Modell-abhängig                 | Modell-abhängig                   |
-| Externe Abhängigkeiten   | Keine                               | LLM-API                         | Multimodale LLM-API               |
-| Erwarteter Hauptvorteil  | Präzision auf Clean-Designs         | Sprachflexibilität              | Visuelles Verständnis             |
-| Erwarteter Hauptnachteil | Sprödigkeit bei Naming-Abweichungen | Token-Kosten, Latenz            | Token-Kosten, Pixel-Approximation |
-| Kosten pro Mockup        | ~0 (CPU im ms-Bereich)              | API-Tokens (Input + Output)     | API-Tokens (Bild + Output)        |
-| Metrik-Erfassung         | Inline (12 Werte pro Mockup)        | Inline + Token-Zählung          | Inline + Token-Zählung            |
+| Aspekt                   | Methode A (Regelbasiert)                 | Methode B (Metadaten-LLM)       | Methode C (Vision-LLM)            |
+|--------------------------|------------------------------------------|---------------------------------|-----------------------------------|
+| Eingabe                  | Figma-JSON                               | Figma-JSON + Doku-Kontext       | Figma-PNG + Doku-Kontext          |
+| Entscheidungslogik       | Deterministisch                          | Probabilistisch                 | Probabilistisch                   |
+| Erweiterbarkeit          | Manuell, regelbasiert                    | Prompt-Engineering, Fine-Tuning | Prompt-Engineering, Fine-Tuning   |
+| Reproduzierbarkeit       | 100%                                     | Modell-abhängig                 | Modell-abhängig                   |
+| Externe Abhängigkeiten   | Keine                                    | LLM-API                         | Multimodale LLM-API               |
+| Erwarteter Hauptvorteil  | Präzision auf Clean-Designs              | Sprachflexibilität              | Visuelles Verständnis             |
+| Erwarteter Hauptnachteil | Sprödigkeit bei Naming-Abweichungen      | Token-Kosten, Latenz            | Token-Kosten, Pixel-Approximation |
+| Kosten pro Mockup        | ~0 (CPU im ms-Bereich)                   | API-Tokens (Input + Output)     | API-Tokens (Bild + Output)        |
+| Metrik-Erfassung         | Inline, resumable CSV (20 Felder/Mockup) | Inline + Token-Zählung          | Inline + Token-Zählung            |
 
 Die regelbasierte Methode A bildet im Gesamtvergleich das untere Ende der Verständnis-Komplexität, aber das obere Ende der Vorhersagbarkeit. Diese Eigenschaft macht sie zur idealen Baseline: Abweichungen der LLM-basierten Methoden lassen sich gegen einen festen Referenzpunkt messen.
