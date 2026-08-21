@@ -69,14 +69,14 @@ Bei den sauberen Daten (K-DS und BO-DS Pretty) sind der metadatenbasierte (B) un
 #### Benutzeroberflächen-Datensatz
  
 - Beim BO-DS liegen die MLLM-basierten Ansätze vorne. In der Pretty-Version ist Ansatz B erneut vorn mit 47,23 % Genauigkeit und der geringsten Missing Rate (31,18 %)
-- In der Messy-Version liegt der hybride Ansatz D knapp vorn mit 43,40 % (Missing Rate 38,29 %), vor Ansatz C mit 43,83 % (38,16 %)
+- In der Messy-Version liegt der visionsbasierte Ansatz C knapp vorn mit 43,83 % (Missing Rate 38,16 %), vor Ansatz D mit 43,40 % (38,29 %)
 - Ansatz A ist in der Messy-Version nicht auswertbar (keine korrekt gemappte Komponente, siehe UF1-F1 = 0), daher liegt hier keine Prop-Genauigkeit vor
 
 *Zugehörige Diagramme: UF5: Prop Accuracy Pretty vs. Messy (Benutzeroberflächen-Datensatz); UF5: Missing Rate Pretty vs. Messy (Benutzeroberflächen-Datensatz); UF1: Prop Accuracy je MLLM-Modell und Ansatz (Benutzeroberflächen-Datensatz)*
  
 #### Fazit UF1 – Prop-Genauigkeit
  
-Die Prop-Genauigkeit liegt insgesamt deutlich niedriger als der F1-Score (~40–52 % gegenüber ~80–92 %): Die richtige Komponente wird zuverlässig erkannt, aber ihre Props nur in etwa der Hälfte der Fälle korrekt gesetzt. Bemerkenswert ist der Zielkonflikt zwischen Genauigkeit und Abdeckung: Ansatz A erreicht beim K-DS zwar die höchste Genauigkeit, dies aber durch eine sehr hohe Missing Rate (lässt Props schlicht weg). Beim BO-DS drehen sich die Verhältnisse, dort führen die MLLM-basierten Ansätze (B bei Pretty, D bei Messy).
+Die Prop-Genauigkeit liegt insgesamt deutlich niedriger als der F1-Score (~40–52 % gegenüber ~80–92 %): Die richtige Komponente wird zuverlässig erkannt, aber ihre Props nur in etwa der Hälfte der Fälle korrekt gesetzt. Bemerkenswert ist der Zielkonflikt zwischen Genauigkeit und Abdeckung: Ansatz A erreicht beim K-DS zwar die höchste Genauigkeit, dies aber durch eine sehr hohe Missing Rate (lässt Props schlicht weg). Beim BO-DS drehen sich die Verhältnisse, dort führen die MLLM-basierten Ansätze (B bei Pretty, C bei Messy).
  
 ---
 
@@ -88,7 +88,7 @@ Die Prop-Genauigkeit liegt insgesamt deutlich niedriger als der F1-Score (~40–
 - **Kompilierung:** Bei Ansatz A konnten alle Ergebnisse kompiliert werden (100 %); bei den MLLM-basierten Ansätzen liegt die Compile Success Rate zwischen 97,22 % (B) und 98,33 % (D)
 - **Imports:** Bei allen Mockups wurden alle Imports für die PrimeVue-Komponenten vollständig hinzugefügt (Import Completeness 100 % bei allen Ansätzen)
 - **PrimeVue-API-Konformität:** Slot-Korrektheit durchgängig sehr hoch (~99–100 %); Prop-Validitätsrate (PVR) (~77–85 %) und Binding-Korrektheit niedriger (~77-83); Passthrough-Korrektheit nur für die MLLM-Ansätze definiert (A nutzt den Passthrough-Mechanismus nicht) zwischen 92,78 % (C) und 99,24 (B)
-- **Wartbarkeit:** LOC-Ratio bei A mit 71,55 deutlich unter 100 % (kürzer als die Referenz), bei D mit 111,96 % am höchsten; Code-Duplizierung (CDR) Arbitrary Value Usage (AVU) bei C am geringsten 4,07 %, 3,27 %; AVU mit 9,91 % bei B am höchsten; CDR mit 7,71 bei Ansatz A im Vergleich zu 4,07 % (A) und 6.41 % (D) am höchsten; Comment Density bei D mit 0,54 % am höchsten und bei B mit 0,38 % am niedrigsten
+- **Wartbarkeit:** LOC-Ratio bei A mit 71,55 deutlich unter 100 % (kürzer als die Referenz), bei D mit 111,96 % am höchsten; Code-Duplizierung (CDR) Arbitrary Value Usage (AVU) bei C am geringsten 4,07 %, 3,27 %; AVU mit 9,91 % bei B am höchsten; CDR mit 7,71 bei Ansatz A im Vergleich zu 4,07 % (A) und 6,41 % (D) am höchsten; Comment Density bei D mit 0,54 % am höchsten und bei B mit 0,38 % am niedrigsten
 
 #### Benutzeroberflächen-Datensatz
  
@@ -121,7 +121,7 @@ Auf technischer Ebene (Parsen, Kompilieren, Imports) liefern alle Ansätze durch
 - Ansatz A liegt bei der Übereinstimmung von Positionen und Größen der Elemente deutlich vorne: Mean IoU 91,61 % gegenüber 85,76–86,17 % bei den MLLM-Ansätzen
   - Positions-Übereinstimmung bei A 94,07 %, bei den MLLM-Ansätzen 88,83–89,25 %
   - Größen-, Style- und Text-Übereinstimmung praktisch gleichauf: ~95,89–96,1 % (Größe), ~97,7–98,2 % (Style) bzw. ~99,5–99,8 % (Text)
-  - IoU und Positions-Übereinstimmung sind intern konsistent (niedrigerer IoU-Wert bei den MLLM-Ansätzen geht mit ebenso niedrigerer Positions-Übereinstimmung einher)
+  - IoU und Positions-Übereinstimmung (A: 94,07% gegenüber 88,83-89,25%) sind intern konsistent (niedrigerer IoU-Wert bei den MLLM-Ansätzen geht mit ebenso niedrigerer Positions-Übereinstimmung einher)
 - Mit steigender Komplexität sinkt die EMR bei allen vier Ansätzen (A 96,1 % → 84,6 %, B 97,3 % → 89,6 %, C 97,1 % → 90,8 %, D 97,3 % → 90,1 %); Degradationsfaktor *hard* zwischen 0,88 (A) und 0,94 (C) —> Ansatz A degradiert damit auch bei der visuellen Treue am stärksten
 
 *Zugehörige Diagramme: UF3: Element-Match-Rate je Ansatz (Komponenten-Datensatz); UF3: Visuelle Teilmetriken je Ansatz (Komponenten-Datensatz)*

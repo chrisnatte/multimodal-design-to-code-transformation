@@ -8,13 +8,13 @@
 
 2. **Code-Qualität und Wartbarkeit**: In welchem Maße erfüllen die generierten Ergebnisse die PrimeVue-API-Konventionen, insbesondere hinsichtlich Slot-Nutzung, Prop-Bindung und Passthrough-Attributen, sowie allgemeine Kriterien der Code-Wartbarkeit?
 
-3. **Visuelle Treue**: In welchem Ausmaß erreichen die vier Ansätze visuelle Übereinstimmung mit der Figma-Vorlage und welche verfahrensspezifischen Klassen von Abweichungen lassen sich identifizieren?
+3. **Visuelle Treue**: In welchem Ausmaß erreichen die vier Ansätze visuelle Übereinstimmung mit dem Figma-Mockup und welche verfahrensspezifischen Klassen von Abweichungen lassen sich identifizieren?
 
 4. **Nacharbeitsaufwand**: Welcher Grad an manueller Nacharbeit ist nach jedem Transformationsansatz erforderlich und wie skaliert dieser Aufwand mit der Komplexität der Figma-Mockups als Eingabe?
 
 5. **Robustheit**: Wie robust verhalten sich die vier Ansätze gegenüber variierender struktureller Qualität der Figma-Eingabedaten?
 
-6. **Effizienz**: Wie unterscheiden sich die vier Ansätze hinsichtlich Verarbeitungszeit, Token-Verbrauch und monetärer Kosten pro Transformation und in welchem Verhältnis stehen diese Aufwände zur erzielten Qualität?
+6. **Effizienz**: Wie unterscheiden sich die vier Ansätze hinsichtlich Verarbeitungszeit, Tokenverbrauch und Kosten pro Transformation und in welchem Verhältnis stehen diese Aufwände zur erzielten Ergebnisqualität?
 
 ## Metriken
 
